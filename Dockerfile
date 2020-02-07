@@ -1,8 +1,7 @@
 FROM node:12.14.1 as builder
 WORKDIR .
-COPY package*.json ./
+COPY . .
 RUN npm ci --prod --silent
-COPY src/ ./src/
 RUN npm run build
 
 FROM nginx:1.12-alpine
