@@ -9,8 +9,6 @@
 ## Getting Started
 
 - Download and install [Docker](https://docs.docker.com/install/)
-- Download and install [GCP SDK](https://cloud.google.com/sdk)
-  - For macOS run `npm run install-gcp-sdk`
 
 ### Starting
 
