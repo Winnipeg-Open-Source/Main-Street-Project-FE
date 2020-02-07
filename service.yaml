@@ -8,7 +8,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 3000
+    - port: 80
       name: main-street-project-fe
   selector:
     app: main-street-project-fe
