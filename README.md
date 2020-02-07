@@ -8,14 +8,8 @@
 
 ## Getting Started
 
-- Download and install [Docker](https://docs.docker.com/install/)
+- Run `npm install`
 
 ### Starting
 
-- Run `docker-compose build`
-
-- Run `docker-compose up -d`
-
-#### Stopping
-
-- Run `docker-compose down`
+- Run `npm start`
