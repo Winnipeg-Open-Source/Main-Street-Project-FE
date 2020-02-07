@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "analyze": "npm run build && source-map-explorer 'build/static/js/*.js'",
-    "storybook": "start-storybook -c .storybook",
+    "build": "react-scripts build",
     "build-storybook": "build-storybook -c .storybook -o ./storybook-static",
+    "installGCPSDK": "./scripts/installGCPSDK.sh",
+    "start": "react-scripts start",
+    "storybook": "start-storybook -c .storybook",
     "test": "jest --coverage --silent"
   },
   "dependencies": {
