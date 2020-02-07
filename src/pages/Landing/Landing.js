@@ -34,7 +34,7 @@ function Landing () {
     return (
         <Container>
             <LandingButton onClick={onNewDonationClick}>New Donation</LandingButton>
-            <LandingButton onClick={onNewRequisitionClick}>New Requistion</LandingButton>
+            <LandingButton onClick={onNewRequisitionClick}>New Requisition</LandingButton>
         </Container>
     );
 }
