@@ -6,7 +6,6 @@
     "analyze": "npm run build && source-map-explorer 'build/static/js/*.js'",
     "build": "react-scripts build",
     "build-storybook": "build-storybook -c .storybook -o ./storybook-static",
-    "install-gcp-sdk": "./scripts/install-gcp-sdk.sh",
     "start": "react-scripts start",
     "storybook": "start-storybook -c .storybook",
     "test": "jest --coverage --silent"
