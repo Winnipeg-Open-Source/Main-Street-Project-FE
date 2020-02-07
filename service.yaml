@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: main-street-project-fe
+  labels:
+    app: main-street-project-fe
+    tier: frontend
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 3000
+      name: main-street-project-fe
+  selector:
+    app: main-street-project-fe
+    tier: frontend
