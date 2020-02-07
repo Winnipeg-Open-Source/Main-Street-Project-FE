@@ -5,6 +5,8 @@ export const PRODUCTS_PATH = '/products';
 export const PRODUCT_PATH = '/products/:id';
 export const PRODUCTS_CREATE_PATH = '/products/create';
 export const PRODUCTS_EDIT_PATH = '/products/edit/:id';
+export const DONATIONS_NEW_PATH = '/donations/new';
+export const REQUISITION_NEW_PATH = '/requisition/new';
 
 const getPath = (path, id) => {
     return id ? `${path}/${id}` : path;
