@@ -15,7 +15,6 @@ const props = {
     onQuantityChange: action('quantity change'),
     onRetailValueChange: action('retail value change'),
     onConditionChange: action('condition change'),
-    onLocationsChange: action('locations change'),
     onNotesChange: action('notes change'),
 };
 

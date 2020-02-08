@@ -16,33 +16,33 @@ function FoodDonationForm ({
     quantity,
     retailValue,
     condition,
-    locations,
     notes,
     onNameChange,
     onDescriptionChange,
     onQuantityChange,
     onRetailValueChange,
     onConditionChange,
-    onLocationsChange,
     onNotesChange,
 }) {
     return (
         <FormWrapper flexDirection='column'>
-            <Input placeholder='Name' value={name} onChange={onNameChange} />
-            <Input placeholder='Description' value={description} onChange={onDescriptionChange} />
-            <Input placeholder='Quantity' type='number' value={quantity} onChange={onQuantityChange} />
-            <Input placeholder='Retail Value ($)' type='number' value={quantity} onChange={onRetailValueChange} />
-            <Select value={condition} onChange={onConditionChange}>
-                <option disabled selected hidden>Condition</option>
-                <option>Perfect</option>
-                <option>Great</option>
-                <option>Good</option>
-                <option>Average</option>
-                <option>Poor</option>
-            </Select>
-            <Label mt={2}>
+            <Input id='name' placeholder='Name' value={name} onChange={onNameChange} />
+            <Input id='description' placeholder='Description' value={description} onChange={onDescriptionChange} />
+            <Input id='quantity' placeholder='Quantity' type='number' value={quantity} onChange={onQuantityChange} />
+            <Input id='retail-value' placeholder='Retail Value ($)' type='number' value={retailValue} onChange={onRetailValueChange} />
+            <Label mt={1}>
+                Condition
+                <Select id='condition' value={condition} onChange={onConditionChange} data-testid='Condition'>
+                    <option>Perfect</option>
+                    <option>Great</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+                </Select>
+            </Label>
+            <Label mt={1}>
                 Notes
-                <TextArea value={notes} onChange={onNotesChange} />
+                <TextArea id='notes' value={notes} onChange={onNotesChange} />
             </Label>
         </FormWrapper>
     );
@@ -57,14 +57,12 @@ FoodDonationForm.propTypes = {
     quantity: PropTypes.number,
     retailValue: PropTypes.number,
     condition: PropTypes.string,
-    locations: PropTypes.shape,
     notes: PropTypes.string,
     onNameChange: PropTypes.func,
     onDescriptionChange: PropTypes.func,
     onQuantityChange: PropTypes.func,
     onRetailValueChange: PropTypes.func,
     onConditionChange: PropTypes.func,
-    onLocationsChange: PropTypes.func,
     onNotesChange: PropTypes.func,
 };
 
