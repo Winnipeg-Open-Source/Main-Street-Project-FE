@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FoodDonationForm renders as expected 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AykKC sc-AykKE sc-LzLMm cOfiim"
+  >
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      id="name"
+      placeholder="Name"
+      value=""
+    />
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      id="description"
+      placeholder="Description"
+      value=""
+    />
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      id="quantity"
+      placeholder="Quantity"
+      type="number"
+      value=""
+    />
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      id="retail-value"
+      placeholder="Retail Value ($)"
+      type="number"
+      value=""
+    />
+    <label
+      class="sc-LzLwr gJUzbr"
+      color="border.light"
+      font-size="10px"
+      font-weight="bold"
+    >
+      Condition
+      <div
+        class="sc-AykKC sc-AykKE dkvxsa"
+        width="1"
+      >
+        <select
+          class="sc-LzLLC kFKhbt sc-LzLLD iXwxhp"
+          data-testid="Condition"
+          font-size="2,,1"
+          id="condition"
+        >
+          <option>
+            Perfect
+          </option>
+          <option>
+            Great
+          </option>
+          <option>
+            Good
+          </option>
+          <option>
+            Average
+          </option>
+          <option>
+            Poor
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="sc-AykKJ bWSYsu sc-fzXfNl sc-LzLLB cXRLCV"
+          color="text.light"
+          fill="currentcolor"
+          focusable="false"
+          height="24"
+          role="img"
+          tabindex="-1"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+          />
+        </svg>
+      </div>
+    </label>
+    <label
+      class="sc-LzLwr gJUzbr"
+      color="border.light"
+      font-size="10px"
+      font-weight="bold"
+    >
+      Notes
+      <textarea
+        class="sc-LzLLI clCiHM"
+        id="notes"
+      />
+    </label>
+  </div>
+</DocumentFragment>
+`;

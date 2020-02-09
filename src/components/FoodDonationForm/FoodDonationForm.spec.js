@@ -18,6 +18,12 @@ const props = {
 };
 
 describe('FoodDonationForm', () => {
+    it ('renders as expected', () => {
+        const { asFragment } = render(<FoodDonationForm />);
+
+        expect(asFragment()).toMatchSnapshot();
+    });
+
     it ('empty has all placeholders', async () => {
         const { getByLabelText, getByPlaceholderText, getByTestId } = render(<FoodDonationForm />);
 
