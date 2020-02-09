@@ -10,7 +10,7 @@ const StyledLink = styled(RouterLink)`
     margin-bottom: 16px;
     color: ${props => props.isActive ? getPaletteColor('text.darkest') : getPaletteColor('text.light')};
     
-    & > :first-child {
+    & > svg {
         margin-right: 16px;
     }
     

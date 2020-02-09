@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingPage renders as expected 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+  >
+    <div
+      class="sc-AykKC sc-AykKE gvuhQT"
+      color="primary.light"
+      width="1"
+    >
+      <a
+        class="sc-LzLMn drBjpY"
+        href="/donations/new"
+      >
+        <button
+          class="sc-LzLvd bCRvXL"
+          color="primary"
+          width="1"
+        >
+          New Donation
+        </button>
+      </a>
+      <a
+        class="sc-LzLMn drBjpY"
+        href="/requisition/new"
+      >
+        <button
+          class="sc-LzLvd EdBXb"
+          color="primary"
+          width="1"
+        >
+          New Requisition
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
