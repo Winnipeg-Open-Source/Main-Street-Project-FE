@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AykKC sc-AykKE sc-LzLMm cOfiim"
+  >
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      placeholder="First Input"
+    />
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      placeholder="Second Input"
+    />
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      placeholder="Third Input"
+    />
+  </div>
+</DocumentFragment>
+`;

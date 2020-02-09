@@ -3,37 +3,36 @@ import PropTypes from 'prop-types';
 import { Input, Label, Select, TextArea } from 'pcln-design-system';
 import Form from 'components/Form';
 
-function FoodDonationForm ({
+function ClothesDonationForm ({
     className,
     name,
     description,
+    size,
     quantity,
-    retailValue,
-    condition,
     notes,
     onNameChange,
     onDescriptionChange,
+    onSizeChange,
     onQuantityChange,
-    onRetailValueChange,
-    onConditionChange,
     onNotesChange,
 }) {
     return (
-        <Form className={className} flexDirection='column'>
+        <Form className={className}>
             <Input id='name' placeholder='Name' value={name} onChange={onNameChange} />
             <Input id='description' placeholder='Description' value={description} onChange={onDescriptionChange} />
-            <Input id='quantity' placeholder='Quantity' type='number' value={quantity} onChange={onQuantityChange} />
-            <Input id='retail-value' placeholder='Retail Value ($)' type='number' value={retailValue} onChange={onRetailValueChange} />
-            <Label mt={1}>
-                Condition
-                <Select id='condition' value={condition} onChange={onConditionChange} data-testid='Condition'>
-                    <option>Perfect</option>
-                    <option>Great</option>
-                    <option>Good</option>
-                    <option>Average</option>
-                    <option>Poor</option>
+            <Label>
+                Size
+                <Select id='size' value={size} onChange={onSizeChange} data-testid='Size'>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>XXXL</option>
                 </Select>
             </Label>
+            <Input id='quantity' placeholder='Quantity' type='number' value={quantity} onChange={onQuantityChange} />
             <Label mt={1}>
                 Notes
                 <TextArea id='notes' value={notes} onChange={onNotesChange} />
@@ -42,26 +41,25 @@ function FoodDonationForm ({
     );
 }
 
-FoodDonationForm.displayName = 'FoodDonationForm';
+ClothesDonationForm.displayName = 'ClothesDonationForm';
 
-FoodDonationForm.propTypes = {
+ClothesDonationForm.propTypes = {
     className: PropTypes.string,
     name: PropTypes.string,
     description: PropTypes.string,
+    size: PropTypes.string,
     quantity: PropTypes.number,
-    retailValue: PropTypes.number,
-    condition: PropTypes.string,
     notes: PropTypes.string,
     onNameChange: PropTypes.func,
     onDescriptionChange: PropTypes.func,
+    onSizeChange: PropTypes.func,
     onQuantityChange: PropTypes.func,
-    onRetailValueChange: PropTypes.func,
-    onConditionChange: PropTypes.func,
     onNotesChange: PropTypes.func,
 };
 
-FoodDonationForm.defaultProps = {
+ClothesDonationForm.defaultProps = {
     className: '',
+    size: 'M'
 };
 
-export default memo(FoodDonationForm);
+export default memo(ClothesDonationForm);

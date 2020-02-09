@@ -1,62 +1,56 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import FoodDonationForm from './FoodDonationForm';
+import ClothesDonationForm from './ClothesDonationForm';
 
 const props = {
-    name: 'Strawberries',
-    description: 'Palette of Juicy Fruit',
+    name: 'T-Shirt',
+    description: 'Pretty Cool T-Shirt',
+    size: 'L',
     quantity: 5,
-    retailValue: 100,
-    condition: 'Great',
     notes: 'A bunch of notes',
     onNameChange: () => {},
     onDescriptionChange: () => {},
+    onSizeChange: () => {},
     onQuantityChange: () => {},
-    onRetailValueChange: () => {},
-    onConditionChange: () => {},
     onNotesChange: () => {},
 };
 
-describe ('FoodDonationForm', () => {
+describe ('ClothesDonationForm', () => {
     it ('renders without crashing', () => {
-        const { asFragment } = render(<FoodDonationForm />);
+        const { asFragment } = render(<ClothesDonationForm />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
     it ('has placeholders when empty', async () => {
-        const { getByLabelText, getByPlaceholderText, getByTestId } = render(<FoodDonationForm />);
+        const { getByLabelText, getByPlaceholderText, getByTestId } = render(<ClothesDonationForm />);
 
         const name = await getByPlaceholderText('Name');
         const description = await getByPlaceholderText('Description');
+        const size = await getByTestId('Size');
         const quantity = await getByPlaceholderText('Quantity');
-        const retailValue = await getByPlaceholderText('Retail Value ($)');
-        const condition = await getByTestId('Condition');
         const notes = await getByLabelText('Notes');
 
         expect(name.value).toBe('');
         expect(description.value).toBe('');
+        expect(size.value).toBe('M');
         expect(quantity.value).toBe('');
-        expect(retailValue.value).toBe('');
-        expect(condition.value).toBe('Perfect');
         expect(notes.value).toBe('');
     });
 
     it ('has all fields used', async () => {
-        const { getByLabelText, getByPlaceholderText, getByTestId } = render(<FoodDonationForm {...props} />);
+        const { getByLabelText, getByPlaceholderText, getByTestId } = render(<ClothesDonationForm {...props} />);
 
         const name = await getByPlaceholderText('Name');
         const description = await getByPlaceholderText('Description');
+        const size = await getByTestId('Size');
         const quantity = await getByPlaceholderText('Quantity');
-        const retailValue = await getByPlaceholderText('Retail Value ($)');
-        const condition = await getByTestId('Condition');
         const notes = await getByLabelText('Notes');
 
-        expect(name.value).toBe('Strawberries');
-        expect(description.value).toBe('Palette of Juicy Fruit');
+        expect(name.value).toBe('T-Shirt');
+        expect(description.value).toBe('Pretty Cool T-Shirt');
+        expect(size.value).toBe('L');
         expect(quantity.value).toBe('5');
-        expect(retailValue.value).toBe('100');
-        expect(condition.value).toBe('Great');
         expect(notes.value).toBe('A bunch of notes');
     });
 });
