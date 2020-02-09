@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiscellaneousDonationForm renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AykKC sc-AykKE sc-LzLMm cOfiim"
+  >
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      id="name"
+      placeholder="Name"
+      value=""
+    />
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      id="description"
+      placeholder="Description"
+      value=""
+    />
+    <input
+      class="sc-LzLwp fPCStU"
+      font-size="2,,1"
+      id="quantity"
+      placeholder="Quantity"
+      value=""
+    />
+    <label
+      class="sc-LzLwr kHkA-dk"
+      color="border.light"
+      font-size="10px"
+      font-weight="bold"
+    >
+      Notes
+      <textarea
+        class="sc-LzLLI clCiHM"
+        id="notes"
+      />
+    </label>
+  </div>
+</DocumentFragment>
+`;
