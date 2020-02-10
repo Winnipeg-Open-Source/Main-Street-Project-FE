@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { Input, Label, Select, TextArea } from 'pcln-design-system';
-import Form from 'components/Form';
 
 function ClothesDonationForm ({
     className,
@@ -17,7 +16,7 @@ function ClothesDonationForm ({
     onNotesChange,
 }) {
     return (
-        <Form className={className}>
+        <>
             <Input id='name' placeholder='Name' value={name} onChange={onNameChange} />
             <Input id='description' placeholder='Description' value={description} onChange={onDescriptionChange} />
             <Label>
@@ -33,11 +32,11 @@ function ClothesDonationForm ({
                 </Select>
             </Label>
             <Input id='quantity' placeholder='Quantity' type='number' value={quantity} onChange={onQuantityChange} />
-            <Label mt={1}>
+            <Label>
                 Notes
                 <TextArea id='notes' value={notes} onChange={onNotesChange} />
             </Label>
-        </Form>
+        </>
     );
 }
 

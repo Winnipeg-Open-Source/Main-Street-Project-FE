@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { Input, Label, TextArea } from 'pcln-design-system';
-import Form from 'components/Form';
 
 function MiscellaneousDonationForm ({
     className,
@@ -15,7 +14,7 @@ function MiscellaneousDonationForm ({
     onNotesChange,
 }) {
     return (
-        <Form className={className}>
+        <>
             <Input id='name' placeholder='Name' value={name} onChange={onNameChange} />
             <Input id='description' placeholder='Description' value={description} onChange={onDescriptionChange} />
             <Input id='quantity' placeholder='Quantity' value={quantity} onChange={onQuantityChange} />
@@ -23,7 +22,7 @@ function MiscellaneousDonationForm ({
                 Notes
                 <TextArea id='notes' value={notes} onChange={onNotesChange} />
             </Label>
-        </Form>
+        </>
     );
 }
 
@@ -45,4 +44,4 @@ MiscellaneousDonationForm.defaultProps = {
     className: '',
 };
 
-export default MiscellaneousDonationForm;
+export default memo(MiscellaneousDonationForm);
