@@ -46,7 +46,7 @@ function useAxios (options = {}) {
             }
         }
         fetchData();
-    }, []);
+    }, [options]);
 
     return state;
 }
