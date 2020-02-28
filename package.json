@@ -11,6 +11,7 @@
     "test": "react-scripts test --silent --coverage --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/**/*.story.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "history": "^4.10.1",
     "pcln-design-system": "^3.2.0",
     "pcln-icons": "^3.0.0",
