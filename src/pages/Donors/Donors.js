@@ -1,31 +1,30 @@
 import React from 'react';
 import Page from 'components/Page';
-import { Input } from 'pcln-design-system';
+import { Button, Input } from 'pcln-design-system';
 import DonorsList from 'components/DonorsList';
+import Link from 'components/Link';
+import useDonors from 'hooks/useDonors';
+import { DONOR_NEW_PATH } from 'constants/paths';
 
-const donors = [
-    {
-        id: 1,
-        name: 'Costco',
-        lastDonationDate: '2019 December 20',
-    },
-    {
-        id: 2,
-        name: 'Costco',
-        lastDonationDate: '2019 December 20',
-    },
-    {
-        id: 3,
-        name: 'Costco',
-        lastDonationDate: '2019 December 20',
-    },
-];
+function NewDonorButton () {
+    return (
+        <Link to={DONOR_NEW_PATH}>
+            <Button size='small'>
+                New Donor
+            </Button>
+        </Link>
+    );
+}
 
 function Donors () {
+    const { isLoading, donors } = useDonors();
+
+    const disabled = isLoading || (donors && donors.length === 0);
+
     return (
-        <Page title='Donors' actionText='New Donor'>
-            <Input id='search' placeholder='Search' mb={3} />
-            <DonorsList donors={donors} />
+        <Page title='Donors' renderAction={NewDonorButton}>
+            <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
+            <DonorsList isLoading={isLoading} donors={donors} />
         </Page>
     );
 }

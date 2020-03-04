@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Donors Page renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+  >
+    <div
+      class="sc-AykKC sc-AykKE iYWgzp"
+      width="1"
+    >
+      <div
+        class="sc-AykKC sc-AykKE fiqGsy"
+      >
+        <div
+          class="sc-AykKF kVwTBu"
+          font-size="3"
+        >
+          Donors
+        </div>
+        <a
+          class="sc-LzLMp gbWbhu"
+          href="/donors/new"
+        >
+          <button
+            class="sc-LzLvd jILXAy"
+            color="primary"
+          >
+            New Donor
+          </button>
+        </a>
+      </div>
+      <input
+        class="sc-LzLwp bohTKD"
+        disabled=""
+        font-size="2,,1"
+        id="search"
+        placeholder="Search"
+      />
+      <div
+        class="sc-AykKC sc-AykKE sc-LzLMn bcymSi"
+        width="1"
+      >
+        <div
+          class="sc-AykKF cuPuLz"
+        >
+          No donors yet...
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

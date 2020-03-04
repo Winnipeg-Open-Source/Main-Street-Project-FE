@@ -3,6 +3,7 @@ import DonorsList from './DonorsList';
 
 const singleDonor = [
     {
+        id: 1,
         name: 'Costco',
         lastDonationDate: '2019 December 20',
     },
@@ -10,12 +11,14 @@ const singleDonor = [
 
 const multipleDonors = [
     {
+        id: 1,
         name: 'Costco',
         lastDonationDate: '2019 December 20',
     },
     {
-        name: 'Costco',
-        lastDonationDate: '2019 December 20',
+        id: 2,
+        name: 'Sobeys',
+        lastDonationDate: '2019 December 21',
     },
 ];
 

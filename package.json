@@ -8,7 +8,7 @@
     "build-storybook": "build-storybook -c .storybook -o ./storybook-static",
     "start": "react-scripts start",
     "storybook": "start-storybook -c .storybook",
-    "test": "react-scripts test --silent --coverage --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/**/*.story.js"
+    "test": "react-scripts test --silent --coverage"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "^5.3.9",
     "@storybook/react": "^5.3.9",
+    "@testing-library/jest-dom": "5.1.1",
     "@testing-library/react": "^9.4.0",
     "@testing-library/react-hooks": "^3.2.1",
     "react-test-renderer": "^16.12.0",
@@ -35,15 +36,16 @@
     "resetMocks": true,
     "resetModules": true,
     "collectCoverageFrom": [
-      "./src/**/*.js"
-    ],
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "html"
+        "./src/**/*.js",
+        "!src/**/*.story.js"
     ],
     "coveragePathIgnorePatterns": [
-      "<rootDir>/node_modules/"
+        "<rootDir>/node_modules/"
+    ],
+    "coverageReporters": [
+        "lcov",
+        "text",
+        "html"
     ]
   },
   "browserslist": {

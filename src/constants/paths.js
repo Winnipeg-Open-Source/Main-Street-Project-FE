@@ -1,6 +1,7 @@
 export const LANDING_PATH = '/';
 export const DONORS_PATH = '/donors';
 export const DONOR_PATH = '/donors/:id';
+export const DONOR_NEW_PATH = '/donors/new';
 export const PRODUCTS_PATH = '/products';
 export const PRODUCT_PATH = '/products/:id';
 export const PRODUCTS_CREATE_PATH = '/products/create';

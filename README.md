@@ -13,3 +13,11 @@
 ### Starting
 
 - Run `npm start`
+
+### Storybook
+
+- Run `npm run storybook`
+
+### Testing
+
+- Run `npm test`

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonorCard renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+  >
+    <div
+      class="sc-AykKC sc-LzLvi sc-LzLMn kHPHVo"
+      color="background.lightest"
+      width="1"
+    >
+      <div
+        class="sc-AykKF kSihtk"
+        color="text.darkest"
+        font-size="1"
+      />
+      <div
+        class="sc-AykKF EgoeG"
+        color="text.light"
+        font-size="1"
+      >
+        Last Donation: -
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
