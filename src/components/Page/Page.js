@@ -21,7 +21,7 @@ Page.displayName = 'Page';
 Page.propTypes = {
     className: PropTypes.string,
     title: PropTypes.string,
-    renderAction: PropTypes.node,
+    renderAction: PropTypes.func,
     children: PropTypes.node,
 };
 
