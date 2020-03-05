@@ -1,11 +1,18 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Flex } from 'pcln-design-system';
 import Modal from 'components/Modal';
 import Link from 'components/Link';
 
 const COLLAPSED_WIDTH = 56;
 const EXPANDED_WIDTH = 200;
+
+const LinksWrapper = styled(Flex)`
+    & > :not(:last-child) {
+        margin-bottom: 16px;
+    }
+`;
 
 function Sidebar ({ className, isMobileSidebar, isCollapsed, currentPathname, routes, onClose }) {
     const Wrapper = isMobileSidebar ? Modal : React.Fragment;
@@ -24,7 +31,7 @@ function Sidebar ({ className, isMobileSidebar, isCollapsed, currentPathname, ro
 
     return (
         <Wrapper {...modalProps}>
-            <Flex className={className} flexDirection='column' width={width} color={backgroundColor} p={padding}>
+            <LinksWrapper className={className} flexDirection='column' width={width} color={backgroundColor} p={padding}>
                 {routes && routes.map(route => (
                     <Link
                         key={route.path}
@@ -36,7 +43,7 @@ function Sidebar ({ className, isMobileSidebar, isCollapsed, currentPathname, ro
                         {route.label}
                     </Link>
                 ))}
-            </Flex>
+            </LinksWrapper>
         </Wrapper>
     );
 }

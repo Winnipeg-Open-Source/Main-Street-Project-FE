@@ -6,7 +6,7 @@ function Page ({ className, title, renderAction, children }) {
     return (
         <Flex className={className} flexDirection='column' width={1} p={3}>
             {title && (
-                <Flex justifyContent='space-between' mb={2}>
+                <Flex justifyContent='space-between' alignItems='center' mb={3}>
                     <Text fontSize={3} bold>{title}</Text>
                     {renderAction()}
                 </Flex>
