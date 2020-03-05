@@ -5,6 +5,9 @@ import { Flex } from 'pcln-design-system';
 import { Menu } from 'pcln-icons';
 
 const StyledHeader = styled(Flex)`
+    position: sticky;
+    overflow-y: hidden;
+    top: 0;
     align-items: center;
     user-select: none;
     box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.08);

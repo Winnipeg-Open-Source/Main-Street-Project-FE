@@ -65,7 +65,7 @@ function useBreakpoint () {
         ...windowSize,
         isMobile,
         currentBreakpoint,
-    }), [ isMobile, currentBreakpoint ]);
+    }), [ windowSize, isMobile, currentBreakpoint ]);
 }
 
 export default useBreakpoint;

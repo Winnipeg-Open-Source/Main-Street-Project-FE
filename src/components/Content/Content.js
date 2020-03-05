@@ -10,7 +10,7 @@ const StyledContent = styled(Flex)`
 
 function Content ({ className, children }) {
     return (
-        <StyledContent className={className} color='primary.light' p={3}>
+        <StyledContent className={className} color='primary.light'>
             {children}
         </StyledContent>
     );

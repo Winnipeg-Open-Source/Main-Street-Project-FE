@@ -7,7 +7,6 @@ import { getPaletteColor, mediaQueries } from 'pcln-design-system';
 const StyledLink = styled(RouterLink)`
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
     color: ${props => props.isActive ? getPaletteColor('text.darkest') : getPaletteColor('text.light')};
     
     & > svg {

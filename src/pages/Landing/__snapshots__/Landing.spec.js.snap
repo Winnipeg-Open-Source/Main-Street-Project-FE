@@ -11,7 +11,7 @@ exports[`LandingPage renders as expected 1`] = `
       width="1"
     >
       <a
-        class="sc-LzLMn drBjpY"
+        class="sc-LzLMn sowXS"
         href="/donations/new"
       >
         <button
@@ -23,7 +23,7 @@ exports[`LandingPage renders as expected 1`] = `
         </button>
       </a>
       <a
-        class="sc-LzLMn drBjpY"
+        class="sc-LzLMn sowXS"
         href="/requisition/new"
       >
         <button
