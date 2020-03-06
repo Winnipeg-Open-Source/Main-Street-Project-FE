@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+  >
+    <a
+      class="sc-LzLMn sowXS"
+      href=""
+    />
+  </div>
+</DocumentFragment>
+`;

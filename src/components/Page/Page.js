@@ -8,7 +8,7 @@ function Page ({ className, title, renderAction, children }) {
             {title && (
                 <Flex justifyContent='space-between' alignItems='center' mb={3}>
                     <Text fontSize={3} bold>{title}</Text>
-                    {renderAction()}
+                    {renderAction && renderAction()}
                 </Flex>
             )}
             {children}
