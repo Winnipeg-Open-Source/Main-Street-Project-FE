@@ -20,7 +20,7 @@ const StyledMenu = styled(Menu)`
 function Header ({ className, onMenuClick }) {
     return (
         <StyledHeader className={className} color='primary' p={3}>
-            <StyledMenu mr={3} onClick={onMenuClick} />
+            <StyledMenu title='Menu' mr={3} onClick={onMenuClick} data-testid='menu-icon' />
             Main Street Project Inventory System
         </StyledHeader>
     );

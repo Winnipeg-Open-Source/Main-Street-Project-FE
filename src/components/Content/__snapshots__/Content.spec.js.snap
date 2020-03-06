@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+  >
+    <div
+      class="sc-AykKC sc-AykKE sc-LzLMn jfEarE"
+      color="primary.light"
+    />
+  </div>
+</DocumentFragment>
+`;

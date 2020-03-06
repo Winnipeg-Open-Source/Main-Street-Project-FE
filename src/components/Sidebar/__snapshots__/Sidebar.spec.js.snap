@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+  >
+    <div
+      class="sc-AykKC sc-AykKE sc-LzLNw bBFXdj"
+      color="tertiary.dark"
+      width="200"
+    />
+  </div>
+</DocumentFragment>
+`;

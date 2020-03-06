@@ -1,7 +1,7 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import Page from './Page';
-import { Input } from 'pcln-design-system';
+import { Button, Input } from 'pcln-design-system';
 
 function Children () {
     return (
@@ -9,6 +9,12 @@ function Children () {
             <Input mb={2} />
             <Input />
         </>
+    );
+}
+
+function RenderAction () {
+    return (
+        <Button>Render Action Button</Button>
     );
 }
 
@@ -25,7 +31,7 @@ export const WithTitle = () => (
 );
 
 export const WithActionButton = () => (
-    <Page title='Title' actionText='Button Text' onActionClick={action('action clicked')}>
+    <Page title='Title' renderAction={RenderAction}>
         <Children />
     </Page>
 );
