@@ -21,7 +21,7 @@ describe('useSidebar', () => {
         expect(result.current.onSidebarToggle).toBeDefined();
     });
 
-    it('should return set state', () => {
+    it('should return set context', () => {
         const { result } = renderHook(() => useSidebar(), { wrapper: SidebarContextWrapper });
         expect(result.current).toBe(customContext);
     });
