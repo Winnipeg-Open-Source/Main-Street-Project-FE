@@ -29,7 +29,7 @@ function NewItemDonationForm ({ className, onCancelClick, onSaveClick, ...props 
 
     return (
         <Form className={className} title='New Item' onCancelClick={onCancelClick} onSaveClick={onSaveClick}>
-            <Select id='item-type-select' value={itemType} onChange={onItemTypeChange}>
+            <Select id='item-type-select' value={itemType} onChange={onItemTypeChange} data-testid='item-type-select'>
                 <option disabled selected>Item Type</option>
                 <option>Food</option>
                 <option>Clothing</option>

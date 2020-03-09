@@ -1,19 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import ClothesDonationForm from './ClothesDonationForm';
-
-const props = {
-    name: 'T-Shirt',
-    description: 'Pretty Cool T-Shirt',
-    size: 'L',
-    quantity: 5,
-    notes: 'A bunch of notes',
-    onNameChange: () => {},
-    onDescriptionChange: () => {},
-    onSizeChange: () => {},
-    onQuantityChange: () => {},
-    onNotesChange: () => {},
-};
+import { mockClothingDonationProps } from 'tests/mocks/MockDonationFormProps';
 
 describe ('ClothesDonationForm', () => {
     it ('renders without crashing', () => {
@@ -39,7 +27,7 @@ describe ('ClothesDonationForm', () => {
     });
 
     it ('has all fields used', async () => {
-        const { getByLabelText, getByPlaceholderText, getByTestId } = render(<ClothesDonationForm {...props} />);
+        const { getByLabelText, getByPlaceholderText, getByTestId } = render(<ClothesDonationForm {...mockClothingDonationProps} />);
 
         const name = await getByPlaceholderText('Name');
         const description = await getByPlaceholderText('Description');
