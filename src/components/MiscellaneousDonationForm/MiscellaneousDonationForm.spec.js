@@ -1,17 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import MiscellaneousDonationForm from './MiscellaneousDonationForm';
-
-const props = {
-    name: 'Misc Name',
-    description: 'A miscellaneous item',
-    quantity: 3,
-    notes: 'Something I had lying around that I do not need anymore',
-    onNameChange: () => {},
-    onDescriptionChange: () => {},
-    onQuantityChange: () => {},
-    onNotesChange: () => {},
-};
+import { mockMiscellaneousDonationProps } from 'tests/mocks/MockDonationFormProps';
 
 describe ('MiscellaneousDonationForm', () => {
     it ('renders without crashing', () => {
@@ -35,7 +25,7 @@ describe ('MiscellaneousDonationForm', () => {
     });
 
     it ('has all fields used', async () => {
-        const { getByLabelText, getByPlaceholderText } = render(<MiscellaneousDonationForm {...props} />);
+        const { getByLabelText, getByPlaceholderText } = render(<MiscellaneousDonationForm {...mockMiscellaneousDonationProps} />);
 
         const name = await getByPlaceholderText('Name');
         const description = await getByPlaceholderText('Description');
