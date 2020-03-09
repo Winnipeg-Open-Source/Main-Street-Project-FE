@@ -3,19 +3,14 @@ import PropTypes from 'prop-types';
 import DonorsContext from 'context/Donors';
 import useDonorsRequest from 'hooks/useDonorsRequest';
 
-function DonorsProvider ({ donors, children }) {
+function DonorsProvider ({ children }) {
     const response = useDonorsRequest();
 
-    const props = donors && {
-        isLoading: false,
-        donors,
-    };
-
     return (
-        <DonorsContext.Provider value={props || response}>
+        <DonorsContext.Provider value={response}>
             {children}
         </DonorsContext.Provider>
-    )
+    );
 }
 
 DonorsProvider.displayName = 'DonorsProvider';

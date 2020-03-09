@@ -4,6 +4,11 @@ import axios from 'axios';
 const REQUEST_START = 'REQUEST_START';
 const REQUEST_FINISHED = 'REQUEST_FINISHED';
 
+const initialState = {
+    isLoading: false,
+    isError: false,
+};
+
 const requestStart = () => ({ type: REQUEST_START });
 const requestFinished = (payload, isError = false) => ({ type: REQUEST_FINISHED, payload, isError });
 
@@ -18,18 +23,13 @@ const reducer = (state, action) => {
         case REQUEST_FINISHED:
             return {
                 ...state,
-                ...action.payload,
+                ...action.payload.data,
                 isLoading: false,
             };
 
         default:
             return state;
     }
-};
-
-const initialState = {
-    isLoading: false,
-    error: null,
 };
 
 function useAxios (options = {}) {
