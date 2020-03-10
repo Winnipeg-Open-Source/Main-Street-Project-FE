@@ -24,9 +24,9 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "5.3.14",
-    "@storybook/react": "5.3.14",
-    "@testing-library/jest-dom": "5.1.1",
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/react": "^5.3.14",
+    "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.4.0",
     "@testing-library/react-hooks": "^3.2.1",
     "axios-mock-adapter": "^1.17.0",

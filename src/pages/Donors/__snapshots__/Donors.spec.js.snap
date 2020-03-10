@@ -3,27 +3,27 @@
 exports[`Donors Page renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
   >
     <div
-      class="sc-AykKC sc-AykKE iYWgzp"
+      class="sc-AxjAm sc-AxiKw bENblX"
       width="1"
     >
       <div
-        class="sc-AykKC sc-AykKE jHNqrR"
+        class="sc-AxjAm sc-AxiKw cPDNBd"
       >
         <div
-          class="sc-AykKF kVwTBu"
+          class="sc-AxhCb fppuj"
           font-size="3"
         >
           Donors
         </div>
         <a
-          class="sc-LzLMp hRdTis"
+          class="sc-qYUWV eihaii"
           href="/donors/new"
         >
           <button
-            class="sc-LzLvd jILXAy"
+            class="sc-oUOMp ilrkvl"
             color="primary"
           >
             New Donor
@@ -31,17 +31,17 @@ exports[`Donors Page renders without crashing 1`] = `
         </a>
       </div>
       <input
-        class="sc-LzLwp bohTKD"
+        class="sc-pTWqp dTCfH"
         font-size="2,,1"
         id="search"
         placeholder="Search"
       />
       <div
-        class="sc-AykKC sc-AykKE sc-LzLMn bcymSi"
+        class="sc-AxjAm sc-AxiKw sc-psDhf iXvOkL"
         width="1"
       >
         <div
-          class="sc-AykKF cuPuLz"
+          class="sc-AxhCb exqJiw"
         >
           No donors yet...
         </div>

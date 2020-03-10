@@ -3,23 +3,34 @@
 exports[`Form renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-AykKC sc-AykKE sc-LzLMm cOfiim"
+    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
   >
-    <input
-      class="sc-LzLwp fPCStU"
-      font-size="2,,1"
-      placeholder="First Input"
-    />
-    <input
-      class="sc-LzLwp fPCStU"
-      font-size="2,,1"
-      placeholder="Second Input"
-    />
-    <input
-      class="sc-LzLwp fPCStU"
-      font-size="2,,1"
-      placeholder="Third Input"
-    />
+    <div
+      class="sc-AxjAm sc-AxiKw sc-qQxFs cDVLUs"
+    >
+      <div
+        class="sc-AxjAm sc-AxiKw sc-qYUWV foBumL"
+      >
+        <input
+          class="sc-pTWqp fyIUKN"
+          font-size="2,,1"
+          placeholder="First Input"
+        />
+        <input
+          class="sc-pTWqp fyIUKN"
+          font-size="2,,1"
+          placeholder="Second Input"
+        />
+        <input
+          class="sc-pTWqp fyIUKN"
+          font-size="2,,1"
+          placeholder="Third Input"
+        />
+      </div>
+      <div
+        class="sc-AxjAm sc-AxiKw sc-psDhf dCBSxT"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;

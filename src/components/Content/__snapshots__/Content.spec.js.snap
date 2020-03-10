@@ -3,10 +3,10 @@
 exports[`Content renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
   >
     <div
-      class="sc-AykKC sc-AykKE sc-LzLMn jfEarE"
+      class="sc-AxjAm sc-AxiKw sc-psDhf cietEN"
       color="primary.light"
     />
   </div>

@@ -3,15 +3,15 @@
 exports[`Header renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
   >
     <div
-      class="sc-AykKC sc-AykKE sc-LzLMn eahPkS"
+      class="sc-AxjAm sc-AxiKw sc-psDhf fFCzsd"
       color="primary"
     >
       <svg
         aria-hidden="true"
-        class="sc-AykKJ fZmLJL sc-LzLrj sc-LzLMo fYdNwH"
+        class="sc-Axmtr dFmDHs sc-pAZqv sc-qQxFs hbnjDB"
         data-testid="menu-icon"
         fill="currentcolor"
         focusable="false"

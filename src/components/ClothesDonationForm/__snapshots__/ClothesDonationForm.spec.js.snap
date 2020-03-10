@@ -2,100 +2,96 @@
 
 exports[`ClothesDonationForm renders without crashing 1`] = `
 <DocumentFragment>
-  <div
-    class="sc-AykKC sc-AykKE sc-LzLMm cOfiim"
+  <input
+    class="sc-pTWqp bpshLo"
+    font-size="2,,1"
+    id="name"
+    placeholder="Name"
+    value=""
+  />
+  <input
+    class="sc-pTWqp bpshLo"
+    font-size="2,,1"
+    id="description"
+    placeholder="Description"
+    value=""
+  />
+  <label
+    class="sc-oVpqz cKfBma"
+    color="border.light"
+    font-size="10px"
+    font-weight="bold"
   >
-    <input
-      class="sc-LzLwp fPCStU"
-      font-size="2,,1"
-      id="name"
-      placeholder="Name"
-      value=""
-    />
-    <input
-      class="sc-LzLwp fPCStU"
-      font-size="2,,1"
-      id="description"
-      placeholder="Description"
-      value=""
-    />
-    <label
-      class="sc-LzLwr kHkA-dk"
-      color="border.light"
-      font-size="10px"
-      font-weight="bold"
+    Size
+    <div
+      class="sc-AxjAm sc-AxiKw iSVrPI"
+      width="1"
     >
-      Size
-      <div
-        class="sc-AykKC sc-AykKE dkvxsa"
-        width="1"
+      <select
+        class="sc-pZCuu jeUCDo sc-oTaid fgxYOF"
+        data-testid="Size"
+        font-size="2,,1"
+        id="size"
       >
-        <select
-          class="sc-LzLLC kFKhbt sc-LzLLD iXwxhp"
-          data-testid="Size"
-          font-size="2,,1"
-          id="size"
-        >
-          <option>
-            XS
-          </option>
-          <option>
-            S
-          </option>
-          <option>
-            M
-          </option>
-          <option>
-            L
-          </option>
-          <option>
-            XL
-          </option>
-          <option>
-            XXL
-          </option>
-          <option>
-            XXXL
-          </option>
-        </select>
-        <svg
-          aria-hidden="true"
-          class="sc-AykKJ bWSYsu sc-fzXfNl sc-LzLLB cXRLCV"
-          color="text.light"
-          fill="currentcolor"
-          focusable="false"
-          height="24"
-          role="img"
-          tabindex="-1"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <path
-            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-          />
-        </svg>
-      </div>
-    </label>
-    <input
-      class="sc-LzLwp fPCStU"
-      font-size="2,,1"
-      id="quantity"
-      placeholder="Quantity"
-      type="number"
-      value=""
+        <option>
+          XS
+        </option>
+        <option>
+          S
+        </option>
+        <option>
+          M
+        </option>
+        <option>
+          L
+        </option>
+        <option>
+          XL
+        </option>
+        <option>
+          XXL
+        </option>
+        <option>
+          XXXL
+        </option>
+      </select>
+      <svg
+        aria-hidden="true"
+        class="sc-Axmtr bsYOWx sc-fzqPZZ sc-pRFHb JnCiE"
+        color="text.light"
+        fill="currentcolor"
+        focusable="false"
+        height="24"
+        role="img"
+        tabindex="-1"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        />
+      </svg>
+    </div>
+  </label>
+  <input
+    class="sc-pTWqp bpshLo"
+    font-size="2,,1"
+    id="quantity"
+    placeholder="Quantity"
+    type="number"
+    value=""
+  />
+  <label
+    class="sc-oVpqz cKfBma"
+    color="border.light"
+    font-size="10px"
+    font-weight="bold"
+  >
+    Notes
+    <textarea
+      class="sc-qYhTA kqinNZ"
+      id="notes"
     />
-    <label
-      class="sc-LzLwr gJUzbr"
-      color="border.light"
-      font-size="10px"
-      font-weight="bold"
-    >
-      Notes
-      <textarea
-        class="sc-LzLLI clCiHM"
-        id="notes"
-      />
-    </label>
-  </div>
+  </label>
 </DocumentFragment>
 `;

@@ -3,14 +3,14 @@
 exports[`DonorsList renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
   >
     <div
-      class="sc-AykKC sc-AykKE sc-LzLMn bcymSi"
+      class="sc-AxjAm sc-AxiKw sc-psDhf iXvOkL"
       width="1"
     >
       <div
-        class="sc-AykKF cuPuLz"
+        class="sc-AxhCb exqJiw"
       >
         No donors yet...
       </div>
