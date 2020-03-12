@@ -12,6 +12,20 @@ describe ('Sidebar', () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
+    it ('renders with collapsed sidebar', () => {
+        const { asFragment } = renderWithThemeAndRouter(<Sidebar isCollapsed />);
+
+        expect(asFragment()).toMatchSnapshot();
+    });
+
+    it ('renders modal for mobile view', () => {
+        const { asFragment } = renderWithThemeAndRouter(
+            <Sidebar isMobileSidebar currentPathname={LANDING_PATH} routes={routes} />
+        );
+
+        expect(asFragment()).toMatchSnapshot();
+    });
+
     it ('can navigate to products page', () => {
         const { getByText, history } = renderWithThemeAndRouter(
             <Sidebar currentPathname={LANDING_PATH} routes={routes} />

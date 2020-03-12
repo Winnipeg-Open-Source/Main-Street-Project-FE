@@ -49,6 +49,7 @@
       "<rootDir>/node_modules/"
     ],
     "coverageReporters": [
+      "html",
       "text"
     ]
   },

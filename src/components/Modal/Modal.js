@@ -60,6 +60,7 @@ const DIALOG_ANIMATIONS = (state) => `
 function Modal ({ className, isMobile, isOpen, hasFooter, title, subtitle, children, onClose }) {
     return (
         <StyledModal
+            className={className}
             disableCloseButton
             isOpen={isOpen}
             color='background.lightest'
