@@ -12,6 +12,7 @@ const reducer = (state, action = {}) => {
             return {
                 ...state,
                 ...action.payload.data,
+                isError: action.isError,
                 isLoading: false,
             };
 

@@ -1,6 +1,7 @@
-import { useReducer, useEffect } from 'react';
+import { useReducer, useCallback } from 'react';
 import axios from 'axios';
 import AxiosReducer from 'reducers/Axios';
+import { requestStart, requestFinished } from 'actions/Axios';
 
 const initialState = {
     isLoading: false,
@@ -10,20 +11,17 @@ const initialState = {
 function useAxios (options = {}) {
     const [ state, dispatch ] = useReducer(AxiosReducer, initialState);
 
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                dispatch(requestStart());
-                const response = await axios(options);
-                dispatch(requestFinished(response));
-            } catch (err) {
-                dispatch(requestFinished(err, true));
-            }
+    const fetchData = useCallback(async () => {
+        try {
+            dispatch(requestStart());
+            const response = await axios(options);
+            dispatch(requestFinished(response));
+        } catch (err) {
+            dispatch(requestFinished(err, true));
         }
-        fetchData();
-    }, [options]);
+    }, [ options ]);
 
-    return state;
+    return { state, fetchData };
 }
 
 export default useAxios;
