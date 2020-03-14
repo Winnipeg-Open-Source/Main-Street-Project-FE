@@ -17,34 +17,40 @@
     "pcln-icons": "^3.0.0",
     "pcln-modal": "^3.1.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^3.4.0",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.9",
-    "@storybook/react": "^5.3.9",
-    "@testing-library/jest-dom": "5.1.1",
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/react": "^5.3.14",
+    "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.4.0",
     "@testing-library/react-hooks": "^3.2.1",
-    "react-test-renderer": "^16.12.0",
+    "axios-mock-adapter": "^1.17.0",
+    "react-test-renderer": "^16.13.0",
     "source-map-explorer": "^2.2.2"
   },
   "jest": {
     "resetMocks": true,
     "resetModules": true,
     "collectCoverageFrom": [
-        "./src/**/*.js",
-        "!src/**/*.story.js"
+      "src/**/*.js",
+      "!src/**/*.story.js",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/constants/*",
+      "!src/context/*",
+      "!src/tests/*"
     ],
     "coveragePathIgnorePatterns": [
-        "<rootDir>/node_modules/"
+      "<rootDir>/node_modules/"
     ],
     "coverageReporters": [
-        "lcov",
-        "html"
+      "html",
+      "text"
     ]
   },
   "browserslist": {

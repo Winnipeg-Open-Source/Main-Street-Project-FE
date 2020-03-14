@@ -39,6 +39,7 @@ const ContentWrapper = styled(Flex)`
     }
 `;
 
+/* istanbul ignore next */
 const OVERLAY_ANIMATIONS = (state) => `
     opacity: 0;
     transition: opacity .25s ease-out;
@@ -48,6 +49,7 @@ const OVERLAY_ANIMATIONS = (state) => `
     ${state === 'exited' ? `opacity: 0;` : ''}
 `;
 
+/* istanbul ignore next */
 const DIALOG_ANIMATIONS = (state) => `
     transform: translate(-100%);
     transition: transform .5s ease-out;
@@ -60,6 +62,7 @@ const DIALOG_ANIMATIONS = (state) => `
 function Modal ({ className, isMobile, isOpen, hasFooter, title, subtitle, children, onClose }) {
     return (
         <StyledModal
+            className={className}
             disableCloseButton
             isOpen={isOpen}
             color='background.lightest'

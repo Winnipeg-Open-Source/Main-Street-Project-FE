@@ -5,12 +5,12 @@ export const mockFoodDonationProps = {
     retailValue: 100,
     condition: 'Great',
     notes: 'A bunch of notes',
-    onNameChange: () => {},
-    onDescriptionChange: () => {},
-    onQuantityChange: () => {},
-    onRetailValueChange: () => {},
-    onConditionChange: () => {},
-    onNotesChange: () => {},
+    onNameChange: null,
+    onDescriptionChange: null,
+    onQuantityChange: null,
+    onRetailValueChange: null,
+    onConditionChange: null,
+    onNotesChange: null,
 };
 
 export const mockClothingDonationProps = {
@@ -19,11 +19,11 @@ export const mockClothingDonationProps = {
     size: 'L',
     quantity: 5,
     notes: 'A bunch of notes',
-    onNameChange: () => {},
-    onDescriptionChange: () => {},
-    onSizeChange: () => {},
-    onQuantityChange: () => {},
-    onNotesChange: () => {},
+    onNameChange: null,
+    onDescriptionChange: null,
+    onSizeChange: null,
+    onQuantityChange: null,
+    onNotesChange: null,
 };
 
 export const mockHouseholdItemDonationProps = {
@@ -31,10 +31,10 @@ export const mockHouseholdItemDonationProps = {
     description: 'This toilet paper is 10-ply',
     quantity: 5,
     notes: 'A bunch of notes',
-    onNameChange: () => {},
-    onDescriptionChange: () => {},
-    onQuantityChange: () => {},
-    onNotesChange: () => {},
+    onNameChange: null,
+    onDescriptionChange: null,
+    onQuantityChange: null,
+    onNotesChange: null,
 };
 
 export const mockMiscellaneousDonationProps = {
@@ -42,10 +42,10 @@ export const mockMiscellaneousDonationProps = {
     description: 'A miscellaneous item',
     quantity: 3,
     notes: 'Something I had lying around that I do not need anymore',
-    onNameChange: () => {},
-    onDescriptionChange: () => {},
-    onQuantityChange: () => {},
-    onNotesChange: () => {},
+    onNameChange: null,
+    onDescriptionChange: null,
+    onQuantityChange: null,
+    onNotesChange: null,
 };
 
 export const mockNewItemDonationProps = {
@@ -56,11 +56,11 @@ export const mockNewItemDonationProps = {
     retailValue: 500,
     condition: 'Great',
     notes: 'Some notes',
-    onNameChange: () => {},
-    onDescriptionChange: () => {},
-    onQuantityChange: () => {},
-    onSizeChange: () => {},
-    onRetailValueChange: () => {},
-    onConditionChange: () => {},
-    onNotesChange: () => {},
+    onNameChange: null,
+    onDescriptionChange: null,
+    onQuantityChange: null,
+    onSizeChange: null,
+    onRetailValueChange: null,
+    onConditionChange: null,
+    onNotesChange: null,
 };

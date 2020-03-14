@@ -1,7 +1,6 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react';
 import renderWithThemeAndRouter from 'tests/helpers/renderWithThemeAndRouter';
-import DonorsProvider from 'providers/Donors';
 import DonorsPage from './Donors';
 import useDonors from 'hooks/useDonors';
 import { DONORS_PATH, DONOR_NEW_PATH } from 'constants/paths';

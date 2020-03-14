@@ -20,7 +20,7 @@ const Content = styled(Flex)`
 function Form ({ className, title, children, onCancelClick, onSaveClick }) {
     return (
         <StyledForm className={className} flexDirection='column' p={2}>
-            {title && <Text bold data-testid='title'>{title}</Text>}
+            {title && <Text bold>{title}</Text>}
             <Content flexDirection='column' alignItems='flex-start' my={2}>
                 {children}
             </Content>

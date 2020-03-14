@@ -1,54 +1,27 @@
-import { useReducer, useEffect } from 'react';
+import { useReducer, useCallback } from 'react';
 import axios from 'axios';
-
-const REQUEST_START = 'REQUEST_START';
-const REQUEST_FINISHED = 'REQUEST_FINISHED';
-
-const requestStart = () => ({ type: REQUEST_START });
-const requestFinished = (payload, isError = false) => ({ type: REQUEST_FINISHED, payload, isError });
-
-const reducer = (state, action) => {
-    switch (action.type) {
-        case REQUEST_START:
-            return {
-                ...state,
-                isLoading: true,
-            };
-
-        case REQUEST_FINISHED:
-            return {
-                ...state,
-                ...action.payload,
-                isLoading: false,
-            };
-
-        default:
-            return state;
-    }
-};
+import AxiosReducer from 'reducers/Axios';
+import { requestStart, requestFinished } from 'actions/Axios';
 
 const initialState = {
     isLoading: false,
-    error: null,
+    isError: false,
 };
 
 function useAxios (options = {}) {
-    const [ state, dispatch ] = useReducer(reducer, initialState);
+    const [ state, dispatch ] = useReducer(AxiosReducer, initialState);
 
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                dispatch(requestStart());
-                const response = await axios(options);
-                dispatch(requestFinished(response));
-            } catch (err) {
-                dispatch(requestFinished(err, true));
-            }
+    const fetchData = useCallback(async () => {
+        try {
+            dispatch(requestStart());
+            const response = await axios(options);
+            dispatch(requestFinished(response));
+        } catch (err) {
+            dispatch(requestFinished(err, true));
         }
-        fetchData();
-    }, [options]);
+    }, [ options ]);
 
-    return state;
+    return { state, fetchData };
 }
 
 export default useAxios;

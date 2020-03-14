@@ -3,26 +3,25 @@
 exports[`NewItemDonationForm renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
   >
     <div
-      class="sc-AykKC sc-AykKE sc-LzLMo eEKIUM"
+      class="sc-AxjAm sc-AxiKw sc-qQxFs cDVLUs"
     >
       <div
-        class="sc-AykKF dPIRLo"
-        data-testid="title"
+        class="sc-AxhCb wyOpT"
       >
         New Item
       </div>
       <div
-        class="sc-AykKC sc-AykKE sc-LzLMp fMrCKx"
+        class="sc-AxjAm sc-AxiKw sc-qYUWV foBumL"
       >
         <div
-          class="sc-AykKC sc-AykKE dkvxsa"
+          class="sc-AxjAm sc-AxiKw iSVrPI"
           width="1"
         >
           <select
-            class="sc-LzLLC hZZkha sc-LzLLD iXwxhp"
+            class="sc-pZCuu kQVKTB sc-oTaid fgxYOF"
             data-testid="item-type-select"
             font-size="2,,1"
             id="item-type-select"
@@ -47,7 +46,7 @@ exports[`NewItemDonationForm renders without crashing 1`] = `
           </select>
           <svg
             aria-hidden="true"
-            class="sc-AykKJ lfaVgU sc-fzXfNl sc-LzLLB cXRLCV"
+            class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
             color="text.light"
             fill="currentcolor"
             focusable="false"
@@ -64,7 +63,7 @@ exports[`NewItemDonationForm renders without crashing 1`] = `
         </div>
       </div>
       <div
-        class="sc-AykKC sc-AykKE sc-LzLMn hyZQrI"
+        class="sc-AxjAm sc-AxiKw sc-psDhf dCBSxT"
       />
     </div>
   </div>

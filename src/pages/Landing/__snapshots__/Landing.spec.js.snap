@@ -3,19 +3,19 @@
 exports[`LandingPage renders as expected 1`] = `
 <DocumentFragment>
   <div
-    class="sc-LzLMl bRtbEd sc-LzLMm jaRkvP"
+    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
   >
     <div
-      class="sc-AykKC sc-AykKE gvuhQT"
+      class="sc-AxjAm sc-AxiKw jthnRD"
       color="primary.light"
       width="1"
     >
       <a
-        class="sc-LzLMn sowXS"
+        class="sc-psDhf gpxmSn"
         href="/donations/new"
       >
         <button
-          class="sc-LzLvd bCRvXL"
+          class="sc-oUOMp dmWTjG"
           color="primary"
           width="1"
         >
@@ -23,11 +23,11 @@ exports[`LandingPage renders as expected 1`] = `
         </button>
       </a>
       <a
-        class="sc-LzLMn sowXS"
+        class="sc-psDhf gpxmSn"
         href="/requisition/new"
       >
         <button
-          class="sc-LzLvd EdBXb"
+          class="sc-oUOMp dUIyXc"
           color="primary"
           width="1"
         >

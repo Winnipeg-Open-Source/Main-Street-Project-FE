@@ -1,5 +1,4 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
 import Page from './Page';
 import { Button, Input } from 'pcln-design-system';
 

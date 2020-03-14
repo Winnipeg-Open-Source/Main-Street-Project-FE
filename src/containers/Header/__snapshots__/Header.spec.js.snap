@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderContainer renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxjAm sc-AxiKw sc-pkfPC irOleE"
+    color="primary"
+  >
+    <svg
+      aria-hidden="true"
+      class="sc-Axmtr dFmDHs sc-pAZqv sc-psDhf gTeQdV"
+      data-testid="menu-icon"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      role="img"
+      tabindex="-1"
+      title="Menu"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <title>
+        Menu
+      </title>
+      <path
+        d="M3 13h18v-2H3v2zm0 5h18v-2H3v2zM3 6v2h18V6H3z"
+      />
+    </svg>
+    Main Street Project Inventory System
+  </div>
+</DocumentFragment>
+`;
