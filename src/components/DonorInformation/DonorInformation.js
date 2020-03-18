@@ -1,10 +1,11 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import { Card, Text } from 'pcln-design-system';
+import Card from 'components/Card';
+import { Text } from 'pcln-design-system';
 
 function DonorInformation ({ className, address, city, email, phoneNumber }) {
     return (
-        <Card className={className} color='background.lightest' width={1} p={2}>
+        <Card className={className}>
             <Text color='text.darkest' fontSize={1} bold>{address}</Text>
             <Text color='text.darkest' fontSize={1} bold>{city}</Text>
             <Text color='text.darkest' fontSize={1} bold>{email}</Text>

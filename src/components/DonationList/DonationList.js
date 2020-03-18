@@ -4,7 +4,7 @@ import { Text } from 'pcln-design-system';
 import List from 'components/List';
 import DonationCard from 'components/DonationCard';
 
-function DonationList ({ className, donations }) {
+function DonationList ({ className, isLoading, donations }) {
     return (
         <List className={className}>
             {donations && donations.length > 0

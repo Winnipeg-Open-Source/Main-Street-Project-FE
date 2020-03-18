@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import { Button } from 'pcln-design-system';
 import Page from 'components/Page';
@@ -7,6 +8,32 @@ import DonorInformation from 'components/DonorInformation';
 import DonationList from 'components/DonationList';
 import useDonor from 'hooks/useDonor';
 import { getDonorEditPath } from 'constants/paths';
+
+const StyledDonorInformation = styled(DonorInformation)`
+    margin-bottom: 8px;
+`;
+
+function Donor () {
+    const { id } = useParams();
+    const { isLoading, donor } = useDonor(id);
+    const EditButton = () => <EditDonorButton id={id} />;
+
+    const name = donor ? donor.name : 'Donor not found';
+
+    return (
+        <Page isLoading={isLoading} title={name} renderAction={EditButton}>
+            {isLoading || donor
+                ? (
+                    <>
+                        <StyledDonorInformation isLoading={isLoading} {...donor} />
+                        <DonationList isLoading={isLoading} donations={donor && donor.donations} />
+                    </>
+                )
+                : 'Donor Not Found'
+            }
+        </Page>
+    );
+}
 
 function EditDonorButton ({ id }) {
     const donorEditPath = getDonorEditPath(id);
@@ -20,26 +47,6 @@ function EditDonorButton ({ id }) {
     );
 }
 
-function Donor () {
-    const { id } = useParams();
-    const donor = useDonor(id);
-    const EditButton = () => <EditDonorButton id={id} />;
-
-    const name = donor ? donor.name : 'Donor Not Found';
-
-    return (
-        <Page title={name} renderAction={EditButton}>
-            {donor
-                ? (
-                    <>
-                        <DonorInformation {...donor} />
-                        <DonationList donations={donor.donations} />
-                    </>
-                )
-                : 'Donor Not Found'
-            }
-        </Page>
-    );
-}
+Donor.displayName = 'Donor';
 
 export default Donor;
