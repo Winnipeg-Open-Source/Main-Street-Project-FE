@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Page renders without crashing 1`] = `
+exports[`DonorEditPage renders without crashing 1`] = `
 <DocumentFragment>
   <div
     class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
@@ -16,8 +16,11 @@ exports[`Page renders without crashing 1`] = `
         <div
           class="sc-AxhCb fppuj"
           font-size="3"
-        />
+        >
+          Donor Edit
+        </div>
       </div>
+      Content
     </div>
   </div>
 </DocumentFragment>

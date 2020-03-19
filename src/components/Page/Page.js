@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Skeleton from 'react-loading-skeleton';
 import { Flex, Text } from 'pcln-design-system';
 
 function Page ({ className, title, renderAction, children }) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from './Page';
+import Page from '.';
 import { Button, Input } from 'pcln-design-system';
 
 function Children () {
@@ -13,7 +13,7 @@ function Children () {
 
 function RenderAction () {
     return (
-        <Button>Render Action Button</Button>
+        <Button size='small'>Render Action Button</Button>
     );
 }
 
@@ -33,6 +33,10 @@ export const WithActionButton = () => (
     <Page title='Title' renderAction={RenderAction}>
         <Children />
     </Page>
+);
+
+export const Loading = () => (
+    <Page isLoading>Content</Page>
 );
 
 export default {

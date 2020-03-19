@@ -39,6 +39,6 @@ export const SingleDonor = () => {
 };
 
 export default {
-    title: 'DonorPage',
+    title: 'Pages|DonorPage',
     components: DonorPage,
 };

@@ -43,16 +43,15 @@
       "!src/index.js",
       "!src/serviceWorker.js",
       "!src/constants/*",
-      "!src/context/*",
-      "!src/storybook/*",
-      "!src/tests/*"
+      "!src/context/**/*.js",
+      "!src/storybook/**/*.js",
+      "!src/tests/**/*.js"
     ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/node_modules/"
     ],
     "coverageReporters": [
-      "html",
-      "text"
+      "html"
     ]
   },
   "browserslist": {
