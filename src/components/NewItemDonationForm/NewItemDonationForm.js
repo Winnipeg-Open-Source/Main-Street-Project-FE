@@ -17,9 +17,9 @@ function FormSwitch ({ itemType, ...props }) {
             return <HouseholdItemDonationForm {...props} />;
         case 'Miscellaneous':
             return <MiscellaneousDonationForm {...props} />;
+        default:
+            return null;
     }
-
-    return null;
 }
 
 function NewItemDonationForm ({ className, onCancelClick, onSaveClick, ...props }) {

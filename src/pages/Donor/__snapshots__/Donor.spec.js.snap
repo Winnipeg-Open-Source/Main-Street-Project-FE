@@ -1,12 +1,302 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`DonorPage renders loading state 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
+  >
+    <div
+      class="sc-AxjAm sc-AxiKw bENblX"
+      width="1"
+    >
+      <div
+        class="sc-AxjAm sc-AxiKw iPzLAe"
+        width="1"
+      >
+        <div
+          class="sc-AxhCb fppuj"
+          font-size="3"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 200px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 100px; height: 29px;"
+          >
+            ‌
+          </span>
+        </span>
+      </div>
+      <div
+        class="sc-AxjAm sc-qYsuA sc-qQxFs hRFnaE sc-pRgDJ jwnESE"
+        color="background.lightest"
+        width="1"
+      >
+        <div
+          class="sc-AxhCb jTwMnz"
+          color="text.darkest"
+          font-size="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 80%;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <div
+          class="sc-AxhCb jTwMnz"
+          color="text.darkest"
+          font-size="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 80%;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <div
+          class="sc-AxhCb jTwMnz"
+          color="text.darkest"
+          font-size="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 80%;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <div
+          class="sc-AxhCb jTwMnz"
+          color="text.darkest"
+          font-size="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 80%;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="sc-AxjAm sc-AxiKw sc-qYUWV jaYlYG"
+        width="1"
+      >
+        <div
+          class="sc-AxjAm sc-qYsuA sc-qQxFs hFUeGs sc-pJipy fiYkzg"
+          color="background.lightest"
+          width="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 150px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 100px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <div
+          class="sc-AxjAm sc-qYsuA sc-qQxFs hFUeGs sc-pJipy fiYkzg"
+          color="background.lightest"
+          width="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 150px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 100px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`DonorPage renders without crashing 1`] = `
 <DocumentFragment>
   <div
     class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
   >
-    <div>
-      Donor
+    <div
+      class="sc-AxjAm sc-AxiKw bENblX"
+      width="1"
+    >
+      <div
+        class="sc-AxjAm sc-AxiKw iPzLAe"
+        width="1"
+      >
+        <div
+          class="sc-AxhCb fppuj"
+          font-size="3"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 200px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 100px; height: 29px;"
+          >
+            ‌
+          </span>
+        </span>
+      </div>
+      <div
+        class="sc-AxjAm sc-qYsuA sc-qQxFs hRFnaE sc-pRgDJ jwnESE"
+        color="background.lightest"
+        width="1"
+      >
+        <div
+          class="sc-AxhCb jTwMnz"
+          color="text.darkest"
+          font-size="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 80%;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <div
+          class="sc-AxhCb jTwMnz"
+          color="text.darkest"
+          font-size="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 80%;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <div
+          class="sc-AxhCb jTwMnz"
+          color="text.darkest"
+          font-size="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 80%;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <div
+          class="sc-AxhCb jTwMnz"
+          color="text.darkest"
+          font-size="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 80%;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="sc-AxjAm sc-AxiKw sc-qYUWV jaYlYG"
+        width="1"
+      >
+        <div
+          class="sc-AxjAm sc-qYsuA sc-qQxFs hFUeGs sc-pJipy fiYkzg"
+          color="background.lightest"
+          width="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 150px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 100px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <div
+          class="sc-AxjAm sc-qYsuA sc-qQxFs hFUeGs sc-pJipy fiYkzg"
+          color="background.lightest"
+          width="1"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 150px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+          <span>
+            <span
+              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+              style="width: 100px; height: 29px;"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
