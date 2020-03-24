@@ -19,9 +19,9 @@ const Content = styled(Flex)`
 
 function Form ({ className, title, children, onCancelClick, onSaveClick }) {
     return (
-        <StyledForm className={className} flexDirection='column' p={2}>
+        <StyledForm className={className} flexDirection='column'>
             {title && <Text bold>{title}</Text>}
-            <Content flexDirection='column' alignItems='flex-start' my={2}>
+            <Content flexDirection='column' alignItems='flex-start' my={title ? 2 : 0}>
                 {children}
             </Content>
             <ButtonGroup>

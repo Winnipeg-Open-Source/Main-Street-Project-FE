@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonorCreate renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
+  >
+    <div
+      class="sc-AxjAm sc-AxiKw bENblX"
+      width="1"
+    >
+      <div
+        class="sc-AxjAm sc-AxiKw iPzLAe"
+        width="1"
+      >
+        <div
+          class="sc-AxhCb fppuj"
+          font-size="3"
+        >
+          Create a donor
+        </div>
+      </div>
+      <div
+        class="sc-AxjAm sc-AxiKw sc-qQxFs cDVLUs"
+      >
+        <div
+          class="sc-AxjAm sc-AxiKw sc-qYUWV foBumL"
+        >
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            placeholder="Name"
+          />
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            placeholder="Phone Number"
+          />
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            placeholder="Email"
+          />
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            placeholder="Street Address"
+          />
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            placeholder="City"
+          />
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            placeholder="Postal Code"
+          />
+        </div>
+        <div
+          class="sc-AxjAm sc-AxiKw sc-psDhf dCBSxT"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
