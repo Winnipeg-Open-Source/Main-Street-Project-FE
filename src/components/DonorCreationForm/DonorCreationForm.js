@@ -23,12 +23,14 @@ const StyledLabel = styled(Label)`
     align-items: center;
 `;
 
-function DonorCreationForm ({ className }) {
+function DonorCreationForm ({ className, onSaveClick, onCancelClick }) {
     const { state, onChange, onToggle } = useForm(initialState);
     const { name, address, city, province, postalCode, phoneNumber, email, isSubscribed } = state;
 
+    const handleSave = () => onSaveClick(state);
+
     return (
-        <Form className={className}>
+        <Form className={className} onSaveClick={handleSave} onCancelClick={onCancelClick}>
             <Input
                 id='name'
                 name='name'
@@ -72,6 +74,8 @@ DonorCreationForm.displayName = 'DonorCreationForm';
 
 DonorCreationForm.propTypes = {
     className: PropTypes.string,
+    onSaveClick: PropTypes.func,
+    onCancelClick: PropTypes.func,
 };
 
 DonorCreationForm.defaultProps = {

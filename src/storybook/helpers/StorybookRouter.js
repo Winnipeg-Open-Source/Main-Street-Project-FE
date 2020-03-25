@@ -1,6 +1,6 @@
 import React from 'react';
-import { Router, Switch, Route } from 'react-router-dom'
-import { createMemoryHistory } from 'history'
+import { Router, Switch, Route } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
 
 function StorybookRouter ({ route = '/', currentRoute = '/', children }) {
     const history = createMemoryHistory({ initialEntries: [currentRoute] });
