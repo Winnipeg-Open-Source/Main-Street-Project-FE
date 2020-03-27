@@ -10,6 +10,7 @@ const StyledHeader = styled(Flex)`
     top: 0;
     align-items: center;
     user-select: none;
+    font-weight: bold;
     box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.08);
 `;
 

@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useReducer, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import DonorsContext from 'context/Donors';
+import DonorsReducer from 'reducers/Donors';
+import DonorsContext, { initialContext } from 'context/Donors';
 import useDonorsRequest from 'hooks/useDonorsRequest';
+import { loadDonors, saveDonor } from 'actions/Donors';
 
 function DonorsProvider ({ children }) {
-    const response = useDonorsRequest();
+    const [ state, dispatch ] = useReducer(DonorsReducer, initialContext);
+    const { response, fetchData } = useDonorsRequest(dispatch);
+
+    useEffect(() => {
+        fetchData();
+    }, [fetchData]);
+
+    useEffect(() => {
+        loadDonors(response);
+    }, [response]);
+
+    const props = {
+        ...state,
+        saveDonor,
+    };
 
     return (
-        <DonorsContext.Provider value={response}>
+        <DonorsContext.Provider value={props}>
             {children}
         </DonorsContext.Provider>
     );

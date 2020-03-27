@@ -24,7 +24,7 @@ function Form ({ className, title, children, onSaveClick, onCancelClick }) {
             <Content flexDirection='column' alignItems='flex-start' my={title ? 2 : 0}>
                 {children}
             </Content>
-            <ButtonGroup>
+            <ButtonGroup mt={2}>
                 {onCancelClick && <Button color='tertiary' variation='outline' width={1} onClick={onCancelClick}>Cancel</Button>}
                 {onSaveClick && <Button width={1} onClick={onSaveClick}>Save</Button>}
             </ButtonGroup>

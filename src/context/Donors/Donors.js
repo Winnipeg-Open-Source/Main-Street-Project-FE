@@ -1,18 +1,9 @@
 import { createContext } from 'react';
 
-export default createContext({
-    isLoading: false,
+export const initialContext = {
+    isLoading: true,
     isError: false,
     donors: [],
-    donor: {
-        id: null,
-        name: null,
-        address: null,
-        city: null,
-        province: null,
-        postalCode: null,
-        phoneNumber: null,
-        email: null,
-        isSubscribed: null,
-    },
-});
+};
+
+export default createContext(initialContext);
