@@ -24,33 +24,33 @@ describe ('useAxios', () => {
         axios.mockResolvedValue({ data: { test: true } });
 
         const { result, waitForValueToChange } = renderHook(() => useAxios());
-        expect(result.current.state).toStrictEqual(initialState);
+        expect(result.current.response).toStrictEqual(initialState);
 
         act(() => {
             result.current.fetchData();
         });
 
         await waitForValueToChange(() => {
-            return result.current.state;
+            return result.current.response;
         });
 
-        expect(result.current.state).toStrictEqual(expectedResult);
+        expect(result.current.response).toStrictEqual(expectedResult);
     });
 
     it ('should receive an error', async () => {
         axios.mockRejectedValue(new Error({ error: true }));
         
         const { result, waitForValueToChange } = renderHook(() => useAxios());
-        expect(result.current.state).toStrictEqual(initialState);
+        expect(result.current.response).toStrictEqual(initialState);
 
         act(() => {
             result.current.fetchData();
         });
 
         await waitForValueToChange(() => {
-            return result.current.state;
+            return result.current.response;
         });
 
-        expect(result.current.state).toStrictEqual(expectedError);
+        expect(result.current.response).toStrictEqual(expectedError);
     });
 });

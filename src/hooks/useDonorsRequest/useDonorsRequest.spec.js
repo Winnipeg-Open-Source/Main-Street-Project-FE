@@ -21,8 +21,11 @@ const expectedRequest = {
 };
 
 const expectedResponse = {
-    isLoading: false,
-    donors: [],
+    fetchData: mockFetchData,
+    state: {
+        isLoading: false,
+        donors: [],
+    },
 };
 
 describe ('useDonorsRequest', () => {
@@ -35,6 +38,9 @@ describe ('useDonorsRequest', () => {
 
         expect(useAxios).toBeCalledWith(expectedRequest);
         expect(result.current).toStrictEqual(expectedResponse);
+        
+        expect(mockFetchData).toHaveBeenCalledTimes(0);
+        result.current.fetchData();
         expect(mockFetchData).toHaveBeenCalledTimes(1);
     });
 });
