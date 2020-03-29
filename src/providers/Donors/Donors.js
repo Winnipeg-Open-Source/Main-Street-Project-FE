@@ -7,19 +7,21 @@ import { loadDonors, saveDonor } from 'actions/Donors';
 
 function DonorsProvider ({ children }) {
     const [ state, dispatch ] = useReducer(DonorsReducer, initialContext);
-    const { response, fetchData } = useDonorsRequest(dispatch);
+    const { response, fetchData } = useDonorsRequest();
 
     useEffect(() => {
         fetchData();
     }, [fetchData]);
 
     useEffect(() => {
-        loadDonors(response);
+        dispatch(loadDonors(response));
     }, [response]);
+
+    const onSaveDonor = (donor) => dispatch(saveDonor(donor));
 
     const props = {
         ...state,
-        saveDonor,
+        onSaveDonor,
     };
 
     return (

@@ -4,6 +4,11 @@ import { loadDonors, saveDonor } from 'actions/Donors';
 const initialState = { isLoading: true, isError: false, donors: [] };
 
 describe ('Donors Reducer', () => {
+    it ('returns default state', () => {
+        const response = reducer();
+        expect(response).toStrictEqual({});
+    });
+
     it ('returns initial state', () => {
         const response = reducer(initialState);
         expect(response).toStrictEqual({ isLoading: true, isError: false, donors: [] });

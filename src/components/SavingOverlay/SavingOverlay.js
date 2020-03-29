@@ -2,9 +2,11 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex, Text } from 'pcln-design-system';
+import Spinner from 'components/Spinner';
 
 const Overlay = styled(Flex)`
     position: fixed;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     top: 0;
@@ -19,9 +21,10 @@ function SavingOverlay ({ className, isSaving }) {
     return isSaving
         ? (
             <Overlay className={className}>
-                <Text bold>
+                <Text color='text.lightest' bold mb={2}>
                     Saving...
                 </Text>
+                <Spinner />
             </Overlay>
         )
         : null;
