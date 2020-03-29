@@ -1,8 +1,6 @@
 import {
     REQUEST_START,
-    REQUEST_FINISHED,
     requestStart,
-    requestFinished,
 } from './Axios';
 
 describe ('Axios Actions', () => {

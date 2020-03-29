@@ -21,7 +21,7 @@ function useAxios (options = {}) {
         }
     }, [ options ]);
 
-    return { state, fetchData };
+    return { response: state, fetchData };
 }
 
 export default useAxios;

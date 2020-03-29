@@ -17,7 +17,7 @@ const DonorContextWrapper = ({ children }) => (
 describe ('useDonors', () => {
     it ('should return default context', () => {
         const { result } = renderHook(() => useDonors());
-        expect(result.current.isLoading).toBe(false);
+        expect(result.current.isLoading).toBe(true);
         expect(result.current.donors).toStrictEqual([]);
     });
 

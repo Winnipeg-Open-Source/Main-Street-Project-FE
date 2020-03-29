@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonorCreate renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+  >
+    <div
+      class="sc-AxjAm sc-AxiKw bENblX"
+      width="1"
+    >
+      <div
+        class="sc-AxjAm sc-AxiKw iPzLAe"
+        width="1"
+      >
+        <div
+          class="sc-AxhCb fppuj"
+          font-size="3"
+        >
+          Create a donor
+        </div>
+      </div>
+      <div
+        class="sc-AxjAm sc-AxiKw sc-qQxFs vcJyQ"
+      >
+        <div
+          class="sc-AxjAm sc-AxiKw sc-qYUWV sa-don"
+        >
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            id="name"
+            name="name"
+            placeholder="Name"
+            value=""
+          />
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            id="address"
+            name="address"
+            placeholder="Street Address"
+            value=""
+          />
+          <div
+            class="sc-AxjAm sc-AxiKw ivVODM"
+            width="1"
+          >
+            <input
+              class="sc-pTWqp fAnUTr"
+              font-size="2,,1"
+              id="city"
+              name="city"
+              placeholder="City"
+              value="Winnipeg"
+            />
+            <div
+              class="sc-AxjAm sc-AxiKw iSVrPI"
+              width="1"
+            >
+              <select
+                class="sc-pZCuu kQVKTB sc-oTaid fgxYOF"
+                data-testid="province-select"
+                font-size="2,,1"
+                id="province"
+                name="province"
+              >
+                <option
+                  value="AB"
+                >
+                  Alberta
+                </option>
+                <option
+                  value="BC"
+                >
+                  British Columbia
+                </option>
+                <option
+                  value="MB"
+                >
+                  Manitoba
+                </option>
+                <option
+                  value="NB"
+                >
+                  New Brunswick
+                </option>
+                <option
+                  value="NL"
+                >
+                  Newfoundland and Labrador
+                </option>
+                <option
+                  value="NS"
+                >
+                  Nova Scotia
+                </option>
+                <option
+                  value="ON"
+                >
+                  Ontario
+                </option>
+                <option
+                  value="PE"
+                >
+                  Prince Edward Island
+                </option>
+                <option
+                  value="QC"
+                >
+                  Quebec
+                </option>
+                <option
+                  value="SK"
+                >
+                  Saskatchewan
+                </option>
+                <option
+                  value="NT"
+                >
+                  Northwest Territories
+                </option>
+                <option
+                  value="NU"
+                >
+                  Nunavut
+                </option>
+                <option
+                  value="YT"
+                >
+                  Yukon
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
+                color="text.light"
+                fill="currentcolor"
+                focusable="false"
+                height="24"
+                role="img"
+                tabindex="-1"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path
+                  d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+                />
+              </svg>
+            </div>
+          </div>
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            id="postal-code"
+            name="postalCode"
+            placeholder="Postal Code"
+            value=""
+          />
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            id="phone-number"
+            name="phoneNumber"
+            placeholder="Phone Number"
+            value=""
+          />
+          <input
+            class="sc-pTWqp fyIUKN"
+            font-size="2,,1"
+            id="email"
+            name="email"
+            placeholder="Email"
+            value=""
+          />
+          <label
+            class="sc-oVpqz sc-pBlxj kvxLLR"
+            color="border.light"
+            font-size="0"
+            font-weight="bold"
+          >
+            <div
+              class="sc-AxjAm sc-qapxP gFfLYW"
+              color="primary"
+            >
+              <input
+                class="sc-oTmHo gacPRn"
+                color="primary"
+                id="newsletter"
+                name="isSubscribed"
+                role="checkbox"
+                size="20"
+                type="checkbox"
+              />
+              <svg
+                aria-hidden="true"
+                class="sc-Axmtr cTdHPN sc-fzoXzr fDlmZK"
+                data-name="checked"
+                fill="currentcolor"
+                focusable="false"
+                height="24"
+                role="img"
+                tabindex="-1"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path
+                  d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="sc-Axmtr cTdHPN sc-fzpjYC kZSQFZ"
+                data-name="empty"
+                fill="currentcolor"
+                focusable="false"
+                height="24"
+                role="img"
+                tabindex="-1"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path
+                  d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+                />
+              </svg>
+            </div>
+            Subscribe to Email Newsletter
+          </label>
+        </div>
+        <div
+          class="sc-AxjAm sc-AxiKw sc-psDhf iCfenm"
+        >
+          <button
+            class="sc-oUOMp kxZVgg"
+            color="tertiary"
+            width="1"
+          >
+            Cancel
+          </button>
+          <button
+            class="sc-oUOMp coOwBP"
+            color="primary"
+            width="1"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

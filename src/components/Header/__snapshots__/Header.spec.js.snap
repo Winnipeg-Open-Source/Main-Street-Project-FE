@@ -3,10 +3,10 @@
 exports[`Header renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
+    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-psDhf fFCzsd"
+      class="sc-AxjAm sc-AxiKw sc-psDhf ksKCEt"
       color="primary"
     >
       <svg

@@ -3,13 +3,13 @@
 exports[`Form renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
+    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-qQxFs cDVLUs"
+      class="sc-AxjAm sc-AxiKw sc-qQxFs vcJyQ"
     >
       <div
-        class="sc-AxjAm sc-AxiKw sc-qYUWV foBumL"
+        class="sc-AxjAm sc-AxiKw sc-qYUWV sa-don"
       >
         <input
           class="sc-pTWqp fyIUKN"
@@ -28,7 +28,7 @@ exports[`Form renders without crashing 1`] = `
         />
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-psDhf dCBSxT"
+        class="sc-AxjAm sc-AxiKw sc-psDhf iCfenm"
       />
     </div>
   </div>

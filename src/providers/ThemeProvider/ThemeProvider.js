@@ -4,6 +4,8 @@ import { ThemeProvider as PCLNThemeProvider } from 'pcln-design-system';
 import theme from 'constants/theme';
 
 const StyledThemeProvider = styled(PCLNThemeProvider)`
+    display: flex;
+    flex-direction: column;
     height: 100%;
 `;
 

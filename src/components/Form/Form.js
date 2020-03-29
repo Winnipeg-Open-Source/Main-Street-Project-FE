@@ -17,15 +17,15 @@ const Content = styled(Flex)`
     }
 `;
 
-function Form ({ className, title, children, onCancelClick, onSaveClick }) {
+function Form ({ className, title, children, onSaveClick, onCancelClick }) {
     return (
-        <StyledForm className={className} flexDirection='column' p={2}>
+        <StyledForm className={className} flexDirection='column'>
             {title && <Text bold>{title}</Text>}
-            <Content flexDirection='column' alignItems='flex-start' my={2}>
+            <Content flexDirection='column' alignItems='flex-start' my={title ? 2 : 0}>
                 {children}
             </Content>
-            <ButtonGroup>
-                {onCancelClick && <Button color='primary.light' width={1} onClick={onCancelClick}>Cancel</Button>}
+            <ButtonGroup mt={2}>
+                {onCancelClick && <Button color='tertiary' variation='outline' width={1} onClick={onCancelClick}>Cancel</Button>}
                 {onSaveClick && <Button width={1} onClick={onSaveClick}>Save</Button>}
             </ButtonGroup>
         </StyledForm>
@@ -38,8 +38,8 @@ Form.propTypes = {
     className: PropTypes.string,
     title: PropTypes.string,
     children: PropTypes.node,
-    onCancelClick: PropTypes.func,
     onSaveClick: PropTypes.func,
+    onCancelClick: PropTypes.func,
 };
 
 Form.defaultProps = {

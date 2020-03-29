@@ -3,10 +3,10 @@
 exports[`NewItemDonationForm renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC jpeBiC"
+    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-qQxFs cDVLUs"
+      class="sc-AxjAm sc-AxiKw sc-qQxFs vcJyQ"
     >
       <div
         class="sc-AxhCb wyOpT"
@@ -63,7 +63,7 @@ exports[`NewItemDonationForm renders without crashing 1`] = `
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-psDhf dCBSxT"
+        class="sc-AxjAm sc-AxiKw sc-psDhf iCfenm"
       />
     </div>
   </div>
