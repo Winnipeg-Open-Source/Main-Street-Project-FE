@@ -1,5 +1,6 @@
 import React from 'react';
-import Page from '.';
+import Page from './Page';
+import PageSkeleton from './PageSkeleton';
 import { Button, Input } from 'pcln-design-system';
 
 function Children () {
@@ -36,7 +37,7 @@ export const WithActionButton = () => (
 );
 
 export const Loading = () => (
-    <Page isLoading>Content</Page>
+    <PageSkeleton>Content</PageSkeleton>
 );
 
 export default {
