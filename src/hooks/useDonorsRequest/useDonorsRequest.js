@@ -1,13 +1,21 @@
+import { useMemo } from 'react';
 import useAxios from 'hooks/useAxios';
-import { DONORS_API_PATH } from 'constants/api';
+import { BASE_API_PATH, DONORS_API_PATH } from 'constants/api';
 
 const request = {
-    url: DONORS_API_PATH,
+    url: BASE_API_PATH + DONORS_API_PATH,
     method: 'get',
 };
 
 function useDonorsRequest () {
-    return useAxios(request);
+    const { response, fetchData } = useAxios(request);
+
+    return useMemo(() => ({
+        isLoading: response.isLoading,
+        isError: response.isError,
+        donors: response.data || [],
+        fetchData,
+    }), [response, fetchData]);
 }
 
 export default useDonorsRequest;

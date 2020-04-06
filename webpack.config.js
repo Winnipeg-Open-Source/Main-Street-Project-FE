@@ -1,7 +1,7 @@
 const path = require('path');
 const AssetsPlugin = require('assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = (env, argv) => {
     const isProd = argv.mode === 'production';
@@ -14,10 +14,11 @@ module.exports = (env, argv) => {
         output: {
             filename: isProd ? 'main.[hash].js' : 'main.js',
             hashDigestLength: 7,
-            path: path.resolve(__dirname, '/dist/public'),
+            path: path.resolve(__dirname, '/build/public'),
             publicPath: '/',
         },
         devServer: {
+            historyApiFallback: true,
             open: true,
             port: 3000,
         },
@@ -43,9 +44,9 @@ module.exports = (env, argv) => {
         plugins: [
             new AssetsPlugin({
                 filename: './public/assets.json',
-                path: './dist',
+                path: './build',
             }),
-            isProd ? new BundleAnalyzerPlugin() : () => {},
+            // new BundleAnalyzerPlugin(),
             new HtmlWebpackPlugin({
                 inject: true,
                 template: path.resolve(__dirname, 'public/index.html'),

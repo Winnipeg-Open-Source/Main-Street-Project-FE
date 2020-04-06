@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "build-storybook": "build-storybook -c .storybook -o ./storybook-static",
-    "start": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --hot --silent",
     "storybook": "start-storybook -c .storybook",
     "test": "jest --silent --coverage"
   },

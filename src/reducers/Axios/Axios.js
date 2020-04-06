@@ -11,7 +11,7 @@ const reducer = (state, action = {}) => {
         case REQUEST_FINISHED:
             return {
                 ...state,
-                ...action.payload.data,
+                data: action.payload.data,
                 isError: action.isError,
                 isLoading: false,
             };

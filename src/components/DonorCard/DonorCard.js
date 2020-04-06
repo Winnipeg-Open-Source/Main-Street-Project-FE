@@ -1,18 +1,14 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Card, Text } from 'pcln-design-system';
+import { Text } from 'pcln-design-system';
+import Card from 'components/Card';
 
-const StyledCard = styled(Card)`
-    border-radius: 4px;
-`;
-
-function DonorCard ({ className, name, lastDonationDate }) {
+function DonorCard ({ className, name, lastDonationDate, onClick }) {
     return (
-        <StyledCard className={className} color='background.lightest' width={1} p={2}>
+        <Card className={className} onClick={onClick}>
             <Text color='text.darkest' fontSize={1} bold>{name}</Text>
             <Text color='text.light' fontSize={1}>Last Donation: {lastDonationDate || '-'}</Text>
-        </StyledCard>
+        </Card>
     );
 }
 

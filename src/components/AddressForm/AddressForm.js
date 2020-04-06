@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import { Flex, Input } from 'pcln-design-system';
+import { Flex } from 'pcln-design-system';
+import Input from 'components/Input';
 import ProvinceSelect from 'components/ProvinceSelect';
 
 function AddressForm ({

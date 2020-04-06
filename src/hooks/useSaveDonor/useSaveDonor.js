@@ -2,26 +2,35 @@ import { useEffect } from 'react';
 import useAxios from 'hooks/useAxios';
 import useSaving from 'hooks/useSaving';
 import useDonors from 'hooks/useDonors';
-import { DONORS_API_PATH } from 'constants/api';
+import useRoute from 'hooks/useRoute';
+import { BASE_API_PATH, DONORS_API_PATH } from 'constants/api';
+import { DONORS_PATH } from 'constants/paths';
 
-const getRequest = (donor) => ({
-    url: DONORS_API_PATH,
+const request = {
+    url: BASE_API_PATH + DONORS_API_PATH,
     method: 'post',
-    body: donor,
-});
+};
 
-function useSaveDonor (donor) {
-    const request = getRequest(donor);
+function useSaveDonor () {
     const { response, fetchData } = useAxios(request);
     const { onSaveDonor } = useDonors();
     const { setSaving } = useSaving();
+    const goToDonorsPage = useRoute(DONORS_PATH);
+
+    const saveDonor = (data) => {
+        setSaving(response.isLoading);
+        fetchData(data);
+    };
 
     useEffect(() => {
-        setSaving(response.isLoading);
-        !response.isLoading && onSaveDonor(response);
-    }, [setSaving, onSaveDonor, response]);
+        if (!response.isLoading && !!response.data) {
+            onSaveDonor(response.data);
+            setSaving(false);
+            goToDonorsPage();
+        }
+    }, [response, onSaveDonor, goToDonorsPage]);
 
-    return { response, saveDonor: fetchData };
+    return { response, saveDonor };
 }
 
 export default useSaveDonor;

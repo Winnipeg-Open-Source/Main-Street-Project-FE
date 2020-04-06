@@ -1,36 +1,42 @@
 import React from 'react';
 import StorybookRouter from 'storybook/helpers/StorybookRouter';
-import DonorsProvider from 'providers/Donors';
+import DonorsContext from 'context/Donors';
 import DonorPage from './Donor';
-import { DONORS_API_PATH } from 'constants/api';
 import { DONOR_PATH, getDonorPath } from 'constants/paths';
 import { noDonors, singleDonor } from 'storybook/mocks/donors';
-import mockAxios from 'storybook/helpers/mockAxios';
 
-export const NoDonors = () => {
-    mockAxios.onGet(DONORS_API_PATH).reply(200, noDonors);
-
+export const Loading = () => {
     const currentDonorPath = getDonorPath(1);
 
     return (
         <StorybookRouter route={DONOR_PATH} currentRoute={currentDonorPath}>
-            <DonorsProvider>
+            <DonorsContext.Provider value={{ isLoading: true }}>
                 <DonorPage />
-            </DonorsProvider>
+            </DonorsContext.Provider>
         </StorybookRouter>
     );
 };
 
-export const SingleDonor = () => {
-    mockAxios.onGet(DONORS_API_PATH).reply(200, singleDonor);
-
+export const NotFound = () => {
     const currentDonorPath = getDonorPath(1);
 
     return (
         <StorybookRouter route={DONOR_PATH} currentRoute={currentDonorPath}>
-            <DonorsProvider>
+            <DonorsContext.Provider value={noDonors}>
                 <DonorPage />
-            </DonorsProvider>
+            </DonorsContext.Provider>
+        </StorybookRouter>
+    );
+};
+
+export const Found = () => {
+    const currentDonorPath = getDonorPath(1);
+
+    return (
+        <StorybookRouter route={DONOR_PATH} currentRoute={currentDonorPath}>
+            <DonorsContext.Provider value={singleDonor}>
+                <DonorPage />
+            </DonorsContext.Provider>
         </StorybookRouter>
     );
 };
