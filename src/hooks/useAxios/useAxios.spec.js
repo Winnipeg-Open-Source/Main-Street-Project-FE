@@ -5,18 +5,22 @@ import useAxios from './useAxios';
 jest.mock('axios', () => jest.fn());
 
 const initialState = {
-    isLoading: false,
+    isLoading: true,
     isError: false,
 };
 
 const expectedResult = {
-    ...initialState,
-    test: true,
+    isLoading: false,
+    isError: false,
+    data: {
+        test: true,
+    },
 };
 
 const expectedError = {
     isLoading: false,
     isError: true,
+    data: null,
 };
 
 describe ('useAxios', () => {

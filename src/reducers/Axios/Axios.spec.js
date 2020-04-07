@@ -4,7 +4,7 @@ import { requestStart, requestFinished } from 'actions/Axios';
 const initialState = { isLoading: false, name: 'test' };
 const requestResponse = { data: { key: 'value' } };
 
-const expectedFinishedResult = { isLoading: false, isError: false, name: 'test', key: 'value' };
+const expectedFinishedResult = { isLoading: false, isError: false, name: 'test', data: { key: 'value' } };
 
 describe ('Axios Reducer', () => {
     it ('returns initial state', () => {

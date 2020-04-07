@@ -1,6 +1,7 @@
 import React from 'react';
 import renderWithTheme from 'tests/helpers/renderWithTheme';
 import DonorsList from './DonorsList';
+import DonorsListSkeleton from './DonorsListSkeleton';
 
 const singleDonorProps = {
     donors: [
@@ -30,6 +31,12 @@ const multipleDonorsProps = {
 describe ('DonorsList', () => {
     it ('renders without crashing', () => {
         const { asFragment } = renderWithTheme(<DonorsList />);
+
+        expect(asFragment()).toMatchSnapshot();
+    });
+
+    it ('skeleton renders without crashing', () => {
+        const { asFragment } = renderWithTheme(<DonorsListSkeleton />);
 
         expect(asFragment()).toMatchSnapshot();
     });

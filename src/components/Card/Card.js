@@ -8,7 +8,7 @@ const StyledCard = styled(PCLNCard)`
     flex-direction: ${props => props.row ? 'row' : 'column'};
 `;
 
-function Card ({ className, row, children, onClick }) {
+function Card ({ className, row, children, onClick, ...props }) {
     return (
         <StyledCard
             className={className}
@@ -17,6 +17,7 @@ function Card ({ className, row, children, onClick }) {
             p={2}
             color='background.lightest'
             onClick={onClick}
+            {...props}
         >
             {children}
         </StyledCard>

@@ -27,7 +27,7 @@ exports[`DonorCreate renders without crashing 1`] = `
           class="sc-AxjAm sc-AxiKw sc-qYUWV sa-don"
         >
           <input
-            class="sc-pTWqp fyIUKN"
+            class="sc-pTWqp sc-pBlxj eKBTPm"
             font-size="2,,1"
             id="name"
             name="name"
@@ -35,7 +35,7 @@ exports[`DonorCreate renders without crashing 1`] = `
             value=""
           />
           <input
-            class="sc-pTWqp fyIUKN"
+            class="sc-pTWqp sc-pBlxj eKBTPm"
             font-size="2,,1"
             id="address"
             name="address"
@@ -47,7 +47,7 @@ exports[`DonorCreate renders without crashing 1`] = `
             width="1"
           >
             <input
-              class="sc-pTWqp fAnUTr"
+              class="sc-pTWqp sc-pBlxj gPQnZg"
               font-size="2,,1"
               id="city"
               name="city"
@@ -59,7 +59,7 @@ exports[`DonorCreate renders without crashing 1`] = `
               width="1"
             >
               <select
-                class="sc-pZCuu kQVKTB sc-oTaid fgxYOF"
+                class="sc-pZCuu kQVKTB sc-oTaid sc-pJipy ceCay"
                 data-testid="province-select"
                 font-size="2,,1"
                 id="province"
@@ -150,7 +150,7 @@ exports[`DonorCreate renders without crashing 1`] = `
             </div>
           </div>
           <input
-            class="sc-pTWqp fyIUKN"
+            class="sc-pTWqp sc-pBlxj eKBTPm"
             font-size="2,,1"
             id="postal-code"
             name="postalCode"
@@ -158,7 +158,7 @@ exports[`DonorCreate renders without crashing 1`] = `
             value=""
           />
           <input
-            class="sc-pTWqp fyIUKN"
+            class="sc-pTWqp sc-pBlxj eKBTPm"
             font-size="2,,1"
             id="phone-number"
             name="phoneNumber"
@@ -166,7 +166,7 @@ exports[`DonorCreate renders without crashing 1`] = `
             value=""
           />
           <input
-            class="sc-pTWqp fyIUKN"
+            class="sc-pTWqp sc-pBlxj eKBTPm"
             font-size="2,,1"
             id="email"
             name="email"
@@ -174,7 +174,7 @@ exports[`DonorCreate renders without crashing 1`] = `
             value=""
           />
           <label
-            class="sc-oVpqz sc-pBlxj kvxLLR"
+            class="sc-oVpqz sc-pRgDJ eInwpm"
             color="border.light"
             font-size="0"
             font-weight="bold"

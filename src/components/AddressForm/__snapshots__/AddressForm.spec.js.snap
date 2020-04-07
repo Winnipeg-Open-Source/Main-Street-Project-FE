@@ -6,7 +6,7 @@ exports[`AddressForm renders without crashing 1`] = `
     class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
   >
     <input
-      class="sc-pTWqp fyIUKN"
+      class="sc-pTWqp sc-psDhf bvmjWf"
       font-size="2,,1"
       id="address"
       name="address"
@@ -18,7 +18,7 @@ exports[`AddressForm renders without crashing 1`] = `
       width="1"
     >
       <input
-        class="sc-pTWqp fAnUTr"
+        class="sc-pTWqp sc-psDhf UrUUF"
         font-size="2,,1"
         id="city"
         name="city"
@@ -30,7 +30,7 @@ exports[`AddressForm renders without crashing 1`] = `
         width="1"
       >
         <select
-          class="sc-pZCuu kQVKTB sc-oTaid fgxYOF"
+          class="sc-pZCuu kQVKTB sc-oTaid sc-qQxFs glncUx"
           data-testid="province-select"
           font-size="2,,1"
           id="province"
@@ -121,7 +121,7 @@ exports[`AddressForm renders without crashing 1`] = `
       </div>
     </div>
     <input
-      class="sc-pTWqp fyIUKN"
+      class="sc-pTWqp sc-psDhf bvmjWf"
       font-size="2,,1"
       id="postal-code"
       name="postalCode"

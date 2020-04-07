@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 import useAxios from 'hooks/useAxios';
-import { BASE_API_PATH, DONORS_API_PATH } from 'constants/api';
+import { DONORS_API_PATH } from 'constants/api';
 
 const request = {
-    url: BASE_API_PATH + DONORS_API_PATH,
+    url: DONORS_API_PATH,
     method: 'get',
 };
 

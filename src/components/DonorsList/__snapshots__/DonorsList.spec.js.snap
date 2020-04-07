@@ -18,3 +18,83 @@ exports[`DonorsList renders without crashing 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`DonorsList skeleton renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+  >
+    <div
+      class="sc-AxjAm sc-AxiKw sc-psDhf iXvOkL"
+      width="1"
+    >
+      <div
+        class="sc-AxjAm sc-qYsuA sc-qQxFs hRFnaE"
+        color="background.lightest"
+        width="1"
+      >
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 20%; height: 14px;"
+          >
+            ‌
+          </span>
+        </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 40%; height: 14px;"
+          >
+            ‌
+          </span>
+        </span>
+      </div>
+      <div
+        class="sc-AxjAm sc-qYsuA sc-qQxFs hRFnaE"
+        color="background.lightest"
+        width="1"
+      >
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 20%; height: 14px;"
+          >
+            ‌
+          </span>
+        </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 40%; height: 14px;"
+          >
+            ‌
+          </span>
+        </span>
+      </div>
+      <div
+        class="sc-AxjAm sc-qYsuA sc-qQxFs hRFnaE"
+        color="background.lightest"
+        width="1"
+      >
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 20%; height: 14px;"
+          >
+            ‌
+          </span>
+        </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 40%; height: 14px;"
+          >
+            ‌
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
