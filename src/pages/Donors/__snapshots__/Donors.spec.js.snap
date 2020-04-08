@@ -20,7 +20,7 @@ exports[`Donors Page renders without crashing 1`] = `
           Donors
         </div>
         <a
-          class="sc-qYUWV eihaii"
+          class="sc-pJipy zTmfk"
           href="/donors/new"
         >
           <button
@@ -32,7 +32,7 @@ exports[`Donors Page renders without crashing 1`] = `
         </a>
       </div>
       <input
-        class="sc-pTWqp dTCfH"
+        class="sc-pTWqp sc-pBlxj fONDhg"
         font-size="2,,1"
         id="search"
         placeholder="Search"

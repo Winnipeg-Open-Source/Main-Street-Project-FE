@@ -1,13 +1,13 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Checkbox, Input, Label } from 'pcln-design-system';
+import { Checkbox, Label } from 'pcln-design-system';
 import Form from 'components/Form';
 import AddressForm from 'components/AddressForm';
+import Input from 'components/Input';
 import useForm from 'hooks/useForm';
 
 const initialState = {
-    id: null,
     name: null,
     address: null,
     city: 'Winnipeg',

@@ -1,46 +1,40 @@
 import React from 'react';
 import StorybookRouter from 'storybook/helpers/StorybookRouter';
-import DonorsProvider from 'providers/Donors';
+import DonorsContext from 'context/Donors';
 import DonorsPage from './Donors';
-import { DONORS_API_PATH } from 'constants/api';
 import { noDonors, singleDonor, multipleDonors } from 'storybook/mocks/donors';
-import mockAxios from 'storybook/helpers/mockAxios';
 
-export const NoDonors = () => {
-    mockAxios.onGet(DONORS_API_PATH).reply(200, noDonors);
+export const Loading = () => (
+    <StorybookRouter>
+        <DonorsContext.Provider value={{ isLoading: true }}>
+            <DonorsPage />
+        </DonorsContext.Provider>
+    </StorybookRouter>
+);
 
-    return (
-        <StorybookRouter>
-            <DonorsProvider>
-                <DonorsPage />
-            </DonorsProvider>
-        </StorybookRouter>
-    );
-};
+export const NoDonors = () => (
+    <StorybookRouter>
+        <DonorsContext.Provider value={noDonors}>
+            <DonorsPage />
+        </DonorsContext.Provider>
+    </StorybookRouter>
+);
 
-export const SingleDonor = () => {
-    mockAxios.onGet(DONORS_API_PATH).reply(200, singleDonor);
+export const SingleDonor = () => (
+    <StorybookRouter>
+        <DonorsContext.Provider value={singleDonor}>
+            <DonorsPage />
+        </DonorsContext.Provider>
+    </StorybookRouter>
+);
 
-    return (
-        <StorybookRouter>
-            <DonorsProvider>
-                <DonorsPage />
-            </DonorsProvider>
-        </StorybookRouter>
-    );
-};
-
-export const MultipleDonors = () => {
-    mockAxios.onGet(DONORS_API_PATH).reply(200, multipleDonors);
-
-    return (
-        <StorybookRouter>
-            <DonorsProvider>
-                <DonorsPage />
-            </DonorsProvider>
-        </StorybookRouter>
-    );
-};
+export const MultipleDonors = () => (
+    <StorybookRouter>
+        <DonorsContext.Provider value={multipleDonors}>
+            <DonorsPage />
+        </DonorsContext.Provider>
+    </StorybookRouter>
+);
 
 export default {
     title: 'Pages|DonorsPage',

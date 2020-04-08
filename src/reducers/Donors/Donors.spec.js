@@ -15,7 +15,7 @@ describe ('Donors Reducer', () => {
     });
 
     it ('returns load donors state', () => {
-        const response = reducer(initialState, loadDonors({ isLoading: false, isError: false, donors: [{ id: 1 }]}));
+        const response = reducer(initialState, loadDonors(false, false, [{ id: 1 }]));
         expect(response).toStrictEqual({ isLoading: false, isError: false, donors: [{ id: 1 }] });
     });
 

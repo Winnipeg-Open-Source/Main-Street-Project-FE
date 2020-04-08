@@ -8,8 +8,9 @@ jest.mock('hooks/useAxios');
 const mockFetchData = jest.fn();
 
 const mockResponse = {
-    state: {
+    response: {
         isLoading: false,
+        isError: false,
         donors: [],
     },
     fetchData: mockFetchData,
@@ -21,11 +22,10 @@ const expectedRequest = {
 };
 
 const expectedResponse = {
+    isLoading: false,
+    isError: false,
+    donors: [],
     fetchData: mockFetchData,
-    state: {
-        isLoading: false,
-        donors: [],
-    },
 };
 
 describe ('useDonorsRequest', () => {
@@ -38,7 +38,7 @@ describe ('useDonorsRequest', () => {
 
         expect(useAxios).toBeCalledWith(expectedRequest);
         expect(result.current).toStrictEqual(expectedResponse);
-        
+
         expect(mockFetchData).toHaveBeenCalledTimes(0);
         result.current.fetchData();
         expect(mockFetchData).toHaveBeenCalledTimes(1);

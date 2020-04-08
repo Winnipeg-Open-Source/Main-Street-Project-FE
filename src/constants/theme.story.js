@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Text } from 'pcln-design-system';
-import theme from 'constants/theme';
+import theme from 'constants/theme.json';
 
 const CardContainer = styled(Flex)`
     display: flex;
@@ -16,8 +16,6 @@ const CardContainer = styled(Flex)`
 `;
 
 function Card ({ title, hexValue }) {
-    // Todo: add toast and copy to clipboard
-
     return (
         <CardContainer width={150} mr={3}>
             <Flex bg={hexValue} style={{ height: 100 }} />

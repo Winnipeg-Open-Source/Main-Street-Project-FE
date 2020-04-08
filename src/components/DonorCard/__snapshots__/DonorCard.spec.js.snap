@@ -6,8 +6,9 @@ exports[`DonorCard renders without crashing 1`] = `
     class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
   >
     <div
-      class="sc-AxjAm sc-qYsuA sc-psDhf knVLSd"
+      class="sc-AxjAm sc-qYsuA sc-psDhf IA-Dcs"
       color="background.lightest"
+      data-testid="donor-card"
       width="1"
     >
       <div
@@ -22,6 +23,37 @@ exports[`DonorCard renders without crashing 1`] = `
       >
         Last Donation: -
       </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DonorCard skeleton renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+  >
+    <div
+      class="sc-AxjAm sc-qYsuA sc-psDhf IA-Dcs"
+      color="background.lightest"
+      width="1"
+    >
+      <span>
+        <span
+          class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+          style="width: 20%; height: 14px;"
+        >
+          ‌
+        </span>
+      </span>
+      <span>
+        <span
+          class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+          style="width: 40%; height: 14px;"
+        >
+          ‌
+        </span>
+      </span>
     </div>
   </div>
 </DocumentFragment>

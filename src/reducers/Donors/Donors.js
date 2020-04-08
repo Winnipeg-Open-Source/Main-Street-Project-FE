@@ -4,7 +4,9 @@ function DonorsReducer (state = {}, action = {}) {
     switch (action.type) {
         case LOAD_DONORS:
             return {
-                ...action.donors,
+                isLoading: action.isLoading,
+                isError: action.isError,
+                donors: action.donors,
             };
 
         case SAVE_DONOR:

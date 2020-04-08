@@ -1,9 +1,11 @@
 import React from 'react';
-import { Button, Input } from 'pcln-design-system';
+import { Button } from 'pcln-design-system';
 import Page from 'components/Page';
 import DonorsList from 'components/DonorsList';
+import Input from 'components/Input';
 import Link from 'components/Link';
 import useDonors from 'hooks/useDonors';
+import useRoute from 'hooks/useRoute';
 import { DONOR_NEW_PATH } from 'constants/paths';
 
 function NewDonorButton () {
@@ -18,12 +20,13 @@ function NewDonorButton () {
 
 function Donors () {
     const { isLoading, donors } = useDonors();
+    const goToDonorPage = useRoute();
     const disabled = isLoading || (donors && donors.length === 0);
 
     return (
-        <Page title='Donors' renderAction={NewDonorButton}>
+        <Page isLoading={isLoading} title='Donors' renderAction={NewDonorButton}>
             <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
-            <DonorsList donors={donors} />
+            <DonorsList isLoading={isLoading} donors={donors} onDonorClick={goToDonorPage} />
         </Page>
     );
 }

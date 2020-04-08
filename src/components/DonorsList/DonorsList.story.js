@@ -22,6 +22,8 @@ const multipleDonors = [
     },
 ];
 
+export const Loading = () => <DonorsList isLoading donors={multipleDonors} />;
+
 export const NoDonors = () => <DonorsList />;
 
 export const SingleDonor = () => <DonorsList donors={singleDonor} />;

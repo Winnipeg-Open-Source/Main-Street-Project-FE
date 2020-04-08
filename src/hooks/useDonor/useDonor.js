@@ -3,7 +3,7 @@ import DonorsContext from 'context/Donors';
 
 function useDonor (id) {
     const { donors, ...rest } = useContext(DonorsContext);
-    const donor = donors && donors.find(donor => parseInt(donor.id) === parseInt(id));
+    const donor = donors && donors.find(donor => donor.id == id);
 
     return {
         ...rest,
