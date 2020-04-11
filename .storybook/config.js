@@ -4,7 +4,7 @@ import { configureActions } from '@storybook/addon-actions';
 import { Flex } from 'pcln-design-system';
 import ThemeProvider from 'providers/ThemeProvider';
 
-import 'styles/index.css';
+import 'styles/storybook.css';
 
 addDecorator((story) => (
     <ThemeProvider>
