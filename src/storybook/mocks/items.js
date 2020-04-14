@@ -1,19 +1,52 @@
-export const mockItemRequisition = [
+export const mockItems = [
     {
         id: 1,
         name: 'Paper Towel',
-        quantity: 5,
         quantityName: 'Rolls',
+        lineItems: [
+            {
+                id: 1,
+                locationName: 'Shelf 1',
+                quantity: 5,
+            },
+            {
+                id: 2,
+                locationName: 'Shelf 2',
+                quantity: 10,
+            },
+        ],
     },
     {
         id: 2,
         name: 'Blueberries',
-        quantity: 10,
         quantityName: 'Packages',
+        lineItems: [
+            {
+                id: 1,
+                locationName: 'Freezer 1',
+                quantity: 5,
+            },
+            {
+                id: 2,
+                locationName: 'Freezer 2',
+                quantity: 10,
+            },
+        ],
     },
     {
         id: 3,
         name: 'Steaks',
-        quantity: 2,
+        lineItems: [
+            {
+                id: 1,
+                locationName: 'Freezer 1',
+                quantity: 5,
+            },
+            {
+                id: 2,
+                locationName: 'Freezer 2',
+                quantity: 10,
+            },
+        ],
     },
 ];

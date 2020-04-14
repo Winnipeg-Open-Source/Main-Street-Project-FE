@@ -8,7 +8,7 @@ import 'styles/storybook.css';
 
 addDecorator((story) => (
     <ThemeProvider>
-        <Flex style={{ height: '100%' }} width={1} p={2}>
+        <Flex width={1} p={2}>
             {story()}
         </Flex>
     </ThemeProvider>
