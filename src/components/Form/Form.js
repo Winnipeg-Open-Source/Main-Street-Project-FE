@@ -7,8 +7,6 @@ import ButtonGroup from 'components/ButtonGroup';
 const StyledForm = styled(Flex)`
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
 `;
 
 const Content = styled(Flex)`

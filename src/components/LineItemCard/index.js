@@ -1,1 +1,1 @@
-export { default } from './LineItemCard';
+export { default } from './LineItem';

@@ -1,11 +1,14 @@
-import React, { memo } from 'react';
+import React, { memo, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import Collapse from 'components/Collapse';
 import LineItemCard from 'components/LineItemCard';
 
-function ItemCard ({ className, name, quantityName, lineItems, onDeleteClick }) {
+function ItemCard ({ className, name, quantityName, lineItems }) {
+    const totalQuantity = useMemo(() => lineItems.reduce((quantity, lineItem) => quantity + lineItem.quantity, 0), [lineItems]);
+    const title = `${name} (${totalQuantity} ${quantityName})`;
+
     return (
-        <Collapse className={className} title={name} alignItems='center' row>
+        <Collapse className={className} title={title} alignItems='center' row>
             {lineItems && lineItems.map(lineItem => (
                 <LineItemCard {...lineItem} quantityName={quantityName} />
             ))}
@@ -24,11 +27,11 @@ ItemCard.propTypes = {
         locationName: PropTypes.string,
         quantity: PropTypes.number,
     }),
-    onDeleteClick: PropTypes.func,
 };
 
 ItemCard.defaultProps = {
     className: '',
+    quantityName: 'Units',
 };
 
 export default memo(ItemCard);

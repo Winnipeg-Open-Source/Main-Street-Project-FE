@@ -1,23 +1,36 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Collapse as Collapsable } from 'react-collapse';
 import { Divider, Flex, Text } from 'pcln-design-system';
 import { ChevronDown } from 'pcln-icons';
 import Card from 'components/Card';
 import useToggle from 'hooks/useToggle';
 
+const ClickableFlex = styled(Flex)`
+    cursor: pointer;
+`;
+
+const StyledFlex = styled(Flex)`
+    & > :not(:last-child) {
+        margin-bottom: 8px;
+    }
+`;
+
 function Collapse ({ className, title, children }) {
     const [ isCollapsed, toggleCollapsed ] = useToggle();
 
     return (
-        <Card className={className} isCollapsed={isCollapsed} onClick={toggleCollapsed}>
-            <Flex justifyContent='space-between' alignItems='center'>
+        <Card className={className} isCollapsed={isCollapsed}>
+            <ClickableFlex justifyContent='space-between' alignItems='center' onClick={toggleCollapsed}>
                 <Text bold>{title}</Text>
                 <ChevronDown />
-            </Flex>
+            </ClickableFlex>
             <Collapsable isOpened={isCollapsed}>
-                <Divider />
-                {children}
+                <StyledFlex flexDirection='column'>
+                    <Divider />
+                    {children}
+                </StyledFlex>
             </Collapsable>
         </Card>
     );

@@ -1,13 +1,11 @@
 import React from 'react';
 import Page from 'components/Page';
-import RequisitionForm from 'components/RequisitionForm';
+import RequisitionForm from 'containers/RequisitionForm';
 
 function RequisitionCreate () {
-    const saveRequisition = () => {};
-
     return (
         <Page title='New Requisition'>
-            <RequisitionForm onSaveClick={saveRequisition} />
+            <RequisitionForm />
         </Page>
     );
 }
