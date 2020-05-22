@@ -24,6 +24,7 @@ ItemList.displayName = 'ItemList';
 ItemList.propTypes = {
     className: PropTypes.string,
     items: PropTypes.array,
+    onDeleteClick: PropTypes.func,
 };
 
 ItemList.defaultProps = {
