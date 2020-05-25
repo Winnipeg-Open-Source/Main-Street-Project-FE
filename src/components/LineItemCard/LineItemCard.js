@@ -19,24 +19,38 @@ const StyledInput = styled(Input)`
     width: 75px;
     height: 25px;
     text-align: center;
+
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    &[type=number] {
+        -moz-appearance: textfield;
+    }
 `;
 
 function LineItem ({
+    id,
+    itemId,
     className,
     locationName,
     quantity,
     quantityName,
-    count,
-    onIncrementClick,
-    onDecrementClick,
-    onCountChange,
+    availableQuantity,
+    onItemQuantityChange,
 }) {
+    const changeQuantity = (value) => onItemQuantityChange(itemId, id, value);
+
+    const onIncrementClick = () => changeQuantity(quantity >= 0 ? ++quantity : 1);
+    const onDecrementClick = () => changeQuantity(quantity >= 1 ? --quantity : 0);
+    const onQuantityChange = (evt) => changeQuantity(evt.target.value);
+
     return (
         <Flex className={className} justifyContent='space-between' alignItems='center' width={1} px={2}>
-            <Text>{locationName} ({quantity} {quantityName})</Text>
+            <Text>{locationName} ({availableQuantity} {quantityName})</Text>
             <Flex>
                 <StyledButton icon={<Minus />} onClick={onDecrementClick} />
-                <StyledInput value={count} onChange={onCountChange} mx={2} />
+                <StyledInput type='number' value={quantity} onChange={onQuantityChange} mx={2} />
                 <StyledButton icon={<Plus />} onClick={onIncrementClick} />
             </Flex>
         </Flex>
@@ -46,14 +60,19 @@ function LineItem ({
 LineItem.displayName = 'LineItem';
 
 LineItem.propTypes = {
+    id: PropTypes.number,
+    itemId: PropTypes.number,
     className: PropTypes.string,
     locationName: PropTypes.string,
     quantity: PropTypes.number,
     quantityName: PropTypes.string,
+    availableQuantity: PropTypes.number,
+    onItemQuantityChange: PropTypes.func,
 };
 
 LineItem.defaultProps = {
     className: '',
+    quantity: 0,
     quantityName: 'Units',
 };
 

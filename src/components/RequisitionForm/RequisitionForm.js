@@ -22,6 +22,7 @@ function RequisitionForm ({
     onEmployeeChange,
     onDescriptionChange,
     onSelectItemChange,
+    onItemQuantityChange,
     onSaveClick,
     onCancelClick
 }) {
@@ -39,7 +40,7 @@ function RequisitionForm ({
                 />
             </Label>
             <ItemAutocomplete items={items} onChange={onSelectItemChange} />
-            <ItemList items={selectedItems} />
+            <ItemList items={selectedItems} onItemQuantityChange={onItemQuantityChange} />
         </Form>
     );
 }
@@ -54,6 +55,7 @@ RequisitionForm.propTypes = {
     items: PropTypes.array,
     selectedItems: PropTypes.array,
     onSelectItemChange: PropTypes.func,
+    onItemQuantityChange: PropTypes.func,
     onSaveClick: PropTypes.func,
     onCancelClick: PropTypes.func,
 };

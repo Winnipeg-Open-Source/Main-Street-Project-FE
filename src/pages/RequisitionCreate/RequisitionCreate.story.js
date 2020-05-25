@@ -5,10 +5,7 @@ import mockAxios from 'storybook/helpers/mockAxios';
 import RequisitionCreate from './RequisitionCreate';
 import { mockEmployees } from 'storybook/mocks/employees';
 import { mockItems } from 'storybook/mocks/items';
-import {
-    EMPLOYEES_API_PATH,
-    ITEMS_API_PATH,
-} from 'constants/api';
+import { EMPLOYEES_API_PATH, ITEMS_API_PATH } from 'constants/api';
 
 export const Loading = () => {
     mockAxios.onGet(EMPLOYEES_API_PATH).reply(200, mockEmployees);

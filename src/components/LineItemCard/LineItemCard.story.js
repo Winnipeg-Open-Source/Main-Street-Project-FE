@@ -1,5 +1,5 @@
 import React from 'react';
-import LineItem from './LineItem';
+import LineItemCard from './LineItemCard';
 import useCounter from 'hooks/useCounter';
 
 export const Default = () => {
@@ -7,7 +7,7 @@ export const Default = () => {
     const onChange = (evt) => setCount(evt.target.value);
 
     return (
-        <LineItem
+        <LineItemCard
             locationName='Freezer 2'
             quantity={10}
             quantityName='Rolls'
@@ -20,6 +20,6 @@ export const Default = () => {
 }
 
 export default {
-    title: 'LineItem',
-    component: LineItem,
+    title: 'LineItemCard',
+    component: LineItemCard,
 };

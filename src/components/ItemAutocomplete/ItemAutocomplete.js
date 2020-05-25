@@ -4,10 +4,6 @@ import styled from 'styled-components';
 import { Autocomplete } from 'pcln-autocomplete';
 import { Text, getPaletteColor } from 'pcln-design-system';
 
-const StyledAutocomplete = styled(Autocomplete)`
-    width: 100%;
-`;
-
 const StyledInput = styled(Autocomplete.Input)`
     background-color: ${getPaletteColor('background.lightest')};
 `;
@@ -16,7 +12,7 @@ function ItemAutocomplete ({ className, items, onChange }) {
     const match = (item, value) => item && item.name && item.name.toLowerCase().includes(value.toLowerCase());
     const handleChange = item => onChange(item);
     return (
-        <StyledAutocomplete
+        <Autocomplete
             className={className}
             style={{ width: '100%' }}
             itemToString={item => item && item.name}
@@ -34,7 +30,7 @@ function ItemAutocomplete ({ className, items, onChange }) {
                     </Autocomplete.Item>
                 ))}
             </Autocomplete.Menu>
-        </StyledAutocomplete>
+        </Autocomplete>
     );
 }
 
