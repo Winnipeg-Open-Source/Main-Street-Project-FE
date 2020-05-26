@@ -6,6 +6,7 @@ import theme from 'constants/theme.json';
 const StyledThemeProvider = styled(PCLNThemeProvider)`
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100%;
 `;
 

@@ -1,6 +1,11 @@
 import React from 'react';
-import { Home, List, User } from 'pcln-icons';
-import { LANDING_PATH, DONORS_PATH, PRODUCTS_PATH } from 'constants/paths';
+import { Home, List, User, Whirlpool } from 'pcln-icons';
+import {
+    LANDING_PATH,
+    DONORS_PATH,
+    PRODUCTS_PATH,
+    REQUISITIONS_PATH,
+} from 'constants/paths';
 
 const routes = [
     {
@@ -17,6 +22,11 @@ const routes = [
         label: 'Donors',
         path: DONORS_PATH,
         icon: <User />,
+    },
+    {
+        label: 'Requisitions',
+        path: REQUISITIONS_PATH,
+        icon: <Whirlpool />,
     },
 ];
 

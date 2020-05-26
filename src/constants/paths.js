@@ -9,7 +9,8 @@ export const PRODUCTS_CREATE_PATH = '/products/create';
 export const PRODUCTS_EDIT_PATH = '/products/edit/:id';
 export const DONATION_PATH = '/donations/:id';
 export const DONATIONS_NEW_PATH = '/donations/new';
-export const REQUISITION_NEW_PATH = '/requisition/new';
+export const REQUISITIONS_PATH ='/requisitions';
+export const REQUISITION_NEW_PATH = '/requisitions/new';
 
 const getPath = (path, id) => {
     return id
@@ -41,4 +42,8 @@ export const getProductEditPath = (id) => {
 
 export const getDonationPath = (id) => {
     return getPath(DONATION_PATH, id);
+};
+
+export const getRequisitionPath = (id) => {
+    return getPath(REQUISITIONS_PATH, id);
 };

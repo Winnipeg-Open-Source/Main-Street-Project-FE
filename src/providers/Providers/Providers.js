@@ -5,6 +5,9 @@ import ResponsiveProvider from 'providers/Responsive';
 import SavingProvider from 'providers/Saving';
 import SidebarProvider from 'providers/Sidebar';
 import DonorsProvider from 'providers/Donors';
+import EmployeesProvider from 'providers/Employees';
+import ItemsProvider from 'providers/Items';
+import RequisitionsProvider from 'providers/Requisitions';
 
 function Providers ({ children }) {
     return (
@@ -13,7 +16,13 @@ function Providers ({ children }) {
                 <SavingProvider>
                     <SidebarProvider>
                         <DonorsProvider>
-                            {children}
+                            <EmployeesProvider>
+                                <ItemsProvider>
+                                    <RequisitionsProvider>
+                                        {children}
+                                    </RequisitionsProvider>
+                                </ItemsProvider>
+                            </EmployeesProvider>
                         </DonorsProvider>
                     </SidebarProvider>
                 </SavingProvider>

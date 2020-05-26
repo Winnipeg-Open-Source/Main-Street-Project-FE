@@ -5,6 +5,7 @@ import { Button, Flex, Text } from 'pcln-design-system';
 import ButtonGroup from 'components/ButtonGroup';
 
 const StyledForm = styled(Flex)`
+    width: 100%;
     height: 100%;
 `;
 

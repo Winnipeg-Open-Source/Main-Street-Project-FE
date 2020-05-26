@@ -1,15 +1,10 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Select, getPaletteColor } from 'pcln-design-system';
-
-const StyledSelect = styled(Select)`
-    background-color: ${getPaletteColor('background.lightest')};
-`;
+import Select from 'components/Select';
 
 function ProvinceSelect ({ className, value, onChange }) {
     return (
-        <StyledSelect
+        <Select
             id='province'
             className={className}
             name='province'
@@ -30,7 +25,7 @@ function ProvinceSelect ({ className, value, onChange }) {
             <option value="NT">Northwest Territories</option>
             <option value="NU">Nunavut</option>
             <option value="YT">Yukon</option>
-        </StyledSelect>
+        </Select>
     );
 }
 

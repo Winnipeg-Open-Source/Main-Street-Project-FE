@@ -9,7 +9,9 @@ import {
     PRODUCT_PATH,
     PRODUCTS_CREATE_PATH,
     PRODUCTS_EDIT_PATH,
-    PRODUCTS_PATH
+    PRODUCTS_PATH,
+    REQUISITIONS_PATH,
+    REQUISITION_NEW_PATH,
 } from 'constants/paths';
 import LandingPage from 'pages/Landing';
 import DonorPage from 'pages/Donor';
@@ -20,6 +22,8 @@ import ProductPage from 'pages/Product';
 import ProductsPage from 'pages/Products';
 import ProductCreatePage from 'pages/ProductCreate';
 import ProductEditPage from 'pages/ProductEdit';
+import RequisitionCreatePage from 'pages/RequisitionCreate';
+import RequisitionsPage from 'pages/Requisitions';
 
 function Routes () {
     return (
@@ -33,6 +37,8 @@ function Routes () {
             <Route exact path={PRODUCTS_EDIT_PATH} component={ProductEditPage} />
             <Route exact path={PRODUCT_PATH} component={ProductPage} />
             <Route exact path={PRODUCTS_PATH} component={ProductsPage} />
+            <Route exact path={REQUISITION_NEW_PATH} component={RequisitionCreatePage} />
+            <Route exact path={REQUISITIONS_PATH} component={RequisitionsPage} />
         </Switch>
     );
 }
