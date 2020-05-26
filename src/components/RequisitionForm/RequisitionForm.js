@@ -14,6 +14,8 @@ const StyledTextArea = styled(TextArea)`
 
 function RequisitionForm ({
     className,
+    isLoadingEmployees,
+    isItemsLoading,
     employees,
     employee,
     description,
@@ -28,7 +30,12 @@ function RequisitionForm ({
 }) {
     return (
         <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
-            <EmployeeSelect employees={employees} value={employee} onChange={onEmployeeChange} />
+            <EmployeeSelect
+                isLoading={isLoadingEmployees}
+                employees={employees}
+                value={employee}
+                onChange={onEmployeeChange}
+            />
             <Label fontSize={1} mt={2}>
                 Description
                 <StyledTextArea
@@ -39,8 +46,15 @@ function RequisitionForm ({
                     mb={2}
                 />
             </Label>
-            <ItemAutocomplete items={items} onChange={onSelectItemChange} />
-            <ItemList items={selectedItems} onItemQuantityChange={onItemQuantityChange} />
+            <ItemAutocomplete
+                isLoading={isItemsLoading}
+                items={items}
+                onChange={onSelectItemChange}
+            />
+            <ItemList
+                items={selectedItems}
+                onItemQuantityChange={onItemQuantityChange}
+            />
         </Form>
     );
 }
@@ -49,6 +63,8 @@ RequisitionForm.displayName = 'RequisitionForm';
 
 RequisitionForm.propTypes = {
     className: PropTypes.string,
+    isLoadingEmployees: PropTypes.bool,
+    isItemsLoading: PropTypes.bool,
     employees: PropTypes.array,
     employee: PropTypes.string,
     description: PropTypes.string,

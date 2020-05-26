@@ -8,7 +8,7 @@ function ItemList ({ className, items, onItemQuantityChange }) {
         ? (
             <List className={className}>
                 {items.map(item => (
-                    <ItemCard
+                <ItemCard
                         key={item.id}
                         {...item}
                         onItemQuantityChange={onItemQuantityChange}

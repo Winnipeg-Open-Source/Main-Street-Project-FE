@@ -8,9 +8,12 @@ const StyledInput = styled(Autocomplete.Input)`
     background-color: ${getPaletteColor('background.lightest')};
 `;
 
-function ItemAutocomplete ({ className, items, onChange }) {
+function ItemAutocomplete ({ className, isLoading, items, onChange }) {
     const match = (item, value) => item && item.name && item.name.toLowerCase().includes(value.toLowerCase());
     const handleChange = item => onChange(item);
+
+    const placeholder = isLoading ? 'Loading...' : 'Item Search';
+
     return (
         <Autocomplete
             className={className}
@@ -19,7 +22,7 @@ function ItemAutocomplete ({ className, items, onChange }) {
             match={match}
             onChange={handleChange}
         >
-            <StyledInput placeholder='Item Search' width={1} />
+            <StyledInput disabled={isLoading} placeholder={placeholder} width={1} />
             <Autocomplete.Menu>
                 {items && items.map(item => (
                     <Autocomplete.Item
@@ -38,6 +41,7 @@ ItemAutocomplete.displayName = 'ItemAutocomplete';
 
 ItemAutocomplete.propTypes = {
     className: PropTypes.string,
+    isLoading: PropTypes.bool,
     items: PropTypes.array,
     onChange: PropTypes.func,
 };

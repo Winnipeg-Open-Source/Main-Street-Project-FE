@@ -7,20 +7,10 @@ import { mockEmployees } from 'storybook/mocks/employees';
 import { mockItems } from 'storybook/mocks/items';
 import { EMPLOYEES_API_PATH, ITEMS_API_PATH } from 'constants/api';
 
-export const Loading = () => {
+export const EmptyForm = () => {
     mockAxios.onGet(EMPLOYEES_API_PATH).reply(200, mockEmployees);
     mockAxios.onGet(ITEMS_API_PATH).reply(200, mockItems);
 
-    return (
-        <StorybookRouter>
-            <MockProviders>
-                <RequisitionCreate />
-            </MockProviders>
-        </StorybookRouter>
-    );
-};
-
-export const Loaded = () => {
     return (
         <StorybookRouter>
             <MockProviders>

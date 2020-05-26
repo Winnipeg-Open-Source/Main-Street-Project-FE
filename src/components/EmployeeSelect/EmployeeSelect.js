@@ -2,7 +2,13 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'components/Select';
 
-function EmployeeSelect ({ className, isLoading, employees, value, onChange }) {
+function EmployeeSelect ({
+    className,
+    isLoading,
+    employees,
+    value,
+    onChange
+}) {
     const placeholder = isLoading ? 'Loading...' : 'Employee / Volunteer';
     
     return (

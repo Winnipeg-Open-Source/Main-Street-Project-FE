@@ -1,4 +1,6 @@
 import {
+    CHANGE_EMPLOYEE,
+    CHANGE_DESCRIPTION,
     ADD_SELECTED_ITEM,
     REMOVE_SELECTED_ITEM,
     CHANGE_ITEM_QUANTITY,
@@ -6,6 +8,18 @@ import {
 
 function RequisitionForm (state = {}, action = {}) {
     switch (action.type) {
+        case CHANGE_EMPLOYEE:
+            return {
+                ...state,
+                employeeId: action.employeeId,
+            };
+
+        case CHANGE_DESCRIPTION:
+            return {
+                ...state,
+                description: action.description,
+            };
+
         case ADD_SELECTED_ITEM:
             return {
                 ...state,
