@@ -22,7 +22,7 @@ function EmployeeSelect ({
             data-testid='employee-select'
         >
             {employees && employees.map(employee => (
-                <option value={employee.id}>
+                <option key={employee.id} value={employee.id}>
                     {employee.name}
                 </option>
             ))}
@@ -35,10 +35,12 @@ EmployeeSelect.displayName = 'EmployeeSelect';
 EmployeeSelect.propTypes = {
     className: PropTypes.string,
     isLoading: PropTypes.bool,
-    employees: PropTypes.shape({
-        id: PropTypes.oneOfType([ PropTypes.string, PropTypes.number ]),
-        name: PropTypes.string,
-    }),
+    employees: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.oneOfType([ PropTypes.string, PropTypes.number ]),
+            name: PropTypes.string,
+        })
+    ),
     value: PropTypes.string,
     onChange: PropTypes.func,
 };
