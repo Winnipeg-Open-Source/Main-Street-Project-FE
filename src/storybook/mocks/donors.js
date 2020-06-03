@@ -36,12 +36,12 @@ export const multipleDonors = {
         },
         {
             id: 2,
-            name: 'Costco',
+            name: 'Sobeys',
             lastDonationDate: '2019 December 20',
         },
         {
             id: 3,
-            name: 'Costco',
+            name: 'Jane Doe',
             lastDonationDate: '2019 December 20',
         },
     ],

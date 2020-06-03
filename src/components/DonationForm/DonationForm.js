@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Label, TextArea, getPaletteColor } from 'pcln-design-system';
 import Form from 'components/Form';
+import Input from 'components/Input';
 import UserSelect from 'components/UserSelect';
 import ItemAutocomplete from 'components/ItemAutocomplete';
 import ItemList from 'components/ItemList';
@@ -12,73 +13,90 @@ const StyledTextArea = styled(TextArea)`
     resize: vertical;
 `;
 
-function RequisitionForm ({
+function DonationForm ({
     className,
-    isLoadingEmployees,
-    isItemsLoading,
-    employees,
-    employee,
+    isLoadingDonors,
+    isLoadingItems,
+    donors,
+    title,
     description,
     items,
     selectedItems,
-    onEmployeeChange,
+    notes,
+    onDonorChange,
+    onTitleChange,
     onDescriptionChange,
     onSelectItemChange,
     onItemQuantityChange,
+    onNotesChange,
     onSaveClick,
-    onCancelClick
+    onCancelClick,
 }) {
     return (
         <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
             <UserSelect
-                isLoading={isLoadingEmployees}
-                placeholder='Employee / Volunteer'
-                users={employees}
-                value={employee}
-                onChange={onEmployeeChange}
+                isLoading={isLoadingDonors}
+                placeholder='Donor'
+                users={donors}
+                onChange={onDonorChange}
             />
-            <Label fontSize={1} mt={2}>
+            <Input
+                placeholder='Title'
+                value={title}
+                onChange={onTitleChange}
+                mt={1}
+            />
+            <Label fontSize={1}>
                 Description
                 <StyledTextArea
-                    id='requisition-description'
+                    id='donation-description'
                     value={description}
                     onChange={onDescriptionChange}
-                    mt={1}
                     mb={2}
                 />
             </Label>
             <ItemAutocomplete
-                isLoading={isItemsLoading}
+                isLoading={isLoadingItems}
                 items={items}
                 onChange={onSelectItemChange}
             />
-            <ItemList
-                items={selectedItems}
-                onItemQuantityChange={onItemQuantityChange}
-            />
+            <ItemList items={selectedItems} onItemQuantityChange={onItemQuantityChange} />
+            <Label fontSize={1} mt={1}>
+                Additional Notes
+                <StyledTextArea
+                    id='donation-notes'
+                    value={notes}
+                    onChange={onNotesChange}
+                />
+            </Label>
         </Form>
     );
 }
 
-RequisitionForm.displayName = 'RequisitionForm';
+DonationForm.displayName = 'DonationForm';
 
-RequisitionForm.propTypes = {
+DonationForm.propTypes = {
     className: PropTypes.string,
-    isLoadingEmployees: PropTypes.bool,
-    isItemsLoading: PropTypes.bool,
-    employees: PropTypes.array,
-    employee: PropTypes.string,
+    isLoadingDonors: PropTypes.bool,
+    isLoadingItems: PropTypes.bool,
+    donors: PropTypes.array,
+    title: PropTypes.string,
     description: PropTypes.string,
     items: PropTypes.array,
     selectedItems: PropTypes.array,
+    notes: PropTypes.string,
+    onDonorChange: PropTypes.func,
+    onTitleChange: PropTypes.func,
+    onDescriptionChange: PropTypes.func,
     onSelectItemChange: PropTypes.func,
     onItemQuantityChange: PropTypes.func,
+    onNotesChange: PropTypes.func,
     onSaveClick: PropTypes.func,
     onCancelClick: PropTypes.func,
 };
 
-RequisitionForm.defaultProps = {
+DonationForm.defaultProps = {
     className: '',
 };
 
-export default memo(RequisitionForm);
+export default memo(DonationForm);

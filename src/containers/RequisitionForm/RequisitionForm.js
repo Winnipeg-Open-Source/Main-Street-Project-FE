@@ -14,7 +14,7 @@ import {
 import { REQUISITIONS_PATH } from 'constants/paths';
 
 const initialState = {
-    employee: null,
+    employeeId: null,
     description: null,
     selectedItems: [],
 };
@@ -38,7 +38,7 @@ function RequisitionForm () {
     const props = {
         isLoadingEmployees,
         isItemsLoading,
-        employees: [{ id: 1, name: 'Costco' }],
+        employees: employees,
         employeeId,
         description,
         items,

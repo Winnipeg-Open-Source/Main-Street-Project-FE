@@ -52,7 +52,7 @@ const OVERLAY_ANIMATIONS = (state) => `
 /* istanbul ignore next */
 const DIALOG_ANIMATIONS = (state) => `
     transform: translate(-100%);
-    transition: transform .5s ease-out;
+    transition: transform .25s ease-out;
     ${state === 'entering' ? `transform: translate(-100%);` : ''}
     ${state === 'entered' ? `transform: translate(0);` : ''}
     ${state === 'exiting' ? `transform: translate(-100%);` : ''}
@@ -65,6 +65,7 @@ function Modal ({ className, isMobile, isOpen, hasFooter, title, subtitle, child
             className={className}
             disableCloseButton
             isOpen={isOpen}
+            timeout={250}
             color='background.lightest'
             width={['100%', null, '640px']}
             header={<ModalHeader title={title} subtitle={subtitle} onClose={onClose} />}

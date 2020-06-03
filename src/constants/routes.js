@@ -3,7 +3,6 @@ import { Home, List, User, Whirlpool } from 'pcln-icons';
 import {
     LANDING_PATH,
     DONORS_PATH,
-    PRODUCTS_PATH,
     REQUISITIONS_PATH,
 } from 'constants/paths';
 
@@ -15,7 +14,7 @@ const routes = [
     },
     {
         label: 'Products',
-        path: PRODUCTS_PATH,
+        path: '/',
         icon: <List />,
     },
     {
