@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Label, TextArea, getPaletteColor } from 'pcln-design-system';
 import Form from 'components/Form';
 import Input from 'components/Input';
-import EmployeeSelect from 'components/EmployeeSelect';
+import UserSelect from 'components/UserSelect';
 import ItemAutocomplete from 'components/ItemAutocomplete';
 import ItemList from 'components/ItemList';
 
@@ -15,6 +15,8 @@ const StyledTextArea = styled(TextArea)`
 
 function DonationForm ({
     className,
+    isLoadingDonors,
+    isLoadingItems,
     donors,
     title,
     description,
@@ -32,7 +34,12 @@ function DonationForm ({
 }) {
     return (
         <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
-            <EmployeeSelect employees={donors} onChange={onDonorChange} />
+            <UserSelect
+                isLoading={isLoadingDonors}
+                placeholder='Donor'
+                users={donors}
+                onChange={onDonorChange}
+            />
             <Input
                 placeholder='Title'
                 value={title}
@@ -48,7 +55,11 @@ function DonationForm ({
                     mb={2}
                 />
             </Label>
-            <ItemAutocomplete items={items} onChange={onSelectItemChange} />
+            <ItemAutocomplete
+                isLoading={isLoadingItems}
+                items={items}
+                onChange={onSelectItemChange}
+            />
             <ItemList items={selectedItems} onItemQuantityChange={onItemQuantityChange} />
             <Label fontSize={1} mt={1}>
                 Additional Notes
@@ -66,6 +77,8 @@ DonationForm.displayName = 'DonationForm';
 
 DonationForm.propTypes = {
     className: PropTypes.string,
+    isLoadingDonors: PropTypes.bool,
+    isLoadingItems: PropTypes.bool,
     donors: PropTypes.array,
     title: PropTypes.string,
     description: PropTypes.string,

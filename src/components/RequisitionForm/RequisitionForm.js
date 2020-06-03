@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Label, TextArea, getPaletteColor } from 'pcln-design-system';
 import Form from 'components/Form';
-import EmployeeSelect from 'components/EmployeeSelect';
+import UserSelect from 'components/UserSelect';
 import ItemAutocomplete from 'components/ItemAutocomplete';
 import ItemList from 'components/ItemList';
 
@@ -30,9 +30,10 @@ function RequisitionForm ({
 }) {
     return (
         <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
-            <EmployeeSelect
+            <UserSelect
                 isLoading={isLoadingEmployees}
-                employees={employees}
+                placeholder='Employee / Volunteer'
+                users={employees}
                 value={employee}
                 onChange={onEmployeeChange}
             />

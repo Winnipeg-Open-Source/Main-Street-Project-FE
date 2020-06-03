@@ -2,51 +2,53 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'components/Select';
 
-function EmployeeSelect ({
+function UserSelect ({
     className,
     isLoading,
-    employees,
+    placeholder,
+    users,
     value,
-    onChange
+    onChange,
 }) {
-    const placeholder = isLoading ? 'Loading...' : 'Employee / Volunteer';
+    const loadingPlaceholder = isLoading ? 'Loading...' : placeholder;
     
     return (
         <Select
-            id='employee'
+            id={placeholder}
             className={className}
             disabled={isLoading}
-            placeholder={placeholder}
+            placeholder={loadingPlaceholder}
             value={value}
             onChange={onChange}
             data-testid='employee-select'
         >
-            {employees && employees.map(employee => (
-                <option key={employee.id} value={employee.id}>
-                    {employee.name}
+            {users && users.map(user => (
+                <option key={user.id} value={user.id}>
+                    {user.name}
                 </option>
             ))}
         </Select>
     );
 }
 
-EmployeeSelect.displayName = 'EmployeeSelect';
+UserSelect.displayName = 'UserSelect';
 
-EmployeeSelect.propTypes = {
+UserSelect.propTypes = {
     className: PropTypes.string,
     isLoading: PropTypes.bool,
-    employees: PropTypes.arrayOf(
+    placeholder: PropTypes.string,
+    users: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.oneOfType([ PropTypes.string, PropTypes.number ]),
             name: PropTypes.string,
-        })
+        }),
     ),
     value: PropTypes.string,
     onChange: PropTypes.func,
 };
 
-EmployeeSelect.defaultProps = {
+UserSelect.defaultProps = {
     className: '',
 };
 
-export default memo(EmployeeSelect);
+export default memo(UserSelect);

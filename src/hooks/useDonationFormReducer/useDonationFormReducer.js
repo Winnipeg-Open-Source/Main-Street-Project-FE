@@ -14,7 +14,7 @@ const initialState = {
     donorId: null,
     title: null,
     description: null,
-    selectedItems: null,
+    selectedItems: [],
     notes: null,
 };
 
