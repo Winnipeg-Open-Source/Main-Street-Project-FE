@@ -4,9 +4,17 @@ import DonationForm from './DonationForm';
 import { mockItems } from 'storybook/mocks/items';
 import { multipleDonors } from 'storybook/mocks/donors';
 
-export const Loading = () => {
-
-};
+export const Loading = () => (
+    <DonationForm
+        isLoadingDonors
+        isLoadingItems
+        donors={multipleDonors.donors}
+        items={mockItems}
+        selectedItems={[]}
+        onSaveClick={action('Saved')}
+        onCancelClick={action('Cancelled')}
+    />
+);
 
 export const EmptyForm = () => {
     const [ selectedItems, setSelectedItems ] = useState([]);
