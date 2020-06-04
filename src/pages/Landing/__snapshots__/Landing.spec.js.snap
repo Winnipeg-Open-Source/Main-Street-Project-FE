@@ -3,7 +3,7 @@
 exports[`LandingPage renders as expected 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
       class="sc-AxjAm sc-AxiKw jthnRD"
@@ -24,7 +24,7 @@ exports[`LandingPage renders as expected 1`] = `
       </a>
       <a
         class="sc-psDhf gpxmSn"
-        href="/requisition/new"
+        href="/requisitions/new"
       >
         <button
           class="sc-oUOMp dUIyXc"
