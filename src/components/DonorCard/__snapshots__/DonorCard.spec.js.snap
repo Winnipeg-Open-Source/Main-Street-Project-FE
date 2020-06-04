@@ -3,10 +3,10 @@
 exports[`DonorCard renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
-      class="sc-AxjAm sc-qYsuA sc-psDhf IA-Dcs"
+      class="sc-AxjAm sc-qYsuA sc-psDhf dOhwaS"
       color="background.lightest"
       data-testid="donor-card"
       width="1"
@@ -31,10 +31,10 @@ exports[`DonorCard renders without crashing 1`] = `
 exports[`DonorCard skeleton renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
-      class="sc-AxjAm sc-qYsuA sc-psDhf IA-Dcs"
+      class="sc-AxjAm sc-qYsuA sc-psDhf iiqOGC"
       color="background.lightest"
       width="1"
     >

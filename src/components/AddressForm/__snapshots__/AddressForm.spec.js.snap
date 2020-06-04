@@ -3,10 +3,10 @@
 exports[`AddressForm renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <input
-      class="sc-pTWqp sc-psDhf bvmjWf"
+      class="sc-pTWqp sc-psDhf gEEOGz"
       font-size="2,,1"
       id="address"
       name="address"
@@ -18,7 +18,7 @@ exports[`AddressForm renders without crashing 1`] = `
       width="1"
     >
       <input
-        class="sc-pTWqp sc-psDhf UrUUF"
+        class="sc-pTWqp sc-psDhf jUOuPh"
         font-size="2,,1"
         id="city"
         name="city"
@@ -121,7 +121,7 @@ exports[`AddressForm renders without crashing 1`] = `
       </div>
     </div>
     <input
-      class="sc-pTWqp sc-psDhf bvmjWf"
+      class="sc-pTWqp sc-psDhf gEEOGz"
       font-size="2,,1"
       id="postal-code"
       name="postalCode"

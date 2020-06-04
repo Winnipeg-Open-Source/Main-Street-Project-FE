@@ -2,7 +2,7 @@ import React from 'react';
 import { fireEvent } from '@testing-library/react';
 import renderWithThemeAndRouter from 'tests/helpers/renderWithThemeAndRouter';
 import LandingPage from './Landing';
-import { LANDING_PATH, DONATIONS_NEW_PATH, REQUISITION_NEW_PATH } from 'constants/paths';
+import { LANDING_PATH, DONATION_NEW_PATH, REQUISITION_NEW_PATH } from 'constants/paths';
 
 describe('LandingPage', () => {
     it ('renders as expected', () => {
@@ -17,7 +17,7 @@ describe('LandingPage', () => {
 
         expect(history.location.pathname).toBe(LANDING_PATH);
         fireEvent.click(newDonationButton);
-        expect(history.location.pathname).toBe(DONATIONS_NEW_PATH);
+        expect(history.location.pathname).toBe(DONATION_NEW_PATH);
     });
 
     it ('new requisition button works as expected', () => {

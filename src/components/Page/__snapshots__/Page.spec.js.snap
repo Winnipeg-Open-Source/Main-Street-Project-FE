@@ -3,7 +3,7 @@
 exports[`Page renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
       class="sc-AxjAm sc-AxiKw bENblX"
@@ -14,7 +14,7 @@ exports[`Page renders without crashing 1`] = `
         width="1"
       >
         <div
-          class="sc-AxhCb fppuj"
+          class="sc-AxhCb sc-psDhf lcjizo"
           font-size="3"
         />
       </div>

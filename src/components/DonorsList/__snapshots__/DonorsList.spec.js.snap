@@ -3,7 +3,7 @@
 exports[`DonorsList renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
       class="sc-AxjAm sc-AxiKw sc-psDhf iXvOkL"
@@ -22,14 +22,14 @@ exports[`DonorsList renders without crashing 1`] = `
 exports[`DonorsList skeleton renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
       class="sc-AxjAm sc-AxiKw sc-psDhf iXvOkL"
       width="1"
     >
       <div
-        class="sc-AxjAm sc-qYsuA sc-qQxFs hRFnaE"
+        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq"
         color="background.lightest"
         width="1"
       >
@@ -51,7 +51,7 @@ exports[`DonorsList skeleton renders without crashing 1`] = `
         </span>
       </div>
       <div
-        class="sc-AxjAm sc-qYsuA sc-qQxFs hRFnaE"
+        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq"
         color="background.lightest"
         width="1"
       >
@@ -73,7 +73,7 @@ exports[`DonorsList skeleton renders without crashing 1`] = `
         </span>
       </div>
       <div
-        class="sc-AxjAm sc-qYsuA sc-qQxFs hRFnaE"
+        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq"
         color="background.lightest"
         width="1"
       >

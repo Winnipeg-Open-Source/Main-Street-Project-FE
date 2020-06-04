@@ -3,10 +3,10 @@
 exports[`Input renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <input
-      class="sc-pTWqp sc-psDhf bvmjWf"
+      class="sc-pTWqp sc-psDhf gEEOGz"
       font-size="2,,1"
     />
   </div>

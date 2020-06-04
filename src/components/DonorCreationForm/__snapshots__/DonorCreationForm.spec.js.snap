@@ -3,16 +3,16 @@
 exports[`DonorCreationForm renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fCxHK"
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-qQxFs vcJyQ"
+      class="sc-AxjAm sc-AxiKw sc-qQxFs dNNRWZ"
     >
       <div
         class="sc-AxjAm sc-AxiKw sc-qYUWV sa-don"
       >
         <input
-          class="sc-pTWqp sc-pBlxj eKBTPm"
+          class="sc-pTWqp sc-pBlxj iLNgzO"
           font-size="2,,1"
           id="name"
           name="name"
@@ -20,7 +20,7 @@ exports[`DonorCreationForm renders without crashing 1`] = `
           value="Costco"
         />
         <input
-          class="sc-pTWqp sc-pBlxj eKBTPm"
+          class="sc-pTWqp sc-pBlxj iLNgzO"
           font-size="2,,1"
           id="address"
           name="address"
@@ -32,7 +32,7 @@ exports[`DonorCreationForm renders without crashing 1`] = `
           width="1"
         >
           <input
-            class="sc-pTWqp sc-pBlxj gPQnZg"
+            class="sc-pTWqp sc-pBlxj bRQLIM"
             font-size="2,,1"
             id="city"
             name="city"
@@ -135,7 +135,7 @@ exports[`DonorCreationForm renders without crashing 1`] = `
           </div>
         </div>
         <input
-          class="sc-pTWqp sc-pBlxj eKBTPm"
+          class="sc-pTWqp sc-pBlxj iLNgzO"
           font-size="2,,1"
           id="postal-code"
           name="postalCode"
@@ -143,7 +143,7 @@ exports[`DonorCreationForm renders without crashing 1`] = `
           value=""
         />
         <input
-          class="sc-pTWqp sc-pBlxj eKBTPm"
+          class="sc-pTWqp sc-pBlxj iLNgzO"
           font-size="2,,1"
           id="phone-number"
           name="phoneNumber"
@@ -151,7 +151,7 @@ exports[`DonorCreationForm renders without crashing 1`] = `
           value=""
         />
         <input
-          class="sc-pTWqp sc-pBlxj eKBTPm"
+          class="sc-pTWqp sc-pBlxj iLNgzO"
           font-size="2,,1"
           id="email"
           name="email"
