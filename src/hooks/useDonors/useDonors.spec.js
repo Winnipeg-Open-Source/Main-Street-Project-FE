@@ -1,17 +1,17 @@
 import React from 'react';
 import { renderHook } from '@testing-library/react-hooks';
 import useDonors from './useDonors';
-import DonorContext from 'context/Donors';
+import DonorsContext from 'context/Donors';
 
 const customContext = {
     isLoading: false,
     donors: [],
 };
 
-const DonorContextWrapper = ({ children }) => (
-    <DonorContext.Provider value={customContext}>
+const DonorsContextWrapper = ({ children }) => (
+    <DonorsContext.Provider value={customContext}>
         {children}
-    </DonorContext.Provider>
+    </DonorsContext.Provider>
 );
 
 describe ('useDonors', () => {
@@ -22,7 +22,7 @@ describe ('useDonors', () => {
     });
 
     it ('should return set context', () => {
-        const { result } = renderHook(() => useDonors(), { wrapper: DonorContextWrapper });
+        const { result } = renderHook(() => useDonors(), { wrapper: DonorsContextWrapper });
         expect(result.current).toBe(customContext);
     });
 });
