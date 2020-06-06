@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RequisitionCreate renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+  >
+    <div
+      class="sc-AxjAm sc-AxiKw bENblX"
+      width="1"
+    >
+      <div
+        class="sc-AxjAm sc-AxiKw iPzLAe"
+        width="1"
+      >
+        <div
+          class="sc-AxhCb sc-psDhf lcjizo"
+          font-size="3"
+        >
+          New Requisition
+        </div>
+      </div>
+      <div
+        class="sc-AxjAm sc-AxiKw sc-qYUWV dgGtKY"
+      >
+        <div
+          class="sc-AxjAm sc-AxiKw sc-pBlxj iKhLIT"
+        >
+          <div
+            class="sc-AxjAm sc-AxiKw iSVrPI"
+            width="1"
+          >
+            <select
+              class="sc-pZCuu kQVKTB sc-oTaid sc-pJipy ceCay"
+              data-testid="employee-select"
+              disabled=""
+              font-size="2,,1"
+              id="Employee / Volunteer"
+            >
+              <option
+                disabled=""
+                hidden=""
+                value=""
+              >
+                Loading...
+              </option>
+            </select>
+            <svg
+              aria-hidden="true"
+              class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
+              color="text.light"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+              />
+            </svg>
+          </div>
+          <label
+            class="sc-oVpqz gSwqCS"
+            color="border.light"
+            font-size="1"
+            font-weight="bold"
+          >
+            Description
+            <textarea
+              class="sc-qYhTA sc-pRtcU iJOiiZ"
+              id="requisition-description"
+            />
+          </label>
+          <div
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-labelledby="downshift-0-label"
+            role="combobox"
+            style="position: relative; width: 100%;"
+          >
+            <input
+              aria-autocomplete="list"
+              aria-labelledby="downshift-0-label"
+              autocomplete="off"
+              class="sc-pTWqp fyIUKN sc-oTzgz kBlAjz"
+              disabled=""
+              font-size="2,,1"
+              id="downshift-0-input"
+              placeholder="Loading..."
+              value=""
+              width="1"
+            />
+            <div
+              aria-labelledby="downshift-0-label"
+              class="sc-AxjAm sc-qYsuA sc-pRgDJ gnjykD"
+              height="256px"
+              id="downshift-0-menu"
+              role="listbox"
+            />
+          </div>
+          <div
+            class="sc-AxjAm sc-AxiKw sc-pbvYO buKzNA"
+            width="1"
+          />
+        </div>
+        <div
+          class="sc-AxjAm sc-AxiKw sc-qQxFs cuUChO"
+        >
+          <button
+            class="sc-oUOMp kxZVgg"
+            color="tertiary"
+            width="1"
+          >
+            Cancel
+          </button>
+          <button
+            class="sc-oUOMp coOwBP"
+            color="primary"
+            width="1"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
