@@ -8,7 +8,7 @@ function DonationList ({ className, donations }) {
     return (
         <List className={className}>
             {donations && donations.length > 0
-                ? donations.map(donation => <DonationCard {...donation} />)
+                ? donations.map(donation => <DonationCard key={donation.id} {...donation} />)
                 : <Text textAlign='center'>No donations yet...</Text>
             }
         </List>
