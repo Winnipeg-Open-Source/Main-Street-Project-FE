@@ -24,7 +24,7 @@ function Requisitions () {
     return (
         <Page isLoading={isLoading} title='Requisitions' renderAction={NewRequisitionButton}>
             <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
-            <RequisitionsList />
+            <RequisitionsList isLoading={isLoading} requisitions={requisitions} />
         </Page>
     );
 }

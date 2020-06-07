@@ -19,6 +19,7 @@ function Donor () {
     const EditButton = () => <EditDonorButton id={id} />;
 
     const name = donor ? donor.name : 'Donor not found';
+    const donations = donor && donor.donations;
 
     return (
         <Page isLoading={isLoading} title={name} renderAction={EditButton}>
@@ -26,7 +27,7 @@ function Donor () {
                 ? (
                     <>
                         <StyledDonorInformation isLoading={isLoading} {...donor} />
-                        <DonationList isLoading={isLoading} donations={donor && donor.donations} />
+                        <DonationList isLoading={isLoading} donations={donations} />
                     </>
                 )
                 : 'Donor Not Found'
