@@ -1,26 +1,19 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Button, Card, Text } from 'pcln-design-system';
-import Link from 'components/Link';
+import { Text } from 'pcln-design-system';
+import Card from 'components/Card';
 import { getDonationPath } from 'constants/paths';
 
-const StyledCard = styled(Card)`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`;
+function DonationCard ({ id, className, title, donationDate, onClick }) {
+    const onDonationClick = () => onClick(getDonationPath(id));
 
-function DonationCard ({ id, className, donationDate }) {
-    const donationPath = getDonationPath(id);
+    const date = donationDate || 'Unknown Donation Date';
 
     return (
-        <StyledCard className={className} color='background.lightest' width={1} p={2}>
-            <Text color='text.darkest' bold>{donationDate || 'Unknown Donation Date'}</Text>
-            <Link to={donationPath}>
-                <Button variation='outline' size='small'>View</Button>
-            </Link>
-        </StyledCard>
+        <Card className={className} onClick={onDonationClick}>
+            <Text color='text.darkest' fontSize={1} bold>{title}</Text>
+            <Text color='text.darkest' fontSize={1}>Donated: {date}</Text>
+        </Card>
     );
 }
 
@@ -29,7 +22,9 @@ DonationCard.displayName = 'DonationCard';
 DonationCard.propTypes = {
     id: PropTypes.number,
     className: PropTypes.string,
+    title: PropTypes.string,
     donationDate: PropTypes.string,
+    onClick: PropTypes.func,
 }
 
 DonationCard.defaultProps = {

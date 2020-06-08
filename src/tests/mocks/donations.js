@@ -4,6 +4,7 @@ function getMockDonation (id) {
         donorId: 1,
         title: 'Donation Title',
         description: 'Description about this donation.',
+        donationDate: '2020 December 20',
         items: [
             {
                 id: 1,

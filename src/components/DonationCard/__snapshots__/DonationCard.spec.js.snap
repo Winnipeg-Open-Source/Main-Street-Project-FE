@@ -6,27 +6,22 @@ exports[`DonationCard renders without crashing 1`] = `
     class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
-      class="sc-AxjAm sc-qYsuA sc-qQxFs hPAuhF"
+      class="sc-AxjAm sc-qYsuA sc-psDhf dOhwaS"
       color="background.lightest"
       width="1"
     >
       <div
-        class="sc-AxhCb dVzyBo"
+        class="sc-AxhCb jTwMnz"
         color="text.darkest"
+        font-size="1"
+      />
+      <div
+        class="sc-AxhCb fYdZYD"
+        color="text.darkest"
+        font-size="1"
       >
-        Unknown Donation Date
+        Donated: Unknown Donation Date
       </div>
-      <a
-        class="sc-psDhf gpxmSn"
-        href="/donations/:id"
-      >
-        <button
-          class="sc-oUOMp kyaVja"
-          color="primary"
-        >
-          View
-        </button>
-      </a>
     </div>
   </div>
 </DocumentFragment>

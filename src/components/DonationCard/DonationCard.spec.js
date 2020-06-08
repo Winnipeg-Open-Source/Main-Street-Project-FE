@@ -12,6 +12,6 @@ describe ('DonationCard', () => {
     it ('renders with a donation date', () => {
         const { getByText } = renderWithThemeAndRouter(<DonationCard donationDate='2020 February 20' />);
 
-        expect(getByText('2020 February 20')).toBeInTheDocument();
+        expect(getByText('Donated: 2020 February 20')).toBeInTheDocument();
     });
 });
