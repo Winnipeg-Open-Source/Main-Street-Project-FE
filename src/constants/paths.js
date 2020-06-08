@@ -35,6 +35,10 @@ export const getDonationPath = (id) => {
     return getPath(DONATION_PATH, id);
 };
 
+export const getDonationEditPath = (id) => {
+    return getPath(DONATION_EDIT_PATH, id);
+};
+
 export const getRequisitionPath = (id) => {
     return getPath(REQUISITIONS_PATH, id);
 };

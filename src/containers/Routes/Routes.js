@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import {
     LANDING_PATH,
+    DONATION_PATH,
     DONATION_NEW_PATH,
     DONORS_PATH,
     DONOR_PATH,
@@ -11,6 +12,7 @@ import {
     REQUISITION_NEW_PATH,
 } from 'constants/paths';
 import LandingPage from 'pages/Landing';
+import DonationPage from 'pages/Donation';
 import DonationCreatePage from 'pages/DonationCreate';
 import DonorPage from 'pages/Donor';
 import DonorsPage from 'pages/Donors';
@@ -23,6 +25,7 @@ function Routes () {
     return (
         <Switch>
             <Route exact path={LANDING_PATH} component={LandingPage} />
+            <Route exact path={DONATION_PATH} component={DonationPage} />
             <Route exact path={DONATION_NEW_PATH} component={DonationCreatePage} />
             <Route exact path={DONOR_NEW_PATH} component={DonorCreatePage} />
             <Route exact path={DONOR_EDIT_PATH} component={DonorEditPage} />

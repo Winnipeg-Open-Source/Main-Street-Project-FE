@@ -4,6 +4,7 @@ import ThemeProvider from 'providers/ThemeProvider';
 import ResponsiveProvider from 'providers/Responsive';
 import SavingProvider from 'providers/Saving';
 import SidebarProvider from 'providers/Sidebar';
+import DonationsProvider from 'providers/Donations';
 import DonorsProvider from 'providers/Donors';
 import EmployeesProvider from 'providers/Employees';
 import ItemsProvider from 'providers/Items';
@@ -15,15 +16,17 @@ function Providers ({ children }) {
             <ResponsiveProvider>
                 <SavingProvider>
                     <SidebarProvider>
-                        <DonorsProvider>
-                            <EmployeesProvider>
-                                <ItemsProvider>
-                                    <RequisitionsProvider>
-                                        {children}
-                                    </RequisitionsProvider>
-                                </ItemsProvider>
-                            </EmployeesProvider>
-                        </DonorsProvider>
+                        <DonationsProvider>
+                            <DonorsProvider>
+                                <EmployeesProvider>
+                                    <ItemsProvider>
+                                        <RequisitionsProvider>
+                                            {children}
+                                        </RequisitionsProvider>
+                                    </ItemsProvider>
+                                </EmployeesProvider>
+                            </DonorsProvider>
+                        </DonationsProvider>
                     </SidebarProvider>
                 </SavingProvider>
             </ResponsiveProvider>

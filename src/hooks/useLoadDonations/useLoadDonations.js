@@ -1,21 +1,21 @@
 import { useMemo } from 'react';
 import useAxios from 'hooks/useAxios';
-import { REQUISITIONS_API_PATH } from 'constants/api';
+import { DONATIONS_API_PATH } from 'constants/api';
 
 const request = {
-    url: REQUISITIONS_API_PATH,
+    url: DONATIONS_API_PATH,
     method: 'get',
 };
 
-function useLoadRequisitions () {
+function useLoadDonations () {
     const { response, fetchData } = useAxios(request);
 
     return useMemo(() => ({
         isLoading: response.isLoading,
         isError: response.isError,
-        requisitions: response.data || [],
+        donations: response.data || [],
         fetchData,
     }), [response, fetchData]);
 }
 
-export default useLoadRequisitions;
+export default useLoadDonations;
