@@ -8,6 +8,7 @@ function DonationListSkeleton ({ className }) {
         <List className={className}>
             <DonationCard isLoading />
             <DonationCard isLoading />
+            <DonationCard isLoading />
         </List>
     );
 }

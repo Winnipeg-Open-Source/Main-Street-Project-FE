@@ -21,6 +21,7 @@ function NewDonorButton () {
 function Donors () {
     const { isLoading, donors } = useDonors();
     const goToDonorPage = useRoute();
+
     const disabled = isLoading || (donors && donors.length === 0);
 
     return (

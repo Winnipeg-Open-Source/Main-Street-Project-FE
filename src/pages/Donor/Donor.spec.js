@@ -42,8 +42,8 @@ describe ('DonorPage', () => {
         expect(getByText('email@email.com')).toBeInTheDocument();
         expect(getByText('email@email.com')).toBeInTheDocument();
         expect(getByText('204-555-5555')).toBeInTheDocument();
-        expect(getByText('2019 December 20')).toBeInTheDocument();
-        expect(getByText('2019 November 20')).toBeInTheDocument();
+        expect(getByText('Donated: 2019 December 20')).toBeInTheDocument();
+        expect(getByText('Donated: 2019 November 20')).toBeInTheDocument();
     });
 
     it ('does not find a donor', () => {
