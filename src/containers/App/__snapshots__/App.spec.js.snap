@@ -59,7 +59,7 @@ exports[`App renders without crashing 1`] = `
               d="M10 20.5v-6h4v6h5v-8h3l-10-9-10 9h3v8h5z"
             />
           </svg>
-          Dashboard
+          Home
         </a>
         <a
           class="sc-pjGMk fqvTnB"
@@ -84,11 +84,11 @@ exports[`App renders without crashing 1`] = `
         </a>
         <a
           class="sc-pjGMk fqvTnB"
-          href="/requisitions"
+          href="/donations"
         >
           <svg
             aria-hidden="true"
-            class="sc-Axmtr cTdHPN sc-pktCe fBFFRE"
+            class="sc-Axmtr cTdHPN sc-pjSSY laaBPC"
             fill="currentcolor"
             focusable="false"
             height="24"
@@ -98,7 +98,70 @@ exports[`App renders without crashing 1`] = `
             width="24"
           >
             <path
-              d="M11.1 11.5c-.3-.2-.6-.5-.8-.7L8.9 9.2c-.2-.2-.4-.3-.7-.5-.3-.1-.6-.2-1-.2C6 8.5 5 9.5 5 10.8v.8H2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8H11.1zm-4.1 8H5v-6h2v6zm4 0H9v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6zm-.4-14.1c-.6-.7-.9-1.5-.7-2.3l.1-.6h-1.9l-.1.4c-.2 1.4.3 2.7 1.3 3.7l.1.1c.6.6.8 1.4.7 2.2l-.1.6h1.9l.1-.4c.2-1.4-.3-2.7-1.4-3.7zm-4 0c1 1 1.5 2.3 1.3 3.7l-.1.4H14l.1-.6c.1-.8-.1-1.6-.7-2.2l-.1-.1c-1-1-1.5-2.4-1.3-3.7l.1-.4H14l-.1.6c-.1.8.1 1.6.7 2.3zM7 7.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+              d="M21.4 11.6l-9-9c-.3-.4-.8-.6-1.4-.6H4c-1.1 0-2 .9-2 2v7c0 .6.2 1.1.6 1.4l9 9c.4.4.9.6 1.4.6s1.1-.2 1.4-.6l7-7c.4-.4.6-.9.6-1.4s-.2-1.1-.6-1.4zM5.5 7C4.7 7 4 6.3 4 5.5S4.7 4 5.5 4 7 4.7 7 5.5 6.3 7 5.5 7zm11.8 8.3L13 19.5l-4.3-4.3c-.4-.4-.7-1-.7-1.7 0-1.4 1.1-2.5 2.5-2.5.7 0 1.3.3 1.8.7l.7.7.7-.7c.5-.4 1.1-.7 1.8-.7 1.4 0 2.5 1.1 2.5 2.5 0 .7-.3 1.3-.7 1.8z"
+            />
+          </svg>
+          Donations
+        </a>
+        <a
+          class="sc-pjGMk fqvTnB"
+          href="/items"
+        >
+          <svg
+            aria-hidden="true"
+            class="sc-Axmtr cTdHPN sc-fzqOul fQbLGO"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4l2 2.7 3-3.7 4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"
+            />
+          </svg>
+          Items
+        </a>
+        <a
+          class="sc-pjGMk fqvTnB"
+          href="/locations"
+        >
+          <svg
+            aria-hidden="true"
+            class="sc-Axmtr cTdHPN sc-qYiqT duDEIF"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M20.5 3h-.2L15 5.1 9 3 3.4 4.9c-.2.1-.4.3-.4.5v15.1c0 .3.2.5.5.5h.2L9 18.9l6 2.1 5.6-1.9c.2-.1.4-.2.4-.5V3.5c0-.3-.2-.5-.5-.5zM15 19l-6-2.1V5l6 2.1V19z"
+            />
+          </svg>
+          Locations
+        </a>
+        <a
+          class="sc-pjGMk fqvTnB"
+          href="/requisitions"
+        >
+          <svg
+            aria-hidden="true"
+            class="sc-Axmtr cTdHPN sc-fznLPX llMHGf"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
             />
           </svg>
           Requisitions

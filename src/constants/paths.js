@@ -10,6 +10,13 @@ export const DONOR_PATH = '/donors/:id';
 export const DONOR_NEW_PATH = '/donors/new';
 export const DONOR_EDIT_PATH = '/donors/edit/:id';
 
+export const ITEMS_PATH = '/items';
+export const ITEM_PATH = '/items/:id';
+export const ITEM_NEW_PATH = '/items/new';
+export const ITEM_EDIT_PATH = '/items/edit/:id';
+
+export const LOCATIONS_PATH = '/locations';
+
 export const REQUISITIONS_PATH ='/requisitions';
 export const REQUISITION_PATH = '/requisitions/:id';
 export const REQUISITION_NEW_PATH = '/requisitions/new';

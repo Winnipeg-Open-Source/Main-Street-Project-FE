@@ -1,14 +1,17 @@
 import React from 'react';
-import { Home, User, Whirlpool } from 'pcln-icons';
+import { Document, Gallery, Home, Loyalty, Map, User } from 'pcln-icons';
 import {
     LANDING_PATH,
+    DONATIONS_PATH,
     DONORS_PATH,
+    ITEMS_PATH,
+    LOCATIONS_PATH,
     REQUISITIONS_PATH,
 } from 'constants/paths';
 
 const routes = [
     {
-        label: 'Dashboard',
+        label: 'Home',
         path: LANDING_PATH,
         icon: <Home />,
     },
@@ -18,9 +21,24 @@ const routes = [
         icon: <User />,
     },
     {
+        label: 'Donations',
+        path: DONATIONS_PATH,
+        icon: <Loyalty />,
+    },
+    {
+        label: 'Items',
+        path: ITEMS_PATH,
+        icon: <Gallery />,
+    },
+    {
+        label: 'Locations',
+        path: LOCATIONS_PATH,
+        icon: <Map />,
+    },
+    {
         label: 'Requisitions',
         path: REQUISITIONS_PATH,
-        icon: <Whirlpool />,
+        icon: <Document />,
     },
 ];
 
