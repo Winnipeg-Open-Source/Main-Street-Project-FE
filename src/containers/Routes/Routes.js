@@ -9,6 +9,7 @@ import {
     DONOR_PATH,
     DONOR_NEW_PATH,
     DONOR_EDIT_PATH,
+    ITEMS_PATH,
     REQUISITIONS_PATH,
     REQUISITION_NEW_PATH,
 } from 'constants/paths';
@@ -20,6 +21,7 @@ import DonorPage from 'pages/Donor';
 import DonorsPage from 'pages/Donors';
 import DonorCreatePage from 'pages/DonorCreate';
 import DonorEditPage from 'pages/DonorEdit';
+import ItemsPage from 'pages/Items';
 import RequisitionCreatePage from 'pages/RequisitionCreate';
 import RequisitionsPage from 'pages/Requisitions';
 
@@ -34,6 +36,7 @@ function Routes () {
             <Route exact path={DONOR_EDIT_PATH} component={DonorEditPage} />
             <Route exact path={DONOR_PATH} component={DonorPage} />
             <Route exact path={DONORS_PATH} component={DonorsPage} />
+            <Route exact path={ITEMS_PATH} component={ItemsPage} />
             <Route exact path={REQUISITION_NEW_PATH} component={RequisitionCreatePage} />
             <Route exact path={REQUISITIONS_PATH} component={RequisitionsPage} />
         </Switch>
