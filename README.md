@@ -21,3 +21,9 @@
 ### Testing
 
 - Run `npm test`
+
+
+### Deploy
+
+- Install firebase tools: `npm install -g firebase-tools`
+- Run `firebase deploy`
