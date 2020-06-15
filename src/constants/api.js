@@ -1,4 +1,4 @@
-export const BASE_API_PATH = 'http://localhost:8080/api';
+export const BASE_API_PATH = `${window.location.origin}/api`;
 
 export const DONATIONS_API_PATH = BASE_API_PATH + '/donations';
 export const DONORS_API_PATH = BASE_API_PATH + '/donors';
