@@ -30,7 +30,12 @@ function useDonationFormReducer () {
     const onItemQuantityChange = (itemId, lineItemId, quantity) => dispatch(changeItemQuantity(itemId, lineItemId, quantity));
     const onNotesChange = (evt) => dispatch(changeNotes(evt.target.value));
 
-    const onSaveClick = () => saveDonation(state);
+    const onSaveClick = () => saveDonation({
+        donorId,
+        title,
+        items: selectedItems,
+        notes,
+    });
 
     return {
         donorId,

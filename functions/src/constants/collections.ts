@@ -1,4 +1,4 @@
-export const DONATIONS_COLLECTIONS = 'Donations';
+export const DONATIONS_COLLECTION = 'Donations';
 export const DONORS_COLLECTION = 'Donors';
 export const EMPLOYEES_COLLECTION = 'Employees';
 export const ITEMS_COLLECTION = 'Items';
