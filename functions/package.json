@@ -17,6 +17,8 @@
   },
   "main": "lib/index.js",
   "dependencies": {
+    "@types/cors": "^2.8.6",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "firebase": "^7.15.1",
     "firebase-admin": "^8.10.0",

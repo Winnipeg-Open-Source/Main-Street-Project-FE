@@ -116,16 +116,16 @@ export const deleteOne = async (collection: string, id: string) => {
 };
 
 export const transaction = async (collection: string, id: string, quantity: number) => {
-    return await db.runTransaction(async (transaction: any) => {
+    return await db.runTransaction(async (trans: any) => {
         const ref = db.collection(collection).doc(id);
-        const doc = await transaction.get(ref);
+        const doc = await trans.get(ref);
 
         if (!doc.exists()) {
-            throw "Document does not exist";
+            throw Error("Document does not exist");
         }
 
         const newQuantity = doc.data().quantity + quantity;
-        const newDoc = await transaction.update(ref, { quantity: newQuantity });
+        const newDoc = await trans.update(ref, { quantity: newQuantity });
         return newDoc;
     });
 };
