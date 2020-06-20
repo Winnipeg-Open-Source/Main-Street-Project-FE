@@ -29,7 +29,7 @@ let provider: any, auth: any, db: any;
 if (process.env.NODE_ENV !== 'test') {
     firebase.initializeApp(firebaseConfig);
 
-    if (process.env.NODE_ENV === 'dev' || true) {
+    if (process.env.NODE_ENV === 'dev') {
         console.log('Using emulated firestore.');
         firebase.firestore().settings({
             host: 'localhost:8080',
