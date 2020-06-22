@@ -6,7 +6,7 @@ import Page from 'components/Page';
 import Link from 'components/Link';
 import DonorInformation from 'components/DonorInformation';
 import DonationList from 'components/DonationList';
-import useDonor from 'hooks/useDonor';
+import useDonor from 'hooks/context/useDonor';
 import { getDonorEditPath } from 'constants/paths';
 
 const StyledDonorInformation = styled(DonorInformation)`

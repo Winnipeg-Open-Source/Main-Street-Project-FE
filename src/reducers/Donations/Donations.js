@@ -15,7 +15,7 @@ function DonationsReducer (state = {}, action = {}) {
                 ...state,
                 donations: [
                     ...state.donations,
-                    action.donations,
+                    action.donation,
                 ],
             };
 

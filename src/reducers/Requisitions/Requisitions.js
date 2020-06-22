@@ -13,7 +13,7 @@ function RequisitionsReducer (state = {}, action = {}) {
             return {
                 ...state,
                 requisitions: [
-                    ...state,requisitions,
+                    ...state.requisitions,
                     action.requisition,
                 ],
             };

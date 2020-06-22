@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderComponent from 'components/Header';
-import useSidebar from 'hooks/useSidebar';
+import useSidebar from 'hooks/context/useSidebar';
 
 function Header () {
     const { onSidebarToggle } = useSidebar();

@@ -4,7 +4,7 @@ import Page from 'components/Page';
 import Input from 'components/Input';
 import Link from 'components/Link';
 import RequisitionsList from 'components/RequisitionsList';
-import useRequisitions from 'hooks/useRequisitions';
+import useRequisitions from 'hooks/context/useRequisitions';
 import { REQUISITION_NEW_PATH } from 'constants/paths';
 
 function NewRequisitionButton () {

@@ -1,5 +1,6 @@
 import { useReducer } from 'react';
-import useSaveDonation from 'hooks/useSaveDonation';
+import useDonations from 'hooks/context/useDonations';
+import useSaveResource from 'hooks/useSaveResource';
 import DonationForm from 'reducers/DonationForm';
 import {
     changeDonor,
@@ -9,6 +10,8 @@ import {
     changeItemQuantity,
     changeNotes,
 } from 'actions/DonationForm';
+import { DONATIONS_API_PATH } from 'constants/api';
+import { DONATIONS_PATH } from 'constants/paths';
 
 const initialState = {
     donorId: null,
@@ -19,7 +22,9 @@ const initialState = {
 };
 
 function useDonationFormReducer () {
-    const { saveDonation } = useSaveDonation();
+    const { onSaveDonation } = useDonations();
+    const { handleSave } = useSaveResource(DONATIONS_API_PATH, DONATIONS_PATH, onSaveDonation);
+
     const [ state, dispatch ] = useReducer(DonationForm, initialState);
     const { donorId, title, description, selectedItems, notes } = state;
 
@@ -30,7 +35,7 @@ function useDonationFormReducer () {
     const onItemQuantityChange = (itemId, lineItemId, quantity) => dispatch(changeItemQuantity(itemId, lineItemId, quantity));
     const onNotesChange = (evt) => dispatch(changeNotes(evt.target.value));
 
-    const onSaveClick = () => saveDonation({
+    const onSaveClick = () => handleSave({
         donorId,
         title,
         items: selectedItems,

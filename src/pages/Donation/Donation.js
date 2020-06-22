@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Button } from 'pcln-design-system';
 import Link from 'components/Link';
 import Page from 'components/Page';
-import useDonation from 'hooks/useDonation';
+import useDonation from 'hooks/context/useDonation';
 import { getDonationEditPath } from 'constants/paths';
 
 function EditDonationButton ({ id }) {

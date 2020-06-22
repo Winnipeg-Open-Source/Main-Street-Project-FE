@@ -3,7 +3,7 @@ import LinkButton from 'components/LinkButton';
 import Input from 'components/Input';
 import ItemList from 'components/ItemList';
 import Page from 'components/Page';
-import useItems from 'hooks/useItems';
+import useItems from 'hooks/context/useItems';
 import { ITEM_NEW_PATH } from 'constants/paths';
 
 function Items () {
