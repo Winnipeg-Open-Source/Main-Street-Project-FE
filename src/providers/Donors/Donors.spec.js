@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, fireEvent, wait } from '@testing-library/react';
 import DonorsProvider from './Donors';
-import useDonors from 'hooks/useDonors';
+import useDonors from 'hooks/context/useDonors';
 import { loadDonors, saveDonor } from 'actions/Donors';
 
-jest.mock('hooks/useDonorsRequest', () => () => ({
+jest.mock('hooks/useLoadResources', () => () => ({
     response: {},
     fetchData: jest.fn(),
 }));

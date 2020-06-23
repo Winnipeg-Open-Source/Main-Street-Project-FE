@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import SidebarProvider from './Sidebar';
-import useSidebar from 'hooks/useSidebar';
+import useSidebar from 'hooks/context/useSidebar';
 
 function Children () {
     const { isCollapsed, onSidebarToggle } = useSidebar();
