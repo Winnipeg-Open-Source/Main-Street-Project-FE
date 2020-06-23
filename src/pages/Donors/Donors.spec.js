@@ -2,10 +2,10 @@ import React from 'react';
 import { fireEvent } from '@testing-library/react';
 import renderWithThemeAndRouter from 'tests/helpers/renderWithThemeAndRouter';
 import DonorsPage from './Donors';
-import useDonors from 'hooks/useDonors';
+import useDonors from 'hooks/context/useDonors';
 import { DONORS_PATH, DONOR_NEW_PATH } from 'constants/paths';
 
-jest.mock('hooks/useDonors');
+jest.mock('hooks/context/useDonors');
 
 const singleDonorProps = {
     donors: [

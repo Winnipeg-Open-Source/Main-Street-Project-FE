@@ -1,10 +1,10 @@
 import React from 'react';
 import renderWithThemeAndRouter from 'tests/helpers/renderWithThemeAndRouter';
 import DonorPage from './Donor';
-import useDonor from 'hooks/useDonor';
+import useDonor from 'hooks/context/useDonor';
 import { donor } from 'tests/mocks/donors';
 
-jest.mock('hooks/useDonor');
+jest.mock('hooks/context/useDonor');
 
 describe ('DonorPage', () => {
     it ('renders without crashing', () => {
