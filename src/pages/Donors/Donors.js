@@ -4,7 +4,7 @@ import Page from 'components/Page';
 import DonorsList from 'components/DonorsList';
 import Input from 'components/Input';
 import Link from 'components/Link';
-import useDonors from 'hooks/useDonors';
+import useDonors from 'hooks/context/useDonors';
 import useRoute from 'hooks/useRoute';
 import { DONOR_NEW_PATH } from 'constants/paths';
 

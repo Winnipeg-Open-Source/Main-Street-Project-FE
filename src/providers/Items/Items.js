@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ItemsContext from 'context/Items';
-import useLoadItems from 'hooks/useLoadItems';
+import useLoadResources from 'hooks/useLoadResources';
+import { ITEMS_API_PATH } from 'constants/api';
 
 function ItemsProvider ({ children }) {
-    const { isLoading, isError, items, fetchData } = useLoadItems();
+    const { isLoading, isError, data: items, fetchData } = useLoadResources(ITEMS_API_PATH);
 
     useEffect(() => {
         fetchData();
-    }, [fetchData]);
+    }, []);
 
     const props = {
         isLoading,

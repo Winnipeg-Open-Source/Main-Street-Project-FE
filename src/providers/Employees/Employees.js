@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import EmployeesContext from 'context/Employees';
-import useLoadEmployees from 'hooks/useLoadEmployees';
+import useLoadResources from 'hooks/useLoadResources';
+import { EMPLOYEES_API_PATH } from 'constants/api';
 
 function EmployeesProvider ({ children }) {
-    const { isLoading, isError, employees, fetchData } = useLoadEmployees();
+    const { isLoading, isError, data: employees, fetchData } = useLoadResources(EMPLOYEES_API_PATH);
 
     useEffect(() => {
         fetchData();
-    }, [fetchData]);
+    }, []);
 
     const props = {
         isLoading,

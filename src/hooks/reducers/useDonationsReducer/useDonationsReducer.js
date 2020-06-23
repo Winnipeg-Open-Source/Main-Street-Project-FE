@@ -1,16 +1,17 @@
 import { useCallback, useEffect, useReducer } from 'react';
 import { initialContext } from 'context/Donations';
 import DonationsReducer from 'reducers/Donations';
-import useLoadDonations from 'hooks/useLoadDonations';
+import useLoadResources from 'hooks/useLoadResources';
 import { loadDonations, saveDonation } from 'actions/Donations';
+import { DONATIONS_API_PATH } from 'constants/api';
 
 function useDonationsReducer () {
     const [ state, dispatch ] = useReducer(DonationsReducer, initialContext);
-    const { isLoading, isError, donations, fetchData } = useLoadDonations();
+    const { isLoading, isError, data: donations, fetchData } = useLoadResources(DONATIONS_API_PATH);
 
     useEffect(() => {
         fetchData();
-    }, [fetchData]);
+    }, []);
 
     useEffect(() => {
         dispatch(loadDonations(isLoading, isError, donations));

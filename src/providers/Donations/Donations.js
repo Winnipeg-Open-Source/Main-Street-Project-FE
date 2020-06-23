@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DonationsContext from 'context/Donations';
-import useDonationsReducer from 'hooks/useDonationsReducer';
+import useDonationsReducer from 'hooks/reducers/useDonationsReducer';
 
 function Donations ({ children }) {
     const donationsProps = useDonationsReducer();

@@ -1,4 +1,4 @@
-import useDonations from 'hooks/useDonations';
+import useDonations from 'hooks/context/useDonations';
 
 function useDonation (id) {
     const { donations, ...rest } = useDonations();

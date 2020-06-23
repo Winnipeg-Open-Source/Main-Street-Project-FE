@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import SidebarComponent from 'components/Sidebar';
 import useResponsive from 'hooks/useResponsive';
-import useSidebar from 'hooks/useSidebar';
+import useSidebar from 'hooks/context/useSidebar';
 import routes from 'constants/routes';
 
 function Sidebar () {

@@ -1,31 +1,13 @@
-import React, { useCallback, useEffect, useReducer } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import RequisitionsReducer from 'reducers/Requisitions';
-import RequisitionsContext, { initialContext } from 'context/Requisitions';
-import useLoadRequisitions from 'hooks/useLoadRequisitions';
-import { loadRequisitions, saveRequisition } from 'actions/Requisitions';
+import RequisitionsContext from 'context/Requisitions';
+import useRequisitionsReducer from 'hooks/reducers/useRequisitionsReducer';
 
 function RequisitionsProvider ({ children }) {
-    const [ state, dispatch ] = useReducer(RequisitionsReducer, initialContext);
-    const { isLoading, isError, requisitions, fetchData } = useLoadRequisitions();
-
-    useEffect(() => {
-        fetchData();
-    }, [fetchData]);
-
-    useEffect(() => {
-        dispatch(loadRequisitions(isLoading, isError, requisitions));
-    }, [isLoading, isError, requisitions]);
-
-    const onSaveRequisition = useCallback((requisition) => dispatch(saveRequisition(requisition)), [dispatch, saveRequisition])
-
-    const props = {
-        ...state,
-        onSaveRequisition,
-    };
+    const requisitionsProps = useRequisitionsReducer();
 
     return (
-        <RequisitionsContext.Provider value={props}>
+        <RequisitionsContext.Provider value={requisitionsProps}>
             {children}
         </RequisitionsContext.Provider>
     )

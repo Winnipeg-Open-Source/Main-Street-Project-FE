@@ -1,17 +1,20 @@
 import React from 'react';
 import Page from 'components/Page';
 import DonorCreationForm from 'components/DonorCreationForm';
+import useDonors from 'hooks/context/useDonors';
 import useRoute from 'hooks/useRoute';
-import useSaveDonor from 'hooks/useSaveDonor';
+import useSaveResource from 'hooks/useSaveResource';
+import { DONORS_API_PATH } from 'constants/api';
 import { DONORS_PATH } from 'constants/paths';
 
 function DonorCreate () {
-    const { saveDonor } = useSaveDonor();
+    const { onSaveDonor } = useDonors();
+    const { handleSave } = useSaveResource(DONORS_API_PATH, DONORS_PATH, onSaveDonor);
     const redirectToDonors = useRoute(DONORS_PATH);
 
     return (
         <Page title='Create a donor'>
-            <DonorCreationForm onSaveClick={saveDonor} onCancelClick={redirectToDonors} />
+            <DonorCreationForm onSaveClick={handleSave} onCancelClick={redirectToDonors} />
         </Page>
     );
 }

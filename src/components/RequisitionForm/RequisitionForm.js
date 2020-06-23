@@ -15,7 +15,7 @@ const StyledTextArea = styled(TextArea)`
 function RequisitionForm ({
     className,
     isLoadingEmployees,
-    isItemsLoading,
+    isLoadingItems,
     employees,
     employee,
     description,
@@ -48,7 +48,7 @@ function RequisitionForm ({
                 />
             </Label>
             <ItemAutocomplete
-                isLoading={isItemsLoading}
+                isLoading={isLoadingItems}
                 items={items}
                 onChange={onSelectItemChange}
             />
@@ -65,7 +65,7 @@ RequisitionForm.displayName = 'RequisitionForm';
 RequisitionForm.propTypes = {
     className: PropTypes.string,
     isLoadingEmployees: PropTypes.bool,
-    isItemsLoading: PropTypes.bool,
+    isLoadingItems: PropTypes.bool,
     employees: PropTypes.array,
     employee: PropTypes.string,
     description: PropTypes.string,

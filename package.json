@@ -6,7 +6,8 @@
     "build": "npm run clean && webpack --mode production",
     "build-storybook": "build-storybook -c .storybook -o ./storybook-static",
     "clean": "rimraf ./build",
-    "start": "webpack-dev-server --hot --silent",
+    "dev": "webpack-dev-server --hot --silent",
+    "start": "firebase emulators:start",
     "storybook": "start-storybook -c .storybook",
     "test": "jest --silent --coverage"
   },

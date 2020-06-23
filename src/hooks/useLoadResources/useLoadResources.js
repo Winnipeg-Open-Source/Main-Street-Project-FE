@@ -1,21 +1,20 @@
 import { useMemo } from 'react';
 import useAxios from 'hooks/useAxios';
-import { ITEMS_API_PATH } from 'constants/api';
 
-const request = {
-    url: ITEMS_API_PATH,
-    method: 'get',
-};
+function useLoadResources (apiPath) {
+    const request = {
+        url: apiPath,
+        method: 'get',
+    };
 
-function useLoadItems () {
     const { response, fetchData } = useAxios(request);
 
     return useMemo(() => ({
         isLoading: response.isLoading,
         isError: response.isError,
-        items: response.data || [],
+        data: response.data || [],
         fetchData,
-    }), [response, fetchData]);
+    }), [response]);
 }
 
-export default useLoadItems;
+export default useLoadResources;
