@@ -39,100 +39,107 @@ exports[`DonorCreationForm renders without crashing 1`] = `
             placeholder="City"
             value="Winnipeg"
           />
-          <div
-            class="sc-AxjAm sc-AxiKw iSVrPI"
-            width="1"
+          <label
+            class="sc-oVpqz cpWgdv className"
+            color="border.light"
+            font-size="10px"
+            font-weight="bold"
           >
-            <select
-              class="sc-pZCuu kQVKTB sc-oTaid sc-pJipy ceCay"
-              data-testid="province-select"
-              font-size="2,,1"
-              id="province"
-              name="province"
+            <div
+              class="sc-AxjAm sc-AxiKw iSVrPI"
+              width="1"
             >
-              <option
-                value="AB"
+              <select
+                class="sc-pZCuu kQVKTB sc-oTaid sc-pJipy ceCay"
+                data-testid="province-select"
+                font-size="2,,1"
+                id="province"
+                name="province"
               >
-                Alberta
-              </option>
-              <option
-                value="BC"
+                <option
+                  value="AB"
+                >
+                  Alberta
+                </option>
+                <option
+                  value="BC"
+                >
+                  British Columbia
+                </option>
+                <option
+                  value="MB"
+                >
+                  Manitoba
+                </option>
+                <option
+                  value="NB"
+                >
+                  New Brunswick
+                </option>
+                <option
+                  value="NL"
+                >
+                  Newfoundland and Labrador
+                </option>
+                <option
+                  value="NS"
+                >
+                  Nova Scotia
+                </option>
+                <option
+                  value="ON"
+                >
+                  Ontario
+                </option>
+                <option
+                  value="PE"
+                >
+                  Prince Edward Island
+                </option>
+                <option
+                  value="QC"
+                >
+                  Quebec
+                </option>
+                <option
+                  value="SK"
+                >
+                  Saskatchewan
+                </option>
+                <option
+                  value="NT"
+                >
+                  Northwest Territories
+                </option>
+                <option
+                  value="NU"
+                >
+                  Nunavut
+                </option>
+                <option
+                  value="YT"
+                >
+                  Yukon
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
+                color="text.light"
+                fill="currentcolor"
+                focusable="false"
+                height="24"
+                role="img"
+                tabindex="-1"
+                viewBox="0 0 24 24"
+                width="24"
               >
-                British Columbia
-              </option>
-              <option
-                value="MB"
-              >
-                Manitoba
-              </option>
-              <option
-                value="NB"
-              >
-                New Brunswick
-              </option>
-              <option
-                value="NL"
-              >
-                Newfoundland and Labrador
-              </option>
-              <option
-                value="NS"
-              >
-                Nova Scotia
-              </option>
-              <option
-                value="ON"
-              >
-                Ontario
-              </option>
-              <option
-                value="PE"
-              >
-                Prince Edward Island
-              </option>
-              <option
-                value="QC"
-              >
-                Quebec
-              </option>
-              <option
-                value="SK"
-              >
-                Saskatchewan
-              </option>
-              <option
-                value="NT"
-              >
-                Northwest Territories
-              </option>
-              <option
-                value="NU"
-              >
-                Nunavut
-              </option>
-              <option
-                value="YT"
-              >
-                Yukon
-              </option>
-            </select>
-            <svg
-              aria-hidden="true"
-              class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
-              color="text.light"
-              fill="currentcolor"
-              focusable="false"
-              height="24"
-              role="img"
-              tabindex="-1"
-              viewBox="0 0 24 24"
-              width="24"
-            >
-              <path
-                d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-              />
-            </svg>
-          </div>
+                <path
+                  d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+                />
+              </svg>
+            </div>
+          </label>
         </div>
         <input
           class="sc-pTWqp sc-pBlxj iLNgzO"

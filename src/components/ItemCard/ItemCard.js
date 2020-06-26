@@ -11,7 +11,7 @@ function ItemCard ({
     lineItems,
     onItemQuantityChange,
 }) {
-    const totalQuantity = useMemo(() => lineItems.reduce((availableQuantity, lineItem) => availableQuantity + lineItem.availableQuantity, 0), [lineItems]);
+    const totalQuantity = useMemo(() => lineItems && lineItems.reduce((availableQuantity, lineItem) => availableQuantity + lineItem.availableQuantity, 0), [lineItems]);
     const title = `${name} (${totalQuantity} ${quantityName})`;
 
     return (

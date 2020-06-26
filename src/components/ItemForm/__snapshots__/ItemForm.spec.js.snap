@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemForm renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+  >
+    <div
+      class="sc-AxjAm sc-AxiKw sc-qQxFs dNNRWZ"
+    >
+      <div
+        class="sc-AxjAm sc-AxiKw sc-qYUWV sa-don"
+      >
+        <label
+          class="sc-oVpqz cpWgdv className"
+          color="border.light"
+          font-size="10px"
+          font-weight="bold"
+        >
+          <div
+            class="sc-AxjAm sc-AxiKw iSVrPI"
+            width="1"
+          >
+            <select
+              class="sc-pZCuu kQVKTB sc-oTaid sc-pBlxj hGRJtc"
+              data-testid="item-type-select"
+              font-size="2,,1"
+              id="item-type-select"
+              name="itemType"
+            >
+              <option>
+                Food
+              </option>
+              <option>
+                Clothing
+              </option>
+              <option>
+                Household Item
+              </option>
+              <option>
+                Miscellaneous
+              </option>
+            </select>
+            <svg
+              aria-hidden="true"
+              class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
+              color="text.light"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+              />
+            </svg>
+          </div>
+        </label>
+      </div>
+      <div
+        class="sc-AxjAm sc-AxiKw sc-psDhf iCfenm"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

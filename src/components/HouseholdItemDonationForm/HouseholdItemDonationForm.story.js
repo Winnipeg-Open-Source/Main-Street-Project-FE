@@ -1,6 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Flex } from 'pcln-design-system';
+import Form from 'components/Form';
 import HouseholdItemDonationForm from './HouseholdItemDonationForm';
 
 const props = {
@@ -8,22 +8,19 @@ const props = {
     description: 'This toilet paper is 10-ply',
     quantity: 5,
     notes: 'A bunch of notes',
-    onNameChange: action('name changed'),
-    onDescriptionChange: action('description changed'),
-    onQuantityChange: action('quantity changed'),
-    onNotesChange: action('notes changed'),
+    onChange: action('on change'),
 };
 
 export const EmptyForm = () => (
-    <Flex p={2}>
+    <Form>
         <HouseholdItemDonationForm />
-    </Flex>
+    </Form>
 );
 
 export const CompletedForm = () => (
-    <Flex p={2}>
+    <Form>
         <HouseholdItemDonationForm {...props} />
-    </Flex>
+    </Form>
 );
 
 export default {

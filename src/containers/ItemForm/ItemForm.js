@@ -8,7 +8,7 @@ import { ITEMS_API_PATH } from 'constants/api';
 import { ITEMS_PATH } from 'constants/paths';
 
 const initialState = {
-    itemType: 'food',
+    itemType: 'Food',
     name: null,
     description: null,
     retailValue: null,
@@ -17,7 +17,7 @@ const initialState = {
 
 function ItemForm () {
     const { onSaveItem } = useItems();
-    const { state, onChange, onToggle } = useForm(initialState);
+    const { state, onChange } = useForm(initialState);
     const goToItems = useRoute(ITEMS_PATH);
 
     const { handleSave } = useSaveResource(ITEMS_API_PATH, ITEMS_PATH, onSaveItem);
@@ -25,6 +25,8 @@ function ItemForm () {
 
     return (
         <ItemFormComponent
+            {...state}
+            onChange={onChange}
             onSaveClick={onSaveClick}
             onCancelClick={goToItems}
         />

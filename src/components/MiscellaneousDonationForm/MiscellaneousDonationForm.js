@@ -1,27 +1,21 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import { Input, Label, TextArea } from 'pcln-design-system';
+import Input from 'components/Input';
+import TextArea from 'components/TextArea';
 
 function MiscellaneousDonationForm ({
-    className,
     name,
     description,
     quantity,
     notes,
-    onNameChange,
-    onDescriptionChange,
-    onQuantityChange,
-    onNotesChange,
+    onChange,
 }) {
     return (
         <>
-            <Input id='name' placeholder='Name' value={name} onChange={onNameChange} />
-            <Input id='description' placeholder='Description' value={description} onChange={onDescriptionChange} />
-            <Input id='quantity' placeholder='Quantity' value={quantity} onChange={onQuantityChange} />
-            <Label>
-                Notes
-                <TextArea id='notes' value={notes} onChange={onNotesChange} />
-            </Label>
+            <Input id='name' name='name' placeholder='Name' value={name} onChange={onChange} />
+            <Input id='description' name='description' placeholder='Description' value={description} onChange={onChange} />
+            <Input id='quantity' name='quantity' placeholder='Quantity' value={quantity} onChange={onChange} />
+            <TextArea id='notes' name='notes' label='Notes' value={notes} onChange={onChange} />
         </>
     );
 }
@@ -29,19 +23,11 @@ function MiscellaneousDonationForm ({
 MiscellaneousDonationForm.displayName = 'MiscellaneousDonationForm';
 
 MiscellaneousDonationForm.propTypes = {
-    className: PropTypes.string,
     name: PropTypes.string,
     description: PropTypes.string,
     quantity: PropTypes.number,
     notes: PropTypes.string,
-    onNameChange: PropTypes.func,
-    onDescriptionChange: PropTypes.func,
-    onQuantityChange: PropTypes.func,
-    onNotesChange: PropTypes.func,
-};
-
-MiscellaneousDonationForm.defaultProps = {
-    className: '',
+    onChange: PropTypes.func,
 };
 
 export default memo(MiscellaneousDonationForm);

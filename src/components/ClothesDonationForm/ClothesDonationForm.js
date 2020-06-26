@@ -1,41 +1,32 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import { Input, Label, Select, TextArea } from 'pcln-design-system';
+import Input from 'components/Input';
+import Select from 'components/Select';
+import TextArea from 'components/TextArea';
 
 function ClothesDonationForm ({
-    className,
     name,
     description,
     size,
     quantity,
     notes,
-    onNameChange,
-    onDescriptionChange,
-    onSizeChange,
-    onQuantityChange,
-    onNotesChange,
+    onChange,
 }) {
     return (
         <>
-            <Input id='name' placeholder='Name' value={name} onChange={onNameChange} />
-            <Input id='description' placeholder='Description' value={description} onChange={onDescriptionChange} />
-            <Label>
-                Size
-                <Select id='size' value={size} onChange={onSizeChange} data-testid='Size'>
-                    <option>XS</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>XXL</option>
-                    <option>XXXL</option>
-                </Select>
-            </Label>
-            <Input id='quantity' placeholder='Quantity' type='number' value={quantity} onChange={onQuantityChange} />
-            <Label>
-                Notes
-                <TextArea id='notes' value={notes} onChange={onNotesChange} />
-            </Label>
+            <Input id='name' name='name' placeholder='Name' value={name} onChange={onChange} />
+            <Input id='description' name='description' placeholder='Description' value={description} onChange={onChange} />
+            <Select id='size' name='size' label='Size' value={size} onChange={onChange} data-testid='Size'>
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>XXXL</option>
+            </Select>
+            <Input id='quantity' name='quantity' placeholder='Quantity' type='number' value={quantity} onChange={onChange} />
+            <TextArea id='notes' name='notes' label='Notes' value={notes} onChange={onChange} />
         </>
     );
 }
@@ -43,21 +34,15 @@ function ClothesDonationForm ({
 ClothesDonationForm.displayName = 'ClothesDonationForm';
 
 ClothesDonationForm.propTypes = {
-    className: PropTypes.string,
     name: PropTypes.string,
     description: PropTypes.string,
     size: PropTypes.string,
     quantity: PropTypes.number,
     notes: PropTypes.string,
-    onNameChange: PropTypes.func,
-    onDescriptionChange: PropTypes.func,
-    onSizeChange: PropTypes.func,
-    onQuantityChange: PropTypes.func,
-    onNotesChange: PropTypes.func,
+    onChange: PropTypes.func,
 };
 
 ClothesDonationForm.defaultProps = {
-    className: '',
     size: 'M'
 };
 
