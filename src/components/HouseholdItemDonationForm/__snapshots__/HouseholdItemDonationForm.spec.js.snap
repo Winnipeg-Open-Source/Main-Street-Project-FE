@@ -3,23 +3,26 @@
 exports[`HouseholdItemDonationForm renders without crashing 1`] = `
 <DocumentFragment>
   <input
-    class="sc-pTWqp bpshLo"
+    class="sc-pTWqp sc-pkfPC eDayKI"
     font-size="2,,1"
     id="name"
+    name="name"
     placeholder="Name"
     value=""
   />
   <input
-    class="sc-pTWqp bpshLo"
+    class="sc-pTWqp sc-pkfPC eDayKI"
     font-size="2,,1"
     id="description"
+    name="description"
     placeholder="Description"
     value=""
   />
   <input
-    class="sc-pTWqp bpshLo"
+    class="sc-pTWqp sc-pkfPC eDayKI"
     font-size="2,,1"
     id="quantity"
+    name="quantity"
     placeholder="Quantity"
     value=""
   />
@@ -31,8 +34,9 @@ exports[`HouseholdItemDonationForm renders without crashing 1`] = `
   >
     Notes
     <textarea
-      class="sc-qYhTA kqinNZ"
+      class="sc-qYhTA sc-psDhf jmxhMl"
       id="notes"
+      name="notes"
     />
   </label>
 </DocumentFragment>

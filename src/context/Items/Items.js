@@ -1,9 +1,9 @@
 import { createContext } from 'react';
 
-export const initialState = {
+export const initialContext = {
     isLoading: true,
     isError: false,
     items: [],
 };
 
-export default createContext(initialState);
+export default createContext(initialContext);

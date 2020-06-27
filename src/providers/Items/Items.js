@@ -1,24 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import ItemsContext from 'context/Items';
-import useLoadResources from 'hooks/useLoadResources';
-import { ITEMS_API_PATH } from 'constants/api';
+import useItemsReducer from 'hooks/reducers/useItemsReducer';
 
 function ItemsProvider ({ children }) {
-    const { isLoading, isError, data: items, fetchData } = useLoadResources(ITEMS_API_PATH);
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-
-    const props = {
-        isLoading,
-        isError,
-        items,
-    };
+    const itemsProps = useItemsReducer();
 
     return (
-        <ItemsContext.Provider value={props}>
+        <ItemsContext.Provider value={itemsProps}>
             {children}
         </ItemsContext.Provider>
     );

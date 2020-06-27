@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import { Select } from 'pcln-design-system';
 import Form from 'components/Form';
+import Select from 'components/Select';
 import FoodDonationForm from 'components/FoodDonationForm';
 import ClothesDonationForm from 'components/ClothesDonationForm';
 import HouseholdItemDonationForm from 'components/HouseholdItemDonationForm';
@@ -22,35 +22,32 @@ function FormSwitch ({ itemType, ...props }) {
     }
 }
 
-function NewItemDonationForm ({ className, onCancelClick, onSaveClick, ...props }) {
-    const [ itemType, setItemType ] = useState();
-
-    const onItemTypeChange = (evt) => setItemType(evt.target.value);
-
+function ItemForm ({ className, itemType, onChange, onSaveClick, onCancelClick, ...props }) {
     return (
-        <Form className={className} title='New Item' onCancelClick={onCancelClick} onSaveClick={onSaveClick}>
-            <Select id='item-type-select' value={itemType} onChange={onItemTypeChange} data-testid='item-type-select'>
-                <option disabled selected>Item Type</option>
+        <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
+            <Select id='item-type-select' name="itemType" value={itemType} onChange={onChange} data-testid='item-type-select'>
                 <option>Food</option>
                 <option>Clothing</option>
                 <option>Household Item</option>
                 <option>Miscellaneous</option>
             </Select>
-            <FormSwitch itemType={itemType} {...props} />
+            <FormSwitch itemType={itemType} onChange={onChange} {...props} />
         </Form>
     );
 }
 
-NewItemDonationForm.displayName = 'NewItemDonationForm';
+ItemForm.displayName = 'ItemForm';
 
-NewItemDonationForm.propTypes = {
+ItemForm.propTypes = {
     className: PropTypes.string,
-    onCancelClick: PropTypes.func,
+    itemType: PropTypes.string,
+    onChange: PropTypes.func,
     onSaveClick: PropTypes.func,
+    onCancelClick: PropTypes.func,
 };
 
-NewItemDonationForm.defaultProps = {
+ItemForm.defaultProps = {
     className: '',
 };
 
-export default NewItemDonationForm;
+export default memo(ItemForm);
