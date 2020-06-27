@@ -1,13 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DonationsContext from 'context/Donations';
-import useDonationsReducer from 'hooks/reducers/useDonationsReducer';
+import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
+import { DONATIONS_API_PATH } from 'constants/api';
 
 function Donations ({ children }) {
-    const donationsProps = useDonationsReducer();
+    const { isLoading, isError, data, onSave } = useResourcesReducer(DONATIONS_API_PATH);
+
+    const props = {
+        isLoading,
+        isError,
+        donations: data,
+        onSaveDonation: onSave,
+    };
 
     return (
-        <DonationsContext.Provider value={donationsProps}>
+        <DonationsContext.Provider value={props}>
             {children}
         </DonationsContext.Provider>
     );
