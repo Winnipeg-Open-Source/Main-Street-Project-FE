@@ -27,7 +27,7 @@ exports[`Donors Page renders without crashing 1`] = `
             class="sc-oUOMp ilrkvl"
             color="primary"
           >
-            New Donor
+            New
           </button>
         </a>
       </div>

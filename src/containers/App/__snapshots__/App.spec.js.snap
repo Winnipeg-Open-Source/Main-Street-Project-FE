@@ -172,7 +172,7 @@ exports[`App renders without crashing 1`] = `
         color="primary.light"
       >
         <div
-          class="sc-AxjAm sc-AxiKw jthnRD"
+          class="sc-AxjAm sc-AxiKw sc-qZtVr bZIWHq"
           color="primary.light"
           width="1"
         >
@@ -181,7 +181,7 @@ exports[`App renders without crashing 1`] = `
             href="/donations/new"
           >
             <button
-              class="sc-oUOMp dmWTjG"
+              class="sc-oUOMp kFWrxZ"
               color="primary"
               width="1"
             >
@@ -193,7 +193,7 @@ exports[`App renders without crashing 1`] = `
             href="/requisitions/new"
           >
             <button
-              class="sc-oUOMp dUIyXc"
+              class="sc-oUOMp kFWrxZ"
               color="primary"
               width="1"
             >
