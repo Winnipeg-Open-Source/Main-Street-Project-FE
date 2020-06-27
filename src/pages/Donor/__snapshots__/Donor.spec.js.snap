@@ -36,7 +36,7 @@ exports[`DonorPage renders loading state 1`] = `
         </span>
       </div>
       <div
-        class="sc-AxjAm sc-qYsuA sc-qYUWV hnwpIX sc-pRgDJ jwnESE"
+        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq sc-pRgDJ jwnESE"
         color="background.lightest"
         width="1"
       >
@@ -98,11 +98,11 @@ exports[`DonorPage renders loading state 1`] = `
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-pBlxj iqwuve"
+        class="sc-AxjAm sc-AxiKw sc-qYUWV jaYlYG"
         width="1"
       >
         <div
-          class="sc-AxjAm sc-qYsuA sc-qYUWV UFuxP sc-pJipy fiYkzg"
+          class="sc-AxjAm sc-qYsuA sc-qQxFs jDnrzG sc-pBlxj hsLelW"
           color="background.lightest"
           width="1"
         >
@@ -124,7 +124,7 @@ exports[`DonorPage renders loading state 1`] = `
           </span>
         </div>
         <div
-          class="sc-AxjAm sc-qYsuA sc-qYUWV UFuxP sc-pJipy fiYkzg"
+          class="sc-AxjAm sc-qYsuA sc-qQxFs jDnrzG sc-pBlxj hsLelW"
           color="background.lightest"
           width="1"
         >
@@ -146,7 +146,7 @@ exports[`DonorPage renders loading state 1`] = `
           </span>
         </div>
         <div
-          class="sc-AxjAm sc-qYsuA sc-qYUWV UFuxP sc-pJipy fiYkzg"
+          class="sc-AxjAm sc-qYsuA sc-qQxFs jDnrzG sc-pBlxj hsLelW"
           color="background.lightest"
           width="1"
         >
@@ -209,7 +209,7 @@ exports[`DonorPage renders without crashing 1`] = `
         </span>
       </div>
       <div
-        class="sc-AxjAm sc-qYsuA sc-qYUWV hnwpIX sc-pRgDJ jwnESE"
+        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq sc-pRgDJ jwnESE"
         color="background.lightest"
         width="1"
       >
@@ -271,11 +271,11 @@ exports[`DonorPage renders without crashing 1`] = `
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-pBlxj iqwuve"
+        class="sc-AxjAm sc-AxiKw sc-qYUWV jaYlYG"
         width="1"
       >
         <div
-          class="sc-AxjAm sc-qYsuA sc-qYUWV UFuxP sc-pJipy fiYkzg"
+          class="sc-AxjAm sc-qYsuA sc-qQxFs jDnrzG sc-pBlxj hsLelW"
           color="background.lightest"
           width="1"
         >
@@ -297,7 +297,7 @@ exports[`DonorPage renders without crashing 1`] = `
           </span>
         </div>
         <div
-          class="sc-AxjAm sc-qYsuA sc-qYUWV UFuxP sc-pJipy fiYkzg"
+          class="sc-AxjAm sc-qYsuA sc-qQxFs jDnrzG sc-pBlxj hsLelW"
           color="background.lightest"
           width="1"
         >
@@ -319,7 +319,7 @@ exports[`DonorPage renders without crashing 1`] = `
           </span>
         </div>
         <div
-          class="sc-AxjAm sc-qYsuA sc-qYUWV UFuxP sc-pJipy fiYkzg"
+          class="sc-AxjAm sc-qYsuA sc-qQxFs jDnrzG sc-pBlxj hsLelW"
           color="background.lightest"
           width="1"
         >

@@ -6,7 +6,7 @@ exports[`LandingPage renders as expected 1`] = `
     class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
-      class="sc-AxjAm sc-AxiKw jthnRD"
+      class="sc-AxjAm sc-AxiKw sc-qQxFs hKrBSs"
       color="primary.light"
       width="1"
     >
@@ -15,7 +15,7 @@ exports[`LandingPage renders as expected 1`] = `
         href="/donations/new"
       >
         <button
-          class="sc-oUOMp dmWTjG"
+          class="sc-oUOMp kFWrxZ"
           color="primary"
           width="1"
         >
@@ -27,7 +27,7 @@ exports[`LandingPage renders as expected 1`] = `
         href="/requisitions/new"
       >
         <button
-          class="sc-oUOMp dUIyXc"
+          class="sc-oUOMp kFWrxZ"
           color="primary"
           width="1"
         >

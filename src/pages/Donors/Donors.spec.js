@@ -5,6 +5,12 @@ import DonorsPage from './Donors';
 import useDonors from 'hooks/context/useDonors';
 import { DONORS_PATH, DONOR_NEW_PATH } from 'constants/paths';
 
+jest.mock('react-router-dom', () => ({
+    ...jest.requireActual('react-router-dom'),
+    useLocation: () => ({
+        pathname: '/donors'
+    })
+}));
 jest.mock('hooks/context/useDonors');
 
 const singleDonorProps = {
@@ -83,7 +89,7 @@ describe ('Donors Page', () => {
 
     it ('can navigate to new donor page', () => {
         const { getByText, history } = renderWithThemeAndRouter(<DonorsPage />, { route: DONORS_PATH });
-        const newDonorButton = getByText('New Donor');
+        const newDonorButton = getByText('New');
 
         expect(history.location.pathname).toBe(DONORS_PATH);
         fireEvent.click(newDonorButton);
