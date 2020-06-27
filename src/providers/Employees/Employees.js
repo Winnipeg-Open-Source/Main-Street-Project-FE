@@ -1,20 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import EmployeesContext from 'context/Employees';
-import useLoadResources from 'hooks/useLoadResources';
+import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
 import { EMPLOYEES_API_PATH } from 'constants/api';
 
 function EmployeesProvider ({ children }) {
-    const { isLoading, isError, data: employees, fetchData } = useLoadResources(EMPLOYEES_API_PATH);
-
-    useEffect(() => {
-        fetchData();
-    }, []);
+    const { isLoading, isError, data, onSave } = useResourcesReducer(EMPLOYEES_API_PATH);
 
     const props = {
         isLoading,
         isError,
-        employees,
+        employees: data,
+        onSaveEmployee: onSave,
     };
 
     return (

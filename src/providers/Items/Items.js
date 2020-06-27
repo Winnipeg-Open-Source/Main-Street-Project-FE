@@ -1,13 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ItemsContext from 'context/Items';
-import useItemsReducer from 'hooks/reducers/useItemsReducer';
+import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
+import { ITEMS_API_PATH } from 'constants/api';
 
 function ItemsProvider ({ children }) {
-    const itemsProps = useItemsReducer();
+    const { isLoading, isError, data, onSave } = useResourcesReducer(ITEMS_API_PATH);
+
+    const props = {
+        isLoading,
+        isError,
+        items: data,
+        onSaveItem: onSave,
+    };
 
     return (
-        <ItemsContext.Provider value={itemsProps}>
+        <ItemsContext.Provider value={props}>
             {children}
         </ItemsContext.Provider>
     );
