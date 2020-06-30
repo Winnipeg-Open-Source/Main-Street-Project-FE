@@ -6,12 +6,14 @@ import {
     DONORS_API_PATH,
     EMPLOYEES_API_PATH,
     ITEMS_API_PATH,
+    LOCATIONS_API_PATH,
     REQUISITIONS_API_PATH,
 } from 'constants/api';
 import { mockDonations } from 'tests/mocks/donations';
 import { mockDonors } from 'tests/mocks/donors';
 import { mockEmployees } from 'tests/mocks/employees';
 import { mockItems } from 'tests/mocks/items';
+import { mockLocations } from 'tests/mocks/locations';
 import { mockRequisitions } from 'tests/mocks/requisitions';
 
 const initialState = {
@@ -19,6 +21,7 @@ const initialState = {
     donors: mockDonors,
     employees: mockEmployees,
     items: mockItems,
+    locations: mockLocations,
     requisitions: mockRequisitions,
 };
 
@@ -87,6 +90,19 @@ function setData (url, data, state, setState) {
             });
             break;
 
+        case LOCATIONS_API_PATH:
+            setState({
+                ...state,
+                locations: [
+                    ...state.locations,
+                    {
+                        id,
+                        data,
+                    },
+                ],
+            });
+            break;
+
         case REQUISITIONS_API_PATH:
             setState({
                 ...state,
@@ -120,6 +136,9 @@ function getData (url, state) {
 
         case ITEMS_API_PATH:
             return state.items;
+
+        case LOCATIONS_API_PATH:
+            return state.locations;
 
         case REQUISITIONS_API_PATH:
             return state.requisitions;

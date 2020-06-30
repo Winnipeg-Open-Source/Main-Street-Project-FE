@@ -1,4 +1,4 @@
-import { LOAD_RESOURCES, SAVE_RESOURCE } from 'actions/resources';
+import { LOAD_RESOURCES, SAVE_RESOURCE } from 'actions/Resources';
 
 function Resources (state = {}, action = {}) {
     switch (action.type) {

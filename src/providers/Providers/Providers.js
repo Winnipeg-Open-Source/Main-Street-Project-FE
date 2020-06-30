@@ -8,6 +8,7 @@ import DonationsProvider from 'providers/Donations';
 import DonorsProvider from 'providers/Donors';
 import EmployeesProvider from 'providers/Employees';
 import ItemsProvider from 'providers/Items';
+import LocationsProvider from 'providers/Locations';
 import RequisitionsProvider from 'providers/Requisitions';
 
 function Providers ({ children }) {
@@ -20,9 +21,11 @@ function Providers ({ children }) {
                             <DonorsProvider>
                                 <EmployeesProvider>
                                     <ItemsProvider>
-                                        <RequisitionsProvider>
-                                            {children}
-                                        </RequisitionsProvider>
+                                        <LocationsProvider>
+                                            <RequisitionsProvider>
+                                                {children}
+                                            </RequisitionsProvider>
+                                        </LocationsProvider>
                                     </ItemsProvider>
                                 </EmployeesProvider>
                             </DonorsProvider>
