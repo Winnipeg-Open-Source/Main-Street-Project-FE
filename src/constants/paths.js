@@ -16,6 +16,7 @@ export const ITEM_NEW_PATH = '/items/new';
 export const ITEM_EDIT_PATH = '/items/edit/:id';
 
 export const LOCATIONS_PATH = '/locations';
+export const LOCATION_NEW_PATH = '/locations/new';
 
 export const REQUISITIONS_PATH ='/requisitions';
 export const REQUISITION_PATH = '/requisitions/:id';
