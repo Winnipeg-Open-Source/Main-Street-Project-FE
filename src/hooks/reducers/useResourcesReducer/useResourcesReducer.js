@@ -14,18 +14,15 @@ function useResourceReducer (apiPath) {
     const { isLoading, isError, data, fetchData } = useLoadResources(apiPath);
 
     useEffect(() => {
-        fetchData();
-    }, []);
-
-    useEffect(() => {
         dispatch(loadResources(isLoading, isError, data));
-    }, [isLoading, isError, data]);
+    }, [isLoading]);
 
     const onSave = useCallback((resource) => dispatch(saveResource(resource)));
 
     return {
         ...state,
         onSave,
+        onLoad: fetchData,
     };
 }
 

@@ -8,7 +8,7 @@ import { LOCATIONS_API_PATH } from 'constants/api';
 import { LOCATIONS_PATH } from 'constants/paths';
 
 const initialState = {
-    type: 'Storage',
+    type: null,
     name: null,
     description: null,
     address: null,

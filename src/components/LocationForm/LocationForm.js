@@ -16,7 +16,13 @@ function LocationForm ({
 }) {
     return (
         <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
-            <Select id='location-type' name='type' value={type} onChange={onChange}>
+            <Select
+                id='location-type'
+                placeholder='Location Type'
+                name='type'
+                value={type}
+                onChange={onChange}
+            >
                 <option>Storage</option>
                 <option>Fridge</option>
                 <option>Freezer</option>
@@ -47,7 +53,6 @@ LocationForm.propTypes = {
 
 LocationForm.defaultProps = {
     className: '',
-    type: 'Storage',
 };
 
 export default memo(LocationForm);

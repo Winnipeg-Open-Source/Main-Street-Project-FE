@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Page from 'components/Page';
 import Input from 'components/Input';
 import RequisitionsList from 'components/RequisitionsList';
@@ -6,8 +6,12 @@ import NewButton from 'containers/NewButton';
 import useRequisitions from 'hooks/context/useRequisitions';
 
 function Requisitions () {
-    const { isLoading, requisitions } = useRequisitions();
+    const { isLoading, requisitions, onLoadRequisitions } = useRequisitions();
     const disabled = isLoading || (requisitions && requisitions.length === 0);
+
+    useEffect(() => {
+        isLoading && onLoadRequisitions();
+    }, []);
 
     return (
         <Page isLoading={isLoading} title='Requisitions' renderAction={NewButton}>
