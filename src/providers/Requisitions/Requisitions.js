@@ -5,13 +5,14 @@ import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
 import { REQUISITIONS_API_PATH } from 'constants/api';
 
 function RequisitionsProvider ({ children }) {
-    const { isLoading, isError, data, onSave } = useResourcesReducer(REQUISITIONS_API_PATH);
+    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(REQUISITIONS_API_PATH);
 
     const props = {
         isLoading,
         isError,
         requisitions: data,
         onSaveRequisition: onSave,
+        onLoadRequisitions: onLoad,
     };
 
     return (

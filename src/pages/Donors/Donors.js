@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Page from 'components/Page';
 import DonorsList from 'components/DonorsList';
 import Input from 'components/Input';
@@ -7,10 +7,14 @@ import useDonors from 'hooks/context/useDonors';
 import useRoute from 'hooks/useRoute';
 
 function Donors () {
-    const { isLoading, donors } = useDonors();
+    const { isLoading, donors, onLoadDonors } = useDonors();
     const goToDonorPage = useRoute();
 
     const disabled = isLoading || (donors && donors.length === 0);
+
+    useEffect(() => {
+        isLoading && onLoadDonors();
+    }, []);
 
     return (
         <Page isLoading={isLoading} title='Donors' renderAction={NewButton}>

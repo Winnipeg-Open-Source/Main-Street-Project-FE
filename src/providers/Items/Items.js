@@ -5,13 +5,14 @@ import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
 import { ITEMS_API_PATH } from 'constants/api';
 
 function ItemsProvider ({ children }) {
-    const { isLoading, isError, data, onSave } = useResourcesReducer(ITEMS_API_PATH);
+    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(ITEMS_API_PATH);
 
     const props = {
         isLoading,
         isError,
         items: data,
         onSaveItem: onSave,
+        onLoadItems: onLoad,
     };
 
     return (

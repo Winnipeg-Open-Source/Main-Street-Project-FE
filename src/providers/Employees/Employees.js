@@ -5,13 +5,14 @@ import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
 import { EMPLOYEES_API_PATH } from 'constants/api';
 
 function EmployeesProvider ({ children }) {
-    const { isLoading, isError, data, onSave } = useResourcesReducer(EMPLOYEES_API_PATH);
+    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(EMPLOYEES_API_PATH);
 
     const props = {
         isLoading,
         isError,
         employees: data,
         onSaveEmployee: onSave,
+        onLoadEmployees: onLoad,
     };
 
     return (

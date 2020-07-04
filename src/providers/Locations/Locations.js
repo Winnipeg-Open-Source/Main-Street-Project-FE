@@ -5,13 +5,14 @@ import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
 import { LOCATIONS_API_PATH } from 'constants/api';
 
 function Locations ({ children }) {
-    const { isLoading, isError, data, onSave } = useResourcesReducer(LOCATIONS_API_PATH);
+    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(LOCATIONS_API_PATH);
 
     const props = {
         isLoading,
         isError,
         locations: data,
         onSaveLocation: onSave,
+        onLoadLocations: onLoad,
     };
 
     return (
