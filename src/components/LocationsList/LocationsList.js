@@ -1,14 +1,16 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import { Text } from 'pcln-design-system';
 import List from 'components/List';
 import LocationCard from 'components/LocationCard';
 
 function LocationsList ({ className, locations }) {
     return (
         <List className={className}>
-            {locations && locations.map(location => (
-                <LocationCard key={location.id} {...location} />
-            ))}
+            {locations && locations.length > 0
+                ? locations.map(location => <LocationCard key={location.id} {...location} />)
+                : <Text textAlign='center'>No locations yet...</Text>
+            }
         </List>
     );
 }
