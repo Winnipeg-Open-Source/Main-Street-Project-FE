@@ -34,14 +34,14 @@ exports[`DonorCard skeleton renders without crashing 1`] = `
     class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
   >
     <div
-      class="sc-AxjAm sc-qYsuA sc-psDhf iiqOGC"
+      class="sc-AxjAm sc-qYsuA sc-psDhf iiqOGC sc-qYUWV bqBpfh"
       color="background.lightest"
       width="1"
     >
       <span>
         <span
           class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-          style="width: 20%; height: 14px;"
+          style="width: 25%;"
         >
           ‌
         </span>
@@ -49,7 +49,7 @@ exports[`DonorCard skeleton renders without crashing 1`] = `
       <span>
         <span
           class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-          style="width: 40%; height: 14px;"
+          style="width: 50%;"
         >
           ‌
         </span>

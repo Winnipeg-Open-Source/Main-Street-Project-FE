@@ -6,7 +6,7 @@ import { mockDonations } from 'tests/mocks/donations';
 
 export const Loading = () => (
     <StorybookRouter>
-        <DonationsContext.Provider value={{ isLoading: true }}>
+        <DonationsContext.Provider value={{ isLoading: true, onLoadDonations: () => {} }}>
             <DonationsPage />
         </DonationsContext.Provider>
     </StorybookRouter>

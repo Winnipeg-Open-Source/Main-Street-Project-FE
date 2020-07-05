@@ -6,7 +6,7 @@ import { mockItems } from 'tests/mocks/items';
 
 export const Loading = () => (
     <StorybookRouter>
-        <ItemsContext.Provider value={{ isLoading: true }}>
+        <ItemsContext.Provider value={{ isLoading: true, onLoadItems: () => {} }}>
             <ItemsPage />
         </ItemsContext.Provider>
     </StorybookRouter>

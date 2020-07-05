@@ -9,7 +9,7 @@ function RequisitionCard ({ id, className, onClick }) {
 
     return (
         <Card className={className} onClick={onRequisitionClick}>
-            <Text></Text>
+            <Text>Requisition</Text>
         </Card>
     );
 }
