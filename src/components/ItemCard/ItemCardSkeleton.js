@@ -6,27 +6,29 @@ import Skeleton from 'components/Skeleton';
 import Card from 'components/Card';
 
 const StyledCard = styled(Card)`
+    justify-content: space-between;
+
     font-size: ${themeGet('fontSizes.1')}px;
     line-height: ${themeGet('lineHeights.standard')};
 `;
 
-function DonationCardSkeleton ({ className }) {
+function ItemCardSkeleton ({ className }) {
     return (
-        <StyledCard className={className}>
-            <Skeleton width='25%' />
-            <Skeleton width='50%' />
+        <StyledCard className={className} row>
+            <Skeleton width='200px' height='22px' />
+            <Skeleton width='22px' height='22px' circle />
         </StyledCard>
     );
 }
 
-DonationCardSkeleton.displayName = 'DonationCardSkeleton';
+ItemCardSkeleton.displayName = 'ItemCardSkeleton';
 
-DonationCardSkeleton.propTypes = {
+ItemCardSkeleton.propTypes = {
     className: PropTypes.string,
 };
 
-DonationCardSkeleton.defaultProps = {
+ItemCardSkeleton.defaultProps = {
     className: '',
 };
 
-export default memo(DonationCardSkeleton);
+export default memo(ItemCardSkeleton);

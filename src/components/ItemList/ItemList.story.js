@@ -1,7 +1,9 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import ItemList from './ItemList';
+import ItemList from './';
 import { mockItems } from 'storybook/mocks/items';
+
+export const Loading = () => <ItemList isLoading />;
 
 export const EmptyList = () => <ItemList />;
 
