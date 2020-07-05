@@ -16,8 +16,8 @@ exports[`DonationCard renders without crashing 1`] = `
         font-size="1"
       />
       <div
-        class="sc-AxhCb fYdZYD"
-        color="text.darkest"
+        class="sc-AxhCb jMzzet"
+        color="text.light"
         font-size="1"
       >
         Donated: Unknown Donation Date
