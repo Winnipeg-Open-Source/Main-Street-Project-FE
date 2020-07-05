@@ -7,7 +7,7 @@ import Skeleton from 'components/Skeleton';
 
 const StyledCard = styled(Card)`
     font-size: ${themeGet('fontSizes.1')}px;
-    line-height: 1.4;
+    line-height: ${themeGet('lineHeights.standard')};
 `;
 
 function DonorCardSkeleton ({ className }) {
