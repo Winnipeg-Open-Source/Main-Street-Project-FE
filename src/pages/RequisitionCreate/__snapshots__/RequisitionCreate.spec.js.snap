@@ -77,7 +77,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
           >
             Description
             <textarea
-              class="sc-qYhTA sc-pRtcU iJOiiZ"
+              class="sc-qYhTA sc-oTLFK kPGgQb"
               id="requisition-description"
             />
           </label>

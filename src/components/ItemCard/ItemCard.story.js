@@ -1,6 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import ItemCard from './ItemCard';
+import ItemCard from './';
 import useCounter from 'hooks/useCounter';
 import { mockItems } from 'storybook/mocks/items';
 
@@ -21,6 +21,8 @@ export const Default = () => {
 }
 
 export const QuantityName = () => <ItemCard {...mockItems[0]} />;
+
+export const Loading = () => <ItemCard isLoading />;
 
 export default {
     title: 'ItemCard',

@@ -16,7 +16,7 @@ function Items () {
     return (
         <Page isLoading={isLoading} title='Items' renderAction={NewButton}>
             <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
-            <ItemList items={items} />
+            <ItemList isLoading={isLoading} items={items} />
         </Page>
     );
 }

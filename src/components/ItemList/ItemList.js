@@ -4,19 +4,17 @@ import List from 'components/List';
 import ItemCard from 'components/ItemCard';
 
 function ItemList ({ className, items, onItemQuantityChange }) {
-    return items
-        ? (
-            <List className={className}>
-                {items.map(item => (
+    return (
+        <List className={className}>
+            {items && items.map(item => (
                 <ItemCard
-                        key={item.id}
-                        {...item}
-                        onItemQuantityChange={onItemQuantityChange}
-                    />
-                ))}
-            </List>
-        )
-        : null;
+                    key={item.id}
+                    {...item}
+                    onItemQuantityChange={onItemQuantityChange}
+                />
+            ))}
+        </List>
+    );
 }
 
 ItemList.displayName = 'ItemList';
