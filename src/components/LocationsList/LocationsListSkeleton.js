@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import List from 'components/List';
 import LocationCard from 'components/LocationCard';
 
-function LocationListSkeleton ({ className }) {
+function LocationsListSkeleton ({ className }) {
     return (
         <List className={className}>
             <LocationCard isLoading />
@@ -13,14 +13,14 @@ function LocationListSkeleton ({ className }) {
     );
 }
 
-LocationListSkeleton.displayName = 'LocationListSkeleton';
+LocationsListSkeleton.displayName = 'LocationsListSkeleton';
 
-LocationListSkeleton.propTypes = {
+LocationsListSkeleton.propTypes = {
     className: PropTypes.string,
 };
 
-LocationListSkeleton.defaultProps = {
+LocationsListSkeleton.defaultProps = {
     className: '',
 };
 
-export default memo(LocationListSkeleton);
+export default memo(LocationsListSkeleton);
