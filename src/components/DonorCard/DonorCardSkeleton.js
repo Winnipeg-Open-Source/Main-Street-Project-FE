@@ -1,14 +1,21 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { themeGet } from 'styled-system';
 import Card from 'components/Card';
 import Skeleton from 'components/Skeleton';
 
+const StyledCard = styled(Card)`
+    font-size: ${themeGet('fontSizes.1')}px;
+    line-height: 1.4;
+`;
+
 function DonorCardSkeleton ({ className }) {
     return (
-        <Card className={className}>
-            <Skeleton width='20%' height={14} />
-            <Skeleton width='40%' height={14} />
-        </Card>
+        <StyledCard className={className}>
+            <Skeleton width='25%' />
+            <Skeleton width='50%' />
+        </StyledCard>
     );
 }
 

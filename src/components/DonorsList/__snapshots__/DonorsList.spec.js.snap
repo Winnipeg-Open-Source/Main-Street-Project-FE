@@ -29,14 +29,14 @@ exports[`DonorsList skeleton renders without crashing 1`] = `
       width="1"
     >
       <div
-        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq"
+        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq sc-pBlxj hKURoK"
         color="background.lightest"
         width="1"
       >
         <span>
           <span
             class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-            style="width: 20%; height: 14px;"
+            style="width: 25%;"
           >
             ‌
           </span>
@@ -44,21 +44,21 @@ exports[`DonorsList skeleton renders without crashing 1`] = `
         <span>
           <span
             class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-            style="width: 40%; height: 14px;"
+            style="width: 50%;"
           >
             ‌
           </span>
         </span>
       </div>
       <div
-        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq"
+        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq sc-pBlxj hKURoK"
         color="background.lightest"
         width="1"
       >
         <span>
           <span
             class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-            style="width: 20%; height: 14px;"
+            style="width: 25%;"
           >
             ‌
           </span>
@@ -66,21 +66,21 @@ exports[`DonorsList skeleton renders without crashing 1`] = `
         <span>
           <span
             class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-            style="width: 40%; height: 14px;"
+            style="width: 50%;"
           >
             ‌
           </span>
         </span>
       </div>
       <div
-        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq"
+        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq sc-pBlxj hKURoK"
         color="background.lightest"
         width="1"
       >
         <span>
           <span
             class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-            style="width: 20%; height: 14px;"
+            style="width: 25%;"
           >
             ‌
           </span>
@@ -88,7 +88,7 @@ exports[`DonorsList skeleton renders without crashing 1`] = `
         <span>
           <span
             class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-            style="width: 40%; height: 14px;"
+            style="width: 50%;"
           >
             ‌
           </span>

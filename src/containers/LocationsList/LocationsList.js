@@ -3,10 +3,10 @@ import LocationsListComponent from 'components/LocationsList';
 import useLocations from 'hooks/context/useLocations';
 
 function LocationsList () {
-    const { locations } = useLocations();
+    const { isLoading, locations } = useLocations();
 
     return (
-        <LocationsListComponent locations={locations} />
+        <LocationsListComponent isLoading={isLoading} locations={locations} />
     );
 }
 
