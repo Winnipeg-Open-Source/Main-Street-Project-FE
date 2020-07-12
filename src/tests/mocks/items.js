@@ -1,20 +1,22 @@
+export const mockLineItems = [
+    {
+        id: 1,
+        locationName: 'Shelf 1',
+        availableQuantity: 5,
+    },
+    {
+        id: 2,
+        locationName: 'Shelf 2',
+        availableQuantity: 10,
+    },
+];
+
 export const mockItems = [
     {
         id: 1,
         name: 'Paper Towel',
         quantityName: 'Rolls',
-        lineItems: [
-            {
-                id: 1,
-                locationName: 'Shelf 1',
-                availableQuantity: 5,
-            },
-            {
-                id: 2,
-                locationName: 'Shelf 2',
-                availableQuantity: 10,
-            },
-        ],
+        lineItems: mockLineItems,
     },
     {
         id: 2,

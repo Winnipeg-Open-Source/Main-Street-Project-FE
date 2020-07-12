@@ -11,7 +11,7 @@ const initialState = {
     itemType: 'Food',
     name: null,
     description: null,
-    retailValue: null,
+    lineItems: [],
     notes: null,
 };
 

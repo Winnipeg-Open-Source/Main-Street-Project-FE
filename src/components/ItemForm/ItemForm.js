@@ -7,7 +7,7 @@ import ClothesDonationForm from 'components/ClothesDonationForm';
 import HouseholdItemDonationForm from 'components/HouseholdItemDonationForm';
 import MiscellaneousDonationForm from 'components/MiscellaneousDonationForm';
 
-function FormSwitch ({ itemType, ...props }) {
+function CurrentForm ({ itemType, ...props }) {
     switch (itemType) {
         case 'Food':
             return <FoodDonationForm {...props} />;
@@ -31,7 +31,7 @@ function ItemForm ({ className, itemType, onChange, onSaveClick, onCancelClick, 
                 <option>Household Item</option>
                 <option>Miscellaneous</option>
             </Select>
-            <FormSwitch itemType={itemType} onChange={onChange} {...props} />
+            <CurrentForm itemType={itemType} onChange={onChange} {...props} />
         </Form>
     );
 }
