@@ -16,7 +16,7 @@ const StyledLineItemCard = styled(LineItemCard)`
     padding: 8px;
 `;
 
-function LineItemForm ({ className, isLoading, locations, lineItems, onAddClick }) {
+function LineItemForm ({ className, isLoading, locations, lineItems, onAddClick, onItemQuantityChange }) {
     return (
         <StyledFlex className={className} flexDirection='column' width={1}>
             <ItemAutocomplete
@@ -27,7 +27,7 @@ function LineItemForm ({ className, isLoading, locations, lineItems, onAddClick 
             />
             {lineItems && lineItems.map(lineItem => {
                 return (
-                    <StyledLineItemCard {...lineItem} />
+                    <StyledLineItemCard {...lineItem} onItemQuantityChange={onItemQuantityChange} />
                 );
             })}
         </StyledFlex>
@@ -42,6 +42,7 @@ LineItemForm.propTypes = {
     locations: PropTypes.array,
     lineItems: PropTypes.array,
     onAddClick: PropTypes.func,
+    onItemQuantityChange: PropTypes.func,
 };
 
 LineItemForm.defaultProps = {

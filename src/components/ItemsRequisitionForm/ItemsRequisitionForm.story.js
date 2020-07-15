@@ -5,6 +5,6 @@ import { mockItems } from 'storybook/mocks/items';
 export const Default = () => <ItemsRequisitionForm items={mockItems} />;
 
 export default {
-    title: 'ItemsRequisitionForm',
+    title: 'Forms|ItemsRequisitionForm',
     component: ItemsRequisitionForm,
 };

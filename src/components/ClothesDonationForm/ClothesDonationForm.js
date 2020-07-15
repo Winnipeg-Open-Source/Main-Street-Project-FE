@@ -2,15 +2,19 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import Input from 'components/Input';
 import Select from 'components/Select';
+import LineItemForm from 'components/LineItemForm';
 import TextArea from 'components/TextArea';
 
 function ClothesDonationForm ({
     name,
     description,
     size,
-    quantity,
+    locations,
+    lineItems,
     notes,
     onChange,
+    onAddLineItemClick,
+    onItemQuantityChange,
 }) {
     return (
         <>
@@ -25,7 +29,12 @@ function ClothesDonationForm ({
                 <option>XXL</option>
                 <option>XXXL</option>
             </Select>
-            <Input id='quantity' name='quantity' placeholder='Quantity' type='number' value={quantity} onChange={onChange} />
+            <LineItemForm
+                locations={locations}
+                lineItems={lineItems}
+                onAddClick={onAddLineItemClick}
+                onItemQuantityChange={onItemQuantityChange}
+            />
             <TextArea id='notes' name='notes' label='Notes' value={notes} onChange={onChange} />
         </>
     );
@@ -40,6 +49,8 @@ ClothesDonationForm.propTypes = {
     quantity: PropTypes.number,
     notes: PropTypes.string,
     onChange: PropTypes.func,
+    onAddLineItemClick: PropTypes.func,
+    onItemQuantityChange: PropTypes.func,
 };
 
 ClothesDonationForm.defaultProps = {

@@ -24,6 +24,6 @@ export const CompletedForm = () => (
 );
 
 export default {
-    title: 'HouseholdItemDonationForm',
+    title: 'Forms|HouseholdItemDonationForm',
     component: HouseholdItemDonationForm,
 };

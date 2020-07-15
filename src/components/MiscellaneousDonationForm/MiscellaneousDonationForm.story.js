@@ -24,6 +24,6 @@ export const CompletedForm = () => (
 );
 
 export default {
-    title: 'MiscellaneousDonationForm',
+    title: 'Forms|MiscellaneousDonationForm',
     component: MiscellaneousDonationForm,
 };
