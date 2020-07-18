@@ -16,7 +16,14 @@ const StyledLineItemCard = styled(LineItemCard)`
     padding: 8px;
 `;
 
-function LineItemForm ({ className, isLoading, locations, lineItems, onAddClick, onItemQuantityChange }) {
+function LineItemForm ({
+    className,
+    isLoading,
+    locations,
+    lineItems,
+    onAddClick,
+    onItemQuantityChange,
+}) {
     return (
         <StyledFlex className={className} flexDirection='column' width={1}>
             <ItemAutocomplete
@@ -27,7 +34,10 @@ function LineItemForm ({ className, isLoading, locations, lineItems, onAddClick,
             />
             {lineItems && lineItems.map(lineItem => {
                 return (
-                    <StyledLineItemCard {...lineItem} onItemQuantityChange={onItemQuantityChange} />
+                    <StyledLineItemCard
+                        {...lineItem}
+                        onItemQuantityChange={onItemQuantityChange}
+                    />
                 );
             })}
         </StyledFlex>
@@ -47,6 +57,7 @@ LineItemForm.propTypes = {
 
 LineItemForm.defaultProps = {
     className: '',
+    quantityName: 'Units',
 };
 
 export default memo(LineItemForm);

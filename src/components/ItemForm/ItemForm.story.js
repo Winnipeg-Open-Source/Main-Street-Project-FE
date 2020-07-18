@@ -10,7 +10,14 @@ export const EmptyForm = () => {
     const [ lineItems, setLineItems ] = useState([]);
     const { state, onChange } = useForm({ itemType: 'Food' });
 
-    const addLineItem = (lineItem) => setLineItems([ ...lineItems, lineItem ]);
+    const addLineItem = (lineItem) => setLineItems([
+        ...lineItems,
+        {
+            ...lineItem,
+            locationName: lineItem.name,
+        },
+    ]);
+
     const itemQuantityChange = (itemId, lineItemId, value) => {
         setLineItems([
             ...lineItems.map(lineItem => lineItem.id === lineItemId

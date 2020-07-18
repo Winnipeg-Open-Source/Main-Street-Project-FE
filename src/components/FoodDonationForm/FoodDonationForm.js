@@ -7,6 +7,7 @@ import TextArea from 'components/TextArea';
 function FoodDonationForm ({
     name,
     description,
+    quantityName,
     retailValue,
     locations,
     lineItems,
@@ -19,6 +20,7 @@ function FoodDonationForm ({
         <>
             <Input id='name' name='name' placeholder='Name' value={name} onChange={onChange} />
             <Input id='description' name='description' placeholder='Description' value={description} onChange={onChange} />
+            <Input id='quantity-name' name='quantityName' placeholder='Quantity Name' value={quantityName} onChange={onChange} />
             <Input id='retail-value' name='retailValue' placeholder='Retail Value ($)' type='number' value={retailValue} onChange={onChange} />
             <LineItemForm
                 locations={locations}
@@ -36,6 +38,7 @@ FoodDonationForm.displayName = 'FoodDonationForm';
 FoodDonationForm.propTypes = {
     name: PropTypes.string,
     description: PropTypes.string,
+    quantityName: PropTypes.string,
     retailValue: PropTypes.number,
     locations: PropTypes.array,
     lineItems: PropTypes.array,

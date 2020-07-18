@@ -9,6 +9,7 @@ function ClothesDonationForm ({
     name,
     description,
     size,
+    quantityName,
     locations,
     lineItems,
     notes,
@@ -20,6 +21,7 @@ function ClothesDonationForm ({
         <>
             <Input id='name' name='name' placeholder='Name' value={name} onChange={onChange} />
             <Input id='description' name='description' placeholder='Description' value={description} onChange={onChange} />
+            <Input id='quantity-name' name='quantityName' placeholder='Quantity Name' value={quantityName} onChange={onChange} />
             <Select id='size' name='size' label='Size' value={size} onChange={onChange} data-testid='Size'>
                 <option>XS</option>
                 <option>S</option>
@@ -45,8 +47,8 @@ ClothesDonationForm.displayName = 'ClothesDonationForm';
 ClothesDonationForm.propTypes = {
     name: PropTypes.string,
     description: PropTypes.string,
+    quantityName: PropTypes.string,
     size: PropTypes.string,
-    quantity: PropTypes.number,
     notes: PropTypes.string,
     onChange: PropTypes.func,
     onAddLineItemClick: PropTypes.func,

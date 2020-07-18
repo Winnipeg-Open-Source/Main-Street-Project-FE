@@ -30,7 +30,7 @@ const StyledInput = styled(Input)`
 `;
 
 function LineItem ({
-    id,
+    id, 
     itemId,
     className,
     locationName,
@@ -45,9 +45,11 @@ function LineItem ({
     const onDecrementClick = () => changeQuantity(quantity >= 1 ? --quantity : 0);
     const onQuantityChange = (evt) => changeQuantity(evt.target.value);
 
+    const quantityText = availableQuantity && ` (${availableQuantity} ${quantityName})`;
+
     return (
         <Flex className={className} justifyContent='space-between' alignItems='center' width={1} px={2}>
-            <Text>{locationName} ({availableQuantity} {quantityName})</Text>
+            <Text>{locationName}{quantityText}</Text>
             <Flex>
                 <StyledButton icon={<Minus />} onClick={onDecrementClick} />
                 <StyledInput type='number' value={quantity} onChange={onQuantityChange} mx={2} />
