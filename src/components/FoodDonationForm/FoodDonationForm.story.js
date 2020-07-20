@@ -8,6 +8,7 @@ import { mockLineItems } from 'tests/mocks/items';
 const props = {
     name: 'Strawberries',
     description: 'Palette of Juicy Fruit',
+    quantityName: 'Rolls',
     retailValue: 100,
     locations: mockLocations,
     lineItems: mockLineItems,
