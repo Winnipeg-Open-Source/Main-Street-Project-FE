@@ -6,8 +6,8 @@
     "build": "npm run clean && webpack --mode production",
     "build-storybook": "build-storybook -c .storybook -o ./storybook-static",
     "clean": "rimraf ./build",
-    "dev": "webpack-dev-server --hot --silent",
     "deploy": "npm run build && firebase deploy",
+    "dev": "webpack-dev-server --hot --silent",
     "start": "firebase emulators:start",
     "storybook": "start-storybook -c .storybook",
     "test": "jest --silent --coverage"
@@ -17,7 +17,7 @@
     "axios": "^0.19.2",
     "history": "^4.10.1",
     "pcln-autocomplete": "^3.0.0",
-    "pcln-design-system": "^3.2.0",
+    "pcln-design-system": "^3.5.3",
     "pcln-icons": "^3.0.0",
     "pcln-modal": "^3.3.0",
     "prop-types": "^15.7.2",

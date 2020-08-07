@@ -13,7 +13,7 @@ function useForm (initialState = {}) {
         [evt.target.name]: evt.target.checked,
     });
 
-    return { state, onChange, onToggle };
+    return { state, onChange, onToggle, setState };
 }
 
 export default useForm;

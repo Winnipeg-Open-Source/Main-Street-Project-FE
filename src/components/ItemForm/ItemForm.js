@@ -41,6 +41,7 @@ ItemForm.displayName = 'ItemForm';
 ItemForm.propTypes = {
     className: PropTypes.string,
     itemType: PropTypes.string,
+    locations: PropTypes.array,
     onChange: PropTypes.func,
     onSaveClick: PropTypes.func,
     onCancelClick: PropTypes.func,
