@@ -4,13 +4,19 @@ const locationTypes = [
     'Freezer',
 ];
 
+const locationsNames = [
+    'Freezer 1',
+    'Freezer 2',
+    'Shelf 1',
+];
+
 function getMockLocation (id) {
-    const locationTypeIndex = id % locationTypes.length;
+    const locationIndex = id % locationTypes.length;
 
     return {
         id,
-        type: locationTypes[locationTypeIndex],
-        name: 'Location Name',
+        type: locationTypes[locationIndex],
+        name: locationsNames[locationIndex],
         description: 'Location Description',
         address: '123 Random Street',
     };

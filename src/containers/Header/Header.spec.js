@@ -1,10 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import renderWithTheme from 'tests/helpers/renderWithTheme';
 import HeaderContainer from './Header';
 
 describe ('HeaderContainer', () => {
     it ('renders without crashing', () => {
-        const { asFragment } = render(<HeaderContainer />);
+        const { asFragment } = renderWithTheme(<HeaderContainer />);
 
         expect(asFragment()).toMatchSnapshot();
     });

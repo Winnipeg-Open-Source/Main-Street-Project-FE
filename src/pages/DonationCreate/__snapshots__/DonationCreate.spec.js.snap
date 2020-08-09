@@ -3,41 +3,41 @@
 exports[`DonationCreate renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw bENblX"
+      class="sc-AxirZ sc-AxhCb jTGKnC"
       width="1"
     >
       <div
-        class="sc-AxjAm sc-AxiKw iPzLAe"
+        class="sc-AxirZ sc-AxhCb iEMUrT"
         width="1"
       >
         <div
-          class="sc-AxhCb sc-psDhf lcjizo"
+          class="sc-AxhUy sc-qQxFs hINyDI"
           font-size="3"
         >
           New Donation
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-qYUWV dgGtKY"
+        class="sc-AxirZ sc-AxhCb sc-pBlxj dyrmdj"
       >
         <div
-          class="sc-AxjAm sc-AxiKw sc-pBlxj iKhLIT"
+          class="sc-AxirZ sc-AxhCb sc-pJipy UdROK"
         >
           <label
-            class="sc-oVpqz cpWgdv className"
+            class="sc-pdKru dQCRbh className"
             color="border.light"
             font-size="10px"
             font-weight="bold"
           >
             <div
-              class="sc-AxjAm sc-AxiKw iSVrPI"
+              class="sc-AxirZ sc-AxhCb czMtkd"
               width="1"
             >
               <select
-                class="sc-pZCuu kQVKTB sc-oTaid sc-pRgDJ dojhwH"
+                class="sc-oTaid bpOcmz sc-paWVw sc-pZdvY sQNhh"
                 data-testid="employee-select"
                 disabled=""
                 font-size="2,,1"
@@ -53,7 +53,7 @@ exports[`DonationCreate renders without crashing 1`] = `
               </select>
               <svg
                 aria-hidden="true"
-                class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
+                class="sc-AxmLO fTwYWQ sc-fzoxKX sc-pZCuu bTxHcb"
                 color="text.light"
                 fill="currentcolor"
                 focusable="false"
@@ -70,20 +70,19 @@ exports[`DonationCreate renders without crashing 1`] = `
             </div>
           </label>
           <input
-            class="sc-pTWqp sc-pJipy ihfsBt"
-            font-size="2,,1"
+            class="sc-qcrrk sc-pRgDJ bVomch"
             placeholder="Title"
             value=""
           />
           <label
-            class="sc-oVpqz CTGsT"
+            class="sc-pdKru cdArqF"
             color="border.light"
             font-size="1"
             font-weight="bold"
           >
             Description
             <textarea
-              class="sc-qYhTA sc-oTLFK ZNjhW"
+              class="sc-pAYXY sc-pjGMk etJyOn"
               id="donation-description"
             />
           </label>
@@ -98,7 +97,7 @@ exports[`DonationCreate renders without crashing 1`] = `
               aria-autocomplete="list"
               aria-labelledby="downshift-0-label"
               autocomplete="off"
-              class="sc-pTWqp fyIUKN sc-pbvYO hcYciJ"
+              class="sc-qcrrk gTabPy sc-pjumZ kwDixD"
               disabled=""
               font-size="2,,1"
               id="downshift-0-input"
@@ -108,41 +107,41 @@ exports[`DonationCreate renders without crashing 1`] = `
             />
             <div
               aria-labelledby="downshift-0-label"
-              class="sc-AxjAm sc-qYsuA sc-pZdvY fOXuV"
+              class="sc-AxirZ sc-pCPXO sc-oTzgz kgmmcQ"
               height="256px"
               id="downshift-0-menu"
               role="listbox"
             />
           </div>
           <div
-            class="sc-AxjAm sc-AxiKw sc-pjumZ jcAEGC"
+            class="sc-AxirZ sc-AxhCb sc-prrfo bGgMQs"
             width="1"
           />
           <label
-            class="sc-oVpqz cjcRzm"
+            class="sc-pdKru jaMWOk"
             color="border.light"
             font-size="1"
             font-weight="bold"
           >
             Additional Notes
             <textarea
-              class="sc-qYhTA sc-oTLFK erbarT"
+              class="sc-pAYXY sc-pjGMk cSpMZe"
               id="donation-notes"
             />
           </label>
         </div>
         <div
-          class="sc-AxjAm sc-AxiKw sc-qQxFs cuUChO"
+          class="sc-AxirZ sc-AxhCb sc-qYUWV cvxNOY"
         >
           <button
-            class="sc-oUOMp kxZVgg"
+            class="sc-pdjNk cJMkLU"
             color="tertiary"
             width="1"
           >
             Cancel
           </button>
           <button
-            class="sc-oUOMp coOwBP"
+            class="sc-pdjNk dqYiIX"
             color="primary"
             width="1"
           >

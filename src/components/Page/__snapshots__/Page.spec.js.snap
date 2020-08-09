@@ -3,18 +3,18 @@
 exports[`Page renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw bENblX"
+      class="sc-AxirZ sc-AxhCb jTGKnC"
       width="1"
     >
       <div
-        class="sc-AxjAm sc-AxiKw iPzLAe"
+        class="sc-AxirZ sc-AxhCb iEMUrT"
         width="1"
       >
         <div
-          class="sc-AxhCb sc-psDhf lcjizo"
+          class="sc-AxhUy sc-qQxFs hINyDI"
           font-size="3"
         />
       </div>

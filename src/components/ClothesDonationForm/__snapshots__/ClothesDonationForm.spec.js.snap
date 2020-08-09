@@ -2,101 +2,132 @@
 
 exports[`ClothesDonationForm renders without crashing 1`] = `
 <DocumentFragment>
-  <input
-    class="sc-pTWqp sc-pkfPC eDayKI"
-    font-size="2,,1"
-    id="name"
-    name="name"
-    placeholder="Name"
-    value=""
-  />
-  <input
-    class="sc-pTWqp sc-pkfPC eDayKI"
-    font-size="2,,1"
-    id="description"
-    name="description"
-    placeholder="Description"
-    value=""
-  />
-  <label
-    class="sc-oVpqz cKfBma className"
-    color="border.light"
-    font-size="10px"
-    font-weight="bold"
+  <div
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
-    Size
+    <input
+      class="sc-qcrrk sc-qQxFs iUvCRq"
+      id="name"
+      name="name"
+      placeholder="Name"
+      value=""
+    />
+    <input
+      class="sc-qcrrk sc-qQxFs iUvCRq"
+      id="description"
+      name="description"
+      placeholder="Description"
+      value=""
+    />
+    <input
+      class="sc-qcrrk sc-qQxFs iUvCRq"
+      id="quantity-name"
+      name="quantityName"
+      placeholder="Quantity Name"
+      value=""
+    />
+    <label
+      class="sc-pdKru dQCRbh className"
+      color="border.light"
+      font-size="10px"
+      font-weight="bold"
+    >
+      Size
+      <div
+        class="sc-AxirZ sc-AxhCb czMtkd"
+        width="1"
+      >
+        <select
+          class="sc-oTaid bpOcmz sc-paWVw sc-qYUWV imGcog"
+          data-testid="Size"
+          font-size="2,,1"
+          id="size"
+          name="size"
+        >
+          <option>
+            XS
+          </option>
+          <option>
+            S
+          </option>
+          <option>
+            M
+          </option>
+          <option>
+            L
+          </option>
+          <option>
+            XL
+          </option>
+          <option>
+            XXL
+          </option>
+          <option>
+            XXXL
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="sc-AxmLO fTwYWQ sc-fzoxKX sc-pZCuu bTxHcb"
+          color="text.light"
+          fill="currentcolor"
+          focusable="false"
+          height="24"
+          role="img"
+          tabindex="-1"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+          />
+        </svg>
+      </div>
+    </label>
     <div
-      class="sc-AxjAm sc-AxiKw iSVrPI"
+      class="sc-AxirZ sc-AxhCb sc-pjumZ jtOhCp"
       width="1"
     >
-      <select
-        class="sc-pZCuu jeUCDo sc-oTaid sc-psDhf bYPPgQ"
-        data-testid="Size"
-        font-size="2,,1"
-        id="size"
-        name="size"
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-labelledby="downshift-0-label"
+        role="combobox"
+        style="position: relative; width: 100%;"
       >
-        <option>
-          XS
-        </option>
-        <option>
-          S
-        </option>
-        <option>
-          M
-        </option>
-        <option>
-          L
-        </option>
-        <option>
-          XL
-        </option>
-        <option>
-          XXL
-        </option>
-        <option>
-          XXXL
-        </option>
-      </select>
-      <svg
-        aria-hidden="true"
-        class="sc-Axmtr bsYOWx sc-fzqPZZ sc-pRFHb JnCiE"
-        color="text.light"
-        fill="currentcolor"
-        focusable="false"
-        height="24"
-        role="img"
-        tabindex="-1"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        <input
+          aria-autocomplete="list"
+          aria-labelledby="downshift-0-label"
+          autocomplete="off"
+          class="sc-qcrrk gTabPy sc-pRgDJ bNviUc"
+          font-size="2,,1"
+          id="downshift-0-input"
+          placeholder="Location Search"
+          value=""
+          width="1"
         />
-      </svg>
+        <div
+          aria-labelledby="downshift-0-label"
+          class="sc-AxirZ sc-pCPXO sc-pBlxj gmOuQA"
+          height="256px"
+          id="downshift-0-menu"
+          role="listbox"
+        />
+      </div>
     </div>
-  </label>
-  <input
-    class="sc-pTWqp sc-pkfPC eDayKI"
-    font-size="2,,1"
-    id="quantity"
-    name="quantity"
-    placeholder="Quantity"
-    type="number"
-    value=""
-  />
-  <label
-    class="sc-oVpqz cKfBma"
-    color="border.light"
-    font-size="10px"
-    font-weight="bold"
-  >
-    Notes
-    <textarea
-      class="sc-qYhTA sc-qQxFs hnlQXd"
-      id="notes"
-      name="notes"
-    />
-  </label>
+    <label
+      class="sc-pdKru dQCRbh"
+      color="border.light"
+      font-size="10px"
+      font-weight="bold"
+    >
+      Notes
+      <textarea
+        class="sc-pAYXY sc-qQKeD gqDCoc"
+        id="notes"
+        name="notes"
+      />
+    </label>
+  </div>
 </DocumentFragment>
 `;

@@ -3,19 +3,19 @@
 exports[`ModalFooter renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-psDhf efsLuN"
+      class="sc-AxirZ sc-AxhCb sc-qQxFs jZDUfG"
     >
       <button
-        class="sc-oUOMp hMxAoF"
+        class="sc-pdjNk hgTuil"
         color="background.light"
       >
         Close
       </button>
       <button
-        class="sc-oUOMp gVrnEU"
+        class="sc-pdjNk dpAQDg"
         color="primary"
       >
         Confirm

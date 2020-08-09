@@ -3,20 +3,20 @@
 exports[`DonationCard renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-qYsuA sc-psDhf dOhwaS"
+      class="sc-AxirZ sc-pCPXO sc-qQxFs kVuSIG"
       color="background.lightest"
       width="1"
     >
       <div
-        class="sc-AxhCb jTwMnz"
+        class="sc-AxhUy gpDHNu"
         color="text.darkest"
         font-size="1"
       />
       <div
-        class="sc-AxhCb jMzzet"
+        class="sc-AxhUy enVSKo"
         color="text.light"
         font-size="1"
       >

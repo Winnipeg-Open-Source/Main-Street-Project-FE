@@ -3,7 +3,7 @@
 exports[`Sidebar renders modal for mobile view 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   />
 </DocumentFragment>
 `;
@@ -11,10 +11,10 @@ exports[`Sidebar renders modal for mobile view 1`] = `
 exports[`Sidebar renders with collapsed sidebar 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-pZQux dGqyOi"
+      class="sc-AxirZ sc-AxhCb sc-oTLFK liZYIB"
       color="tertiary.dark"
       width="56"
     />
@@ -25,10 +25,10 @@ exports[`Sidebar renders with collapsed sidebar 1`] = `
 exports[`Sidebar renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-pZQux cAhDEX"
+      class="sc-AxirZ sc-AxhCb sc-oTLFK dmuitw"
       color="tertiary.dark"
       width="200"
     />
