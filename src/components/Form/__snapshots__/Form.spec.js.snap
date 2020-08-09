@@ -3,32 +3,32 @@
 exports[`Form renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-qQxFs dNNRWZ"
+      class="sc-AxirZ sc-AxhCb sc-qYUWV irQtBP"
     >
       <div
-        class="sc-AxjAm sc-AxiKw sc-qYUWV sa-don"
+        class="sc-AxirZ sc-AxhCb sc-pBlxj bOWLHE"
       >
         <input
-          class="sc-pTWqp fyIUKN"
+          class="sc-qcrrk gTabPy"
           font-size="2,,1"
           placeholder="First Input"
         />
         <input
-          class="sc-pTWqp fyIUKN"
+          class="sc-qcrrk gTabPy"
           font-size="2,,1"
           placeholder="Second Input"
         />
         <input
-          class="sc-pTWqp fyIUKN"
+          class="sc-qcrrk gTabPy"
           font-size="2,,1"
           placeholder="Third Input"
         />
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-psDhf iCfenm"
+        class="sc-AxirZ sc-AxhCb sc-qQxFs jbeWmJ"
       />
     </div>
   </div>

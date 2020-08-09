@@ -3,69 +3,66 @@
 exports[`DonorCreate renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw bENblX"
+      class="sc-AxirZ sc-AxhCb jTGKnC"
       width="1"
     >
       <div
-        class="sc-AxjAm sc-AxiKw iPzLAe"
+        class="sc-AxirZ sc-AxhCb iEMUrT"
         width="1"
       >
         <div
-          class="sc-AxhCb sc-psDhf lcjizo"
+          class="sc-AxhUy sc-qQxFs hINyDI"
           font-size="3"
         >
           Create a donor
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-qYUWV dgGtKY"
+        class="sc-AxirZ sc-AxhCb sc-pBlxj dyrmdj"
       >
         <div
-          class="sc-AxjAm sc-AxiKw sc-pBlxj iKhLIT"
+          class="sc-AxirZ sc-AxhCb sc-pJipy UdROK"
         >
           <input
-            class="sc-pTWqp sc-pJipy IkhGA"
-            font-size="2,,1"
+            class="sc-qcrrk sc-pRgDJ gWdwPw"
             id="name"
             name="name"
             placeholder="Name"
             value=""
           />
           <input
-            class="sc-pTWqp sc-pJipy IkhGA"
-            font-size="2,,1"
+            class="sc-qcrrk sc-pRgDJ gWdwPw"
             id="address"
             name="address"
             placeholder="Street Address"
             value=""
           />
           <div
-            class="sc-AxjAm sc-AxiKw ivVODM"
+            class="sc-AxirZ sc-AxhCb gOSRBl"
             width="1"
           >
             <input
-              class="sc-pTWqp sc-pJipy crzsVC"
-              font-size="2,,1"
+              class="sc-qcrrk sc-pRgDJ kAInuO"
               id="city"
               name="city"
               placeholder="City"
               value="Winnipeg"
             />
             <label
-              class="sc-oVpqz cpWgdv className"
+              class="sc-pdKru dQCRbh className"
               color="border.light"
               font-size="10px"
               font-weight="bold"
             >
               <div
-                class="sc-AxjAm sc-AxiKw iSVrPI"
+                class="sc-AxirZ sc-AxhCb czMtkd"
                 width="1"
               >
                 <select
-                  class="sc-pZCuu kQVKTB sc-oTaid sc-pRgDJ dojhwH"
+                  class="sc-oTaid bpOcmz sc-paWVw sc-pZdvY sQNhh"
                   data-testid="province-select"
                   font-size="2,,1"
                   id="province"
@@ -139,7 +136,7 @@ exports[`DonorCreate renders without crashing 1`] = `
                 </select>
                 <svg
                   aria-hidden="true"
-                  class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
+                  class="sc-AxmLO fTwYWQ sc-fzoxKX sc-pZCuu bTxHcb"
                   color="text.light"
                   fill="currentcolor"
                   focusable="false"
@@ -157,41 +154,38 @@ exports[`DonorCreate renders without crashing 1`] = `
             </label>
           </div>
           <input
-            class="sc-pTWqp sc-pJipy IkhGA"
-            font-size="2,,1"
+            class="sc-qcrrk sc-pRgDJ gWdwPw"
             id="postal-code"
             name="postalCode"
             placeholder="Postal Code"
             value=""
           />
           <input
-            class="sc-pTWqp sc-pJipy IkhGA"
-            font-size="2,,1"
+            class="sc-qcrrk sc-pRgDJ gWdwPw"
             id="phone-number"
             name="phoneNumber"
             placeholder="Phone Number"
             value=""
           />
           <input
-            class="sc-pTWqp sc-pJipy IkhGA"
-            font-size="2,,1"
+            class="sc-qcrrk sc-pRgDJ gWdwPw"
             id="email"
             name="email"
             placeholder="Email"
             value=""
           />
           <label
-            class="sc-oVpqz sc-pZdvY dqmguI"
+            class="sc-pdKru sc-oTzgz fkxQch"
             color="border.light"
             font-size="0"
             font-weight="bold"
           >
             <div
-              class="sc-AxjAm sc-qapxP gFfLYW"
+              class="sc-AxirZ sc-oTmHo kXvGmn"
               color="primary"
             >
               <input
-                class="sc-oTmHo gacPRn"
+                class="sc-pbJYR gEYcpV"
                 color="primary"
                 id="newsletter"
                 name="isSubscribed"
@@ -201,7 +195,7 @@ exports[`DonorCreate renders without crashing 1`] = `
               />
               <svg
                 aria-hidden="true"
-                class="sc-Axmtr cTdHPN sc-fzoXzr fDlmZK"
+                class="sc-AxmLO bliMTQ sc-fzpjYC kZSQFZ"
                 data-name="checked"
                 fill="currentcolor"
                 focusable="false"
@@ -217,7 +211,7 @@ exports[`DonorCreate renders without crashing 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="sc-Axmtr cTdHPN sc-fzpjYC kZSQFZ"
+                class="sc-AxmLO bliMTQ sc-fznxsB gFPgcq"
                 data-name="empty"
                 fill="currentcolor"
                 focusable="false"
@@ -236,17 +230,17 @@ exports[`DonorCreate renders without crashing 1`] = `
           </label>
         </div>
         <div
-          class="sc-AxjAm sc-AxiKw sc-qQxFs cuUChO"
+          class="sc-AxirZ sc-AxhCb sc-qYUWV cvxNOY"
         >
           <button
-            class="sc-oUOMp kxZVgg"
+            class="sc-pdjNk cJMkLU"
             color="tertiary"
             width="1"
           >
             Cancel
           </button>
           <button
-            class="sc-oUOMp coOwBP"
+            class="sc-pdjNk dqYiIX"
             color="primary"
             width="1"
           >

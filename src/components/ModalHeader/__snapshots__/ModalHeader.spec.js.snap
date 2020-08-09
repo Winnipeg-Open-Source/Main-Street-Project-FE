@@ -3,22 +3,22 @@
 exports[`ModalHeader renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw iYMgpq"
+      class="sc-AxirZ sc-AxhCb fidhWr"
       color="primary.base"
       height="auto"
     >
       <div
-        class="sc-AxjAm sc-AxiKw tOqmH"
+        class="sc-AxirZ sc-AxhCb dkAhFW"
       >
         <div
-          class="sc-AxhCb wyOpT"
+          class="sc-AxhUy gGlGcm"
         />
       </div>
       <div
-        class="sc-AxhCb ljfizs"
+        class="sc-AxhUy hPygOl"
         font-size="1"
       />
     </div>

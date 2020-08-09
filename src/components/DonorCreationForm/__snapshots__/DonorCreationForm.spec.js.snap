@@ -3,54 +3,51 @@
 exports[`DonorCreationForm renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-qQxFs dNNRWZ"
+      class="sc-AxirZ sc-AxhCb sc-qYUWV irQtBP"
     >
       <div
-        class="sc-AxjAm sc-AxiKw sc-qYUWV sa-don"
+        class="sc-AxirZ sc-AxhCb sc-pBlxj bOWLHE"
       >
         <input
-          class="sc-pTWqp sc-pBlxj iLNgzO"
-          font-size="2,,1"
+          class="sc-qcrrk sc-pJipy kwoJoZ"
           id="name"
           name="name"
           placeholder="Name"
           value="Costco"
         />
         <input
-          class="sc-pTWqp sc-pBlxj iLNgzO"
-          font-size="2,,1"
+          class="sc-qcrrk sc-pJipy kwoJoZ"
           id="address"
           name="address"
           placeholder="Street Address"
           value=""
         />
         <div
-          class="sc-AxjAm sc-AxiKw ivVODM"
+          class="sc-AxirZ sc-AxhCb gOSRBl"
           width="1"
         >
           <input
-            class="sc-pTWqp sc-pBlxj bRQLIM"
-            font-size="2,,1"
+            class="sc-qcrrk sc-pJipy jGOEYX"
             id="city"
             name="city"
             placeholder="City"
             value="Winnipeg"
           />
           <label
-            class="sc-oVpqz cpWgdv className"
+            class="sc-pdKru dQCRbh className"
             color="border.light"
             font-size="10px"
             font-weight="bold"
           >
             <div
-              class="sc-AxjAm sc-AxiKw iSVrPI"
+              class="sc-AxirZ sc-AxhCb czMtkd"
               width="1"
             >
               <select
-                class="sc-pZCuu kQVKTB sc-oTaid sc-pJipy ceCay"
+                class="sc-oTaid bpOcmz sc-paWVw sc-pRgDJ dojhwH"
                 data-testid="province-select"
                 font-size="2,,1"
                 id="province"
@@ -124,7 +121,7 @@ exports[`DonorCreationForm renders without crashing 1`] = `
               </select>
               <svg
                 aria-hidden="true"
-                class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
+                class="sc-AxmLO fTwYWQ sc-fzoxKX sc-pZCuu bTxHcb"
                 color="text.light"
                 fill="currentcolor"
                 focusable="false"
@@ -142,41 +139,38 @@ exports[`DonorCreationForm renders without crashing 1`] = `
           </label>
         </div>
         <input
-          class="sc-pTWqp sc-pBlxj iLNgzO"
-          font-size="2,,1"
+          class="sc-qcrrk sc-pJipy kwoJoZ"
           id="postal-code"
           name="postalCode"
           placeholder="Postal Code"
           value=""
         />
         <input
-          class="sc-pTWqp sc-pBlxj iLNgzO"
-          font-size="2,,1"
+          class="sc-qcrrk sc-pJipy kwoJoZ"
           id="phone-number"
           name="phoneNumber"
           placeholder="Phone Number"
           value=""
         />
         <input
-          class="sc-pTWqp sc-pBlxj iLNgzO"
-          font-size="2,,1"
+          class="sc-qcrrk sc-pJipy kwoJoZ"
           id="email"
           name="email"
           placeholder="Email"
           value=""
         />
         <label
-          class="sc-oVpqz sc-pRgDJ eInwpm"
+          class="sc-pdKru sc-pZdvY dqmguI"
           color="border.light"
           font-size="0"
           font-weight="bold"
         >
           <div
-            class="sc-AxjAm sc-qapxP gFfLYW"
+            class="sc-AxirZ sc-oTmHo kXvGmn"
             color="primary"
           >
             <input
-              class="sc-oTmHo gacPRn"
+              class="sc-pbJYR gEYcpV"
               color="primary"
               id="newsletter"
               name="isSubscribed"
@@ -186,7 +180,7 @@ exports[`DonorCreationForm renders without crashing 1`] = `
             />
             <svg
               aria-hidden="true"
-              class="sc-Axmtr cTdHPN sc-fzoXzr fDlmZK"
+              class="sc-AxmLO bliMTQ sc-fzpjYC kZSQFZ"
               data-name="checked"
               fill="currentcolor"
               focusable="false"
@@ -202,7 +196,7 @@ exports[`DonorCreationForm renders without crashing 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="sc-Axmtr cTdHPN sc-fzpjYC kZSQFZ"
+              class="sc-AxmLO bliMTQ sc-fznxsB gFPgcq"
               data-name="empty"
               fill="currentcolor"
               focusable="false"
@@ -221,10 +215,10 @@ exports[`DonorCreationForm renders without crashing 1`] = `
         </label>
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-psDhf iCfenm"
+        class="sc-AxirZ sc-AxhCb sc-qQxFs jbeWmJ"
       >
         <button
-          class="sc-oUOMp coOwBP"
+          class="sc-pdjNk dqYiIX"
           color="primary"
           width="1"
         >

@@ -3,15 +3,15 @@
 exports[`App renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-qYUWV jpqZzA"
+      class="sc-AxirZ sc-AxhCb sc-pBlxj bNcKsb"
       color="primary"
     >
       <svg
         aria-hidden="true"
-        class="sc-Axmtr dFmDHs sc-pAZqv sc-pBlxj eigskg"
+        class="sc-AxmLO gyOszF sc-pJurq sc-pJipy eILbpC"
         data-testid="menu-icon"
         fill="currentcolor"
         focusable="false"
@@ -32,21 +32,21 @@ exports[`App renders without crashing 1`] = `
       Main Street Project Inventory System
     </div>
     <div
-      class="sc-AxjAm sc-AxiKw kUKRqP"
+      class="sc-AxirZ sc-AxhCb cRjlXG"
       style="height: 100%;"
     >
       <div
-        class="sc-AxjAm sc-AxiKw sc-psedN hRWWYQ"
+        class="sc-AxirZ sc-AxhCb sc-qQWDO ljXucD"
         color="tertiary.dark"
         width="56"
       >
         <a
-          class="sc-pjGMk WuYUh"
+          class="sc-psedN kmNwOi"
           href="/"
         >
           <svg
             aria-hidden="true"
-            class="sc-Axmtr cTdHPN sc-fzoCUK gcKcJr"
+            class="sc-AxmLO bliMTQ sc-fzoOEf kFCLXy"
             fill="currentcolor"
             focusable="false"
             height="24"
@@ -62,12 +62,12 @@ exports[`App renders without crashing 1`] = `
           Home
         </a>
         <a
-          class="sc-pjGMk fqvTnB"
+          class="sc-psedN imWxiO"
           href="/donors"
         >
           <svg
             aria-hidden="true"
-            class="sc-Axmtr cTdHPN sc-pIjat gTixYT"
+            class="sc-AxmLO bliMTQ sc-pQdCa kfkxVO"
             fill="currentcolor"
             focusable="false"
             height="24"
@@ -83,12 +83,12 @@ exports[`App renders without crashing 1`] = `
           Donors
         </a>
         <a
-          class="sc-pjGMk fqvTnB"
+          class="sc-psedN imWxiO"
           href="/donations"
         >
           <svg
             aria-hidden="true"
-            class="sc-Axmtr cTdHPN sc-pjSSY laaBPC"
+            class="sc-AxmLO bliMTQ sc-prOVx hqMPBu"
             fill="currentcolor"
             focusable="false"
             height="24"
@@ -104,12 +104,12 @@ exports[`App renders without crashing 1`] = `
           Donations
         </a>
         <a
-          class="sc-pjGMk fqvTnB"
+          class="sc-psedN imWxiO"
           href="/items"
         >
           <svg
             aria-hidden="true"
-            class="sc-Axmtr cTdHPN sc-fzqOul fQbLGO"
+            class="sc-AxmLO bliMTQ sc-fzoCCn kcXXrA"
             fill="currentcolor"
             focusable="false"
             height="24"
@@ -125,12 +125,12 @@ exports[`App renders without crashing 1`] = `
           Items
         </a>
         <a
-          class="sc-pjGMk fqvTnB"
+          class="sc-psedN imWxiO"
           href="/locations"
         >
           <svg
             aria-hidden="true"
-            class="sc-Axmtr cTdHPN sc-qYiqT duDEIF"
+            class="sc-AxmLO bliMTQ sc-pAZqv kIAUSF"
             fill="currentcolor"
             focusable="false"
             height="24"
@@ -146,12 +146,12 @@ exports[`App renders without crashing 1`] = `
           Locations
         </a>
         <a
-          class="sc-pjGMk fqvTnB"
+          class="sc-psedN imWxiO"
           href="/requisitions"
         >
           <svg
             aria-hidden="true"
-            class="sc-Axmtr cTdHPN sc-fznLPX llMHGf"
+            class="sc-AxmLO bliMTQ sc-fzoaKM hIyLDd"
             fill="currentcolor"
             focusable="false"
             height="24"
@@ -168,20 +168,20 @@ exports[`App renders without crashing 1`] = `
         </a>
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-qQWDO cdkSxU"
+        class="sc-AxirZ sc-AxhCb sc-qZtVr kxyWbM"
         color="primary.light"
       >
         <div
-          class="sc-AxjAm sc-AxiKw sc-qZtVr bZIWHq"
+          class="sc-AxirZ sc-AxhCb sc-pzLqt kTmceR"
           color="primary.light"
           width="1"
         >
           <a
-            class="sc-pjGMk fqvTnB"
+            class="sc-psedN imWxiO"
             href="/donations/new"
           >
             <button
-              class="sc-oUOMp kFWrxZ"
+              class="sc-pdjNk jsoVMR"
               color="primary"
               width="1"
             >
@@ -189,11 +189,11 @@ exports[`App renders without crashing 1`] = `
             </button>
           </a>
           <a
-            class="sc-pjGMk fqvTnB"
+            class="sc-psedN imWxiO"
             href="/requisitions/new"
           >
             <button
-              class="sc-oUOMp kFWrxZ"
+              class="sc-pdjNk jsoVMR"
               color="primary"
               width="1"
             >

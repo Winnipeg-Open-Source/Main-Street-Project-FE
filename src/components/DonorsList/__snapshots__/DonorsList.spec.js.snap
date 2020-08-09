@@ -3,14 +3,14 @@
 exports[`DonorsList renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-psDhf iXvOkL"
+      class="sc-AxirZ sc-AxhCb sc-qQxFs iHzsts"
       width="1"
     >
       <div
-        class="sc-AxhCb exqJiw"
+        class="sc-AxhUy ilqMHx"
       >
         No donors yet...
       </div>
@@ -22,14 +22,14 @@ exports[`DonorsList renders without crashing 1`] = `
 exports[`DonorsList skeleton renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-psDhf iXvOkL"
+      class="sc-AxirZ sc-AxhCb sc-qQxFs iHzsts"
       width="1"
     >
       <div
-        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq sc-pBlxj fEneLh"
+        class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-pJipy gtukoL"
         color="background.lightest"
         width="1"
       >
@@ -51,7 +51,7 @@ exports[`DonorsList skeleton renders without crashing 1`] = `
         </span>
       </div>
       <div
-        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq sc-pBlxj fEneLh"
+        class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-pJipy gtukoL"
         color="background.lightest"
         width="1"
       >
@@ -73,7 +73,7 @@ exports[`DonorsList skeleton renders without crashing 1`] = `
         </span>
       </div>
       <div
-        class="sc-AxjAm sc-qYsuA sc-qQxFs bUCIQq sc-pBlxj fEneLh"
+        class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-pJipy gtukoL"
         color="background.lightest"
         width="1"
       >

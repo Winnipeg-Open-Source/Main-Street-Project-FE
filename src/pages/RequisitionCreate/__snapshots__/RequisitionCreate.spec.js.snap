@@ -3,41 +3,41 @@
 exports[`RequisitionCreate renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw bENblX"
+      class="sc-AxirZ sc-AxhCb jTGKnC"
       width="1"
     >
       <div
-        class="sc-AxjAm sc-AxiKw iPzLAe"
+        class="sc-AxirZ sc-AxhCb iEMUrT"
         width="1"
       >
         <div
-          class="sc-AxhCb sc-psDhf lcjizo"
+          class="sc-AxhUy sc-qQxFs hINyDI"
           font-size="3"
         >
           New Requisition
         </div>
       </div>
       <div
-        class="sc-AxjAm sc-AxiKw sc-qYUWV dgGtKY"
+        class="sc-AxirZ sc-AxhCb sc-pBlxj dyrmdj"
       >
         <div
-          class="sc-AxjAm sc-AxiKw sc-pBlxj iKhLIT"
+          class="sc-AxirZ sc-AxhCb sc-pJipy UdROK"
         >
           <label
-            class="sc-oVpqz cpWgdv className"
+            class="sc-pdKru dQCRbh className"
             color="border.light"
             font-size="10px"
             font-weight="bold"
           >
             <div
-              class="sc-AxjAm sc-AxiKw iSVrPI"
+              class="sc-AxirZ sc-AxhCb czMtkd"
               width="1"
             >
               <select
-                class="sc-pZCuu kQVKTB sc-oTaid sc-pJipy ceCay"
+                class="sc-oTaid bpOcmz sc-paWVw sc-pRgDJ dojhwH"
                 data-testid="employee-select"
                 disabled=""
                 font-size="2,,1"
@@ -53,7 +53,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
               </select>
               <svg
                 aria-hidden="true"
-                class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
+                class="sc-AxmLO fTwYWQ sc-fzoxKX sc-pZCuu bTxHcb"
                 color="text.light"
                 fill="currentcolor"
                 focusable="false"
@@ -70,14 +70,14 @@ exports[`RequisitionCreate renders without crashing 1`] = `
             </div>
           </label>
           <label
-            class="sc-oVpqz gSwqCS"
+            class="sc-pdKru gdtSdk"
             color="border.light"
             font-size="1"
             font-weight="bold"
           >
             Description
             <textarea
-              class="sc-qYhTA sc-oTLFK kPGgQb"
+              class="sc-pAYXY sc-pjGMk bdNXVS"
               id="requisition-description"
             />
           </label>
@@ -92,7 +92,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
               aria-autocomplete="list"
               aria-labelledby="downshift-0-label"
               autocomplete="off"
-              class="sc-pTWqp fyIUKN sc-oTzgz kBlAjz"
+              class="sc-qcrrk gTabPy sc-pbvYO hcYciJ"
               disabled=""
               font-size="2,,1"
               id="downshift-0-input"
@@ -102,29 +102,29 @@ exports[`RequisitionCreate renders without crashing 1`] = `
             />
             <div
               aria-labelledby="downshift-0-label"
-              class="sc-AxjAm sc-qYsuA sc-pRgDJ gnjykD"
+              class="sc-AxirZ sc-pCPXO sc-pZdvY jzYtnB"
               height="256px"
               id="downshift-0-menu"
               role="listbox"
             />
           </div>
           <div
-            class="sc-AxjAm sc-AxiKw sc-pbvYO buKzNA"
+            class="sc-AxirZ sc-AxhCb sc-pjumZ llGral"
             width="1"
           />
         </div>
         <div
-          class="sc-AxjAm sc-AxiKw sc-qQxFs cuUChO"
+          class="sc-AxirZ sc-AxhCb sc-qYUWV cvxNOY"
         >
           <button
-            class="sc-oUOMp kxZVgg"
+            class="sc-pdjNk cJMkLU"
             color="tertiary"
             width="1"
           >
             Cancel
           </button>
           <button
-            class="sc-oUOMp coOwBP"
+            class="sc-pdjNk dqYiIX"
             color="primary"
             width="1"
           >

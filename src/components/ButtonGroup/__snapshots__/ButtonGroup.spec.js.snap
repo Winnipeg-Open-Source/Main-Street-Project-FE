@@ -3,10 +3,10 @@
 exports[`ButtonGroup renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <div
-      class="sc-AxjAm sc-AxiKw sc-psDhf dCBSxT"
+      class="sc-AxirZ sc-AxhCb sc-qQxFs eIXiCQ"
     />
   </div>
 </DocumentFragment>

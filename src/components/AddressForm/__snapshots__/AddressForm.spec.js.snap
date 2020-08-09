@@ -3,40 +3,38 @@
 exports[`AddressForm renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pbJYR hNzbLI sc-pkfPC fQMEfn"
+    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
   >
     <input
-      class="sc-pTWqp sc-psDhf gEEOGz"
-      font-size="2,,1"
+      class="sc-qcrrk sc-qQxFs iUvCRq"
       id="address"
       name="address"
       placeholder="Street Address"
       value=""
     />
     <div
-      class="sc-AxjAm sc-AxiKw ivVODM"
+      class="sc-AxirZ sc-AxhCb gOSRBl"
       width="1"
     >
       <input
-        class="sc-pTWqp sc-psDhf jUOuPh"
-        font-size="2,,1"
+        class="sc-qcrrk sc-qQxFs gQcuhI"
         id="city"
         name="city"
         placeholder="City"
         value=""
       />
       <label
-        class="sc-oVpqz cpWgdv className"
+        class="sc-pdKru dQCRbh className"
         color="border.light"
         font-size="10px"
         font-weight="bold"
       >
         <div
-          class="sc-AxjAm sc-AxiKw iSVrPI"
+          class="sc-AxirZ sc-AxhCb czMtkd"
           width="1"
         >
           <select
-            class="sc-pZCuu kQVKTB sc-oTaid sc-qQxFs glncUx"
+            class="sc-oTaid bpOcmz sc-paWVw sc-qYUWV imGcog"
             data-testid="province-select"
             font-size="2,,1"
             id="province"
@@ -110,7 +108,7 @@ exports[`AddressForm renders without crashing 1`] = `
           </select>
           <svg
             aria-hidden="true"
-            class="sc-Axmtr gXMRoh sc-fzqPZZ sc-pRFHb JnCiE"
+            class="sc-AxmLO fTwYWQ sc-fzoxKX sc-pZCuu bTxHcb"
             color="text.light"
             fill="currentcolor"
             focusable="false"
@@ -128,8 +126,7 @@ exports[`AddressForm renders without crashing 1`] = `
       </label>
     </div>
     <input
-      class="sc-pTWqp sc-psDhf gEEOGz"
-      font-size="2,,1"
+      class="sc-qcrrk sc-qQxFs iUvCRq"
       id="postal-code"
       name="postalCode"
       placeholder="Postal Code"
