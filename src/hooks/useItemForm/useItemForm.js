@@ -7,7 +7,10 @@ function useItemForm (initialState) {
         ...state,
         lineItems: [
             ...state.lineItems,
-            lineItem,
+            {
+                ...lineItem,
+                locationName: lineItem.name,
+            },
         ],
     });
 

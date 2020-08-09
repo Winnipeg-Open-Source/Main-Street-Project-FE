@@ -5,6 +5,10 @@ import { Flex, IconButton, Text, getPaletteColor } from 'pcln-design-system';
 import { Minus, Plus } from 'pcln-icons';
 import Input from 'components/Input';
 
+const StyledFlex = styled(Flex)`
+    background-color: ${getPaletteColor('background.lightest')};
+`;
+
 const StyledButton = styled(IconButton)`
     display: flex;
     justify-content: center;
@@ -48,14 +52,14 @@ function LineItem ({
     const quantityText = availableQuantity && ` (${availableQuantity} ${quantityName})`;
 
     return (
-        <Flex className={className} justifyContent='space-between' alignItems='center' width={1} px={2}>
+        <StyledFlex className={className} justifyContent='space-between' alignItems='center' width={1} px={2}>
             <Text>{locationName}{quantityText}</Text>
             <Flex>
                 <StyledButton icon={<Minus />} onClick={onDecrementClick} />
                 <StyledInput type='number' value={quantity} onChange={onQuantityChange} mx={2} />
                 <StyledButton icon={<Plus />} onClick={onIncrementClick} />
             </Flex>
-        </Flex>
+        </StyledFlex>
     );
 }
 

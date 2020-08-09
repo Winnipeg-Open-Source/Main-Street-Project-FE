@@ -18,7 +18,7 @@ export const EmptyForm = () => {
         },
     ]);
 
-    const itemQuantityChange = (itemId, lineItemId, value) => {
+    const itemQuantityChange = (_, lineItemId, value) => {
         setLineItems([
             ...lineItems.map(lineItem => lineItem.id === lineItemId
                 ? {

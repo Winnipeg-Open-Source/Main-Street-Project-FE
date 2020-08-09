@@ -9,8 +9,8 @@ import { mockLocations } from 'tests/mocks/locations';
 export const Loading = () => {
     return (
         <StorybookRouter>
-            <ItemsContext.Provider value={{ isLoading: true }}>
-                <LocationsContext.Provider value={{ isLoading: true }}>
+            <ItemsContext.Provider value={{ isLoading: true, onLoadItems: () => {} }}>
+                <LocationsContext.Provider value={{ isLoading: true, onLoadLocations: () => {} }}>
                     <ItemsCreate />
                 </LocationsContext.Provider>
             </ItemsContext.Provider>

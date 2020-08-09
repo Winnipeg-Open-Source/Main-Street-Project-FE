@@ -12,7 +12,7 @@ function ItemCard ({
     onItemQuantityChange,
 }) {
     const totalQuantity = useMemo(() => lineItems && lineItems.reduce((availableQuantity, lineItem) => availableQuantity + lineItem.availableQuantity, 0), [lineItems]);
-    const title = `${name} (${totalQuantity} ${quantityName})`;
+    const title = totalQuantity ? `${name} (${totalQuantity} ${quantityName})` : name;
 
     return (
         <Collapse className={className} title={title} alignItems='center' row>
