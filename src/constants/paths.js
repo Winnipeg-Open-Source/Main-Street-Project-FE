@@ -1,4 +1,7 @@
 export const LANDING_PATH = '/';
+export const LOGIN_PATH = '/login';
+export const LOGOUT_PATH = '/logout';
+export const SIGN_UP_PATH = '/signUp';
 
 export const DONATIONS_PATH = '/donations';
 export const DONATION_PATH = '/donations/:id';

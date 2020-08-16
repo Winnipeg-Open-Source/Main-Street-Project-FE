@@ -1,11 +1,12 @@
 import React from 'react';
-import { Document, Gallery, Home, Loyalty, Map, User } from 'pcln-icons';
+import { Document, ExitToApp, Gallery, Home, Loyalty, Map, User } from 'pcln-icons';
 import {
     LANDING_PATH,
     DONATIONS_PATH,
     DONORS_PATH,
     ITEMS_PATH,
     LOCATIONS_PATH,
+    LOGOUT_PATH,
     REQUISITIONS_PATH,
 } from 'constants/paths';
 
@@ -40,6 +41,11 @@ const routes = [
         path: REQUISITIONS_PATH,
         icon: <Document />,
     },
+    {
+        label: 'Logout',
+        path: LOGOUT_PATH,
+        icon: <ExitToApp />,
+    }
 ];
 
 export default routes;

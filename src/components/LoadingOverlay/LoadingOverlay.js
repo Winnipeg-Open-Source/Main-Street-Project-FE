@@ -17,12 +17,12 @@ const Overlay = styled(Flex)`
     background-color: rgba(0,0,0,0.5);
 `;
 
-function SavingOverlay ({ className, isSaving }) {
-    return isSaving
+function LoadingOverlay ({ className, isLoading, children }) {
+    return isLoading
         ? (
             <Overlay className={className}>
                 <Text color='text.lightest' bold mb={2}>
-                    Saving...
+                    {children}
                 </Text>
                 <Spinner />
             </Overlay>
@@ -30,15 +30,16 @@ function SavingOverlay ({ className, isSaving }) {
         : null;
 }
 
-SavingOverlay.displayName = 'SavingOverlay';
+LoadingOverlay.displayName = 'LoadingOverlay';
 
-SavingOverlay.propTypes = {
+LoadingOverlay.propTypes = {
     className: PropTypes.string,
-    isSaving: PropTypes.bool,
+    isLoading: PropTypes.bool,
+    children: PropTypes.node,
 };
 
-SavingOverlay.defaultProps = {
+LoadingOverlay.defaultProps = {
     className: '',
 };
 
-export default memo(SavingOverlay);
+export default memo(LoadingOverlay);

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ThemeProvider from 'providers/ThemeProvider';
 import ResponsiveProvider from 'providers/Responsive';
+import AuthenticationProvider from 'providers/Authentication';
 import SavingProvider from 'providers/Saving';
 import SidebarProvider from 'providers/Sidebar';
 import DonationsProvider from 'providers/Donations';
@@ -15,23 +16,25 @@ function Providers ({ children }) {
     return (
         <ThemeProvider>
             <ResponsiveProvider>
-                <SavingProvider>
-                    <SidebarProvider>
-                        <DonationsProvider>
-                            <DonorsProvider>
-                                <EmployeesProvider>
-                                    <ItemsProvider>
-                                        <LocationsProvider>
-                                            <RequisitionsProvider>
-                                                {children}
-                                            </RequisitionsProvider>
-                                        </LocationsProvider>
-                                    </ItemsProvider>
-                                </EmployeesProvider>
-                            </DonorsProvider>
-                        </DonationsProvider>
-                    </SidebarProvider>
-                </SavingProvider>
+                <AuthenticationProvider>
+                    <SavingProvider>
+                        <SidebarProvider>
+                            <DonationsProvider>
+                                <DonorsProvider>
+                                    <EmployeesProvider>
+                                        <ItemsProvider>
+                                            <LocationsProvider>
+                                                <RequisitionsProvider>
+                                                    {children}
+                                                </RequisitionsProvider>
+                                            </LocationsProvider>
+                                        </ItemsProvider>
+                                    </EmployeesProvider>
+                                </DonorsProvider>
+                            </DonationsProvider>
+                        </SidebarProvider>
+                    </SavingProvider>
+                </AuthenticationProvider>
             </ResponsiveProvider>
         </ThemeProvider>
     );
