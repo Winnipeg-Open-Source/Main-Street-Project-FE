@@ -30,4 +30,25 @@ router.get('/', async (req: any, res: any) => {
     res.json(donations);
 })
 
+router.post('/search', async (req: any, res: any) => {
+
+    // body: JSON.stringify(
+    //     {
+    //         searchTerm: '######'
+    //     }
+    // )
+
+    const value = req.body.searchTerm;
+
+    const filters = [
+        {key: 'title', match: '>=', value: value.toUpperCase()},
+        {key: 'title', match: '<=', value: value.toLowerCase()}
+    ]
+
+    const donations = await getAll(DONATIONS_COLLECTION, filters)
+
+    res.status(200);
+    res.json(donations);
+})
+
 export default router;
