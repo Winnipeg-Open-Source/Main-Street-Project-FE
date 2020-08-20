@@ -1,13 +1,22 @@
-import * as firebase from 'firebase';
-import * as admin from 'firebase-admin';
+// @ts-ignore
+import jwt from 'jsonwebtoken';
 
 const Authentication = async (req: any, res: any, next: any) => {
-    const accessToken = req.cookies.auth?.accessToken || '';
-    const authToken = req.cookies.auth?.authToken || '';
+    const token = req.cookies.authToken;
 
-    const user = await firebase.auth().signInWithCustomToken(authToken);
-    res.locals.user = user;
-    next();
+    if (!token) {
+        next();
+        return;
+    }
+    
+    try {
+        const user = jwt.verify(token, 'ajbsadfjhasdf');
+        res.locals.user = user;
+        next();
+    } catch (err) {
+        res.status(400);
+        res.json(err);
+    }
 };
 
 export default Authentication;
