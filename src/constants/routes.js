@@ -41,11 +41,11 @@ const routes = [
         path: REQUISITIONS_PATH,
         icon: <Document />,
     },
-    {
-        label: 'Logout',
-        path: LOGOUT_PATH,
-        icon: <ExitToApp />,
-    }
+    // {
+    //     label: 'Logout',
+    //     path: LOGOUT_PATH,
+    //     icon: <ExitToApp />,
+    // }
 ];
 
 export default routes;

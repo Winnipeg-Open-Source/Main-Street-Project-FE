@@ -15,18 +15,23 @@ function useLogin () {
     const { response, fetchData } = useAxios(request);
     const goToLandingPage = useRoute(LANDING_PATH);
 
-    const handleLogin = (email) => {
-        fetchData({ email });
+    const handleLogin = (email, password) => {
+        fetchData({ email, password });
+    };
+
+    const handleLoginWithToken = () => {
+        const token = 
+        fetchData({ customToken: token });
     };
 
     useEffect(() => {
         if (!response.isLoading && !!response.data && !response.isError) {
-            onLogin();
+            onLogin(response.data);
             goToLandingPage();
         }
     }, [response]);
 
-    return { response, handleLogin };
+    return { response, handleLogin, handleLoginWithToken };
 }
 
 export default useLogin;

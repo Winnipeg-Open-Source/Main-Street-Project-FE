@@ -6,7 +6,7 @@ import { login, logout } from 'actions/Authentication';
 function Authentication ({ children }) {
     const [ state, dispatch ] = useReducer(AuthenticationReducer);
 
-    const onLogin = () => dispatch(login());
+    const onLogin = (user) => dispatch(login(user));
     const onLogout = () => dispatch(logout());
 
     const props = {
