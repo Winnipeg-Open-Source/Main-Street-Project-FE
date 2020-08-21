@@ -1,7 +1,10 @@
 import { createContext } from 'react';
 
-const initialContext = {
+export const initialContext = {
+    isAttemptingLogin: true,
+    isLoggingIn: true,
     isLoggedIn: false,
-}
+    isLoginFailed: false,
+};
 
 export default createContext(initialContext);

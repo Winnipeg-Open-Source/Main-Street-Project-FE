@@ -23,6 +23,14 @@ export const LoggingIn = () => (
     />
 );
 
+export const LoginError = () => (
+    <LoginForm
+        isLoginFailed
+        email='email@email.com'
+        password='abcdefgh'
+    />
+);
+
 export default {
     title: 'Forms|LoginForm',
     component: LoginForm,

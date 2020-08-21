@@ -11,23 +11,26 @@ const request = {
 };
 
 function useLogin () {
-    const { onLogin } = useAuthentication();
+    const { onAttemptLogin, onLogin, onLoggedIn, onLoginFailed } = useAuthentication();
     const { response, fetchData } = useAxios(request);
     const goToLandingPage = useRoute(LANDING_PATH);
 
     const handleLogin = (email, password) => {
+        onLogin();
         fetchData({ email, password });
     };
 
     const handleLoginWithToken = () => {
-        const token = 
-        fetchData({ customToken: token });
+        onAttemptLogin();
+        fetchData();
     };
 
     useEffect(() => {
         if (!response.isLoading && !!response.data && !response.isError) {
-            onLogin(response.data);
+            onLoggedIn(response.data);
             goToLandingPage();
+        } else if (response.isError) {
+            onLoginFailed();
         }
     }, [response]);
 
