@@ -1,22 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Flex } from 'pcln-design-system';
 import SavingOverlay from 'containers/SavingOverlay';
 import Header from 'containers/Header';
 import Sidebar from 'containers/Sidebar';
 import Content from 'components/Content';
 
+const StyledFlex = styled(Flex)`
+    height: 100%;
+    overflow-y: hidden;
+`;
+
 function RouteWrapper ({ children }) {
     return (
         <React.Fragment>
             <SavingOverlay />
             <Header />
-            <Flex style={{ height: '100%' }}>
+            <StyledFlex>
                 <Sidebar />
                 <Content>
                     {children}
                 </Content>
-            </Flex>
+            </StyledFlex>
         </React.Fragment>
     );
 }

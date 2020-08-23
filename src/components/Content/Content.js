@@ -6,6 +6,7 @@ import { Flex } from 'pcln-design-system';
 const StyledContent = styled(Flex)`
     flex: 1;
     height: 100%;
+    overflow-y: scroll;
 `;
 
 function Content ({ className, children }) {

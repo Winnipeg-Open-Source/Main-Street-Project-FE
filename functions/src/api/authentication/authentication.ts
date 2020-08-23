@@ -39,8 +39,8 @@ router.post('/login', async (req: any, res: any) => {
     }
 });
 
-router.post('/logout', (_, res: any) => {
-    firebase.auth().signOut();
+router.post('/logout', async (_, res: any) => {
+    await firebase.auth().signOut();
     res.clearCookie('authToken');
     res.json('Logged out.');
 });

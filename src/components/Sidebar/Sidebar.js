@@ -9,8 +9,8 @@ const COLLAPSED_WIDTH = 56;
 const EXPANDED_WIDTH = 200;
 
 const LinksWrapper = styled(Flex)`
-    & > :not(:last-child) {
-        margin-bottom: 16px;
+    & > * {
+        padding: 8px 0;
     }
 `;
 
@@ -18,7 +18,7 @@ function Sidebar ({ className, isMobileSidebar, isCollapsed, currentPathname, ro
     const Wrapper = isMobileSidebar ? Modal : React.Fragment;
 
     const width = isCollapsed && !isMobileSidebar ? COLLAPSED_WIDTH : EXPANDED_WIDTH;
-    const backgroundColor = isMobileSidebar ? 'inherit' : 'tertiary.dark';
+    const backgroundColor = isMobileSidebar ? 'inherit' : 'tertiary';
     const padding = isMobileSidebar ? 0 : 3;
 
     const modalProps = isMobileSidebar ? {
