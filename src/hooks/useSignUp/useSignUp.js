@@ -15,9 +15,8 @@ function useSignUp () {
     const { response, fetchData } = useAxios(request);
     const goToLandingPage = useRoute(LANDING_PATH);
 
-    const handleSignUp = (email) => {
-        const href = window.location.href;
-        fetchData({ email, href });
+    const handleSignUp = (email, password) => {
+        fetchData({ email, password });
     };
 
     useEffect(() => {

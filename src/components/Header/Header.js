@@ -8,6 +8,7 @@ const StyledHeader = styled(Flex)`
     position: sticky;
     overflow-y: hidden;
     top: 0;
+    min-height: 56px;
     align-items: center;
     user-select: none;
     font-weight: bold;
