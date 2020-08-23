@@ -3,16 +3,16 @@
 exports[`ItemForm renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-qYUWV irQtBP"
+      class="sc-AxirZ sc-AxhCb sc-pIITJ fvsxQV"
     >
       <div
-        class="sc-AxirZ sc-AxhCb sc-pBlxj bOWLHE"
+        class="sc-AxirZ sc-AxhCb sc-pRFZy jPPOuz"
       >
         <label
-          class="sc-pdKru dQCRbh className"
+          class="sc-ptfmh cDYtMS className"
           color="border.light"
           font-size="10px"
           font-weight="bold"
@@ -22,7 +22,7 @@ exports[`ItemForm renders without crashing 1`] = `
             width="1"
           >
             <select
-              class="sc-oTaid bpOcmz sc-paWVw sc-pJipy ceCay"
+              class="sc-plVHf jbMuUc sc-ptSuy sc-pZCbX bRVWpf"
               data-testid="item-type-select"
               font-size="2,,1"
               id="item-type-select"
@@ -43,7 +43,7 @@ exports[`ItemForm renders without crashing 1`] = `
             </select>
             <svg
               aria-hidden="true"
-              class="sc-AxmLO fTwYWQ sc-fzoxKX sc-pZCuu bTxHcb"
+              class="sc-AxmLO fTwYWQ sc-fzqAui sc-pcZmk fxlvpJ"
               color="text.light"
               fill="currentcolor"
               focusable="false"
@@ -61,7 +61,7 @@ exports[`ItemForm renders without crashing 1`] = `
         </label>
       </div>
       <div
-        class="sc-AxirZ sc-AxhCb sc-qQxFs jbeWmJ"
+        class="sc-AxirZ sc-AxhCb sc-pAMRk jwXtLh"
       />
     </div>
   </div>

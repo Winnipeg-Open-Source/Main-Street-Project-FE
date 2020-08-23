@@ -18,7 +18,7 @@ describe ('Header', () => {
 
     it ('allows menu click', () => {
         const onMenuClick = jest.fn();
-        const { getByTestId } = renderWithTheme(<Header onMenuClick={onMenuClick} />);
+        const { getByTestId } = renderWithTheme(<Header isLoggedIn onMenuClick={onMenuClick} />);
 
         const MenuIcon = getByTestId(/menu-icon/);
 

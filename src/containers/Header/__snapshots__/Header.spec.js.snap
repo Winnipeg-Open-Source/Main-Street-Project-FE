@@ -3,32 +3,12 @@
 exports[`HeaderContainer renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-qQxFs bvtZEG"
+      class="sc-AxirZ sc-AxhCb sc-pAMRk irQlka"
       color="primary"
     >
-      <svg
-        aria-hidden="true"
-        class="sc-AxmLO gyOszF sc-pJurq sc-qYUWV gjufQg"
-        data-testid="menu-icon"
-        fill="currentcolor"
-        focusable="false"
-        height="24"
-        role="img"
-        tabindex="-1"
-        title="Menu"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <title>
-          Menu
-        </title>
-        <path
-          d="M3 13h18v-2H3v2zm0 5h18v-2H3v2zM3 6v2h18V6H3z"
-        />
-      </svg>
       Main Street Project Inventory System
     </div>
   </div>
