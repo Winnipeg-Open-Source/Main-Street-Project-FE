@@ -6,6 +6,10 @@
 - Jest
 - React Testing Library
 
+## Prerequisites
+
+- Install firebase tools: `npm install -g firebase-tools`
+
 ## Getting Started
 
 - Run `npm install`
@@ -25,5 +29,4 @@
 
 ### Deploy
 
-- Install firebase tools: `npm install -g firebase-tools`
 - Run `firebase deploy`
