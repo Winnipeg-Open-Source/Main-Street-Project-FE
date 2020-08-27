@@ -6,6 +6,7 @@ import { Card as PCLNCard } from 'pcln-design-system';
 const StyledCard = styled(PCLNCard)`
     display: flex;
     flex-direction: ${props => props.row ? 'row' : 'column'};
+    align-items: ${props => props.row ? 'center' : 'flex-start'};
     height: auto;
     cursor: ${props => props.onClick ? 'pointer': 'default'};
 `;

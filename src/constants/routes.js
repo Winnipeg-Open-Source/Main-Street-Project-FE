@@ -8,6 +8,7 @@ import {
     LOCATIONS_PATH,
     LOGOUT_PATH,
     REQUISITIONS_PATH,
+    USERS_PATH,
 } from 'constants/paths';
 
 const routes = [
@@ -15,6 +16,12 @@ const routes = [
         label: 'Home',
         path: LANDING_PATH,
         icon: <Home />,
+    },
+    {
+        label: 'Users',
+        path: USERS_PATH,
+        icon: <User />,
+        isAdmin: true,
     },
     {
         label: 'Donors',

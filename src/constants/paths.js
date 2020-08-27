@@ -26,6 +26,9 @@ export const REQUISITION_PATH = '/requisitions/:id';
 export const REQUISITION_NEW_PATH = '/requisitions/new';
 export const REQUISITION_EDIT_PATH = '/requisitions/edit/:id';
 
+export const USERS_PATH = '/users';
+export const USERS_NEW_PATH = '/users/new';
+
 const getPath = (path, id) => {
     return id
         ? path.includes(':id')

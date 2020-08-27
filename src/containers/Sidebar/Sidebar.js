@@ -7,7 +7,7 @@ import useSidebar from 'hooks/context/useSidebar';
 import routes from 'constants/routes';
 
 function Sidebar () {
-    const { isLoggedIn } = useAuthentication();
+    const { isLoggedIn, isAdmin } = useAuthentication();
     const { currentBreakpoint } = useResponsive();
     const { isCollapsed, onSidebarToggle } = useSidebar();
     const { pathname } = useLocation();
@@ -17,6 +17,7 @@ function Sidebar () {
     return isLoggedIn
         ? (
             <SidebarComponent
+                isAdmin={isAdmin}
                 isMobileSidebar={isSmallBreakpoint}
                 isCollapsed={isCollapsed}
                 currentPathname={pathname}

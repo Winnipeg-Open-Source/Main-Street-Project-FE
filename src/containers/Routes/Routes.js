@@ -18,6 +18,8 @@ import {
     REQUISITIONS_PATH,
     REQUISITION_NEW_PATH,
     SIGN_UP_PATH,
+    USERS_PATH,
+    USERS_NEW_PATH,
 } from 'constants/paths';
 import AuthenticatedRoute from 'containers/AuthenticatedRoute';
 import LandingPage from 'pages/Landing';
@@ -37,6 +39,8 @@ import LocationCreatePage from 'pages/LocationCreate';
 import RequisitionCreatePage from 'pages/RequisitionCreate';
 import RequisitionsPage from 'pages/Requisitions';
 import SignUpPage from 'pages/SignUp';
+import UsersPage from 'pages/Users';
+import UserCreatePage from 'pages/UserCreate';
 
 function Routes () {
     return (
@@ -58,6 +62,8 @@ function Routes () {
             <AuthenticatedRoute exact path={LOCATIONS_PATH} component={LocationsPage} />
             <AuthenticatedRoute exact path={REQUISITION_NEW_PATH} component={RequisitionCreatePage} />
             <AuthenticatedRoute exact path={REQUISITIONS_PATH} component={RequisitionsPage} />
+            <AuthenticatedRoute exact path={USERS_NEW_PATH} component={UserCreatePage} />
+            <AuthenticatedRoute exact path={USERS_PATH} component={UsersPage} />
         </Switch>
     );
 }

@@ -11,6 +11,7 @@ import EmployeesProvider from 'providers/Employees';
 import ItemsProvider from 'providers/Items';
 import LocationsProvider from 'providers/Locations';
 import RequisitionsProvider from 'providers/Requisitions';
+import UsersProvider from 'providers/Users';
 
 function Providers ({ children }) {
     return (
@@ -25,7 +26,9 @@ function Providers ({ children }) {
                                         <ItemsProvider>
                                             <LocationsProvider>
                                                 <RequisitionsProvider>
-                                                    {children}
+                                                    <UsersProvider>
+                                                        {children}
+                                                    </UsersProvider>
                                                 </RequisitionsProvider>
                                             </LocationsProvider>
                                         </ItemsProvider>

@@ -10,3 +10,4 @@ export const EMPLOYEES_API_PATH = BASE_API_PATH + '/employees';
 export const ITEMS_API_PATH = BASE_API_PATH + '/items';
 export const LOCATIONS_API_PATH = BASE_API_PATH + '/locations';
 export const REQUISITIONS_API_PATH = BASE_API_PATH + '/requisitions';
+export const USERS_API_PATH = BASE_API_PATH + '/users';

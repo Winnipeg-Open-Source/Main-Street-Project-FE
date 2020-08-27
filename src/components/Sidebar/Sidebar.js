@@ -14,7 +14,7 @@ const LinksWrapper = styled(Flex)`
     }
 `;
 
-function Sidebar ({ className, isMobileSidebar, isCollapsed, currentPathname, routes, onClose }) {
+function Sidebar ({ className, isAdmin, isMobileSidebar, isCollapsed, currentPathname, routes, onClose }) {
     const Wrapper = isMobileSidebar ? Modal : React.Fragment;
 
     const width = isCollapsed && !isMobileSidebar ? COLLAPSED_WIDTH : EXPANDED_WIDTH;
@@ -32,7 +32,7 @@ function Sidebar ({ className, isMobileSidebar, isCollapsed, currentPathname, ro
     return (
         <Wrapper {...modalProps}>
             <LinksWrapper className={className} flexDirection='column' width={width} color={backgroundColor} p={padding}>
-                {routes && routes.map(route => (
+                {routes && routes.map(route => (route.isAdmin && !isAdmin) || (
                     <Link
                         key={route.path}
                         isActive={currentPathname === route.path}
@@ -52,6 +52,7 @@ Sidebar.displayName = 'Sidebar';
 
 Sidebar.propTypes = {
     className: PropTypes.string,
+    isAdmin: PropTypes.bool,
     isMobileSidebar: PropTypes.bool,
     isCollapsed: PropTypes.bool,
     currentPathname: PropTypes.string,
