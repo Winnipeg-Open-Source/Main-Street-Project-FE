@@ -24,6 +24,8 @@ function Authentication (state = {}, action = {}) {
                 isAttemptingLogin: false,
                 isLoggingIn: false,
                 isLoggedIn: true,
+                isAdmin: action.user.isAdmin,
+                uid: action.user.uid,
             };
 
         case LOGIN_FAILED:

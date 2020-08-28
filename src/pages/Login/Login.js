@@ -4,22 +4,21 @@ import LoginForm from 'containers/LoginForm';
 import Spinner from 'components/Spinner';
 import useAuthentication from 'hooks/context/useAuthentication';
 import useLogin from 'hooks/useLogin';
-import useRoute from 'hooks/useRoute';
-import { LANDING_PATH } from 'constants/paths';
+import usePreviousRoute from 'hooks/usePreviousRoute';
 
 function Login () {
     const { isAttemptingLogin, isLoggedIn } = useAuthentication();
     const { handleLoginWithToken } = useLogin();
-    const goToLandingPage = useRoute(LANDING_PATH);
+    const goToPreviousRoute = usePreviousRoute();
 
     useEffect(() => {
         !isLoggedIn && handleLoginWithToken();
-        isLoggedIn && goToLandingPage();
-    }, []);
+        isLoggedIn && goToPreviousRoute();
+    }, [isLoggedIn]);
 
     return (
         <Flex justifyContent='center' width={1} p={3}>
-            {isAttemptingLogin
+            {isAttemptingLogin || isLoggedIn
                 ? <Flex mt={4}><Spinner /></Flex>
                 : <LoginForm />
             }

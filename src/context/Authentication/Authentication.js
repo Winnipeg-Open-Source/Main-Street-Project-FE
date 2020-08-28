@@ -5,6 +5,7 @@ export const initialContext = {
     isLoggingIn: true,
     isLoggedIn: false,
     isLoginFailed: false,
+    isAdmin: false,
 };
 
 export default createContext(initialContext);

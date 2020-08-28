@@ -1,4 +1,5 @@
 import * as firebase from 'firebase';
+import * as firebaseAdmin from 'firebase-admin';
 import express from 'express';
 // @ts-ignore
 import jwt from 'jsonwebtoken';
@@ -10,7 +11,7 @@ router.post('/signUp', async (req: any, res: any) => {
 
     try {
         const { user } = await firebase.auth().createUserWithEmailAndPassword(email, password);
-        const token = jwt.sign({ uid: user?.uid }, 'ajbsadfjhasdf');
+        const token = jwt.sign({ uid: user?.uid, isAdmin: false }, 'ajbsadfjhasdf');
         res.cookie('authToken', token);
         res.json(user);
     } catch (err) {
@@ -30,9 +31,15 @@ router.post('/login', async (req: any, res: any) => {
 
     try {
         const { user } = await firebase.auth().signInWithEmailAndPassword(email, password);
-        const token = jwt.sign({ uid: user?.uid }, 'ajbsadfjhasdf');
+        const userRecord = await firebaseAdmin.auth().getUser(user?.uid || '');
+        const isAdmin = userRecord?.customClaims?.isAdmin;
+
+        const token = jwt.sign({ uid: user?.uid, isAdmin }, 'ajbsadfjhasdf');
         res.cookie('authToken', token);
-        res.json(user);
+        res.json({
+            ...user?.toJSON(),
+            isAdmin,
+        });
     } catch (err) {
         res.status(400);
         res.json(err);

@@ -8,7 +8,7 @@ const Authentication = async (req: any, res: any, next: any) => {
         next();
         return;
     }
-    
+
     try {
         const user = jwt.verify(token, 'ajbsadfjhasdf');
         res.locals.user = user;

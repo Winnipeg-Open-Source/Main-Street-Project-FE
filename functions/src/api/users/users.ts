@@ -24,11 +24,13 @@ router.post('/', async (req: any, res: any) => {
 
 router.put('/:id', async (req: any, res: any) => {
     const id: string = req.params.id;
-    const { permissions } = req.body;
+    const { isAdmin } = req.body;
 
     try {
-        await firebaseAdmin.auth().updateUser(id, {
-            permissions,
+        await firebaseAdmin.auth().setCustomUserClaims(id, { isAdmin: isAdmin });
+        res.json({
+            uid: id,
+            isAdmin,
         });
     } catch (err) {
         res.status(404);

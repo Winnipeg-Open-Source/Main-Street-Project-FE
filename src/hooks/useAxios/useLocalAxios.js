@@ -7,7 +7,9 @@ import {
     EMPLOYEES_API_PATH,
     ITEMS_API_PATH,
     LOCATIONS_API_PATH,
+    LOGIN_API_PATH,
     REQUISITIONS_API_PATH,
+    USERS_API_PATH,
 } from 'constants/api';
 import { mockDonations } from 'tests/mocks/donations';
 import { mockDonors } from 'tests/mocks/donors';
@@ -15,6 +17,7 @@ import { mockEmployees } from 'tests/mocks/employees';
 import { mockItems } from 'tests/mocks/items';
 import { mockLocations } from 'tests/mocks/locations';
 import { mockRequisitions } from 'tests/mocks/requisitions';
+import { mockUsers } from 'tests/mocks/users';
 
 const initialState = {
     donations: mockDonations,
@@ -23,6 +26,7 @@ const initialState = {
     items: mockItems,
     locations: mockLocations,
     requisitions: mockRequisitions,
+    users: mockUsers,
 };
 
 const initialReducerState = {
@@ -103,6 +107,13 @@ function setData (url, data, state, setState) {
             });
             break;
 
+        case LOGIN_API_PATH:
+            return {
+                uid: 123456789,
+                isAdmin: true,
+                isLoggedIn: true,
+            };
+
         case REQUISITIONS_API_PATH:
             setState({
                 ...state,
@@ -142,6 +153,9 @@ function getData (url, state) {
 
         case REQUISITIONS_API_PATH:
             return state.requisitions;
+        
+        case USERS_API_PATH:
+            return state.users;
     }
 }
 

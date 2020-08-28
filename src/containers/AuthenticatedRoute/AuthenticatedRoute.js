@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import { Route } from 'react-router-dom';
-import useRoute from 'hooks/useRoute';
+import useRedirectToLogin from 'hooks/useRedirectToLogin';
 import useAuthentication from 'hooks/context/useAuthentication';
-import { LOGIN_PATH } from 'constants/paths';
 
 function AuthenticatedRoute (props) {
     const { isLoggedIn } = useAuthentication();
-    const goToLogin = useRoute(LOGIN_PATH);
+    const goToLogin = useRedirectToLogin();
 
     useEffect(() => {
         !isLoggedIn && goToLogin();
