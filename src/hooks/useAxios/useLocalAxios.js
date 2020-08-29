@@ -126,6 +126,9 @@ function setData (url, data, state, setState) {
                 ],
             });
             break;
+
+        case USERS_API_PATH:
+            return 'Email is already used.';
     }
 
     return {

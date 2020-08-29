@@ -19,8 +19,10 @@ function useSaveResource (apiPath, redirectPath, onSave) {
     };
 
     useEffect(() => {
-        if (!response.isLoading && !!response.data) {
-            onSave(response.data);
+        if (!response.isLoading && response.isError) {
+            setSaving(false);
+        } else if (!response.isLoading && !!response.data) {
+            onSave && onSave(response.data);
             setSaving(false);
             goToRedirectPage();
         }

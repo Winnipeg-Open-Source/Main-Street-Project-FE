@@ -13,6 +13,13 @@ router.post('/', async (req: any, res: any) => {
     const { email } = req.body;
 
     try {
+        try {
+            await firebaseAdmin.auth().getUserByEmail(email);
+            res.status(400);
+            res.json(`${email} already belongs to a user.`);
+            return;
+        } catch (err) {}
+
         await firebase.auth().sendSignInLinkToEmail(email, actionCodeSettings);
         res.status(201);
         res.json(`Email sent to ${email}`);

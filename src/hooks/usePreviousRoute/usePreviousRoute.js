@@ -6,7 +6,7 @@ function usePreviousRoute () {
     const { search } = useLocation();
     const referrer = search && search.replace('?referrer=', '');
     const previousRoute = referrer || LANDING_PATH;
-    return useRoute(previousRoute);
+    return useRoute(previousRoute, true);
 }
 
 export default usePreviousRoute;
