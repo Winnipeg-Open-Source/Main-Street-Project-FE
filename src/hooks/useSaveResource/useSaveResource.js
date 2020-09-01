@@ -3,15 +3,15 @@ import useAxios from 'hooks/useAxios';
 import useSaving from 'hooks/context/useSaving';
 import useRoute from 'hooks/useRoute';
 
-function useSaveResource (apiPath, redirectPath, onSave) {
+function useSaveResource (apiPath, redirectPath, onSave, method = 'post') {
     const request = {
         url: apiPath,
-        method: 'post',
+        method,
     };
 
     const { response, fetchData } = useAxios(request);
     const { setSaving } = useSaving();
-    const goToRedirectPage = useRoute(redirectPath);
+    const goToRedirectPage = redirectPath && useRoute(redirectPath);
 
     const handleSave = (data) => {
         setSaving(true);
@@ -24,7 +24,7 @@ function useSaveResource (apiPath, redirectPath, onSave) {
         } else if (!response.isLoading && !!response.data) {
             onSave && onSave(response.data);
             setSaving(false);
-            goToRedirectPage();
+            goToRedirectPage && goToRedirectPage();
         }
     }, [response]);
 

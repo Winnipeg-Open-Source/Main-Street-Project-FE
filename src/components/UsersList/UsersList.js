@@ -4,7 +4,7 @@ import { Text } from 'pcln-design-system';
 import List from 'components/List';
 import UserCard from 'components/UserCard';
 
-function UsersList ({ className, users }) {
+function UsersList ({ className, users, onAdminChange }) {
     return (
         <List className={className}>
             {users && users.length > 0
@@ -12,6 +12,7 @@ function UsersList ({ className, users }) {
                     <UserCard
                         key={user.uid}
                         {...user}
+                        onAdminChange={onAdminChange}
                     />
                 ))
                 : <Text textAlign='center'>No users yet...</Text>
@@ -24,6 +25,8 @@ UsersList.displayName = 'UsersList';
 
 UsersList.propTypes = {
     className: PropTypes.string,
+    users: PropTypes.array,
+    onAdminChange: PropTypes.func,
 };
 
 export default memo(UsersList);

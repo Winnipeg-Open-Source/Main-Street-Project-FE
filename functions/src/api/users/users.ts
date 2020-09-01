@@ -36,7 +36,7 @@ router.put('/:id', async (req: any, res: any) => {
     try {
         await firebaseAdmin.auth().setCustomUserClaims(id, { isAdmin: isAdmin });
         res.json({
-            uid: id,
+            id,
             isAdmin,
         });
     } catch (err) {
@@ -48,7 +48,16 @@ router.put('/:id', async (req: any, res: any) => {
 router.get('/', async (req: any, res: any) => {
     try {
         const listUsersResult = await firebaseAdmin.auth().listUsers();
-        const users = listUsersResult && listUsersResult.users.map(user => user.toJSON());
+        const users = listUsersResult && listUsersResult.users.map(user => {
+            const userJSON = user.toJSON();
+            const isAdmin = userJSON?.customClaims?.isAdmin;
+
+            return {
+                ...userJSON,
+                id: userJSON?.uid,
+                isAdmin,
+            };
+        });
 
         res.json(users);
     } catch (err) {

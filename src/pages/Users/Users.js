@@ -3,10 +3,15 @@ import Page from 'components/Page';
 import Input from 'components/Input';
 import UsersList from 'components/UsersList';
 import NewButton from 'containers/NewButton';
+import useSaveResource from 'hooks/useSaveResource';
 import useUsers from 'hooks/context/useUsers';
+import { USERS_API_PATH } from 'constants/api';
 
 function Users () {
-    const { isLoading, users, onLoadUsers } = useUsers();
+    const { isLoading, users, onUpdateUser, onLoadUsers } = useUsers();
+    const { handleSave } = useSaveResource(USERS_API_PATH, null, onUpdateUser, 'put');
+
+    const onAdminChange = (id, isAdmin) => handleSave({ id, isAdmin });
     const disabled = isLoading || (users && users.length === 0);
 
     useEffect(() => {
@@ -16,7 +21,7 @@ function Users () {
     return (
         <Page isLoading={isLoading} title='Users' renderAction={NewButton}>
             <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
-            <UsersList users={users} />
+            <UsersList users={users} onAdminChange={onAdminChange} />
         </Page>
     );
 }
