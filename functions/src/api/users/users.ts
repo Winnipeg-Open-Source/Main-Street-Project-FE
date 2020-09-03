@@ -50,11 +50,14 @@ router.get('/', async (req: any, res: any) => {
         const listUsersResult = await firebaseAdmin.auth().listUsers();
         const users = listUsersResult && listUsersResult.users.map(user => {
             const userJSON = user.toJSON();
+            // @ts-ignore
             const isAdmin = userJSON?.customClaims?.isAdmin;
+            // @ts-ignore
+            const uid = userJSON?.uid;
 
             return {
                 ...userJSON,
-                id: userJSON?.uid,
+                id: uid,
                 isAdmin,
             };
         });

@@ -7,6 +7,7 @@ import ItemsRouter from './items';
 import LocationsRouter from './locations';
 import RequisitionsRouter from './requisitions';
 import UsersRouter from './users';
+import requireAdmin from '../middleware/requireAdmin';
 
 const router = express.Router();
 
@@ -17,6 +18,6 @@ router.use('/employees', EmployeesRouter);
 router.use('/items', ItemsRouter);
 router.use('/locations', LocationsRouter);
 router.use('/requisitions', RequisitionsRouter);
-router.use('/users', UsersRouter);
+router.use('/users', requireAdmin, UsersRouter);
 
 export default router;

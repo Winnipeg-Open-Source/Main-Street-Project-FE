@@ -63,7 +63,7 @@ function Routes () {
             <AuthenticatedRoute exact path={REQUISITION_NEW_PATH} component={RequisitionCreatePage} />
             <AuthenticatedRoute exact path={REQUISITIONS_PATH} component={RequisitionsPage} />
             <AuthenticatedRoute exact path={USERS_NEW_PATH} component={UserCreatePage} />
-            <AuthenticatedRoute exact path={USERS_PATH} component={UsersPage} />
+            <AuthenticatedRoute requiresAdmin exact path={USERS_PATH} component={UsersPage} />
         </Switch>
     );
 }

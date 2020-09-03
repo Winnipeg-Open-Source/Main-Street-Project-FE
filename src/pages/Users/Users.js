@@ -21,7 +21,7 @@ function Users () {
     return (
         <Page isLoading={isLoading} title='Users' renderAction={NewButton}>
             <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
-            <UsersList users={users} onAdminChange={onAdminChange} />
+            <UsersList isLoading={isLoading} users={users} onAdminChange={onAdminChange} />
         </Page>
     );
 }

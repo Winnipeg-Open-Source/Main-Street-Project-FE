@@ -8,6 +8,10 @@ import Card from 'components/Card';
 const StyledCard = styled(Card)`
     font-size: ${themeGet('fontSizes.1')}px;
     line-height: ${themeGet('lineHeights.standard')};
+
+    & > span {
+        width: 100%;
+    }
 `;
 
 function DonationCardSkeleton ({ className }) {

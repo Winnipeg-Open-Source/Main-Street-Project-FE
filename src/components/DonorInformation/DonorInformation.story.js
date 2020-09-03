@@ -1,5 +1,6 @@
 import React from 'react';
 import DonorInformation from './DonorInformation';
+import DonorInformationSkeleton from './DonorInformationSkeleton';
 
 const props = {
     address: '2600 - 360 Main Street',
@@ -7,6 +8,8 @@ const props = {
     email: 'test@gmail.com',
     phoneNumber: '204-555-5555',
 };
+
+export const Loading = () => <DonorInformationSkeleton />;
 
 export const WithoutInfo = () => <DonorInformation />;
 
