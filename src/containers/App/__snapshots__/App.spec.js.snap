@@ -12,11 +12,10 @@ exports[`App renders without crashing 1`] = `
       Main Street Project Inventory System
     </div>
     <div
-      class="sc-AxirZ sc-AxhCb cRjlXG"
-      style="height: 100%;"
+      class="sc-AxirZ sc-AxhCb sc-pRhbc bTvRHw"
     >
       <div
-        class="sc-AxirZ sc-AxhCb sc-pJhSf fZKBiw"
+        class="sc-AxirZ sc-AxhCb sc-pJhSf BfXtC"
         color="primary.light"
       >
         <div

@@ -6,7 +6,7 @@ exports[`DonorCard renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-pQfvp sc-pAMRk cnQumW"
+      class="sc-AxirZ sc-pQfvp sc-pAMRk isCbCu"
       color="background.lightest"
       data-testid="donor-card"
       width="1"
@@ -34,14 +34,14 @@ exports[`DonorCard skeleton renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-pQfvp sc-pAMRk NZHHS sc-pRFZy ihGggO"
+      class="sc-AxirZ sc-pQfvp sc-pAMRk djnmSu sc-pRFZy fVRgPn"
       color="background.lightest"
       width="1"
     >
       <span>
         <span
           class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-          style="width: 25%;"
+          style="width: 25%; height: 14px;"
         >
           ‌
         </span>
@@ -49,7 +49,7 @@ exports[`DonorCard skeleton renders without crashing 1`] = `
       <span>
         <span
           class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-          style="width: 50%;"
+          style="width: 50%; height: 14px;"
         >
           ‌
         </span>

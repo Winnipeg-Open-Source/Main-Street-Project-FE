@@ -14,8 +14,8 @@ exports[`Sidebar renders with collapsed sidebar 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-pkfsj eMoorP"
-      color="tertiary.dark"
+      class="sc-AxirZ sc-AxhCb sc-pkfsj gCUQlb"
+      color="tertiary"
       width="56"
     />
   </div>
@@ -28,8 +28,8 @@ exports[`Sidebar renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-pkfsj destcu"
-      color="tertiary.dark"
+      class="sc-AxirZ sc-AxhCb sc-pkfsj igsiIe"
+      color="tertiary"
       width="200"
     />
   </div>
