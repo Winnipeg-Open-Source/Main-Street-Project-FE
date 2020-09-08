@@ -9,6 +9,7 @@
     "deploy": "npm run build && firebase deploy",
     "dev": "webpack-dev-server --hot --silent",
     "start": "npm run build && firebase emulators:start",
+    "start:client": "firebase emulators:start --only hosting",
     "storybook": "start-storybook -c .storybook",
     "test": "jest --silent --coverage"
   },

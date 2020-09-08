@@ -1,8 +1,7 @@
 import * as firebase from 'firebase';
 import * as firebaseAdmin from 'firebase-admin';
 import express from 'express';
-// @ts-ignore
-import jwt from 'jsonwebtoken';
+import { sign } from '../../utils/jwt';
 
 const router = express.Router();
 
@@ -11,8 +10,9 @@ router.post('/signUp', async (req: any, res: any) => {
 
     try {
         const { user } = await firebase.auth().createUserWithEmailAndPassword(email, password);
-        const token = jwt.sign({ uid: user?.uid, isAdmin: false }, 'ajbsadfjhasdf');
-        res.cookie('authToken', token);
+        const token = sign({ uid: user?.uid, isAdmin: false });
+        const session = JSON.stringify({ authToken: token });
+        res.cookie('__session', session);
         res.json(user);
     } catch (err) {
         res.status(400);
@@ -34,8 +34,9 @@ router.post('/login', async (req: any, res: any) => {
         const userRecord = await firebaseAdmin.auth().getUser(user?.uid || '');
         const isAdmin = userRecord?.customClaims?.isAdmin;
 
-        const token = jwt.sign({ uid: user?.uid, isAdmin }, 'ajbsadfjhasdf');
-        res.cookie('authToken', token);
+        const token = sign({ uid: user?.uid, isAdmin });
+        const session = JSON.stringify({ authToken: token });
+        res.cookie('__session', session);
         res.json({
             ...user?.toJSON(),
             isAdmin,
@@ -48,7 +49,7 @@ router.post('/login', async (req: any, res: any) => {
 
 router.post('/logout', async (_, res: any) => {
     await firebase.auth().signOut();
-    res.clearCookie('authToken');
+    res.clearCookie('__session');
     res.json('Logged out.');
 });
 

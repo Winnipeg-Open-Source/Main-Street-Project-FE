@@ -18,7 +18,6 @@ const webapp = express();
 
 webapp.use(cookieParser());
 webapp.use(cors({ origin: true }));
-webapp.use(authMiddleware);
-webapp.use('/api', apiRouter);
+webapp.use('/api', authMiddleware, apiRouter);
 
 export const app = functions.https.onRequest(webapp);
