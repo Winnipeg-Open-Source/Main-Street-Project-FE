@@ -8,16 +8,17 @@ import LocationsRouter from './locations';
 import RequisitionsRouter from './requisitions';
 import UsersRouter from './users';
 import requireAdmin from '../middleware/requireAdmin';
+import requireAuth from '../middleware/requireAuth';
 
 const router = express.Router();
 
 router.use('/', AuthenticationRouter);
-router.use('/donations', DonationsRouter);
-router.use('/donors', DonorsRouter);
-router.use('/employees', EmployeesRouter);
-router.use('/items', ItemsRouter);
-router.use('/locations', LocationsRouter);
-router.use('/requisitions', RequisitionsRouter);
+router.use('/donations', requireAuth, DonationsRouter);
+router.use('/donors', requireAuth, DonorsRouter);
+router.use('/employees', requireAuth, EmployeesRouter);
+router.use('/items', requireAuth, ItemsRouter);
+router.use('/locations', requireAuth, LocationsRouter);
+router.use('/requisitions', requireAuth, RequisitionsRouter);
 router.use('/users', requireAdmin, UsersRouter);
 
 export default router;

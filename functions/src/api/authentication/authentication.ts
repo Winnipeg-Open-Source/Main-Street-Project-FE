@@ -24,7 +24,7 @@ router.post('/login', async (req: any, res: any) => {
     const { email, password } = req.body;
     const currentUser = res.locals.user;
 
-    if (currentUser) {
+    if (currentUser && !!currentUser.uid) {
         res.json(currentUser);
         return;
     }
