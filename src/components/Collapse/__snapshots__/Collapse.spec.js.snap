@@ -3,22 +3,22 @@
 exports[`Collapse renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-pCPXO sc-qQxFs jeoTiO"
+      class="sc-AxirZ sc-pQfvp sc-pAMRk djnmSu"
       color="background.lightest"
       width="1"
     >
       <div
-        class="sc-AxirZ sc-AxhCb sc-qYUWV fAjewc"
+        class="sc-AxirZ sc-AxhCb sc-pIITJ JHjYq"
       >
         <div
           class="sc-AxhUy gGlGcm"
         />
         <svg
           aria-hidden="true"
-          class="sc-AxmLO bliMTQ sc-fzoxKX gYYuDx"
+          class="sc-AxmLO bliMTQ sc-fzqAui eslvzV"
           fill="currentcolor"
           focusable="false"
           height="24"
@@ -40,10 +40,10 @@ exports[`Collapse renders without crashing 1`] = `
           class="ReactCollapse--content"
         >
           <div
-            class="sc-AxirZ sc-AxhCb sc-pBlxj jwVAMe"
+            class="sc-AxirZ sc-AxhCb sc-pRFZy cxlcIV"
           >
             <hr
-              class="sc-pTHAw iCiTWw"
+              class="sc-oUAoT bfCxJq"
               color="border"
             />
           </div>

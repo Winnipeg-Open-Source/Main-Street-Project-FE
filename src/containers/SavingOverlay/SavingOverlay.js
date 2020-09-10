@@ -1,12 +1,14 @@
 import React from 'react';
-import SavingOverlayComponent from 'components/SavingOverlay';
+import LoadingOverlayComponent from 'components/LoadingOverlay';
 import useSaving from 'hooks/context/useSaving';
 
 function SavingOverlay () {
     const { isSaving } = useSaving();
 
     return (
-        <SavingOverlayComponent isSaving={isSaving} />
+        <LoadingOverlayComponent isLoading={isSaving}>
+            Saving...
+        </LoadingOverlayComponent>
     );
 }
 

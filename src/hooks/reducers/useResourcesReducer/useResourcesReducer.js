@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useReducer } from 'react';
 import ResourcesReducer from 'reducers/Resources';
 import useLoadResources from 'hooks/useLoadResources';
-import { loadResources, saveResource } from 'actions/Resources';
+import { loadResources, saveResource, updateResource } from 'actions/Resources';
 
 const initialState = {
     isLoading: true,
@@ -18,11 +18,13 @@ function useResourceReducer (apiPath) {
     }, [isLoading]);
 
     const onSave = useCallback((resource) => dispatch(saveResource(resource)));
+    const onUpdate = useCallback((resource) => dispatch(updateResource(resource)));
 
     return {
         ...state,
-        onSave,
         onLoad: fetchData,
+        onSave,
+        onUpdate,
     };
 }
 

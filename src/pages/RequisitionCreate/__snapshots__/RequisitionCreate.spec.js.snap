@@ -3,10 +3,10 @@
 exports[`RequisitionCreate renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb jTGKnC"
+      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
       width="1"
     >
       <div
@@ -14,20 +14,20 @@ exports[`RequisitionCreate renders without crashing 1`] = `
         width="1"
       >
         <div
-          class="sc-AxhUy sc-qQxFs hINyDI"
+          class="sc-AxhUy sc-pIITJ gbtPxP"
           font-size="3"
         >
           New Requisition
         </div>
       </div>
       <div
-        class="sc-AxirZ sc-AxhCb sc-pBlxj dyrmdj"
+        class="sc-AxirZ sc-AxhCb sc-pZCbX kEIMlE"
       >
         <div
-          class="sc-AxirZ sc-AxhCb sc-pJipy UdROK"
+          class="sc-AxirZ sc-AxhCb sc-oTaAA hapUIm"
         >
           <label
-            class="sc-pdKru dQCRbh className"
+            class="sc-ptfmh cDYtMS className"
             color="border.light"
             font-size="10px"
             font-weight="bold"
@@ -37,7 +37,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
               width="1"
             >
               <select
-                class="sc-oTaid bpOcmz sc-paWVw sc-pRgDJ dojhwH"
+                class="sc-plVHf jbMuUc sc-ptSuy sc-paWCZ bICCST"
                 data-testid="employee-select"
                 disabled=""
                 font-size="2,,1"
@@ -53,7 +53,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
               </select>
               <svg
                 aria-hidden="true"
-                class="sc-AxmLO fTwYWQ sc-fzoxKX sc-pZCuu bTxHcb"
+                class="sc-AxmLO fTwYWQ sc-fzqAui sc-pcZmk fxlvpJ"
                 color="text.light"
                 fill="currentcolor"
                 focusable="false"
@@ -70,14 +70,14 @@ exports[`RequisitionCreate renders without crashing 1`] = `
             </div>
           </label>
           <label
-            class="sc-pdKru gdtSdk"
+            class="sc-ptfmh ibAoZD"
             color="border.light"
             font-size="1"
             font-weight="bold"
           >
             Description
             <textarea
-              class="sc-pAYXY sc-pjGMk bdNXVS"
+              class="sc-pTUxa sc-qYVps gaUhZc"
               id="requisition-description"
             />
           </label>
@@ -92,7 +92,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
               aria-autocomplete="list"
               aria-labelledby="downshift-0-label"
               autocomplete="off"
-              class="sc-qcrrk gTabPy sc-pbvYO hcYciJ"
+              class="sc-pdkfH jYnISK sc-qQlyE jmRcib"
               disabled=""
               font-size="2,,1"
               id="downshift-0-input"
@@ -102,29 +102,29 @@ exports[`RequisitionCreate renders without crashing 1`] = `
             />
             <div
               aria-labelledby="downshift-0-label"
-              class="sc-AxirZ sc-pCPXO sc-pZdvY jzYtnB"
+              class="sc-AxirZ sc-pQfvp sc-pjTIO cGtXuM"
               height="256px"
               id="downshift-0-menu"
               role="listbox"
             />
           </div>
           <div
-            class="sc-AxirZ sc-AxhCb sc-pjumZ llGral"
+            class="sc-AxirZ sc-AxhCb sc-qYhBd fFHzQn"
             width="1"
           />
         </div>
         <div
-          class="sc-AxirZ sc-AxhCb sc-qYUWV cvxNOY"
+          class="sc-AxirZ sc-AxhCb sc-pRFZy eQXfCz"
         >
           <button
-            class="sc-pdjNk cJMkLU"
+            class="sc-ptEpz beoNIQ"
             color="tertiary"
             width="1"
           >
             Cancel
           </button>
           <button
-            class="sc-pdjNk dqYiIX"
+            class="sc-ptEpz bUlphT"
             color="primary"
             width="1"
           >

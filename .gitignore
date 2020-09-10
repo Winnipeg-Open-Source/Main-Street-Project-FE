@@ -7,5 +7,6 @@ dist/
 .vscode
 .DS_STORE
 
+key.json
 jsconfig.json
 *-debug.log

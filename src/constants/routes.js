@@ -1,12 +1,14 @@
 import React from 'react';
-import { Document, Gallery, Home, Loyalty, Map, User } from 'pcln-icons';
+import { Document, ExitToApp, Gallery, Home, Loyalty, Map, User } from 'pcln-icons';
 import {
     LANDING_PATH,
     DONATIONS_PATH,
     DONORS_PATH,
     ITEMS_PATH,
     LOCATIONS_PATH,
+    LOGOUT_PATH,
     REQUISITIONS_PATH,
+    USERS_PATH,
 } from 'constants/paths';
 
 const routes = [
@@ -14,6 +16,12 @@ const routes = [
         label: 'Home',
         path: LANDING_PATH,
         icon: <Home />,
+    },
+    {
+        label: 'Users',
+        path: USERS_PATH,
+        icon: <User />,
+        isAdmin: true,
     },
     {
         label: 'Donors',
@@ -39,6 +47,11 @@ const routes = [
         label: 'Requisitions',
         path: REQUISITIONS_PATH,
         icon: <Document />,
+    },
+    {
+        label: 'Logout',
+        path: LOGOUT_PATH,
+        icon: <ExitToApp />,
     },
 ];
 

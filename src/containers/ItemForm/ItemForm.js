@@ -20,7 +20,6 @@ function ItemForm () {
     const { state, onChange, onAddLineItemClick, onLineItemQuantityChange } = useItemForm(initialState);
     const { onSaveItem } = useItems();
     const { isLoading: isLoadingLocations, locations, onLoadLocations } = useLocations();
-    const { lineItems, setLineItems } = useState([]);
     const goToItems = useRoute(ITEMS_PATH);
 
     const { handleSave } = useSaveResource(ITEMS_API_PATH, ITEMS_PATH, onSaveItem);

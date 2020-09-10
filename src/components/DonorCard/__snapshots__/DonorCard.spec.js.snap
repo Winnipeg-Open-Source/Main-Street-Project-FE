@@ -3,10 +3,10 @@
 exports[`DonorCard renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-pCPXO sc-qQxFs kVuSIG"
+      class="sc-AxirZ sc-pQfvp sc-pAMRk isCbCu"
       color="background.lightest"
       data-testid="donor-card"
       width="1"
@@ -31,17 +31,17 @@ exports[`DonorCard renders without crashing 1`] = `
 exports[`DonorCard skeleton renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-pCPXO sc-qQxFs jeoTiO sc-pBlxj fEneLh"
+      class="sc-AxirZ sc-pQfvp sc-pAMRk djnmSu sc-pRFZy fVRgPn"
       color="background.lightest"
       width="1"
     >
       <span>
         <span
           class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-          style="width: 25%;"
+          style="width: 25%; height: 14px;"
         >
           ‌
         </span>
@@ -49,7 +49,7 @@ exports[`DonorCard skeleton renders without crashing 1`] = `
       <span>
         <span
           class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-          style="width: 50%;"
+          style="width: 50%; height: 14px;"
         >
           ‌
         </span>

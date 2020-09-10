@@ -7,6 +7,10 @@ import Card from 'components/Card';
 
 const StyledCard = styled(Card)`
     line-height: ${themeGet('lineHeights.standard')};
+
+    & > span {
+        width: 100%;
+    }
 `;
 
 function RequisitionCardSkeleton ({ className }) {

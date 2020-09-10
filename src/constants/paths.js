@@ -1,4 +1,7 @@
 export const LANDING_PATH = '/';
+export const LOGIN_PATH = '/login';
+export const LOGOUT_PATH = '/logout';
+export const SIGN_UP_PATH = '/signUp';
 
 export const DONATIONS_PATH = '/donations';
 export const DONATION_PATH = '/donations/:id';
@@ -22,6 +25,9 @@ export const REQUISITIONS_PATH ='/requisitions';
 export const REQUISITION_PATH = '/requisitions/:id';
 export const REQUISITION_NEW_PATH = '/requisitions/new';
 export const REQUISITION_EDIT_PATH = '/requisitions/edit/:id';
+
+export const USERS_PATH = '/users';
+export const USERS_NEW_PATH = '/users/new';
 
 const getPath = (path, id) => {
     return id

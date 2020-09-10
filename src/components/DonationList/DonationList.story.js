@@ -1,5 +1,6 @@
 import React from 'react';
 import DonationList from './DonationList';
+import DonationListSkeleton from './DonationListSkeleton';
 
 const props = {
     donations: [
@@ -15,6 +16,8 @@ const props = {
         },
     ],
 };
+
+export const Loading = () => <DonationListSkeleton />;
 
 export const WithoutDonations = () => <DonationList />;
 

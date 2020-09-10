@@ -3,31 +3,31 @@
 exports[`ClothesDonationForm renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <input
-      class="sc-qcrrk sc-qQxFs iUvCRq"
+      class="sc-pdkfH sc-pAMRk fgScIC"
       id="name"
       name="name"
       placeholder="Name"
       value=""
     />
     <input
-      class="sc-qcrrk sc-qQxFs iUvCRq"
+      class="sc-pdkfH sc-pAMRk fgScIC"
       id="description"
       name="description"
       placeholder="Description"
       value=""
     />
     <input
-      class="sc-qcrrk sc-qQxFs iUvCRq"
+      class="sc-pdkfH sc-pAMRk fgScIC"
       id="quantity-name"
       name="quantityName"
       placeholder="Quantity Name"
       value=""
     />
     <label
-      class="sc-pdKru dQCRbh className"
+      class="sc-ptfmh cDYtMS className"
       color="border.light"
       font-size="10px"
       font-weight="bold"
@@ -38,7 +38,7 @@ exports[`ClothesDonationForm renders without crashing 1`] = `
         width="1"
       >
         <select
-          class="sc-oTaid bpOcmz sc-paWVw sc-qYUWV imGcog"
+          class="sc-plVHf jbMuUc sc-ptSuy sc-pIITJ kkUGby"
           data-testid="Size"
           font-size="2,,1"
           id="size"
@@ -68,7 +68,7 @@ exports[`ClothesDonationForm renders without crashing 1`] = `
         </select>
         <svg
           aria-hidden="true"
-          class="sc-AxmLO fTwYWQ sc-fzoxKX sc-pZCuu bTxHcb"
+          class="sc-AxmLO fTwYWQ sc-fzqAui sc-pcZmk fxlvpJ"
           color="text.light"
           fill="currentcolor"
           focusable="false"
@@ -85,7 +85,7 @@ exports[`ClothesDonationForm renders without crashing 1`] = `
       </div>
     </label>
     <div
-      class="sc-AxirZ sc-AxhCb sc-pjumZ jtOhCp"
+      class="sc-AxirZ sc-AxhCb sc-qQlyE gSYXBB"
       width="1"
     >
       <div
@@ -99,7 +99,7 @@ exports[`ClothesDonationForm renders without crashing 1`] = `
           aria-autocomplete="list"
           aria-labelledby="downshift-0-label"
           autocomplete="off"
-          class="sc-qcrrk gTabPy sc-pRgDJ bNviUc"
+          class="sc-pdkfH jYnISK sc-oTaAA cKTQOl"
           font-size="2,,1"
           id="downshift-0-input"
           placeholder="Location Search"
@@ -108,7 +108,7 @@ exports[`ClothesDonationForm renders without crashing 1`] = `
         />
         <div
           aria-labelledby="downshift-0-label"
-          class="sc-AxirZ sc-pCPXO sc-pBlxj gmOuQA"
+          class="sc-AxirZ sc-pQfvp sc-pRFZy dHidPf"
           height="256px"
           id="downshift-0-menu"
           role="listbox"
@@ -116,14 +116,14 @@ exports[`ClothesDonationForm renders without crashing 1`] = `
       </div>
     </div>
     <label
-      class="sc-pdKru dQCRbh"
+      class="sc-ptfmh cDYtMS"
       color="border.light"
       font-size="10px"
       font-weight="bold"
     >
       Notes
       <textarea
-        class="sc-pAYXY sc-qQKeD gqDCoc"
+        class="sc-pTUxa sc-pBbHd cuPsLi"
         id="notes"
         name="notes"
       />

@@ -1,5 +1,10 @@
 import React from 'react';
 import DonationCard from './DonationCard';
+import DonationCardSkeleton from './DonationCardSkeleton';
+
+export const Loading = () => (
+    <DonationCardSkeleton />
+);
 
 export const WithoutDonationDate = () => <DonationCard title='Donation Title' />;
 

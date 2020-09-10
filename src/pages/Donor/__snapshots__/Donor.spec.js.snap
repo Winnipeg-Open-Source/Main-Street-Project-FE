@@ -3,10 +3,10 @@
 exports[`DonorPage renders loading state 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb jTGKnC"
+      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
       width="1"
     >
       <div
@@ -14,7 +14,7 @@ exports[`DonorPage renders loading state 1`] = `
         width="1"
       >
         <div
-          class="sc-AxhUy sc-qQxFs hINyDI"
+          class="sc-AxhUy sc-pIITJ gbtPxP"
           font-size="3"
         >
           <span>
@@ -36,80 +36,56 @@ exports[`DonorPage renders loading state 1`] = `
         </span>
       </div>
       <div
-        class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-oTzgz kLGYlD"
+        class="sc-AxirZ sc-pQfvp sc-pRFZy fwLFUE sc-oTaAA jJOuRG sc-qQlyE hwzJsD"
         color="background.lightest"
         width="1"
       >
-        <div
-          class="sc-AxhUy gpDHNu"
-          color="text.darkest"
-          font-size="1"
-        >
-          <span>
-            <span
-              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 80%;"
-            >
-              ‌
-            </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 80%; height: 14px;"
+          >
+            ‌
           </span>
-        </div>
-        <div
-          class="sc-AxhUy gpDHNu"
-          color="text.darkest"
-          font-size="1"
-        >
-          <span>
-            <span
-              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 80%;"
-            >
-              ‌
-            </span>
+        </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 80%; height: 14px;"
+          >
+            ‌
           </span>
-        </div>
-        <div
-          class="sc-AxhUy gpDHNu"
-          color="text.darkest"
-          font-size="1"
-        >
-          <span>
-            <span
-              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 80%;"
-            >
-              ‌
-            </span>
+        </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 80%; height: 14px;"
+          >
+            ‌
           </span>
-        </div>
-        <div
-          class="sc-AxhUy gpDHNu"
-          color="text.darkest"
-          font-size="1"
-        >
-          <span>
-            <span
-              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 80%;"
-            >
-              ‌
-            </span>
+        </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 80%; height: 14px;"
+          >
+            ‌
           </span>
-        </div>
+        </span>
       </div>
       <div
-        class="sc-AxirZ sc-AxhCb sc-pBlxj cDPXBJ"
+        class="sc-AxirZ sc-AxhCb sc-paWCZ gLRdpG"
         width="1"
       >
         <div
-          class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-pRgDJ eZkolW"
+          class="sc-AxirZ sc-pQfvp sc-pRFZy fwLFUE sc-pjTIO iHcBlI"
           color="background.lightest"
           width="1"
         >
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 25%;"
+              style="width: 25%; height: 14px;"
             >
               ‌
             </span>
@@ -117,21 +93,21 @@ exports[`DonorPage renders loading state 1`] = `
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 50%;"
+              style="width: 50%; height: 14px;"
             >
               ‌
             </span>
           </span>
         </div>
         <div
-          class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-pRgDJ eZkolW"
+          class="sc-AxirZ sc-pQfvp sc-pRFZy fwLFUE sc-pjTIO iHcBlI"
           color="background.lightest"
           width="1"
         >
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 25%;"
+              style="width: 25%; height: 14px;"
             >
               ‌
             </span>
@@ -139,21 +115,21 @@ exports[`DonorPage renders loading state 1`] = `
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 50%;"
+              style="width: 50%; height: 14px;"
             >
               ‌
             </span>
           </span>
         </div>
         <div
-          class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-pRgDJ eZkolW"
+          class="sc-AxirZ sc-pQfvp sc-pRFZy fwLFUE sc-pjTIO iHcBlI"
           color="background.lightest"
           width="1"
         >
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 25%;"
+              style="width: 25%; height: 14px;"
             >
               ‌
             </span>
@@ -161,7 +137,7 @@ exports[`DonorPage renders loading state 1`] = `
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 50%;"
+              style="width: 50%; height: 14px;"
             >
               ‌
             </span>
@@ -176,10 +152,10 @@ exports[`DonorPage renders loading state 1`] = `
 exports[`DonorPage renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb jTGKnC"
+      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
       width="1"
     >
       <div
@@ -187,7 +163,7 @@ exports[`DonorPage renders without crashing 1`] = `
         width="1"
       >
         <div
-          class="sc-AxhUy sc-qQxFs hINyDI"
+          class="sc-AxhUy sc-pIITJ gbtPxP"
           font-size="3"
         >
           <span>
@@ -209,80 +185,56 @@ exports[`DonorPage renders without crashing 1`] = `
         </span>
       </div>
       <div
-        class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-oTzgz kLGYlD"
+        class="sc-AxirZ sc-pQfvp sc-pRFZy fwLFUE sc-oTaAA jJOuRG sc-qQlyE hwzJsD"
         color="background.lightest"
         width="1"
       >
-        <div
-          class="sc-AxhUy gpDHNu"
-          color="text.darkest"
-          font-size="1"
-        >
-          <span>
-            <span
-              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 80%;"
-            >
-              ‌
-            </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 80%; height: 14px;"
+          >
+            ‌
           </span>
-        </div>
-        <div
-          class="sc-AxhUy gpDHNu"
-          color="text.darkest"
-          font-size="1"
-        >
-          <span>
-            <span
-              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 80%;"
-            >
-              ‌
-            </span>
+        </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 80%; height: 14px;"
+          >
+            ‌
           </span>
-        </div>
-        <div
-          class="sc-AxhUy gpDHNu"
-          color="text.darkest"
-          font-size="1"
-        >
-          <span>
-            <span
-              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 80%;"
-            >
-              ‌
-            </span>
+        </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 80%; height: 14px;"
+          >
+            ‌
           </span>
-        </div>
-        <div
-          class="sc-AxhUy gpDHNu"
-          color="text.darkest"
-          font-size="1"
-        >
-          <span>
-            <span
-              class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 80%;"
-            >
-              ‌
-            </span>
+        </span>
+        <span>
+          <span
+            class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+            style="width: 80%; height: 14px;"
+          >
+            ‌
           </span>
-        </div>
+        </span>
       </div>
       <div
-        class="sc-AxirZ sc-AxhCb sc-pBlxj cDPXBJ"
+        class="sc-AxirZ sc-AxhCb sc-paWCZ gLRdpG"
         width="1"
       >
         <div
-          class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-pRgDJ eZkolW"
+          class="sc-AxirZ sc-pQfvp sc-pRFZy fwLFUE sc-pjTIO iHcBlI"
           color="background.lightest"
           width="1"
         >
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 25%;"
+              style="width: 25%; height: 14px;"
             >
               ‌
             </span>
@@ -290,21 +242,21 @@ exports[`DonorPage renders without crashing 1`] = `
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 50%;"
+              style="width: 50%; height: 14px;"
             >
               ‌
             </span>
           </span>
         </div>
         <div
-          class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-pRgDJ eZkolW"
+          class="sc-AxirZ sc-pQfvp sc-pRFZy fwLFUE sc-pjTIO iHcBlI"
           color="background.lightest"
           width="1"
         >
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 25%;"
+              style="width: 25%; height: 14px;"
             >
               ‌
             </span>
@@ -312,21 +264,21 @@ exports[`DonorPage renders without crashing 1`] = `
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 50%;"
+              style="width: 50%; height: 14px;"
             >
               ‌
             </span>
           </span>
         </div>
         <div
-          class="sc-AxirZ sc-pCPXO sc-qYUWV kPjGTf sc-pRgDJ eZkolW"
+          class="sc-AxirZ sc-pQfvp sc-pRFZy fwLFUE sc-pjTIO iHcBlI"
           color="background.lightest"
           width="1"
         >
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 25%;"
+              style="width: 25%; height: 14px;"
             >
               ‌
             </span>
@@ -334,7 +286,7 @@ exports[`DonorPage renders without crashing 1`] = `
           <span>
             <span
               class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
-              style="width: 50%;"
+              style="width: 50%; height: 14px;"
             >
               ‌
             </span>

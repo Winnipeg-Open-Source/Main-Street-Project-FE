@@ -3,31 +3,31 @@
 exports[`MiscellaneousDonationForm renders without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="sc-pkfPC haHNKR sc-psDhf iAENMo"
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <input
-      class="sc-qcrrk sc-qQxFs iUvCRq"
+      class="sc-pdkfH sc-pAMRk fgScIC"
       id="name"
       name="name"
       placeholder="Name"
       value=""
     />
     <input
-      class="sc-qcrrk sc-qQxFs iUvCRq"
+      class="sc-pdkfH sc-pAMRk fgScIC"
       id="description"
       name="description"
       placeholder="Description"
       value=""
     />
     <input
-      class="sc-qcrrk sc-qQxFs iUvCRq"
+      class="sc-pdkfH sc-pAMRk fgScIC"
       id="quantity-name"
       name="quantityName"
       placeholder="Quantity Name"
       value=""
     />
     <div
-      class="sc-AxirZ sc-AxhCb sc-pbvYO lbwXdz"
+      class="sc-AxirZ sc-AxhCb sc-prPLn hvsTFl"
       width="1"
     >
       <div
@@ -41,7 +41,7 @@ exports[`MiscellaneousDonationForm renders without crashing 1`] = `
           aria-autocomplete="list"
           aria-labelledby="downshift-0-label"
           autocomplete="off"
-          class="sc-qcrrk gTabPy sc-pJipy guPmcd"
+          class="sc-pdkfH jYnISK sc-pZCbX jZUHIk"
           font-size="2,,1"
           id="downshift-0-input"
           placeholder="Location Search"
@@ -50,7 +50,7 @@ exports[`MiscellaneousDonationForm renders without crashing 1`] = `
         />
         <div
           aria-labelledby="downshift-0-label"
-          class="sc-AxirZ sc-pCPXO sc-qYUWV iPxrxw"
+          class="sc-AxirZ sc-pQfvp sc-pIITJ hkyCZe"
           height="256px"
           id="downshift-0-menu"
           role="listbox"
@@ -58,14 +58,14 @@ exports[`MiscellaneousDonationForm renders without crashing 1`] = `
       </div>
     </div>
     <label
-      class="sc-pdKru dQCRbh"
+      class="sc-ptfmh cDYtMS"
       color="border.light"
       font-size="10px"
       font-weight="bold"
     >
       Notes
       <textarea
-        class="sc-pAYXY sc-prrfo jgdyQH"
+        class="sc-pTUxa sc-qYhBd fKpFqM"
         id="notes"
         name="notes"
       />
