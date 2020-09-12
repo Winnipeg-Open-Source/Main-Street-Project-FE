@@ -16,7 +16,9 @@
 
 ### Starting
 
-- Run `npm start`
+- Run `npm start` to run with cloud emulation
+
+- Run `npm run dev` to run with mocked api calls
 
 ### Storybook
 

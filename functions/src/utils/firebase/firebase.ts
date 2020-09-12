@@ -2,6 +2,9 @@ import * as firebase from 'firebase';
 import 'firebase/auth';
 import 'firebase/firestore';
 
+import firebaseConfigProd from '../../../firebase-config.prod.json';
+import firebaseConfigQA from '../../../firebase-config.qa.json';
+
 interface Document {
     id: string
     data: () => {}
@@ -13,16 +16,9 @@ interface Filter {
     value: any
 }
 
-const firebaseConfig = {
-    apiKey: "AIzaSyA_AQVxsSjqXgsVQgUIIOyNGvXpXY-9FtY",
-    authDomain: "main-street-project-qa.firebaseapp.com",
-    databaseURL: "https://main-street-project-qa.firebaseio.com",
-    projectId: "main-street-project-qa",
-    storageBucket: "main-street-project-qa.appspot.com",
-    messagingSenderId: "941395738080",
-    appId: "1:941395738080:web:694c42266e474dd2553f85",
-    measurementId: "G-F0J5X7MPXP"
-};
+const firebaseConfig = process.env.GCLOUD_PROJECT === 'Main Street Project QA'
+    ? firebaseConfigQA
+    : firebaseConfigProd;
 
 let provider: any, auth: any, db: any;
 
