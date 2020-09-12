@@ -13,6 +13,8 @@
   },
   "compileOnSave": true,
   "include": [
-    "src"
+    "src",
+    "key.*.json",
+    "firebase-config.*.json"
   ]
 }

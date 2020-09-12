@@ -17,7 +17,7 @@ const Authentication = async (req: any, res: any, next: any) => {
         next();
     } catch (err) {
         res.status(400);
-        res.json(err);
+        res.json(err.message);
     }
 };
 

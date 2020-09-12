@@ -7,6 +7,7 @@ dist/
 .vscode
 .DS_STORE
 
-key.json
+key.*.json
+firebase-config.*.json
 jsconfig.json
 *-debug.log

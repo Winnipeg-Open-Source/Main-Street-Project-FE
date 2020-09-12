@@ -36,6 +36,7 @@ router.post('/login', async (req: any, res: any) => {
 
         const token = sign({ uid: user?.uid, isAdmin });
         const session = JSON.stringify({ authToken: token });
+
         res.cookie('__session', session);
         res.json({
             ...user?.toJSON(),
