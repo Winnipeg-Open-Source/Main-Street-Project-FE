@@ -15,6 +15,9 @@
         "source": "**",
         "destination": "/index.html"
       }
+    ],
+    "predeploy": [
+      "npm run build"
     ]
   },
   "firestore": {
@@ -37,7 +40,7 @@
   },
   "functions": {
     "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint",
+      "npm --prefix \"$RESOURCE_DIR\" ci",
       "npm --prefix \"$RESOURCE_DIR\" run build"
     ]
   }

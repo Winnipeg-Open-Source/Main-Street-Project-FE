@@ -6,9 +6,9 @@
     "build": "npm run clean && webpack --mode production",
     "build-storybook": "build-storybook -c .storybook -o ./storybook-static",
     "clean": "rimraf ./build",
-    "deploy": "npm run build && firebase deploy",
+    "deploy": "firebase deploy",
     "dev": "webpack-dev-server --hot --silent",
-    "start": "npm run build && firebase emulators:start",
+    "start": "firebase emulators:start",
     "start:client": "firebase emulators:start --only hosting",
     "storybook": "start-storybook -c .storybook",
     "test": "jest --silent --coverage"
@@ -46,6 +46,7 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "copy-webpack-plugin": "^6.0.2",
     "css-loader": "^3.4.2",
+    "firebase-tools": "^8.10.0",
     "html-webpack-plugin": "^4.0.3",
     "jest": "^25.2.3",
     "react-test-renderer": "^16.13.1",
@@ -53,7 +54,7 @@
     "style-loader": "^1.1.3",
     "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
   "jest": {
     "resetMocks": true,
