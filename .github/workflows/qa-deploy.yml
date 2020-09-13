@@ -15,9 +15,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Install Dependencies
-        uses: npm ci
+        run: npm ci
       - name: Build
-        uses: npm run build
+        run: npm run build
       - name: Store Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -33,9 +33,9 @@ jobs:
       - name: Navigate Directory
         uses: cd ./functions
       - name: Install Dependencies
-        uses: npm ci
+        run: npm ci
       - name: Build
-        uses: npm run build
+        run: npm run build
       - name: Store Artifact
         uses: actions/upload-artifact@v2
         with:
