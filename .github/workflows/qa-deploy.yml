@@ -30,13 +30,14 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
-      - name: Navigate Directory
-        uses: cd ./functions
       - name: Install Dependencies
+        working-directory: functions
         run: npm ci
       - name: Build
+        working-directory: functions
         run: npm run build
       - name: Store Artifact
+        working-directory: functions
         uses: actions/upload-artifact@v2
         with:
           name: build-functions
