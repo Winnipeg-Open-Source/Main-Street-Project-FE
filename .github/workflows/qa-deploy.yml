@@ -29,11 +29,11 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Install Dependencies
-        working-directory: ./functions
         run: npm ci
-      -name: Build
         working-directory: ./functions
+      -name: Build
         run: npm run build
+        working-directory: ./functions
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
