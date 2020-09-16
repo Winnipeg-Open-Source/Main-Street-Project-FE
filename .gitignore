@@ -7,6 +7,8 @@ dist/
 .vscode
 .DS_STORE
 
+./hosting.*
+
 key.*.json
 firebase-config.*.json
 jsconfig.json
