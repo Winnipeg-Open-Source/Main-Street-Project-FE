@@ -1,9 +1,8 @@
+// @ts-ignore
 import * as firebase from 'firebase';
 import 'firebase/auth';
 import 'firebase/firestore';
-
-import firebaseConfigProd from '../../../firebase-config.prod.json';
-import firebaseConfigQA from '../../../firebase-config.qa.json';
+import { getFirebaseConfig } from '../config';
 
 interface Document {
     id: string
@@ -16,13 +15,15 @@ interface Filter {
     value: any
 }
 
-const firebaseConfig = process.env.GCLOUD_PROJECT === 'Main Street Project QA'
-    ? firebaseConfigQA
-    : firebaseConfigProd;
-
 let provider: any, auth: any, db: any;
 
 if (process.env.NODE_ENV !== 'test') {
+    const firebaseConfig = getFirebaseConfig();
+
+    if (!firebaseConfig) {
+        throw new Error('Firebase config not found.');
+    }
+
     firebase.initializeApp(firebaseConfig);
 
     if (process.env.NODE_ENV === 'dev') {

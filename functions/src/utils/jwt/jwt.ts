@@ -1,8 +1,8 @@
 // @ts-ignore
 import jwt from 'jsonwebtoken';
-import * as functions from 'firebase-functions';
+import config from '../config';
 
-const jwtSecret = functions.config()?.jwt?.secret;
+const jwtSecret = config?.jwt?.secret;
 
 export const sign = (data: object) => {
     return jwt.sign(data, jwtSecret);
