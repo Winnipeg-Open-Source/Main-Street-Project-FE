@@ -1,6 +1,15 @@
 node_modules
 build/
+coverage/
+dist/
 
 .idea
 .vscode
 .DS_STORE
+
+hosting.*
+
+key.*.json
+firebase-config.*.json
+jsconfig.json
+*-debug.log

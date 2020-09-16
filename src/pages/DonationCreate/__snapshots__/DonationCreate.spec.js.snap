@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonationCreate renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
+      width="1"
+    >
+      <div
+        class="sc-AxirZ sc-AxhCb iEMUrT"
+        width="1"
+      >
+        <div
+          class="sc-AxhUy sc-pIITJ gbtPxP"
+          font-size="3"
+        >
+          New Donation
+        </div>
+      </div>
+      <div
+        class="sc-AxirZ sc-AxhCb sc-pZCbX kEIMlE"
+      >
+        <div
+          class="sc-AxirZ sc-AxhCb sc-oTaAA hapUIm"
+        >
+          <label
+            class="sc-ptfmh cDYtMS className"
+            color="border.light"
+            font-size="10px"
+            font-weight="bold"
+          >
+            <div
+              class="sc-AxirZ sc-AxhCb czMtkd"
+              width="1"
+            >
+              <select
+                class="sc-plVHf jbMuUc sc-ptSuy sc-pjTIO bQvwgs"
+                data-testid="employee-select"
+                disabled=""
+                font-size="2,,1"
+                id="Donor"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Loading...
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="sc-AxmLO fTwYWQ sc-fzqAui sc-pcZmk fxlvpJ"
+                color="text.light"
+                fill="currentcolor"
+                focusable="false"
+                height="24"
+                role="img"
+                tabindex="-1"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path
+                  d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+                />
+              </svg>
+            </div>
+          </label>
+          <input
+            class="sc-pdkfH sc-paWCZ dUQeml"
+            placeholder="Title"
+            value=""
+          />
+          <label
+            class="sc-ptfmh eraTxu"
+            color="border.light"
+            font-size="1"
+            font-weight="bold"
+          >
+            Description
+            <textarea
+              class="sc-pTUxa sc-qYVps gYLwBp"
+              id="donation-description"
+            />
+          </label>
+          <div
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-labelledby="downshift-0-label"
+            role="combobox"
+            style="position: relative; width: 100%;"
+          >
+            <input
+              aria-autocomplete="list"
+              aria-labelledby="downshift-0-label"
+              autocomplete="off"
+              class="sc-pdkfH jYnISK sc-qYhBd xvDwV"
+              disabled=""
+              font-size="2,,1"
+              id="downshift-0-input"
+              placeholder="Loading..."
+              value=""
+              width="1"
+            />
+            <div
+              aria-labelledby="downshift-0-label"
+              class="sc-AxirZ sc-pQfvp sc-prPLn jczYnA"
+              height="256px"
+              id="downshift-0-menu"
+              role="listbox"
+            />
+          </div>
+          <div
+            class="sc-AxirZ sc-AxhCb sc-pBbHd kIxEbl"
+            width="1"
+          />
+          <label
+            class="sc-ptfmh fehkoD"
+            color="border.light"
+            font-size="1"
+            font-weight="bold"
+          >
+            Additional Notes
+            <textarea
+              class="sc-pTUxa sc-qYVps dPFXzI"
+              id="donation-notes"
+            />
+          </label>
+        </div>
+        <div
+          class="sc-AxirZ sc-AxhCb sc-pRFZy eQXfCz"
+        >
+          <button
+            class="sc-ptEpz beoNIQ"
+            color="tertiary"
+            width="1"
+          >
+            Cancel
+          </button>
+          <button
+            class="sc-ptEpz bUlphT"
+            color="primary"
+            width="1"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

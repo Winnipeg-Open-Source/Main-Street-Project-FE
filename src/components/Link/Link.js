@@ -7,10 +7,11 @@ import { getPaletteColor, mediaQueries } from 'pcln-design-system';
 const StyledLink = styled(RouterLink)`
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
     color: ${props => props.isActive ? getPaletteColor('text.darkest') : getPaletteColor('text.light')};
-    
-    & > :first-child {
+    font-size: 20px;
+    font-weight: bold;
+
+    & > svg {
         margin-right: 16px;
     }
     
@@ -19,6 +20,8 @@ const StyledLink = styled(RouterLink)`
     }
     
     ${mediaQueries.sm} {
+        font-size: 16px;
+        font-weight: normal;
         color: ${props => props.isActive ? getPaletteColor('text.darkest') : getPaletteColor('text.lightest')};
     }
 `;

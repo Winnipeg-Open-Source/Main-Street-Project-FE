@@ -13,7 +13,7 @@ function ModalHeader ({ className, title, subtitle, onClose }) {
         >
             <Flex justifyContent='space-between'>
                 <Text bold>{title}</Text>
-                {onClose && <CloseButton onClick={onClose} />}
+                {onClose && <CloseButton onClick={onClose} data-testid='close-icon' />}
             </Flex>
             <Text fontSize={1}>{subtitle}</Text>
         </Flex>

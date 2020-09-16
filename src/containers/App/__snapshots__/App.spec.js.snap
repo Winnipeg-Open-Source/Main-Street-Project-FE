@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb sc-pRFZy jjUXyQ"
+      color="primary"
+    >
+      Main Street Project Inventory System
+    </div>
+    <div
+      class="sc-AxirZ sc-AxhCb sc-pRhbc bTvRHw"
+    >
+      <div
+        class="sc-AxirZ sc-AxhCb sc-pJhSf BfXtC"
+        color="primary.light"
+      >
+        <div
+          class="sc-AxirZ sc-AxhCb dDRiMW"
+          width="1"
+        >
+          <div
+            class="sc-AxirZ sc-AxhCb ccVsty"
+          >
+            <div
+              class="sc-pAMRk cTeAEL"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

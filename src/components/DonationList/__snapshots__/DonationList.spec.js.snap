@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonationList renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb sc-pAMRk gNNRns"
+      width="1"
+    >
+      <div
+        class="sc-AxhUy ilqMHx"
+      >
+        No donations yet...
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderContainer renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb sc-pAMRk irQlka"
+      color="primary"
+    >
+      Main Street Project Inventory System
+    </div>
+  </div>
+</DocumentFragment>
+`;

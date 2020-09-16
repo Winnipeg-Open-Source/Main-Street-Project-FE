@@ -1,0 +1,17 @@
+name: QA Deploy
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm ci
+      - name: Deploy
+        run: npm run deploy -- --token=${{ secrets.FIREBASE_TOKEN_QA }} --project=${{ secrets.PROJECT_ID_QA }}

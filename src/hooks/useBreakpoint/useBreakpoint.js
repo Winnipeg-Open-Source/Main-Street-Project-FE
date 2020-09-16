@@ -36,6 +36,8 @@ function isMobileCheck () {
 function useBreakpoint () {
     const hasWindow = typeof window === 'object';
 
+
+    /* istanbul ignore next */
     function getSize () {
         return {
             width: hasWindow ? window.innerWidth : undefined,
@@ -46,6 +48,7 @@ function useBreakpoint () {
     const [ windowSize, setWindowSize ] = useState(getSize);
 
     useEffect(() => {
+        /* istanbul ignore next */
         if (!hasWindow) {
             return false;
         }
@@ -65,7 +68,7 @@ function useBreakpoint () {
         ...windowSize,
         isMobile,
         currentBreakpoint,
-    }), [ isMobile, currentBreakpoint ]);
+    }), [ windowSize, isMobile, currentBreakpoint ]);
 }
 
 export default useBreakpoint;

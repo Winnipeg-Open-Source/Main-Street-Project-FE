@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar renders modal for mobile view 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  />
+</DocumentFragment>
+`;
+
+exports[`Sidebar renders with collapsed sidebar 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb sc-pkfsj gCUQlb"
+      color="tertiary"
+      width="56"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Sidebar renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb sc-pkfsj igsiIe"
+      color="tertiary"
+      width="200"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonorCard renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-pQfvp sc-pAMRk isCbCu"
+      color="background.lightest"
+      data-testid="donor-card"
+      width="1"
+    >
+      <div
+        class="sc-AxhUy gpDHNu"
+        color="text.darkest"
+        font-size="1"
+      />
+      <div
+        class="sc-AxhUy enVSKo"
+        color="text.light"
+        font-size="1"
+      >
+        Last Donation: -
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DonorCard skeleton renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-pQfvp sc-pAMRk djnmSu sc-pRFZy fVRgPn"
+      color="background.lightest"
+      width="1"
+    >
+      <span>
+        <span
+          class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+          style="width: 25%; height: 14px;"
+        >
+          ‌
+        </span>
+      </span>
+      <span>
+        <span
+          class="react-loading-skeleton css-1x45xix-skeletonStyles-Skeleton"
+          style="width: 50%; height: 14px;"
+        >
+          ‌
+        </span>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

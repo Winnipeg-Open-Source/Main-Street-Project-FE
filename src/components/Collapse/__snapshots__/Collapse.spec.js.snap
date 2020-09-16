@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapse renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-pQfvp sc-pAMRk djnmSu"
+      color="background.lightest"
+      width="1"
+    >
+      <div
+        class="sc-AxirZ sc-AxhCb sc-pIITJ JHjYq"
+      >
+        <div
+          class="sc-AxhUy gGlGcm"
+        />
+        <svg
+          aria-hidden="true"
+          class="sc-AxmLO bliMTQ sc-fzqAui eslvzV"
+          fill="currentcolor"
+          focusable="false"
+          height="24"
+          role="img"
+          tabindex="-1"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+          />
+        </svg>
+      </div>
+      <div
+        class="ReactCollapse--collapse"
+        style="height: 0px; overflow: hidden;"
+      >
+        <div
+          class="ReactCollapse--content"
+        >
+          <div
+            class="sc-AxirZ sc-AxhCb sc-pRFZy cxlcIV"
+          >
+            <hr
+              class="sc-oUAoT bfCxJq"
+              color="border"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

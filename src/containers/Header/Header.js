@@ -1,12 +1,14 @@
 import React from 'react';
 import HeaderComponent from 'components/Header';
-import useSidebar from 'hooks/useSidebar';
+import useAuthentication from 'hooks/context/useAuthentication';
+import useSidebar from 'hooks/context/useSidebar';
 
 function Header () {
+    const { isLoggedIn } = useAuthentication();
     const { onSidebarToggle } = useSidebar();
 
     return (
-        <HeaderComponent onMenuClick={onSidebarToggle} />
+        <HeaderComponent isLoggedIn={isLoggedIn} onMenuClick={onSidebarToggle} />
     );
 }
 

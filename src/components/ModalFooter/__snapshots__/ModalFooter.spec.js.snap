@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalFooter renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb sc-pAMRk hxXjgK"
+    >
+      <button
+        class="sc-ptEpz jcQtA-d"
+        color="background.light"
+      >
+        Close
+      </button>
+      <button
+        class="sc-ptEpz inSPOQ"
+        color="primary"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

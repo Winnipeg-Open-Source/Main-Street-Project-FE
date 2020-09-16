@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "main-street-project-qa",
+    "production": "main-street-project-c652c"
+  }
+}

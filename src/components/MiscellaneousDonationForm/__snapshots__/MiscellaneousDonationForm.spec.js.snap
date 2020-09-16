@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiscellaneousDonationForm renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <input
+      class="sc-pdkfH sc-pAMRk fgScIC"
+      id="name"
+      name="name"
+      placeholder="Name"
+      value=""
+    />
+    <input
+      class="sc-pdkfH sc-pAMRk fgScIC"
+      id="description"
+      name="description"
+      placeholder="Description"
+      value=""
+    />
+    <input
+      class="sc-pdkfH sc-pAMRk fgScIC"
+      id="quantity-name"
+      name="quantityName"
+      placeholder="Quantity Name"
+      value=""
+    />
+    <div
+      class="sc-AxirZ sc-AxhCb sc-prPLn hvsTFl"
+      width="1"
+    >
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-labelledby="downshift-0-label"
+        role="combobox"
+        style="position: relative; width: 100%;"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-labelledby="downshift-0-label"
+          autocomplete="off"
+          class="sc-pdkfH jYnISK sc-pZCbX jZUHIk"
+          font-size="2,,1"
+          id="downshift-0-input"
+          placeholder="Location Search"
+          value=""
+          width="1"
+        />
+        <div
+          aria-labelledby="downshift-0-label"
+          class="sc-AxirZ sc-pQfvp sc-pIITJ hkyCZe"
+          height="256px"
+          id="downshift-0-menu"
+          role="listbox"
+        />
+      </div>
+    </div>
+    <label
+      class="sc-ptfmh cDYtMS"
+      color="border.light"
+      font-size="10px"
+      font-weight="bold"
+    >
+      Notes
+      <textarea
+        class="sc-pTUxa sc-qYhBd fKpFqM"
+        id="notes"
+        name="notes"
+      />
+    </label>
+  </div>
+</DocumentFragment>
+`;

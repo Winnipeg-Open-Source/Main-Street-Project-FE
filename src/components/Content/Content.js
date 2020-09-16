@@ -6,11 +6,12 @@ import { Flex } from 'pcln-design-system';
 const StyledContent = styled(Flex)`
     flex: 1;
     height: 100%;
+    overflow-y: scroll;
 `;
 
 function Content ({ className, children }) {
     return (
-        <StyledContent className={className} color='background.light' p={3}>
+        <StyledContent className={className} color='primary.light'>
             {children}
         </StyledContent>
     );

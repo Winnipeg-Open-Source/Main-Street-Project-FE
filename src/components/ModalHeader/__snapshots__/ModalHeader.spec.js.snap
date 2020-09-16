@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalHeader renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb fidhWr"
+      color="primary.base"
+      height="auto"
+    >
+      <div
+        class="sc-AxirZ sc-AxhCb dkAhFW"
+      >
+        <div
+          class="sc-AxhUy gGlGcm"
+        />
+      </div>
+      <div
+        class="sc-AxhUy hPygOl"
+        font-size="1"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Flex } from 'pcln-design-system';
 import Modal from 'components/Modal';
 import Link from 'components/Link';
@@ -7,11 +8,17 @@ import Link from 'components/Link';
 const COLLAPSED_WIDTH = 56;
 const EXPANDED_WIDTH = 200;
 
-function Sidebar ({ className, isMobileSidebar, isCollapsed, currentPathname, routes, onClose }) {
+const LinksWrapper = styled(Flex)`
+    & > * {
+        padding: 8px 0;
+    }
+`;
+
+function Sidebar ({ className, isAdmin, isMobileSidebar, isCollapsed, currentPathname, routes, onClose }) {
     const Wrapper = isMobileSidebar ? Modal : React.Fragment;
 
     const width = isCollapsed && !isMobileSidebar ? COLLAPSED_WIDTH : EXPANDED_WIDTH;
-    const backgroundColor = isMobileSidebar ? 'inherit' : 'tertiary.dark';
+    const backgroundColor = isMobileSidebar ? 'inherit' : 'tertiary';
     const padding = isMobileSidebar ? 0 : 3;
 
     const modalProps = isMobileSidebar ? {
@@ -24,8 +31,8 @@ function Sidebar ({ className, isMobileSidebar, isCollapsed, currentPathname, ro
 
     return (
         <Wrapper {...modalProps}>
-            <Flex className={className} flexDirection='column' width={width} color={backgroundColor} p={padding}>
-                {routes && routes.map(route => (
+            <LinksWrapper className={className} flexDirection='column' width={width} color={backgroundColor} p={padding}>
+                {routes && routes.map(route => (route.isAdmin && !isAdmin) || (
                     <Link
                         key={route.path}
                         isActive={currentPathname === route.path}
@@ -36,7 +43,7 @@ function Sidebar ({ className, isMobileSidebar, isCollapsed, currentPathname, ro
                         {route.label}
                     </Link>
                 ))}
-            </Flex>
+            </LinksWrapper>
         </Wrapper>
     );
 }
@@ -45,6 +52,7 @@ Sidebar.displayName = 'Sidebar';
 
 Sidebar.propTypes = {
     className: PropTypes.string,
+    isAdmin: PropTypes.bool,
     isMobileSidebar: PropTypes.bool,
     isCollapsed: PropTypes.bool,
     currentPathname: PropTypes.string,

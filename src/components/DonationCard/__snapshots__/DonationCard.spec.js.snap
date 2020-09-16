@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonationCard renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-pQfvp sc-pAMRk isCbCu"
+      color="background.lightest"
+      width="1"
+    >
+      <div
+        class="sc-AxhUy gpDHNu"
+        color="text.darkest"
+        font-size="1"
+      />
+      <div
+        class="sc-AxhUy enVSKo"
+        color="text.light"
+        font-size="1"
+      >
+        Donated: Unknown Donation Date
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

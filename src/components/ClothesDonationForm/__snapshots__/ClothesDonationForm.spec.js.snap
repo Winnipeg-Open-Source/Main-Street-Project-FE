@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClothesDonationForm renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <input
+      class="sc-pdkfH sc-pAMRk fgScIC"
+      id="name"
+      name="name"
+      placeholder="Name"
+      value=""
+    />
+    <input
+      class="sc-pdkfH sc-pAMRk fgScIC"
+      id="description"
+      name="description"
+      placeholder="Description"
+      value=""
+    />
+    <input
+      class="sc-pdkfH sc-pAMRk fgScIC"
+      id="quantity-name"
+      name="quantityName"
+      placeholder="Quantity Name"
+      value=""
+    />
+    <label
+      class="sc-ptfmh cDYtMS className"
+      color="border.light"
+      font-size="10px"
+      font-weight="bold"
+    >
+      Size
+      <div
+        class="sc-AxirZ sc-AxhCb czMtkd"
+        width="1"
+      >
+        <select
+          class="sc-plVHf jbMuUc sc-ptSuy sc-pIITJ kkUGby"
+          data-testid="Size"
+          font-size="2,,1"
+          id="size"
+          name="size"
+        >
+          <option>
+            XS
+          </option>
+          <option>
+            S
+          </option>
+          <option>
+            M
+          </option>
+          <option>
+            L
+          </option>
+          <option>
+            XL
+          </option>
+          <option>
+            XXL
+          </option>
+          <option>
+            XXXL
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="sc-AxmLO fTwYWQ sc-fzqAui sc-pcZmk fxlvpJ"
+          color="text.light"
+          fill="currentcolor"
+          focusable="false"
+          height="24"
+          role="img"
+          tabindex="-1"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+          />
+        </svg>
+      </div>
+    </label>
+    <div
+      class="sc-AxirZ sc-AxhCb sc-qQlyE gSYXBB"
+      width="1"
+    >
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-labelledby="downshift-0-label"
+        role="combobox"
+        style="position: relative; width: 100%;"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-labelledby="downshift-0-label"
+          autocomplete="off"
+          class="sc-pdkfH jYnISK sc-oTaAA cKTQOl"
+          font-size="2,,1"
+          id="downshift-0-input"
+          placeholder="Location Search"
+          value=""
+          width="1"
+        />
+        <div
+          aria-labelledby="downshift-0-label"
+          class="sc-AxirZ sc-pQfvp sc-pRFZy dHidPf"
+          height="256px"
+          id="downshift-0-menu"
+          role="listbox"
+        />
+      </div>
+    </div>
+    <label
+      class="sc-ptfmh cDYtMS"
+      color="border.light"
+      font-size="10px"
+      font-weight="bold"
+    >
+      Notes
+      <textarea
+        class="sc-pTUxa sc-pBbHd cuPsLi"
+        id="notes"
+        name="notes"
+      />
+    </label>
+  </div>
+</DocumentFragment>
+`;

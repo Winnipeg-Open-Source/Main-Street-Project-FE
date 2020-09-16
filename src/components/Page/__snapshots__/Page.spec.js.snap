@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
+      width="1"
+    >
+      <div
+        class="sc-AxirZ sc-AxhCb iEMUrT"
+        width="1"
+      >
+        <div
+          class="sc-AxhUy sc-pIITJ gbtPxP"
+          font-size="3"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
