@@ -1,8 +1,8 @@
-name: QA Deploy
+name: PROD Deploy
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ master ]
 
 jobs:
   deploy:
@@ -14,4 +14,4 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Deploy
-        run: npm run deploy -- --token=${{ secrets.FIREBASE_TOKEN_QA }} --project=${{ secrets.PROJECT_ID_QA }}
+        run: npm run deploy -- --token=${{ secrets.FIREBASE_TOKEN }} --project=${{ secrets.PROJECT_ID }}

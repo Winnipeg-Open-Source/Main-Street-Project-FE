@@ -28,7 +28,8 @@
 
 - Run `npm test`
 
-
 ### Deploy
 
-- Run `firebase deploy`
+Merging to develop will deploy to QA via Github Actions
+
+Merging to master will deploy to Production via Github Actions
