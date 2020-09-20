@@ -6,7 +6,7 @@ exports[`DonationCreate renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
+      class="sc-AxirZ sc-AxhCb jTGKnC"
       width="1"
     >
       <div
@@ -14,17 +14,17 @@ exports[`DonationCreate renders without crashing 1`] = `
         width="1"
       >
         <div
-          class="sc-AxhUy sc-pIITJ gbtPxP"
+          class="sc-AxhUy sc-pAMRk BrgM"
           font-size="3"
         >
           New Donation
         </div>
       </div>
       <div
-        class="sc-AxirZ sc-AxhCb sc-pZCbX kEIMlE"
+        class="sc-AxirZ sc-AxhCb sc-pRFZy gSXiAM"
       >
         <div
-          class="sc-AxirZ sc-AxhCb sc-oTaAA hapUIm"
+          class="sc-AxirZ sc-AxhCb sc-pZCbX dBsXyn"
         >
           <label
             class="sc-ptfmh cDYtMS className"
@@ -37,7 +37,7 @@ exports[`DonationCreate renders without crashing 1`] = `
               width="1"
             >
               <select
-                class="sc-plVHf jbMuUc sc-ptSuy sc-pjTIO bQvwgs"
+                class="sc-plVHf jbMuUc sc-ptSuy sc-paWCZ bICCST"
                 data-testid="employee-select"
                 disabled=""
                 font-size="2,,1"
@@ -70,7 +70,7 @@ exports[`DonationCreate renders without crashing 1`] = `
             </div>
           </label>
           <input
-            class="sc-pdkfH sc-paWCZ dUQeml"
+            class="sc-pdkfH sc-oTaAA hZCgLA"
             placeholder="Title"
             value=""
           />
@@ -82,7 +82,7 @@ exports[`DonationCreate renders without crashing 1`] = `
           >
             Description
             <textarea
-              class="sc-pTUxa sc-qYVps gYLwBp"
+              class="sc-pTUxa sc-qQAox iGmEaa"
               id="donation-description"
             />
           </label>
@@ -97,7 +97,7 @@ exports[`DonationCreate renders without crashing 1`] = `
               aria-autocomplete="list"
               aria-labelledby="downshift-0-label"
               autocomplete="off"
-              class="sc-pdkfH jYnISK sc-qYhBd xvDwV"
+              class="sc-pdkfH jYnISK sc-qQlyE jmRcib"
               disabled=""
               font-size="2,,1"
               id="downshift-0-input"
@@ -107,14 +107,14 @@ exports[`DonationCreate renders without crashing 1`] = `
             />
             <div
               aria-labelledby="downshift-0-label"
-              class="sc-AxirZ sc-pQfvp sc-prPLn jczYnA"
+              class="sc-AxirZ sc-pQfvp sc-pjTIO cGtXuM"
               height="256px"
               id="downshift-0-menu"
               role="listbox"
             />
           </div>
           <div
-            class="sc-AxirZ sc-AxhCb sc-pBbHd kIxEbl"
+            class="sc-AxirZ sc-AxhCb sc-qYhBd fFHzQn"
             width="1"
           />
           <label
@@ -125,13 +125,13 @@ exports[`DonationCreate renders without crashing 1`] = `
           >
             Additional Notes
             <textarea
-              class="sc-pTUxa sc-qYVps dPFXzI"
+              class="sc-pTUxa sc-qQAox gJYSGT"
               id="donation-notes"
             />
           </label>
         </div>
         <div
-          class="sc-AxirZ sc-AxhCb sc-pRFZy eQXfCz"
+          class="sc-AxirZ sc-AxhCb sc-pIITJ kragTS"
         >
           <button
             class="sc-ptEpz beoNIQ"
