@@ -6,7 +6,7 @@ exports[`Page renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
+      class="sc-AxirZ sc-AxhCb jTGKnC"
       width="1"
     >
       <div
@@ -14,7 +14,7 @@ exports[`Page renders without crashing 1`] = `
         width="1"
       >
         <div
-          class="sc-AxhUy sc-pIITJ gbtPxP"
+          class="sc-AxhUy sc-pAMRk BrgM"
           font-size="3"
         />
       </div>

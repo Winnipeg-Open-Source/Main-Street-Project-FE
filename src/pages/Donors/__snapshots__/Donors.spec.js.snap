@@ -6,7 +6,7 @@ exports[`Donors Page renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
+      class="sc-AxirZ sc-AxhCb jTGKnC"
       width="1"
     >
       <div
@@ -14,13 +14,13 @@ exports[`Donors Page renders without crashing 1`] = `
         width="1"
       >
         <div
-          class="sc-AxhUy sc-pIITJ gbtPxP"
+          class="sc-AxhUy sc-pAMRk BrgM"
           font-size="3"
         >
           Donors
         </div>
         <a
-          class="sc-prPLn iZDbcF"
+          class="sc-pjTIO eyMuap"
           href="/donors/new"
         >
           <button
@@ -32,12 +32,12 @@ exports[`Donors Page renders without crashing 1`] = `
         </a>
       </div>
       <input
-        class="sc-pdkfH sc-pjTIO dzGJal"
+        class="sc-pdkfH sc-paWCZ hoHuFG"
         id="search"
         placeholder="Search"
       />
       <div
-        class="sc-AxirZ sc-AxhCb sc-pRFZy csfxgC"
+        class="sc-AxirZ sc-AxhCb sc-pIITJ kGwFbj"
         width="1"
       >
         <div

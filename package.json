@@ -11,7 +11,8 @@
     "start": "firebase emulators:start",
     "start:client": "firebase emulators:start --only hosting",
     "storybook": "start-storybook -c .storybook",
-    "test": "jest --silent --coverage"
+    "test": "jest --silent --coverage",
+    "test:ci": "jest --silent"
   },
   "dependencies": {
     "@babel/runtime": "7.9.2",

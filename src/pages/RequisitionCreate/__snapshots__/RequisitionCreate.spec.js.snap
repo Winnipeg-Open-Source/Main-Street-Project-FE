@@ -6,7 +6,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
+      class="sc-AxirZ sc-AxhCb jTGKnC"
       width="1"
     >
       <div
@@ -14,17 +14,17 @@ exports[`RequisitionCreate renders without crashing 1`] = `
         width="1"
       >
         <div
-          class="sc-AxhUy sc-pIITJ gbtPxP"
+          class="sc-AxhUy sc-pAMRk BrgM"
           font-size="3"
         >
           New Requisition
         </div>
       </div>
       <div
-        class="sc-AxirZ sc-AxhCb sc-pZCbX kEIMlE"
+        class="sc-AxirZ sc-AxhCb sc-pRFZy gSXiAM"
       >
         <div
-          class="sc-AxirZ sc-AxhCb sc-oTaAA hapUIm"
+          class="sc-AxirZ sc-AxhCb sc-pZCbX dBsXyn"
         >
           <label
             class="sc-ptfmh cDYtMS className"
@@ -37,7 +37,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
               width="1"
             >
               <select
-                class="sc-plVHf jbMuUc sc-ptSuy sc-paWCZ bICCST"
+                class="sc-plVHf jbMuUc sc-ptSuy sc-oTaAA eLXKiy"
                 data-testid="employee-select"
                 disabled=""
                 font-size="2,,1"
@@ -77,7 +77,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
           >
             Description
             <textarea
-              class="sc-pTUxa sc-qYVps gaUhZc"
+              class="sc-pTUxa sc-qQAox holwVz"
               id="requisition-description"
             />
           </label>
@@ -92,7 +92,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
               aria-autocomplete="list"
               aria-labelledby="downshift-0-label"
               autocomplete="off"
-              class="sc-pdkfH jYnISK sc-qQlyE jmRcib"
+              class="sc-pdkfH jYnISK sc-prPLn gvbFYP"
               disabled=""
               font-size="2,,1"
               id="downshift-0-input"
@@ -102,19 +102,19 @@ exports[`RequisitionCreate renders without crashing 1`] = `
             />
             <div
               aria-labelledby="downshift-0-label"
-              class="sc-AxirZ sc-pQfvp sc-pjTIO cGtXuM"
+              class="sc-AxirZ sc-pQfvp sc-paWCZ iPhzbn"
               height="256px"
               id="downshift-0-menu"
               role="listbox"
             />
           </div>
           <div
-            class="sc-AxirZ sc-AxhCb sc-qYhBd fFHzQn"
+            class="sc-AxirZ sc-AxhCb sc-qQlyE plbYB"
             width="1"
           />
         </div>
         <div
-          class="sc-AxirZ sc-AxhCb sc-pRFZy eQXfCz"
+          class="sc-AxirZ sc-AxhCb sc-pIITJ kragTS"
         >
           <button
             class="sc-ptEpz beoNIQ"
