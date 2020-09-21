@@ -57,29 +57,6 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "jest": {
-    "resetMocks": true,
-    "resetModules": true,
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/**/*.story.js",
-      "!src/index.js",
-      "!src/serviceWorker.js",
-      "!src/constants/*",
-      "!src/context/**/*.js",
-      "!src/storybook/**/*.js",
-      "!src/tests/**/*.js"
-    ],
-    "coveragePathIgnorePatterns": [
-      "<rootDir>/node_modules/"
-    ],
-    "coverageReporters": [
-      "html"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.js"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
