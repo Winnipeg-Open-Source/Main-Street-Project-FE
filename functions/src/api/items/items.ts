@@ -1,6 +1,6 @@
 import express from 'express';
 import { ITEMS_COLLECTION } from '../../constants/collections';
-import { create, get, getAll } from '../../utils/firebase';
+import { create, get, getAll } from '../../utils/firestore';
 import { createMany, getByItemId } from '../../services/lineItems';
 
 const router = express.Router();

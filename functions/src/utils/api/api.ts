@@ -5,7 +5,7 @@ import {
     get as dbGet,
     getAll as dbGetAll,
     deleteOne as dbDeleteOne
-} from '../firebase';
+} from '../firestore';
 
 export const post = async (collection: string, req: any, res: any) => {
     const data = req.body;
