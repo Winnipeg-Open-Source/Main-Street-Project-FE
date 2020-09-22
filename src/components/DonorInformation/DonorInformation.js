@@ -8,10 +8,9 @@ function DonorInformation ({ className, address, city, province, email, phoneNum
     
     return (
         <Card className={className}>
-            <Text color='text.darkest' fontSize={1} bold>{address}</Text>
-            <Text color='text.darkest' fontSize={1} bold>{cityProvince}</Text>
-            <Text color='text.darkest' fontSize={1} bold>{email}</Text>
-            <Text color='text.darkest' fontSize={1} bold>{phoneNumber}</Text>
+            <Text color='text.darkest' fontSize={1} bold>{address} - {cityProvince}</Text>
+            <Text color='text.light' fontSize={1}>{email}</Text>
+            <Text color='text.light' fontSize={1}>{phoneNumber}</Text>
         </Card>
     );
 }

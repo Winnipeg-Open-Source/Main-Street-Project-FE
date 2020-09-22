@@ -6,12 +6,13 @@ import LineItemCard from 'components/LineItemCard';
 function ItemCard ({
     id,
     className,
+    isEditable,
     name,
     quantityName,
     lineItems,
     onItemQuantityChange,
 }) {
-    const totalQuantity = useMemo(() => lineItems && lineItems.reduce((availableQuantity, lineItem) => availableQuantity + lineItem.availableQuantity, 0), [lineItems]);
+    const totalQuantity = useMemo(() => lineItems && lineItems.reduce((total, lineItem) => total + lineItem.quantity, 0), [lineItems]);
     const title = totalQuantity ? `${name} (${totalQuantity} ${quantityName})` : name;
 
     return (
@@ -19,6 +20,7 @@ function ItemCard ({
             {lineItems && lineItems.map(lineItem => (
                 <LineItemCard
                     {...lineItem}
+                    isEditable={isEditable}
                     itemId={id}
                     quantityName={quantityName}
                     onItemQuantityChange={onItemQuantityChange}
@@ -33,6 +35,7 @@ ItemCard.displayName = 'ItemCard';
 ItemCard.propTypes = {
     id: PropTypes.oneOfType([ PropTypes.string, PropTypes.number ]),
     className: PropTypes.string,
+    isEditable: PropTypes.bool,
     name: PropTypes.string.isRequired,
     quantityName: PropTypes.string,
     lineItems: PropTypes.shape({

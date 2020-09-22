@@ -8,9 +8,18 @@ function getMockDonation (id) {
         items: [
             {
                 id: 1,
+                name: 'Paper Towel',
+                quantityName: 'Rolls',
                 lineItems: [
                     {
                         id: 1,
+                        locationName: 'Shelf 1',
+                        quantity: 5,
+                    },
+                    {
+                        id: 2,
+                        locationName: 'Shelf 2',
+                        quantity: 10,
                     },
                 ],
             },
