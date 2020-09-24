@@ -4,30 +4,34 @@ import DonorInformation from './DonorInformation';
 
 const address = '123 Test Street';
 const city = 'Winnipeg';
+const province = 'MB';
 const email = '123@test.com';
 const phoneNumber = '2045555555';
-const province = 'MB';
 
 const commonProps = {
     address,
     city,
+    province,
     email,
     phoneNumber,
 };
 
 describe ('DonorInformation', () => {
     it ('renders without province', () => {
-        const { queryByText } = renderWithTheme(<DonorInformation {...commonProps} />);
+        const fullAddress = `${address}, ${city}`;
 
-        expect(queryByText(address)).toBeInTheDocument();
-        expect(queryByText(city)).toBeInTheDocument();
+        const { queryByText } = renderWithTheme(<DonorInformation {...commonProps} province={null} />);
+
+        expect(queryByText(fullAddress)).toBeInTheDocument();
         expect(queryByText(email)).toBeInTheDocument();
         expect(queryByText(phoneNumber)).toBeInTheDocument();
     });
 
     it ('renders with province', () => {
+        const fullAddress = `${address}, ${city}, ${province}`;
+
         const { queryByText } = renderWithTheme(<DonorInformation {...commonProps} province={province} />);
 
-        expect(queryByText(`${city}, ${province}`)).toBeInTheDocument();
+        expect(queryByText(fullAddress)).toBeInTheDocument();
     });
 });

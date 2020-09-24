@@ -11,8 +11,7 @@ const StyledForm = styled(Flex)`
 
 const Content = styled(Flex)`
     flex: 1;
-    height: 100%;
-    
+
     & > :not(:last-child) {
         margin-bottom: 8px;
     }

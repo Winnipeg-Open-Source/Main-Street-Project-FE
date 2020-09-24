@@ -60,7 +60,11 @@ function DonationForm ({
                 items={items}
                 onChange={onSelectItemChange}
             />
-            <ItemList items={selectedItems} onItemQuantityChange={onItemQuantityChange} />
+            <ItemList
+                isEditable
+                items={selectedItems}
+                onItemQuantityChange={onItemQuantityChange}
+            />
             <Label fontSize={1} mt={1}>
                 Additional Notes
                 <StyledTextArea
