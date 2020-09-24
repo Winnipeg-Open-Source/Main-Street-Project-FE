@@ -24,7 +24,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
         class="sc-AxirZ sc-AxhCb sc-pRFZy gSXiAM"
       >
         <div
-          class="sc-AxirZ sc-AxhCb sc-pZCbX dBsXyn"
+          class="sc-AxirZ sc-AxhCb sc-pZCbX gSmPnj"
         >
           <label
             class="sc-ptfmh cDYtMS className"
@@ -77,7 +77,7 @@ exports[`RequisitionCreate renders without crashing 1`] = `
           >
             Description
             <textarea
-              class="sc-pTUxa sc-qQAox holwVz"
+              class="sc-pTUxa sc-qYVps gaUhZc"
               id="requisition-description"
             />
           </label>

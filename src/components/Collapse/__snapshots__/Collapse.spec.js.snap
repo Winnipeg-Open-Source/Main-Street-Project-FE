@@ -6,19 +6,22 @@ exports[`Collapse renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-pQfvp sc-pAMRk djnmSu"
+      class="sc-AxirZ sc-pQfvp sc-pAMRk djnmSu sc-pIITJ jlKqWb"
       color="background.lightest"
       width="1"
     >
       <div
-        class="sc-AxirZ sc-AxhCb sc-pIITJ JHjYq"
+        class="sc-AxirZ sc-AxhCb sc-pRFZy dTsfzD"
       >
         <div
-          class="sc-AxhUy gGlGcm"
+          class="sc-AxhUy gpDHNu"
+          color="text.darkest"
+          font-size="1"
         />
         <svg
           aria-hidden="true"
-          class="sc-AxmLO bliMTQ sc-fzqAui eslvzV"
+          class="sc-AxmLO hzqPhL sc-fzqAui eslvzV"
+          color="text.darkest"
           fill="currentcolor"
           focusable="false"
           height="24"
@@ -40,7 +43,8 @@ exports[`Collapse renders without crashing 1`] = `
           class="ReactCollapse--content"
         >
           <div
-            class="sc-AxirZ sc-AxhCb sc-pRFZy cxlcIV"
+            class="sc-AxirZ sc-AxhCb sc-pZCbX nKtqG"
+            width="1"
           >
             <hr
               class="sc-oUAoT bfCxJq"

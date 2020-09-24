@@ -24,7 +24,7 @@ exports[`DonationCreate renders without crashing 1`] = `
         class="sc-AxirZ sc-AxhCb sc-pRFZy gSXiAM"
       >
         <div
-          class="sc-AxirZ sc-AxhCb sc-pZCbX dBsXyn"
+          class="sc-AxirZ sc-AxhCb sc-pZCbX gSmPnj"
         >
           <label
             class="sc-ptfmh cDYtMS className"
@@ -82,7 +82,7 @@ exports[`DonationCreate renders without crashing 1`] = `
           >
             Description
             <textarea
-              class="sc-pTUxa sc-qQAox iGmEaa"
+              class="sc-pTUxa sc-qYVps gYLwBp"
               id="donation-description"
             />
           </label>
@@ -125,7 +125,7 @@ exports[`DonationCreate renders without crashing 1`] = `
           >
             Additional Notes
             <textarea
-              class="sc-pTUxa sc-qQAox gJYSGT"
+              class="sc-pTUxa sc-qYVps dPFXzI"
               id="donation-notes"
             />
           </label>
