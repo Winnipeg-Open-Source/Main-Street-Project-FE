@@ -14,12 +14,12 @@ describe ('Axios Reducer', () => {
 
     it ('returns request start state', () => {
         const response = reducer(initialState, requestStart());
-        expect(response).toStrictEqual({ isLoading: true, name: 'test' });
+        expect(response).toStrictEqual({ isError: false, isLoading: true, name: 'test' });
     });
 
     it ('returns request finished state', () => {
         const response = reducer(initialState, requestStart());
-        expect(response).toStrictEqual({ isLoading: true, name: 'test' });
+        expect(response).toStrictEqual({ isError: false, isLoading: true, name: 'test' });
 
         const secondResponse = reducer(response, requestFinished(requestResponse));
         expect(secondResponse).toStrictEqual(expectedFinishedResult);

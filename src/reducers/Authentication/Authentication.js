@@ -29,7 +29,7 @@ function Authentication (state = {}, action = {}) {
             };
 
         case LOGIN_FAILED:
-            const isLoginFailed = state.isLoggingIn
+            const isLoginFailed = state.isAttemptingLogin === false;
             return {
                 ...state,
                 isAttemptingLogin: false,

@@ -6,6 +6,7 @@ const reducer = (state, action = {}) => {
             return {
                 ...state,
                 isLoading: true,
+                isError: false,
             };
 
         case REQUEST_FINISHED:

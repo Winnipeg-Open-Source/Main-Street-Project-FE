@@ -2,7 +2,7 @@ import { createContext } from 'react';
 
 export const initialContext = {
     isAttemptingLogin: true,
-    isLoggingIn: true,
+    isLoggingIn: false,
     isLoggedIn: false,
     isLoginFailed: false,
     isAdmin: false,
