@@ -1,19 +1,14 @@
 import React from 'react';
 import LoginFormComponent from 'components/LoginForm';
-import useAuthentication from 'hooks/context/useAuthentication';
 import useForm from 'hooks/useForm';
-import useLogin from 'hooks/useLogin';
 
 const initialState = {
     email: '',
     password: '',
 };
 
-function LoginForm () {
-    const { isLoggingIn, isLoginFailed } = useAuthentication();
+function LoginForm ({ isLoggingIn, isLoginFailed, handleLogin }) {
     const { state, onChange } = useForm(initialState);
-    const { handleLogin } = useLogin();
-
     const { email, password } = state;
 
     const onLoginClick = () => {
