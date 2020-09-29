@@ -6,7 +6,7 @@ exports[`DonorCreate renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-pAMRk cPkxDf"
+      class="sc-AxirZ sc-AxhCb jTGKnC"
       width="1"
     >
       <div
@@ -14,27 +14,27 @@ exports[`DonorCreate renders without crashing 1`] = `
         width="1"
       >
         <div
-          class="sc-AxhUy sc-pIITJ gbtPxP"
+          class="sc-AxhUy sc-pAMRk BrgM"
           font-size="3"
         >
           Create a donor
         </div>
       </div>
       <div
-        class="sc-AxirZ sc-AxhCb sc-pZCbX kEIMlE"
+        class="sc-AxirZ sc-AxhCb sc-pRFZy gSXiAM"
       >
         <div
-          class="sc-AxirZ sc-AxhCb sc-oTaAA hapUIm"
+          class="sc-AxirZ sc-AxhCb sc-pZCbX gSmPnj"
         >
           <input
-            class="sc-pdkfH sc-paWCZ hNjKmU"
+            class="sc-pdkfH sc-oTaAA hAKnA-d"
             id="name"
             name="name"
             placeholder="Name"
             value=""
           />
           <input
-            class="sc-pdkfH sc-paWCZ hNjKmU"
+            class="sc-pdkfH sc-oTaAA hAKnA-d"
             id="address"
             name="address"
             placeholder="Street Address"
@@ -45,7 +45,7 @@ exports[`DonorCreate renders without crashing 1`] = `
             width="1"
           >
             <input
-              class="sc-pdkfH sc-paWCZ hHzxPy"
+              class="sc-pdkfH sc-oTaAA HOymP"
               id="city"
               name="city"
               placeholder="City"
@@ -62,7 +62,7 @@ exports[`DonorCreate renders without crashing 1`] = `
                 width="1"
               >
                 <select
-                  class="sc-plVHf jbMuUc sc-ptSuy sc-pjTIO bQvwgs"
+                  class="sc-plVHf jbMuUc sc-ptSuy sc-paWCZ bICCST"
                   data-testid="province-select"
                   font-size="2,,1"
                   id="province"
@@ -154,28 +154,28 @@ exports[`DonorCreate renders without crashing 1`] = `
             </label>
           </div>
           <input
-            class="sc-pdkfH sc-paWCZ hNjKmU"
+            class="sc-pdkfH sc-oTaAA hAKnA-d"
             id="postal-code"
             name="postalCode"
             placeholder="Postal Code"
             value=""
           />
           <input
-            class="sc-pdkfH sc-paWCZ hNjKmU"
+            class="sc-pdkfH sc-oTaAA hAKnA-d"
             id="phone-number"
             name="phoneNumber"
             placeholder="Phone Number"
             value=""
           />
           <input
-            class="sc-pdkfH sc-paWCZ hNjKmU"
+            class="sc-pdkfH sc-oTaAA hAKnA-d"
             id="email"
             name="email"
             placeholder="Email"
             value=""
           />
           <label
-            class="sc-ptfmh sc-prPLn jzhPnp"
+            class="sc-ptfmh sc-pjTIO diRsbh"
             color="border.light"
             font-size="0"
             font-weight="bold"
@@ -230,7 +230,7 @@ exports[`DonorCreate renders without crashing 1`] = `
           </label>
         </div>
         <div
-          class="sc-AxirZ sc-AxhCb sc-pRFZy eQXfCz"
+          class="sc-AxirZ sc-AxhCb sc-pIITJ kragTS"
         >
           <button
             class="sc-ptEpz beoNIQ"

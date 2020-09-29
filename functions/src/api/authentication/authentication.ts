@@ -49,7 +49,6 @@ router.post('/login', async (req: any, res: any) => {
 });
 
 router.post('/logout', async (_, res: any) => {
-    await firebase.auth().signOut();
     res.clearCookie('__session');
     res.json('Logged out.');
 });

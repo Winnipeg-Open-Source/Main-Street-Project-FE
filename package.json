@@ -11,7 +11,8 @@
     "start": "firebase emulators:start",
     "start:client": "firebase emulators:start --only hosting",
     "storybook": "start-storybook -c .storybook",
-    "test": "jest --silent --coverage"
+    "test": "jest --silent --coverage",
+    "test:ci": "jest --silent"
   },
   "dependencies": {
     "@babel/runtime": "7.9.2",
@@ -55,29 +56,6 @@
     "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
-  },
-  "jest": {
-    "resetMocks": true,
-    "resetModules": true,
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/**/*.story.js",
-      "!src/index.js",
-      "!src/serviceWorker.js",
-      "!src/constants/*",
-      "!src/context/**/*.js",
-      "!src/storybook/**/*.js",
-      "!src/tests/**/*.js"
-    ],
-    "coveragePathIgnorePatterns": [
-      "<rootDir>/node_modules/"
-    ],
-    "coverageReporters": [
-      "html"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.js"
-    ]
   },
   "browserslist": {
     "production": [

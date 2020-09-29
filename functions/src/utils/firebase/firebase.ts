@@ -4,20 +4,23 @@ import 'firebase/auth';
 import 'firebase/firestore';
 import { getFirebaseConfig } from '../config';
 
-interface Document {
-    id: string
-    data: () => {}
+interface Cache {
+    provider: firebase.auth.GoogleAuthProvider | null,
+    auth: firebase.auth.Auth | null,
+    db: firebase.firestore.Firestore | null
 }
 
-interface Filter {
-    key: string
-    match: string
-    value: any
-}
+const cache: Cache = {
+    provider: null,
+    auth: null,
+    db: null,
+};
 
-let provider: any, auth: any, db: any;
+export function getFirestore (): firebase.firestore.Firestore {
+    if (cache.db) {
+        return cache.db;
+    }
 
-if (process.env.NODE_ENV !== 'test') {
     const firebaseConfig = getFirebaseConfig();
 
     if (!firebaseConfig) {
@@ -34,97 +37,12 @@ if (process.env.NODE_ENV !== 'test') {
         });
     }
 
-    provider = new firebase.auth.GoogleAuthProvider();
+    cache.provider = new firebase.auth.GoogleAuthProvider();
     // @ts-ignore
-    auth = new firebase.auth();
-    db = firebase.firestore();
+    cache.auth = new firebase.auth();
+    cache.db = firebase.firestore();
+
+    return cache.db;
 }
 
-export {
-    auth,
-    db,
-    provider,
-};
-
-export const create = async (collection: string, data: object) => {
-    const doc = await db.collection(collection).add(data);
-    return {
-        id: doc.id,
-        ...data,
-    };
-};
-
-export const createMany = async (collection: string, data: Array<object>) => {
-    const batch = db.batch();
-
-    data.forEach((datum: object) => {
-        const docRef = db.collection(collection).doc();
-        batch.set(docRef, datum);
-    });
-
-    return await batch.commit();
-};
-
-export const update = async (collection: string, id: string, data: object) => {
-    await db.collection(collection).doc(id).update(data);
-    return {
-        id,
-        ...data,
-    };
-};
-
-export const get = async (collection: string, id: string) => {
-    const doc = await db.collection(collection).doc(id).get();
-    return doc.exists
-        ? {
-            id: doc.id,
-            ...doc.data(),
-        }
-        : null;
-};
-
-export const getAll = async (collection: string, filters?: any) => {
-    const docRef = db.collection(collection);
-
-    const query = filters
-        ? filters.reduce((que: any, filter: Filter) => {
-            return que.where(filter.key, filter.match, filter.value);
-        }, docRef)
-        : docRef;
-
-    const documents = await query.get();
-
-    let response: any = [];
-    documents.forEach((doc: Document) => {
-        response = [
-            ...response,
-            {
-                id: doc.id,
-                ...doc.data(),
-            },
-        ]
-    });
-
-    return response;
-};
-
-export const deleteOne = async (collection: string, id: string) => {
-    return await db.collection(collection).doc(id).delete();
-};
-
-export const transaction = async (collection: string, id: string, quantity: number) => {
-    return await db.runTransaction(async (trans: any) => {
-        const ref = db.collection(collection).doc(id);
-        const doc = await trans.get(ref);
-
-        if (!doc.exists()) {
-            throw Error("Document does not exist");
-        }
-
-        const newQuantity = doc.data().quantity + quantity;
-        const newDoc = await trans.update(ref, { quantity: newQuantity });
-        return newDoc;
-    });
-};
-
-export const createBatch = () => db.batch();
+getFirestore();

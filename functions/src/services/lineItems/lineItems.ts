@@ -1,5 +1,5 @@
 import { LINE_ITEMS_COLLECTION } from '../../constants/collections';
-import { createMany as dbCreateMany, getAll, transaction } from '../../utils/firebase';
+import { createMany as dbCreateMany, getAll, transaction } from '../../utils/firestore';
 
 export const createMany = async (itemId: string, lineItems: any) => {
     const data = lineItems.map((lineItem: any) => ({ itemId, ...lineItem }));

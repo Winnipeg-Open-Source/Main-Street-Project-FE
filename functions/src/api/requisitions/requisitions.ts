@@ -1,7 +1,7 @@
 import express from 'express';
 import { REQUISITIONS_COLLECTION } from '../../constants/collections';
 import { update as updateLineItems } from '../../services/lineItems';
-import { create, get, getAll } from '../../utils/firebase';
+import { create, get, getAll } from '../../utils/firestore';
 
 const router = express.Router();
 
