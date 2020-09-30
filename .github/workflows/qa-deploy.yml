@@ -2,7 +2,7 @@ name: QA Deploy
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ master ]
 
 jobs:
   deploy:
