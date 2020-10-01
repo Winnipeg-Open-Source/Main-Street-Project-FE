@@ -5,7 +5,7 @@ function useToggle (defaultValue) {
 
     function onToggle () { onChange(!value); }
 
-    return [ value, onToggle ];
+    return [ value, onToggle, onChange ];
 }
 
 export default useToggle;

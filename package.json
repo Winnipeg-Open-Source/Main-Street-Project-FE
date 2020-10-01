@@ -28,6 +28,7 @@
     "react-dom": "^16.13.1",
     "react-loading-skeleton": "^2.0.1",
     "react-router-dom": "^5.1.2",
+    "react-swipeable": "^5.5.1",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
