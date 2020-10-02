@@ -25,7 +25,7 @@ function Donation () {
 
     const isLoading = isLoadingDonations || isLoadingDonors;
     const title = donation ? donation.title : 'Donation not found';
-    const donor = !isLoadingDonations && !isLoadingDonors && donors.find(donor => donor.id === donation.id);
+    const donor = !isLoadingDonations && !isLoadingDonors && donors.find(donor => donor.id === donation.donorId);
     const items = donation && donation.items;
 
     useEffect(() => {
