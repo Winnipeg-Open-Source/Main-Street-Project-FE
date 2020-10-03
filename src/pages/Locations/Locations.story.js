@@ -29,6 +29,6 @@ export const MultipleLocations = () => (
 );
 
 export default {
-    title: 'Pages|Locations',
+    title: 'Pages/Locations',
     component: LocationsPage,
 };

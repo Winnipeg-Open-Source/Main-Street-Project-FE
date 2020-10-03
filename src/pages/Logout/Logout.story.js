@@ -13,6 +13,6 @@ export const Default = () => (
 );
 
 export default {
-    title: 'Pages|Logout',
+    title: 'Pages/Logout',
     component: Logout,
 };

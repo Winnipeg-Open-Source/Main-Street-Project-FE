@@ -32,6 +32,6 @@ export const LoginError = () => (
 );
 
 export default {
-    title: 'Forms|LoginForm',
+    title: 'Forms/LoginForm',
     component: LoginForm,
 };

@@ -21,6 +21,6 @@ export const MultipleUsers = () => (
 );
 
 export default {
-    title: 'Pages|Users',
+    title: 'Pages/Users',
     component: Users,
 };

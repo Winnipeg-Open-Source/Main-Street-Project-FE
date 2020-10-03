@@ -30,6 +30,6 @@ export const CompletedForm = () => (
 );
 
 export default {
-    title: 'Forms|MiscellaneousDonationForm',
+    title: 'Forms/MiscellaneousDonationForm',
     component: MiscellaneousDonationForm,
 };

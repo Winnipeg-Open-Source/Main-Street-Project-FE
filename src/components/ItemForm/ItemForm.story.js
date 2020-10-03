@@ -60,6 +60,6 @@ export const CompletedForm = () => {
 };
 
 export default {
-    title: 'Forms|ItemForm',
+    title: 'Forms/ItemForm',
     component: ItemForm,
 };
