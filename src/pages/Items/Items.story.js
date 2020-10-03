@@ -29,6 +29,6 @@ export const MultipleItems = () => (
 );
 
 export default {
-    title: 'Pages|Items',
+    title: 'Pages/Items',
     component: ItemsPage,
 };

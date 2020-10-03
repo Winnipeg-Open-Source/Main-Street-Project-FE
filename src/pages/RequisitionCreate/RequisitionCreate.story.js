@@ -21,6 +21,6 @@ export const EmptyForm = () => {
 };
 
 export default {
-    title: 'Pages|RequisitionCreate',
+    title: 'Pages/RequisitionCreate',
     component: RequisitionCreate,
 };

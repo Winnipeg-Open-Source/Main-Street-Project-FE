@@ -19,6 +19,6 @@ export const EmptyForm = () => {
 };
 
 export default {
-    title: 'Pages|DonorCreate',
+    title: 'Pages/DonorCreate',
     component: DonorCreate,
 };

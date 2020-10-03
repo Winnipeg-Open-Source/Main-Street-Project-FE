@@ -31,6 +31,6 @@ export const EmptyForm = () => {
 };
 
 export default {
-    title: 'Pages|ItemsCreate',
+    title: 'Pages/ItemsCreate',
     component: ItemsCreate,
 };

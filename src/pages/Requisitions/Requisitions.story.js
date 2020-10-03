@@ -29,6 +29,6 @@ export const MultipleRequisitions = () => (
 );
 
 export default {
-    title: 'Pages|Requisitions',
+    title: 'Pages/Requisitions',
     component: Requisitions,
 };

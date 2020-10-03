@@ -9,6 +9,6 @@ export const Default = () => (
 );
 
 export default {
-    title: 'Pages|LandingPage',
+    title: 'Pages/LandingPage',
     component: LandingPage,
 };

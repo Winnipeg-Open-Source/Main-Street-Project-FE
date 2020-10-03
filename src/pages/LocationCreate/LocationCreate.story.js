@@ -15,6 +15,6 @@ export const EmptyForm = () => {
 };
 
 export default {
-    title: 'Pages|LocationCreate',
+    title: 'Pages/LocationCreate',
     component: LocationCreate,
 };

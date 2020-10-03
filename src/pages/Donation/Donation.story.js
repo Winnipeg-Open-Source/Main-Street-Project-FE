@@ -50,6 +50,6 @@ export const NotFound = () => {
 };
 
 export default {
-    title: 'Pages|Donation',
+    title: 'Pages/Donation',
     component: DonationPage,
 };

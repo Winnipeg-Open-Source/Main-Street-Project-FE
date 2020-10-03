@@ -42,6 +42,6 @@ export const Found = () => {
 };
 
 export default {
-    title: 'Pages|DonorPage',
+    title: 'Pages/DonorPage',
     components: DonorPage,
 };

@@ -34,6 +34,6 @@ export const LoggingIn = () => (
 );
 
 export default {
-    title: 'Pages|Login',
+    title: 'Pages/Login',
     component: Login,
 };

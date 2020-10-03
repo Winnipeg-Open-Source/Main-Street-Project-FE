@@ -37,6 +37,6 @@ export const MultipleDonors = () => (
 );
 
 export default {
-    title: 'Pages|DonorsPage',
+    title: 'Pages/DonorsPage',
     component: DonorsPage,
 };

@@ -4,6 +4,6 @@ import UserCreate from './UserCreate';
 export const Default = () => <UserCreate />;
 
 export default {
-    title: 'Pages|UserCreate',
+    title: 'Pages/UserCreate',
     component: UserCreate,
 };

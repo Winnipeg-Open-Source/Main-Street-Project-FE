@@ -31,6 +31,6 @@ export const CompletedForm = () => (
 );
 
 export default {
-    title: 'Forms|FoodDonationForm',
+    title: 'Forms/FoodDonationForm',
     component: FoodDonationForm,
 };
