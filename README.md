@@ -5,10 +5,13 @@
 - React
 - Jest
 - React Testing Library
+- Priceline Design System
 
 ## Prerequisites
 
 - Install firebase tools: `npm install -g firebase-tools`
+
+- Run `firebase login`
 
 ## Getting Started
 
@@ -16,7 +19,7 @@
 
 ### Starting
 
-- Run `npm start` to run with cloud emulation
+- Run `npm start` to run with cloud emulation (requires Firebase Login)
 
 - Run `npm run dev` to run with mocked api calls
 
@@ -30,6 +33,6 @@
 
 ### Deploy
 
-Merging to develop will deploy to QA via Github Actions
+Merging to master will deploy master to QA via Github Actions
 
-Merging to master will deploy to Production via Github Actions
+Publishing a release will deploy master to Production via Github Actions
