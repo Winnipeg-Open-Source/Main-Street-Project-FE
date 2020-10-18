@@ -1,5 +1,5 @@
 import React from 'react';
-import { Document, ExitToApp, Gallery, Home, Loyalty, Map, User } from 'pcln-icons';
+import { Document, ExitToApp, Gallery, Home, Loyalty, Map, ParentChildCircle, User } from 'pcln-icons';
 import {
     LANDING_PATH,
     DONATIONS_PATH,
@@ -26,7 +26,7 @@ const routes = [
     {
         label: 'Donors',
         path: DONORS_PATH,
-        icon: <User />,
+        icon: <ParentChildCircle />,
     },
     {
         label: 'Donations',
