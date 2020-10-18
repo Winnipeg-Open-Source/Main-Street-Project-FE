@@ -16,6 +16,9 @@
 ## Getting Started
 
 - Run `npm install`
+- Run `firebase use default` to set your default environment to QA.
+- Run `cd functions && npm install && npm run build`
+- While in the `functions` folder also run `firebase functions:config:get > .runtimeconfig.json` to set up authentication.
 
 ### Starting
 
