@@ -8,9 +8,18 @@ const StyledInput = styled(Autocomplete.Input)`
     background-color: ${getPaletteColor('background.lightest')};
 `;
 
-function ItemAutocomplete ({ className, isLoading, placeholder, items, onChange }) {
-    const match = (item, value) => item && item.name && item.name.toLowerCase().includes(value.toLowerCase());
-    const handleChange = item => onChange(item);
+function ItemAutocomplete ({
+    className,
+    isLoading,
+    placeholder,
+    items,
+    onChange,
+}) {
+    const match = (item, value) =>
+        item &&
+        item.name &&
+        item.name.toLowerCase().includes(value.toLowerCase());
+    const handleChange = (item) => onChange(item);
 
     const loadingPlaceholder = isLoading ? 'Loading...' : placeholder;
 
@@ -18,20 +27,22 @@ function ItemAutocomplete ({ className, isLoading, placeholder, items, onChange 
         <Autocomplete
             className={className}
             style={{ width: '100%' }}
-            itemToString={item => item && item.name}
+            itemToString={(item) => item && item.name}
             match={match}
             onChange={handleChange}
         >
-            <StyledInput disabled={isLoading} placeholder={loadingPlaceholder} width={1} />
+            <StyledInput
+                disabled={isLoading}
+                placeholder={loadingPlaceholder}
+                width={1}
+            />
             <Autocomplete.Menu>
-                {items && items.map(item => (
-                    <Autocomplete.Item
-                        key={item.id}
-                        item={item}
-                    >
-                        <Text>{item.name}</Text>
-                    </Autocomplete.Item>
-                ))}
+                {items &&
+                    items.map((item) => (
+                        <Autocomplete.Item key={item.id} item={item}>
+                            <Text>{item.name}</Text>
+                        </Autocomplete.Item>
+                    ))}
             </Autocomplete.Menu>
         </Autocomplete>
     );

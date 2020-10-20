@@ -15,9 +15,7 @@ function AuthenticatedRoute ({ requiresAdmin, ...props }) {
         isLoggedIn && requiresAdmin && !isAdmin && goToLandingPage();
     }, [isLoggedIn]);
 
-    return (
-        <Route {...props} />
-    );
+    return <Route {...props} />;
 }
 
 AuthenticatedRoute.displayName = 'AuthenticatedRoute';

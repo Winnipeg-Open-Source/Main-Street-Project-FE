@@ -20,7 +20,7 @@ exports[`Donors Page renders without crashing 1`] = `
           Donors
         </div>
         <a
-          class="sc-pjTIO eyMuap"
+          class="sc-pjTIO hnLKbB"
           href="/donors/new"
         >
           <button

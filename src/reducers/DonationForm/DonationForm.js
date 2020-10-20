@@ -36,27 +36,26 @@ function DonationForm (state = {}, action = {}) {
         case ADD_SELECTED_ITEM:
             return {
                 ...state,
-                selectedItems: [
-                    ...state.selectedItems,
-                    action.item,
-                ],
+                selectedItems: [...state.selectedItems, action.item],
             };
 
         case CHANGE_ITEM_QUANTITY:
             return {
                 ...state,
-                selectedItems: state.selectedItems.map(item => item.id === action.itemId
-                    ? {
-                        ...item,
-                        lineItems: item.lineItems.map(lineItem => lineItem.id === action.lineItemId
-                            ? {
-                                ...lineItem,
-                                quantity: action.quantity,
-                            }
-                            : lineItem
-                        ),
-                    }
-                    : item
+                selectedItems: state.selectedItems.map((item) =>
+                    item.id === action.itemId
+                        ? {
+                              ...item,
+                              lineItems: item.lineItems.map((lineItem) =>
+                                  lineItem.id === action.lineItemId
+                                      ? {
+                                            ...lineItem,
+                                            quantity: action.quantity,
+                                        }
+                                      : lineItem
+                              ),
+                          }
+                        : item
                 ),
             };
     }

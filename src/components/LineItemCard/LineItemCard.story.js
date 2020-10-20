@@ -3,14 +3,8 @@ import LineItemCard from './LineItemCard';
 import useCounter from 'hooks/useCounter';
 
 export const Default = () => {
-    return (
-        <LineItemCard
-            name='Freezer 2'
-            quantity={10}
-            quantityName='Rolls'
-        />
-    );
-}
+    return <LineItemCard name='Freezer 2' quantity={10} quantityName='Rolls' />;
+};
 
 export const WithAvailableQuantity = () => {
     return (
@@ -21,7 +15,7 @@ export const WithAvailableQuantity = () => {
             availableQuantity={20}
         />
     );
-}
+};
 
 export default {
     title: 'LineItemCard',

@@ -12,19 +12,17 @@ function Children () {
 }
 
 function RenderAction () {
-    return (
-        <div>Render Action</div>
-    );
+    return <div>Render Action</div>;
 }
 
-describe ('Page', () => {
-    it ('renders without crashing', () => {
+describe('Page', () => {
+    it('renders without crashing', () => {
         const { asFragment } = renderWithTheme(<Page />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('renders without title', () => {
+    it('renders without title', () => {
         const { queryByText } = renderWithTheme(
             <Page>
                 <Children />
@@ -37,7 +35,7 @@ describe ('Page', () => {
         expect(queryByText(/Render Action/i)).not.toBeInTheDocument();
     });
 
-    it ('renders with title', () => {
+    it('renders with title', () => {
         const { queryByText } = renderWithTheme(
             <Page title='Title'>
                 <Children />
@@ -50,7 +48,7 @@ describe ('Page', () => {
         expect(queryByText(/Render Action/i)).not.toBeInTheDocument();
     });
 
-    it ('renders with render actions', () => {
+    it('renders with render actions', () => {
         const { queryByText } = renderWithTheme(
             <Page title='Title' renderAction={RenderAction}>
                 <Children />

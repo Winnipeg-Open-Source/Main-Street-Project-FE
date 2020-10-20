@@ -1,4 +1,8 @@
-import { LOAD_RESOURCES, SAVE_RESOURCE, UPDATE_RESOURCE } from 'actions/Resources';
+import {
+    LOAD_RESOURCES,
+    SAVE_RESOURCE,
+    UPDATE_RESOURCE,
+} from 'actions/Resources';
 
 function Resources (state = {}, action = {}) {
     switch (action.type) {
@@ -12,22 +16,20 @@ function Resources (state = {}, action = {}) {
         case SAVE_RESOURCE:
             return {
                 ...state,
-                data: [
-                    ...state.data,
-                    action.resource,
-                ],
+                data: [...state.data, action.resource],
             };
 
         case UPDATE_RESOURCE:
             return {
                 ...state,
                 data: [
-                    ...state.data.map(datum => datum.id === action.resource.id
-                        ? {
-                            ...datum,
-                            ...action.resource,
-                        }
-                        : datum,
+                    ...state.data.map((datum) =>
+                        datum.id === action.resource.id
+                            ? {
+                                  ...datum,
+                                  ...action.resource,
+                              }
+                            : datum
                     ),
                 ],
             };

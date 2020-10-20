@@ -16,7 +16,12 @@ function Locations () {
 
     return (
         <Page title='Locations' renderAction={NewButton}>
-            <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
+            <Input
+                id='search'
+                disabled={disabled}
+                placeholder='Search'
+                mb={3}
+            />
             <LocationsList />
         </Page>
     );

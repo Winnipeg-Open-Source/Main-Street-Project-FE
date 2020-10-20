@@ -11,4 +11,7 @@ export const loadResources = (isLoading, isError, resources) => ({
 
 export const saveResource = (resource) => ({ type: SAVE_RESOURCE, resource });
 
-export const updateResource = (resource) => ({ type: UPDATE_RESOURCE, resource });
+export const updateResource = (resource) => ({
+    type: UPDATE_RESOURCE,
+    resource,
+});

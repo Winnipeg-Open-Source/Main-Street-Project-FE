@@ -14,15 +14,17 @@ const DonorsContextWrapper = ({ children }) => (
     </DonorsContext.Provider>
 );
 
-describe ('useDonors', () => {
-    it ('should return default context', () => {
+describe('useDonors', () => {
+    it('should return default context', () => {
         const { result } = renderHook(() => useDonors());
         expect(result.current.isLoading).toBe(true);
         expect(result.current.donors).toStrictEqual([]);
     });
 
-    it ('should return set context', () => {
-        const { result } = renderHook(() => useDonors(), { wrapper: DonorsContextWrapper });
+    it('should return set context', () => {
+        const { result } = renderHook(() => useDonors(), {
+            wrapper: DonorsContextWrapper,
+        });
         expect(result.current).toBe(customContext);
     });
 });

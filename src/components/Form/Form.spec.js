@@ -12,8 +12,8 @@ const FormChildren = () => (
     </>
 );
 
-describe ('Form', () => {
-    it ('renders without crashing', () => {
+describe('Form', () => {
+    it('renders without crashing', () => {
         const { asFragment } = renderWithTheme(
             <Form>
                 <FormChildren />
@@ -23,7 +23,7 @@ describe ('Form', () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('renders without a title', () => {
+    it('renders without a title', () => {
         const { queryByText } = renderWithTheme(
             <Form>
                 <FormChildren />
@@ -33,7 +33,7 @@ describe ('Form', () => {
         expect(queryByText('Title')).toBeNull();
     });
 
-    it ('renders with a title', () => {
+    it('renders with a title', () => {
         const { queryByText } = renderWithTheme(
             <Form title='Title'>
                 <FormChildren />
@@ -43,12 +43,16 @@ describe ('Form', () => {
         expect(queryByText('Title')).toBeDefined();
     });
 
-    it ('renders with buttons', () => {
+    it('renders with buttons', () => {
         const mockSaveClick = jest.fn();
         const mockCancelClick = jest.fn();
 
         const { getByText } = renderWithTheme(
-            <Form title='Title' onCancelClick={mockCancelClick} onSaveClick={mockSaveClick}>
+            <Form
+                title='Title'
+                onCancelClick={mockCancelClick}
+                onSaveClick={mockSaveClick}
+            >
                 <FormChildren />
             </Form>
         );

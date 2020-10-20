@@ -22,7 +22,9 @@ describe('useSidebar', () => {
     });
 
     it('should return set context', () => {
-        const { result } = renderHook(() => useSidebar(), { wrapper: SidebarContextWrapper });
+        const { result } = renderHook(() => useSidebar(), {
+            wrapper: SidebarContextWrapper,
+        });
         expect(result.current).toBe(customContext);
     });
 });

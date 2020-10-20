@@ -18,17 +18,48 @@ function FoodDonationForm ({
 }) {
     return (
         <>
-            <Input id='name' name='name' placeholder='Name' value={name} onChange={onChange} />
-            <Input id='description' name='description' placeholder='Description' value={description} onChange={onChange} />
-            <Input id='quantity-name' name='quantityName' placeholder='Quantity Name' value={quantityName} onChange={onChange} />
-            <Input id='retail-value' name='retailValue' placeholder='Retail Value ($)' type='number' value={retailValue} onChange={onChange} />
+            <Input
+                id='name'
+                name='name'
+                placeholder='Name'
+                value={name}
+                onChange={onChange}
+            />
+            <Input
+                id='description'
+                name='description'
+                placeholder='Description'
+                value={description}
+                onChange={onChange}
+            />
+            <Input
+                id='quantity-name'
+                name='quantityName'
+                placeholder='Quantity Name'
+                value={quantityName}
+                onChange={onChange}
+            />
+            <Input
+                id='retail-value'
+                name='retailValue'
+                placeholder='Retail Value ($)'
+                type='number'
+                value={retailValue}
+                onChange={onChange}
+            />
             <LineItemForm
                 locations={locations}
                 lineItems={lineItems}
                 onAddClick={onAddLineItemClick}
                 onItemQuantityChange={onItemQuantityChange}
             />
-            <TextArea id='notes' name='notes' label='Notes' value={notes} onChange={onChange} />
+            <TextArea
+                id='notes'
+                name='notes'
+                label='Notes'
+                value={notes}
+                onChange={onChange}
+            />
         </>
     );
 }

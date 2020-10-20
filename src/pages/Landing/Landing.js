@@ -16,9 +16,24 @@ const StyledFlex = styled(Flex)`
 
 function Landing () {
     return (
-        <StyledFlex flexDirection='column' color='primary.light' width={1} p={3}>
-            <LinkButton title='New Donation' path={DONATION_NEW_PATH} size='large' width={1} />
-            <LinkButton title='New Requisition' path={REQUISITION_NEW_PATH} size='large' width={1} />
+        <StyledFlex
+            flexDirection='column'
+            color='primary.light'
+            width={1}
+            p={3}
+        >
+            <LinkButton
+                title='New Donation'
+                path={DONATION_NEW_PATH}
+                size='large'
+                width={1}
+            />
+            <LinkButton
+                title='New Requisition'
+                path={REQUISITION_NEW_PATH}
+                size='large'
+                width={1}
+            />
         </StyledFlex>
     );
 }

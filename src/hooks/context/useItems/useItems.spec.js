@@ -14,15 +14,17 @@ const ItemsContextWrapper = ({ children }) => (
     </ItemsContext.Provider>
 );
 
-describe ('useItems', () => {
-    it ('should return default context', () => {
+describe('useItems', () => {
+    it('should return default context', () => {
         const { result } = renderHook(() => useItems());
         expect(result.current.isLoading).toBe(true);
         expect(result.current.items).toStrictEqual([]);
     });
 
-    it ('should return set context', () => {
-        const { result } = renderHook(() => useItems(), { wrapper: ItemsContextWrapper });
+    it('should return set context', () => {
+        const { result } = renderHook(() => useItems(), {
+            wrapper: ItemsContextWrapper,
+        });
         expect(result.current).toBe(customContext);
     });
 });

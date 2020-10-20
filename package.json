@@ -8,11 +8,19 @@
     "clean": "rimraf ./build",
     "deploy": "firebase deploy",
     "dev": "webpack-dev-server --hot --silent",
+    "lint": "npm run format -- --check",
+    "format": "prettier-standard 'src/**/*.{js,jsx,css,md,json}'",
+    "precommit": "lint-staged && npm test",
     "start": "firebase emulators:start",
     "start:client": "firebase emulators:start --only hosting",
     "storybook": "start-storybook -c .storybook",
     "test": "jest --silent --coverage",
     "test:ci": "jest --silent"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,css,md,json}": [
+      "prettier-standard"
+    ]
   },
   "dependencies": {
     "@babel/runtime": "7.9.2",
@@ -50,7 +58,10 @@
     "css-loader": "^3.4.2",
     "firebase-tools": "^8.10.0",
     "html-webpack-plugin": "^4.0.3",
+    "husky": "^4.3.0",
     "jest": "^25.2.3",
+    "lint-staged": "^10.4.2",
+    "prettier-standard": "^16.4.1",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
     "style-loader": "^1.1.3",

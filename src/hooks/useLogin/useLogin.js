@@ -9,7 +9,12 @@ const request = {
 };
 
 function useLogin () {
-    const { onAttemptLogin, onLogin, onLoggedIn, onLoginFailed } = useAuthentication();
+    const {
+        onAttemptLogin,
+        onLogin,
+        onLoggedIn,
+        onLoginFailed,
+    } = useAuthentication();
     const { response, fetchData } = useAxios(request);
     const { isLoading, isError, data } = response;
 

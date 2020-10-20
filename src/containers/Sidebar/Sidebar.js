@@ -12,20 +12,19 @@ function Sidebar () {
     const { isCollapsed, onSidebarToggle } = useSidebar();
     const { pathname } = useLocation();
 
-    const isSmallBreakpoint = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
+    const isSmallBreakpoint =
+        currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
-    return isLoggedIn
-        ? (
-            <SidebarComponent
-                isAdmin={isAdmin}
-                isMobileSidebar={isSmallBreakpoint}
-                isCollapsed={isCollapsed}
-                currentPathname={pathname}
-                routes={routes}
-                onClose={onSidebarToggle}
-            />
-        )
-        : null;
+    return isLoggedIn ? (
+        <SidebarComponent
+            isAdmin={isAdmin}
+            isMobileSidebar={isSmallBreakpoint}
+            isCollapsed={isCollapsed}
+            currentPathname={pathname}
+            routes={routes}
+            onClose={onSidebarToggle}
+        />
+    ) : null;
 }
 
 Sidebar.displayName = 'Sidebar';

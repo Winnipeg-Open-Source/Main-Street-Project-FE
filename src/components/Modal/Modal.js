@@ -9,14 +9,14 @@ import ModalFooter from 'components/ModalFooter';
 const StyledModal = styled(PCLNModal)`
     max-width: 100%;
     height: 100%;
-    
+
     & > div {
         & > :last-child {
             height: 100%;
             padding: 0;
         }
     }
-    
+
     ${mediaQueries.sm} {
         max-width: calc(100% - 32px);
         height: auto;
@@ -59,7 +59,16 @@ const DIALOG_ANIMATIONS = (state) => `
     ${state === 'exited' ? `transform: translate(-100%);` : ''}
 `;
 
-function Modal ({ className, isMobile, isOpen, hasFooter, title, subtitle, children, onClose }) {
+function Modal ({
+    className,
+    isMobile,
+    isOpen,
+    hasFooter,
+    title,
+    subtitle,
+    children,
+    onClose,
+}) {
     return (
         <StyledModal
             className={className}
@@ -68,7 +77,13 @@ function Modal ({ className, isMobile, isOpen, hasFooter, title, subtitle, child
             timeout={250}
             color='background.lightest'
             width={['100%', null, '640px']}
-            header={<ModalHeader title={title} subtitle={subtitle} onClose={onClose} />}
+            header={
+                <ModalHeader
+                    title={title}
+                    subtitle={subtitle}
+                    onClose={onClose}
+                />
+            }
             overlayAnimation={isMobile ? OVERLAY_ANIMATIONS : null}
             dialogAnimation={isMobile ? DIALOG_ANIMATIONS : null}
             onClose={onClose}

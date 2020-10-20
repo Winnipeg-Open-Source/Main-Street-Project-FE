@@ -9,7 +9,12 @@ import { USERS_API_PATH } from 'constants/api';
 
 function Users () {
     const { isLoading, users, onUpdateUser, onLoadUsers } = useUsers();
-    const { handleSave } = useSaveResource(USERS_API_PATH, null, onUpdateUser, 'put');
+    const { handleSave } = useSaveResource(
+        USERS_API_PATH,
+        null,
+        onUpdateUser,
+        'put'
+    );
 
     const onAdminChange = (id, isAdmin) => handleSave({ id, isAdmin });
     const disabled = isLoading || (users && users.length === 0);
@@ -20,8 +25,17 @@ function Users () {
 
     return (
         <Page isLoading={isLoading} title='Users' renderAction={NewButton}>
-            <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
-            <UsersList isLoading={isLoading} users={users} onAdminChange={onAdminChange} />
+            <Input
+                id='search'
+                disabled={disabled}
+                placeholder='Search'
+                mb={3}
+            />
+            <UsersList
+                isLoading={isLoading}
+                users={users}
+                onAdminChange={onAdminChange}
+            />
         </Page>
     );
 }

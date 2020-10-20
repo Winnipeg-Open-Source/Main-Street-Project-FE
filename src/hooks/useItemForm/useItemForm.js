@@ -3,36 +3,39 @@ import useForm from 'hooks/useForm';
 function useItemForm (initialState) {
     const { state, onChange, setState } = useForm(initialState);
 
-    const onAddLineItemClick = (lineItem) => setState({
-        ...state,
-        lineItems: [
-            ...state.lineItems,
-            {
-                ...lineItem,
-                locationName: lineItem.name,
-            },
-        ],
-    });
-
-    const onLineItemQuantityChange = (_, lineItemId, value) => setState({
-        ...state,
-        lineItems: [
-            ...state.lineItems.map(lineItem => lineItem.id === lineItemId
-                ? {
+    const onAddLineItemClick = (lineItem) =>
+        setState({
+            ...state,
+            lineItems: [
+                ...state.lineItems,
+                {
                     ...lineItem,
-                    quantity: value,
-                }
-                : lineItem
-            ),
-        ],
-    });
+                    locationName: lineItem.name,
+                },
+            ],
+        });
+
+    const onLineItemQuantityChange = (_, lineItemId, value) =>
+        setState({
+            ...state,
+            lineItems: [
+                ...state.lineItems.map((lineItem) =>
+                    lineItem.id === lineItemId
+                        ? {
+                              ...lineItem,
+                              quantity: value,
+                          }
+                        : lineItem
+                ),
+            ],
+        });
 
     return {
         state,
         onChange,
         onAddLineItemClick,
         onLineItemQuantityChange,
-    }
+    };
 }
 
 export default useItemForm;

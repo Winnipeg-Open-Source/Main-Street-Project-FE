@@ -8,8 +8,8 @@ import { DONORS_PATH, DONOR_NEW_PATH } from 'constants/paths';
 jest.mock('react-router-dom', () => ({
     ...jest.requireActual('react-router-dom'),
     useLocation: () => ({
-        pathname: '/donors'
-    })
+        pathname: '/donors',
+    }),
 }));
 jest.mock('hooks/context/useDonors');
 
@@ -38,18 +38,18 @@ const multipleDonorsProps = {
     ],
 };
 
-describe ('Donors Page', () => {
+describe('Donors Page', () => {
     beforeEach(() => {
         useDonors.mockImplementation(() => []);
     });
 
-    it ('renders without crashing', () => {
+    it('renders without crashing', () => {
         const { asFragment } = renderWithThemeAndRouter(<DonorsPage />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('has no donors', () => {
+    it('has no donors', () => {
         const { queryByText } = renderWithThemeAndRouter(<DonorsPage />);
 
         const noDonorsText = queryByText('No donors yet...');
@@ -59,9 +59,9 @@ describe ('Donors Page', () => {
         expect(title).not.toBeInTheDocument();
     });
 
-    it ('has single donor', () => {
+    it('has single donor', () => {
         useDonors.mockImplementation(() => singleDonorProps);
-        
+
         const { queryByText } = renderWithThemeAndRouter(<DonorsPage />);
 
         const noDonorsText = queryByText('No donors yet...');
@@ -73,7 +73,7 @@ describe ('Donors Page', () => {
         expect(secondTitle).not.toBeInTheDocument();
     });
 
-    it ('has multiple donors', () => {
+    it('has multiple donors', () => {
         useDonors.mockImplementation(() => multipleDonorsProps);
 
         const { queryByText } = renderWithThemeAndRouter(<DonorsPage />);
@@ -87,8 +87,11 @@ describe ('Donors Page', () => {
         expect(secondTitle).toBeInTheDocument();
     });
 
-    it ('can navigate to new donor page', () => {
-        const { getByText, history } = renderWithThemeAndRouter(<DonorsPage />, { route: DONORS_PATH });
+    it('can navigate to new donor page', () => {
+        const { getByText, history } = renderWithThemeAndRouter(
+            <DonorsPage />,
+            { route: DONORS_PATH }
+        );
         const newDonorButton = getByText('New');
 
         expect(history.location.pathname).toBe(DONORS_PATH);

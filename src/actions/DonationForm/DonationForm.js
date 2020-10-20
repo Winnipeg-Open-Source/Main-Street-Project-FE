@@ -7,7 +7,10 @@ export const CHANGE_NOTES = 'CHANGE_NOTES';
 
 export const changeDonor = (donorId) => ({ type: CHANGE_DONOR, donorId });
 export const changeTitle = (title) => ({ type: CHANGE_TITLE, title });
-export const changeDescription = (description) => ({ type: CHANGE_DESCRIPTION, description });
+export const changeDescription = (description) => ({
+    type: CHANGE_DESCRIPTION,
+    description,
+});
 export const changeNotes = (notes) => ({ type: CHANGE_NOTES, notes });
 
 export const addSelectedItem = (item) => ({ type: ADD_SELECTED_ITEM, item });

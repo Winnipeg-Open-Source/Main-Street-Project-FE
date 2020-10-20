@@ -19,7 +19,11 @@ function LocationForm () {
     const { state, onChange } = useForm(initialState);
     const goToLocations = useRoute(LOCATIONS_PATH);
 
-    const { handleSave } = useSaveResource(LOCATIONS_API_PATH, LOCATIONS_PATH, onSaveLocation);
+    const { handleSave } = useSaveResource(
+        LOCATIONS_API_PATH,
+        LOCATIONS_PATH,
+        onSaveLocation
+    );
     const onSaveClick = () => handleSave(state);
 
     return (

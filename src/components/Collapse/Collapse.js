@@ -24,14 +24,20 @@ const StyledFlex = styled(Flex)`
 `;
 
 function Collapse ({ className, title, children }) {
-    const [ isCollapsed, toggleCollapsed ] = useToggle();
+    const [isCollapsed, toggleCollapsed] = useToggle();
 
     const Chevron = isCollapsed ? ChevronUp : ChevronDown;
 
     return (
         <StyledCard className={className} isCollapsed={isCollapsed}>
-            <ClickableFlex justifyContent='space-between' alignItems='center' onClick={toggleCollapsed}>
-                <Text color='text.darkest' fontSize={1} bold>{title}</Text>
+            <ClickableFlex
+                justifyContent='space-between'
+                alignItems='center'
+                onClick={toggleCollapsed}
+            >
+                <Text color='text.darkest' fontSize={1} bold>
+                    {title}
+                </Text>
                 <Chevron color='text.darkest' />
             </ClickableFlex>
             <Collapsible isOpened={isCollapsed}>

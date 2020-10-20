@@ -9,12 +9,19 @@ import { DONORS_PATH } from 'constants/paths';
 
 function DonorCreate () {
     const { onSaveDonor } = useDonors();
-    const { handleSave } = useSaveResource(DONORS_API_PATH, DONORS_PATH, onSaveDonor);
+    const { handleSave } = useSaveResource(
+        DONORS_API_PATH,
+        DONORS_PATH,
+        onSaveDonor
+    );
     const redirectToDonors = useRoute(DONORS_PATH);
 
     return (
         <Page title='Create a donor'>
-            <DonorCreationForm onSaveClick={handleSave} onCancelClick={redirectToDonors} />
+            <DonorCreationForm
+                onSaveClick={handleSave}
+                onCancelClick={redirectToDonors}
+            />
         </Page>
     );
 }

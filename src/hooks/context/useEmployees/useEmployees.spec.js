@@ -14,15 +14,17 @@ const EmployeesContextWrapper = ({ children }) => (
     </EmployeesContext.Provider>
 );
 
-describe ('useEmployees', () => {
-    it ('should return default context', () => {
+describe('useEmployees', () => {
+    it('should return default context', () => {
         const { result } = renderHook(() => useEmployees());
         expect(result.current.isLoading).toBe(true);
         expect(result.current.employees).toStrictEqual([]);
     });
 
-    it ('should return set context', () => {
-        const { result } = renderHook(() => useEmployees(), { wrapper: EmployeesContextWrapper });
+    it('should return set context', () => {
+        const { result } = renderHook(() => useEmployees(), {
+            wrapper: EmployeesContextWrapper,
+        });
         expect(result.current).toBe(customContext);
     });
 });

@@ -35,19 +35,35 @@ export const WithSubtitle = () => (
 );
 
 export const WithCloseButton = () => (
-    <Modal isOpen title='Title' subtitle='Subtitle Message' onClose={action('Close')}>
+    <Modal
+        isOpen
+        title='Title'
+        subtitle='Subtitle Message'
+        onClose={action('Close')}
+    >
         <Content />
     </Modal>
 );
 
 export const WithFooter = () => (
-    <Modal isOpen hasFooter title='Title' subtitle='Subtitle Message' onClose={action('Close')}>
+    <Modal
+        isOpen
+        hasFooter
+        title='Title'
+        subtitle='Subtitle Message'
+        onClose={action('Close')}
+    >
         <Content />
     </Modal>
 );
 
 export const Scrollable = () => (
-    <Modal isOpen title='Title' subtitle='Subtitle Message' onClose={action('Close')}>
+    <Modal
+        isOpen
+        title='Title'
+        subtitle='Subtitle Message'
+        onClose={action('Close')}
+    >
         <LargeContent />
     </Modal>
 );

@@ -23,8 +23,8 @@ const expectedError = {
     data: null,
 };
 
-describe ('useAxios', () => {
-    it ('should receive valid response', async () => {
+describe('useAxios', () => {
+    it('should receive valid response', async () => {
         axios.mockResolvedValue({ data: { test: true } });
 
         const { result, waitForValueToChange } = renderHook(() => useAxios());
@@ -41,9 +41,9 @@ describe ('useAxios', () => {
         expect(result.current.response).toStrictEqual(expectedResult);
     });
 
-    it ('should receive an error', async () => {
+    it('should receive an error', async () => {
         axios.mockRejectedValue(new Error({ error: true }));
-        
+
         const { result, waitForValueToChange } = renderHook(() => useAxios());
         expect(result.current.response).toStrictEqual(initialState);
 

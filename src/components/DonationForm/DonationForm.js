@@ -33,7 +33,11 @@ function DonationForm ({
     onCancelClick,
 }) {
     return (
-        <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
+        <Form
+            className={className}
+            onSaveClick={onSaveClick}
+            onCancelClick={onCancelClick}
+        >
             <UserSelect
                 isLoading={isLoadingDonors}
                 placeholder='Donor'

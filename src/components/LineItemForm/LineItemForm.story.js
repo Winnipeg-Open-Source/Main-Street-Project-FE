@@ -6,19 +6,15 @@ import { mockLocations } from 'tests/mocks/locations';
 export const NoLocations = () => <LineItemForm />;
 
 export const Filled = () => {
-    return (
-        <LineItemForm
-            locations={mockLocations}
-            lineItems={mockLineItems}
-        />
-    );
+    return <LineItemForm locations={mockLocations} lineItems={mockLineItems} />;
 };
 
 export const Fillable = () => {
-    const [ lineItems, setLineItems ] = useState([]);
-    
-    const addLineItem = (item) => setLineItems([ ...lineItems, item ]);
-    const removeLineItem = (id) => setLineItems(lineItems.filter(lineItem => lineItem.id !== id));
+    const [lineItems, setLineItems] = useState([]);
+
+    const addLineItem = (item) => setLineItems([...lineItems, item]);
+    const removeLineItem = (id) =>
+        setLineItems(lineItems.filter((lineItem) => lineItem.id !== id));
 
     return (
         <LineItemForm

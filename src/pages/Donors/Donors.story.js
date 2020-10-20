@@ -6,7 +6,9 @@ import { noDonors, singleDonor, multipleDonors } from 'storybook/mocks/donors';
 
 export const Loading = () => (
     <StorybookRouter>
-        <DonorsContext.Provider value={{ isLoading: true, onLoadDonors: () => {} }}>
+        <DonorsContext.Provider
+            value={{ isLoading: true, onLoadDonors: () => {} }}
+        >
             <DonorsPage />
         </DonorsContext.Provider>
     </StorybookRouter>

@@ -6,7 +6,9 @@ import { mockLocations } from 'tests/mocks/locations';
 
 export const Loading = () => (
     <StorybookRouter>
-        <LocationsContext.Provider value={{ isLoading: true, onLoadLocations: () => {} }}>
+        <LocationsContext.Provider
+            value={{ isLoading: true, onLoadLocations: () => {} }}
+        >
             <LocationsPage />
         </LocationsContext.Provider>
     </StorybookRouter>
@@ -22,7 +24,9 @@ export const NoLocations = () => (
 
 export const MultipleLocations = () => (
     <StorybookRouter>
-        <LocationsContext.Provider value={{ isLoading: false, locations: mockLocations }}>
+        <LocationsContext.Provider
+            value={{ isLoading: false, locations: mockLocations }}
+        >
             <LocationsPage />
         </LocationsContext.Provider>
     </StorybookRouter>

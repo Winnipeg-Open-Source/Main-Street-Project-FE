@@ -12,20 +12,25 @@ jest.mock('hooks/useForm', () => () => ({
     onToggle: jest.fn(),
 }));
 
-describe ('DonorCreationForm', () => {
-    it ('renders without crashing', () => {
+describe('DonorCreationForm', () => {
+    it('renders without crashing', () => {
         const { asFragment } = renderWithTheme(<DonorCreationForm />);
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('should save the current state', () => {
+    it('should save the current state', () => {
         const mockSave = jest.fn();
-        const { getByText } = renderWithTheme(<DonorCreationForm onSaveClick={mockSave} />);
+        const { getByText } = renderWithTheme(
+            <DonorCreationForm onSaveClick={mockSave} />
+        );
 
         const SaveButton = getByText('Save');
         expect(mockSave).toHaveBeenCalledTimes(0);
         fireEvent.click(SaveButton);
         expect(mockSave).toHaveBeenCalledTimes(1);
-        expect(mockSave).toHaveBeenCalledWith({ name: 'Costco', city: 'Winnipeg' });
+        expect(mockSave).toHaveBeenCalledWith({
+            name: 'Costco',
+            city: 'Winnipeg',
+        });
     });
 });

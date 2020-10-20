@@ -13,7 +13,9 @@ const props = {
 
 export const Loading = () => <DonorInformationSkeleton />;
 
-export const WithoutProvince = () => <DonorInformation {...props} province={null} />;
+export const WithoutProvince = () => (
+    <DonorInformation {...props} province={null} />
+);
 
 export const WithInfo = () => <DonorInformation {...props} />;
 

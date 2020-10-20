@@ -11,8 +11,12 @@ function DonationCard ({ id, className, title, donationDate, onClick }) {
 
     return (
         <Card className={className} onClick={onDonationClick}>
-            <Text color='text.darkest' fontSize={1} bold>{title}</Text>
-            <Text color='text.light' fontSize={1}>Donated: {date}</Text>
+            <Text color='text.darkest' fontSize={1} bold>
+                {title}
+            </Text>
+            <Text color='text.light' fontSize={1}>
+                Donated: {date}
+            </Text>
         </Card>
     );
 }
@@ -25,7 +29,7 @@ DonationCard.propTypes = {
     title: PropTypes.string,
     donationDate: PropTypes.string,
     onClick: PropTypes.func,
-}
+};
 
 DonationCard.defaultProps = {
     className: '',

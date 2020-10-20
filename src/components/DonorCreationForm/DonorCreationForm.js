@@ -25,12 +25,25 @@ const StyledLabel = styled(Label)`
 
 function DonorCreationForm ({ className, onSaveClick, onCancelClick }) {
     const { state, onChange, onToggle } = useForm(initialState);
-    const { name, address, city, province, postalCode, phoneNumber, email, isSubscribed } = state;
+    const {
+        name,
+        address,
+        city,
+        province,
+        postalCode,
+        phoneNumber,
+        email,
+        isSubscribed,
+    } = state;
 
     const handleSave = () => onSaveClick(state);
 
     return (
-        <Form className={className} onSaveClick={handleSave} onCancelClick={onCancelClick}>
+        <Form
+            className={className}
+            onSaveClick={handleSave}
+            onCancelClick={onCancelClick}
+        >
             <Input
                 id='name'
                 name='name'
@@ -63,7 +76,12 @@ function DonorCreationForm ({ className, onSaveClick, onCancelClick }) {
                 onChange={onChange}
             />
             <StyledLabel fontSize={0}>
-                <Checkbox id='newsletter' name='isSubscribed' chekced={isSubscribed} onChange={onToggle} />
+                <Checkbox
+                    id='newsletter'
+                    name='isSubscribed'
+                    chekced={isSubscribed}
+                    onChange={onToggle}
+                />
                 Subscribe to Email Newsletter
             </StyledLabel>
         </Form>

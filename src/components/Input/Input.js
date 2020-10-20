@@ -4,13 +4,11 @@ import { Input as PCLNInput, getPaletteColor } from 'pcln-design-system';
 
 const StyledInput = styled(PCLNInput)`
     background-color: ${getPaletteColor('background.lightest')};
-    width: ${props => props.width};
+    width: ${(props) => props.width};
 `;
 
 function Input (props) {
-    return (
-        <StyledInput {...props} />
-    );
+    return <StyledInput {...props} />;
 }
 
 Input.displayName = 'Input';

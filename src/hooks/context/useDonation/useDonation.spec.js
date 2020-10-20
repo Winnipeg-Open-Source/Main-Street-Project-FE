@@ -10,7 +10,7 @@ const mockDonationState = {
 const mockNoDonationState = {
     isLoading: false,
     donations: [],
-}
+};
 
 const expectedSuccess = {
     isLoading: false,
@@ -24,19 +24,31 @@ const expectedFailure = {
     donation: undefined,
 };
 
-describe ('useDonation', () => {
-    it ('returns donation for the given id', () => {
-        const { result } = renderHookWithContext(() => useDonation(1), DonationsContext, mockDonationState);
+describe('useDonation', () => {
+    it('returns donation for the given id', () => {
+        const { result } = renderHookWithContext(
+            () => useDonation(1),
+            DonationsContext,
+            mockDonationState
+        );
         expect(result.current).toStrictEqual(expectedSuccess);
     });
 
-    it ('returns null for bad id', () => {
-        const { result } = renderHookWithContext(() => useDonation(2), DonationsContext, mockDonationState);
+    it('returns null for bad id', () => {
+        const { result } = renderHookWithContext(
+            () => useDonation(2),
+            DonationsContext,
+            mockDonationState
+        );
         expect(result.current).toStrictEqual(expectedFailure);
     });
 
-    it ('returns null for no donations', () => {
-        const { result } = renderHookWithContext(() => useDonation(1), DonationsContext, mockNoDonationState);
+    it('returns null for no donations', () => {
+        const { result } = renderHookWithContext(
+            () => useDonation(1),
+            DonationsContext,
+            mockNoDonationState
+        );
         expect(result.current).toStrictEqual(expectedFailure);
     });
 });

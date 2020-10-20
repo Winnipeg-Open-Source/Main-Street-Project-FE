@@ -1,11 +1,17 @@
 import React, { useReducer } from 'react';
 import AuthenticationContext from 'context/Authentication';
 import AuthenticationReducer from 'reducers/Authentication';
-import { attemptLogin, login, loggedIn, loginFailed, logout } from 'actions/Authentication';
+import {
+    attemptLogin,
+    login,
+    loggedIn,
+    loginFailed,
+    logout,
+} from 'actions/Authentication';
 import { initialContext } from 'context/Authentication';
 
 function Authentication ({ children }) {
-    const [ state, dispatch ] = useReducer(AuthenticationReducer, initialContext);
+    const [state, dispatch] = useReducer(AuthenticationReducer, initialContext);
 
     const onAttemptLogin = () => dispatch(attemptLogin());
     const onLogin = () => dispatch(login());

@@ -7,13 +7,19 @@ import useItems from 'hooks/context/useItems';
 jest.mock('hooks/context/useEmployees');
 jest.mock('hooks/context/useItems');
 
-describe ('RequisitionCreate', () => {
-    it ('renders without crashing', () => {
+describe('RequisitionCreate', () => {
+    it('renders without crashing', () => {
         const mockLoadEmployees = jest.fn();
         const mockLoadItems = jest.fn();
 
-        useEmployees.mockImplementation(() => ({ isLoading: true, onLoadEmployees: mockLoadEmployees }));
-        useItems.mockImplementation(() => ({ isLoading: true, onLoadItems: mockLoadItems }));
+        useEmployees.mockImplementation(() => ({
+            isLoading: true,
+            onLoadEmployees: mockLoadEmployees,
+        }));
+        useItems.mockImplementation(() => ({
+            isLoading: true,
+            onLoadItems: mockLoadItems,
+        }));
 
         const { asFragment } = renderWithThemeAndRouter(<RequisitionCreate />);
 
@@ -22,12 +28,18 @@ describe ('RequisitionCreate', () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('does not load already loaded resources', () => {
+    it('does not load already loaded resources', () => {
         const mockLoadEmployees = jest.fn();
         const mockLoadItems = jest.fn();
 
-        useEmployees.mockImplementation(() => ({ isLoading: false, onLoadEmployees: mockLoadEmployees }));
-        useItems.mockImplementation(() => ({ isLoading: false, onLoadItems: mockLoadItems }));
+        useEmployees.mockImplementation(() => ({
+            isLoading: false,
+            onLoadEmployees: mockLoadEmployees,
+        }));
+        useItems.mockImplementation(() => ({
+            isLoading: false,
+            onLoadItems: mockLoadItems,
+        }));
 
         renderWithThemeAndRouter(<RequisitionCreate />);
 

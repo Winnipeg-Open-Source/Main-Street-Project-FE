@@ -6,26 +6,28 @@ import { mockLocations } from 'tests/mocks/locations';
 import { mockLineItems } from 'tests/mocks/items';
 
 export const EmptyForm = () => {
-    const [ locations ] = useState(mockLocations);
-    const [ lineItems, setLineItems ] = useState([]);
+    const [locations] = useState(mockLocations);
+    const [lineItems, setLineItems] = useState([]);
     const { state, onChange } = useForm({ itemType: 'Food' });
 
-    const addLineItem = (lineItem) => setLineItems([
-        ...lineItems,
-        {
-            ...lineItem,
-            locationName: lineItem.name,
-        },
-    ]);
+    const addLineItem = (lineItem) =>
+        setLineItems([
+            ...lineItems,
+            {
+                ...lineItem,
+                locationName: lineItem.name,
+            },
+        ]);
 
     const itemQuantityChange = (_, lineItemId, value) => {
         setLineItems([
-            ...lineItems.map(lineItem => lineItem.id === lineItemId
-                ? {
-                    ...lineItem,
-                    quantity: value,
-                }
-                : lineItem
+            ...lineItems.map((lineItem) =>
+                lineItem.id === lineItemId
+                    ? {
+                          ...lineItem,
+                          quantity: value,
+                      }
+                    : lineItem
             ),
         ]);
     };

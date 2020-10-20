@@ -19,16 +19,23 @@ const initialState = {
 
 function useRequisitionFormReducer () {
     const { onSaveRequisition } = useRequisitions();
-    const { handleSave } = useSaveResource(REQUISITIONS_API_PATH, REQUISITIONS_PATH, onSaveRequisition);
+    const { handleSave } = useSaveResource(
+        REQUISITIONS_API_PATH,
+        REQUISITIONS_PATH,
+        onSaveRequisition
+    );
 
-    const [ state, dispatch ] = useReducer(RequisitionFormReducer, initialState);    
+    const [state, dispatch] = useReducer(RequisitionFormReducer, initialState);
     const { employeeId, description, selectedItems } = state;
 
-    const onEmployeeChange = (evt) => dispatch(changeEmployee(evt.target.value));
-    const onDescriptionChange = (evt) => dispatch(changeDescription(evt.target.value));
+    const onEmployeeChange = (evt) =>
+        dispatch(changeEmployee(evt.target.value));
+    const onDescriptionChange = (evt) =>
+        dispatch(changeDescription(evt.target.value));
     const onSelectItemChange = (item) => dispatch(addSelectedItem(item));
-    const onItemQuantityChange = (itemId, lineItemId, quantity) => dispatch(changeItemQuantity(itemId, lineItemId, quantity));
-    
+    const onItemQuantityChange = (itemId, lineItemId, quantity) =>
+        dispatch(changeItemQuantity(itemId, lineItemId, quantity));
+
     const onSaveClick = () => handleSave(state);
 
     return {

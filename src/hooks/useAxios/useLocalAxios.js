@@ -141,7 +141,7 @@ function getData (url, state) {
     switch (url) {
         case DONATIONS_API_PATH:
             return state.donations;
-            
+
         case DONORS_API_PATH:
             return state.donors;
 
@@ -156,33 +156,42 @@ function getData (url, state) {
 
         case REQUISITIONS_API_PATH:
             return state.requisitions;
-        
+
         case USERS_API_PATH:
             return state.users;
     }
 }
 
 function useLocalAxios (options = {}) {
-    const [ state, setState ] = useState(initialState);
-    const [ reducerState, dispatch ] = useReducer(AxiosReducer, initialReducerState);
+    const [state, setState] = useState(initialState);
+    const [reducerState, dispatch] = useReducer(
+        AxiosReducer,
+        initialReducerState
+    );
 
-    const fetchData = useCallback(async (data) => {
-        const { url, method } = options;
+    const fetchData = useCallback(
+        async (data) => {
+            const { url, method } = options;
 
-        dispatch(requestStart());
+            dispatch(requestStart());
 
-        let response = null;
-        switch (method) {
-            case 'post':
-                response = setData(url, data, state, setState);
-                break;
-            case 'get':
-                response = getData(url, state);
-                break;
-        }
+            let response = null;
+            switch (method) {
+                case 'post':
+                    response = setData(url, data, state, setState);
+                    break;
+                case 'get':
+                    response = getData(url, state);
+                    break;
+            }
 
-        setTimeout(() => dispatch(requestFinished({ data: response })), 500);
-    }, [ options ]);
+            setTimeout(
+                () => dispatch(requestFinished({ data: response })),
+                500
+            );
+        },
+        [options]
+    );
 
     return { response: reducerState, fetchData };
 }

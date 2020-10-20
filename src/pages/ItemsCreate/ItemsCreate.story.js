@@ -9,8 +9,12 @@ import { mockLocations } from 'tests/mocks/locations';
 export const Loading = () => {
     return (
         <StorybookRouter>
-            <ItemsContext.Provider value={{ isLoading: true, onLoadItems: () => {} }}>
-                <LocationsContext.Provider value={{ isLoading: true, onLoadLocations: () => {} }}>
+            <ItemsContext.Provider
+                value={{ isLoading: true, onLoadItems: () => {} }}
+            >
+                <LocationsContext.Provider
+                    value={{ isLoading: true, onLoadLocations: () => {} }}
+                >
                     <ItemsCreate />
                 </LocationsContext.Provider>
             </ItemsContext.Provider>
@@ -21,8 +25,12 @@ export const Loading = () => {
 export const EmptyForm = () => {
     return (
         <StorybookRouter>
-            <ItemsContext.Provider value={{ isLoading: false, items: mockItems }}>
-                <LocationsContext.Provider value={{ isLoading: false, locations: mockLocations }}>
+            <ItemsContext.Provider
+                value={{ isLoading: false, items: mockItems }}
+            >
+                <LocationsContext.Provider
+                    value={{ isLoading: false, locations: mockLocations }}
+                >
                     <ItemsCreate />
                 </LocationsContext.Provider>
             </ItemsContext.Provider>

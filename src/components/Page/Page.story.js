@@ -13,9 +13,7 @@ function Children () {
 }
 
 function RenderAction () {
-    return (
-        <Button size='small'>Render Action Button</Button>
-    );
+    return <Button size='small'>Render Action Button</Button>;
 }
 
 export const WithoutTitle = () => (
@@ -36,9 +34,7 @@ export const WithActionButton = () => (
     </Page>
 );
 
-export const Loading = () => (
-    <PageSkeleton>Content</PageSkeleton>
-);
+export const Loading = () => <PageSkeleton>Content</PageSkeleton>;
 
 export default {
     title: 'Page',

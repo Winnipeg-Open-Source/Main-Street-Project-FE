@@ -8,9 +8,17 @@ function DonorCard ({ id, className, name, lastDonationDate, onClick }) {
     const onDonorClick = () => onClick(getDonorPath(id));
 
     return (
-        <Card className={className} onClick={onDonorClick} data-testid='donor-card'>
-            <Text color='text.darkest' fontSize={1} bold>{name}</Text>
-            <Text color='text.light' fontSize={1}>Last Donation: {lastDonationDate || '-'}</Text>
+        <Card
+            className={className}
+            onClick={onDonorClick}
+            data-testid='donor-card'
+        >
+            <Text color='text.darkest' fontSize={1} bold>
+                {name}
+            </Text>
+            <Text color='text.light' fontSize={1}>
+                Last Donation: {lastDonationDate || '-'}
+            </Text>
         </Card>
     );
 }
@@ -18,7 +26,7 @@ function DonorCard ({ id, className, name, lastDonationDate, onClick }) {
 DonorCard.displayName = 'DonorCard';
 
 DonorCard.propTypes = {
-    id: PropTypes.oneOfType([ PropTypes.string, PropTypes.number ]).isRequired,
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     className: PropTypes.string,
     name: PropTypes.string,
     lastDonationDate: PropTypes.string,

@@ -11,9 +11,24 @@ export const Loading = () => {
     const currentDonationPath = getDonationPath(1);
 
     return (
-        <StorybookRouter route={DONATION_PATH} currentRoute={currentDonationPath}>
-            <DonationsContext.Provider value={{ isLoading: true, donations: [], onLoadDonations: () => {} }}>
-                <DonorsContext.Provider value={{ isLoading: true, donors: [], onLoadDonors: () => {} }}>
+        <StorybookRouter
+            route={DONATION_PATH}
+            currentRoute={currentDonationPath}
+        >
+            <DonationsContext.Provider
+                value={{
+                    isLoading: true,
+                    donations: [],
+                    onLoadDonations: () => {},
+                }}
+            >
+                <DonorsContext.Provider
+                    value={{
+                        isLoading: true,
+                        donors: [],
+                        onLoadDonors: () => {},
+                    }}
+                >
                     <DonationPage />
                 </DonorsContext.Provider>
             </DonationsContext.Provider>
@@ -25,9 +40,16 @@ export const Loaded = () => {
     const currentDonationPath = getDonationPath(1);
 
     return (
-        <StorybookRouter route={DONATION_PATH} currentRoute={currentDonationPath}>
-            <DonationsContext.Provider value={{ isLoading: false, donations: mockDonations }}>
-                <DonorsContext.Provider value={{ isLoading: false, donors: mockDonors }}>
+        <StorybookRouter
+            route={DONATION_PATH}
+            currentRoute={currentDonationPath}
+        >
+            <DonationsContext.Provider
+                value={{ isLoading: false, donations: mockDonations }}
+            >
+                <DonorsContext.Provider
+                    value={{ isLoading: false, donors: mockDonors }}
+                >
                     <DonationPage />
                 </DonorsContext.Provider>
             </DonationsContext.Provider>
@@ -39,9 +61,16 @@ export const NotFound = () => {
     const currentDonationPath = getDonationPath(1);
 
     return (
-        <StorybookRouter route={DONATION_PATH} currentRoute={currentDonationPath}>
-            <DonationsContext.Provider value={{ isLoading: false, donations: [] }}>
-                <DonorsContext.Provider value={{ isLoading: false, donors: [] }}>
+        <StorybookRouter
+            route={DONATION_PATH}
+            currentRoute={currentDonationPath}
+        >
+            <DonationsContext.Provider
+                value={{ isLoading: false, donations: [] }}
+            >
+                <DonorsContext.Provider
+                    value={{ isLoading: false, donors: [] }}
+                >
                     <DonationPage />
                 </DonorsContext.Provider>
             </DonationsContext.Provider>

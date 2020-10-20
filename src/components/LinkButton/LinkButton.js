@@ -25,7 +25,7 @@ LinkButton.propTypes = {
 
 LinkButton.defaultProps = {
     className: '',
-    size: 'small'
+    size: 'small',
 };
 
 export default memo(LinkButton);

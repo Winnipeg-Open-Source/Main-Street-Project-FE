@@ -32,14 +32,15 @@ function LineItemForm ({
                 items={locations}
                 onChange={onAddClick}
             />
-            {lineItems && lineItems.map(lineItem => {
-                return (
-                    <StyledLineItemCard
-                        {...lineItem}
-                        onItemQuantityChange={onItemQuantityChange}
-                    />
-                );
-            })}
+            {lineItems &&
+                lineItems.map((lineItem) => {
+                    return (
+                        <StyledLineItemCard
+                            {...lineItem}
+                            onItemQuantityChange={onItemQuantityChange}
+                        />
+                    );
+                })}
         </StyledFlex>
     );
 }

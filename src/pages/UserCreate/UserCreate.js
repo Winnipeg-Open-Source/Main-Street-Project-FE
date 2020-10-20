@@ -7,8 +7,11 @@ import { USERS_API_PATH } from 'constants/api';
 import { USERS_PATH } from 'constants/paths';
 
 function UserCreate () {
-    const [ email, setEmail ] = useState('');
-    const { response, handleSave } = useSaveResource(USERS_API_PATH, USERS_PATH);
+    const [email, setEmail] = useState('');
+    const { response, handleSave } = useSaveResource(
+        USERS_API_PATH,
+        USERS_PATH
+    );
 
     const isError = response && response.data && response.data.isError;
     const message = response && response.data;
@@ -17,12 +20,21 @@ function UserCreate () {
     const onSubmit = () => handleSave({ email });
 
     const helperTextColor = isError ? 'error' : 'text';
-    const helperText = isError ? message : 'Email that invite link will be sent to.';
+    const helperText = isError
+        ? message
+        : 'Email that invite link will be sent to.';
 
     return (
         <Page title='New User'>
-            <Input id='email' placeholder='New User Email Address' value={email} onChange={onEmailChange} />
-            <Text color={helperTextColor} fontSize={0} ml={1} my={2}>{helperText}</Text>
+            <Input
+                id='email'
+                placeholder='New User Email Address'
+                value={email}
+                onChange={onEmailChange}
+            />
+            <Text color={helperTextColor} fontSize={0} ml={1} my={2}>
+                {helperText}
+            </Text>
             <Button onClick={onSubmit}>Send Email</Button>
         </Page>
     );

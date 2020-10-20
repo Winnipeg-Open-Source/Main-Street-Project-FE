@@ -5,28 +5,34 @@ import Sidebar from './Sidebar';
 import routes from 'constants/routes';
 import { LANDING_PATH, DONORS_PATH } from 'constants/paths';
 
-describe ('Sidebar', () => {
-    it ('renders without crashing', () => {
+describe('Sidebar', () => {
+    it('renders without crashing', () => {
         const { asFragment } = renderWithThemeAndRouter(<Sidebar />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('renders with collapsed sidebar', () => {
-        const { asFragment } = renderWithThemeAndRouter(<Sidebar isCollapsed />);
-
-        expect(asFragment()).toMatchSnapshot();
-    });
-
-    it ('renders modal for mobile view', () => {
+    it('renders with collapsed sidebar', () => {
         const { asFragment } = renderWithThemeAndRouter(
-            <Sidebar isMobileSidebar currentPathname={LANDING_PATH} routes={routes} />
+            <Sidebar isCollapsed />
         );
 
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('can navigate to donors page', () => {
+    it('renders modal for mobile view', () => {
+        const { asFragment } = renderWithThemeAndRouter(
+            <Sidebar
+                isMobileSidebar
+                currentPathname={LANDING_PATH}
+                routes={routes}
+            />
+        );
+
+        expect(asFragment()).toMatchSnapshot();
+    });
+
+    it('can navigate to donors page', () => {
         const { getByText, history } = renderWithThemeAndRouter(
             <Sidebar currentPathname={LANDING_PATH} routes={routes} />
         );

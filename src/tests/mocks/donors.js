@@ -13,15 +13,11 @@ function getMockDonor (id) {
             },
             {
                 donationDate: '2019 November 20',
-            }
-        ]
+            },
+        ],
     };
 }
 
 export const donor = getMockDonor(1);
 
-export const mockDonors = [
-    getMockDonor(1),
-    getMockDonor(2),
-    getMockDonor(3),
-];
+export const mockDonors = [getMockDonor(1), getMockDonor(2), getMockDonor(3)];

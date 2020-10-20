@@ -6,7 +6,9 @@ import { mockRequisitions } from 'tests/mocks/requisitions';
 
 export const Loading = () => (
     <StorybookRouter>
-        <RequisitionsContext.Provider value={{ isLoading: true, onLoadRequisitions: () => {} }}>
+        <RequisitionsContext.Provider
+            value={{ isLoading: true, onLoadRequisitions: () => {} }}
+        >
             <Requisitions />
         </RequisitionsContext.Provider>
     </StorybookRouter>
@@ -22,7 +24,9 @@ export const NoRequisitions = () => (
 
 export const MultipleRequisitions = () => (
     <StorybookRouter>
-        <RequisitionsContext.Provider value={{ isLoading: false, requisitions: mockRequisitions }}>
+        <RequisitionsContext.Provider
+            value={{ isLoading: false, requisitions: mockRequisitions }}
+        >
             <Requisitions isLoading />
         </RequisitionsContext.Provider>
     </StorybookRouter>

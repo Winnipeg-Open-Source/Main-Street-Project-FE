@@ -7,16 +7,17 @@ import UserCard from 'components/UserCard';
 function UsersList ({ className, users, onAdminChange }) {
     return (
         <List className={className}>
-            {users && users.length > 0
-                ? users.map(user => (
+            {users && users.length > 0 ? (
+                users.map((user) => (
                     <UserCard
                         key={user.uid}
                         {...user}
                         onAdminChange={onAdminChange}
                     />
                 ))
-                : <Text textAlign='center'>No users yet...</Text>
-            }
+            ) : (
+                <Text textAlign='center'>No users yet...</Text>
+            )}
         </List>
     );
 }

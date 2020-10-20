@@ -4,11 +4,16 @@ import { Text } from 'pcln-design-system';
 import List from 'components/List';
 import RequisitionCard from 'components/RequisitionCard';
 
-function RequisitionsList ({ className, isLoading, requisitions, onRequisitionClick }) {
+function RequisitionsList ({
+    className,
+    isLoading,
+    requisitions,
+    onRequisitionClick,
+}) {
     return (
         <List className={className}>
-            {requisitions && requisitions.length > 0
-                ? requisitions.map(requisition => (
+            {requisitions && requisitions.length > 0 ? (
+                requisitions.map((requisition) => (
                     <RequisitionCard
                         key={requisition.id}
                         isLoading={isLoading}
@@ -16,8 +21,9 @@ function RequisitionsList ({ className, isLoading, requisitions, onRequisitionCl
                         onClick={onRequisitionClick}
                     />
                 ))
-                : <Text textAlign='center'>No requisitions yet...</Text>
-            }
+            ) : (
+                <Text textAlign='center'>No requisitions yet...</Text>
+            )}
         </List>
     );
 }

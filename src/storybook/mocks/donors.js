@@ -20,10 +20,10 @@ export const singleDonor = {
                 },
                 {
                     donationDate: '2019 November 20',
-                }
-            ]
+                },
+            ],
         },
-    ]
+    ],
 };
 
 export const multipleDonors = {

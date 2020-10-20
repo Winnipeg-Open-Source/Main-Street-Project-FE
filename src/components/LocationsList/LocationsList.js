@@ -7,10 +7,13 @@ import LocationCard from 'components/LocationCard';
 function LocationsList ({ className, locations }) {
     return (
         <List className={className}>
-            {locations && locations.length > 0
-                ? locations.map(location => <LocationCard key={location.id} {...location} />)
-                : <Text textAlign='center'>No locations yet...</Text>
-            }
+            {locations && locations.length > 0 ? (
+                locations.map((location) => (
+                    <LocationCard key={location.id} {...location} />
+                ))
+            ) : (
+                <Text textAlign='center'>No locations yet...</Text>
+            )}
         </List>
     );
 }

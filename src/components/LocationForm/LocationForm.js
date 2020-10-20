@@ -15,7 +15,11 @@ function LocationForm ({
     onCancelClick,
 }) {
     return (
-        <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
+        <Form
+            className={className}
+            onSaveClick={onSaveClick}
+            onCancelClick={onCancelClick}
+        >
             <Select
                 id='location-type'
                 placeholder='Location Type'
@@ -27,9 +31,27 @@ function LocationForm ({
                 <option>Fridge</option>
                 <option>Freezer</option>
             </Select>
-            <Input id='name' name='name' placeholder='Name' value={name} onChange={onChange} />
-            <Input id='description' name='description' placeholder='Description' value={description} onChange={onChange} />
-            <Input id='address' name='address' placeholder='Address' value={address} onChange={onChange} />
+            <Input
+                id='name'
+                name='name'
+                placeholder='Name'
+                value={name}
+                onChange={onChange}
+            />
+            <Input
+                id='description'
+                name='description'
+                placeholder='Description'
+                value={description}
+                onChange={onChange}
+            />
+            <Input
+                id='address'
+                name='address'
+                placeholder='Address'
+                value={address}
+                onChange={onChange}
+            />
         </Form>
     );
 }
@@ -38,11 +60,7 @@ LocationForm.displayName = 'LocationForm';
 
 LocationForm.propTypes = {
     className: PropTypes.string,
-    type: PropTypes.oneOf([
-        'Storage',
-        'Fridge',
-        'Freezer',
-    ]),
+    type: PropTypes.oneOf(['Storage', 'Fridge', 'Freezer']),
     name: PropTypes.string,
     description: PropTypes.string,
     address: PropTypes.string,

@@ -4,7 +4,9 @@ import { mockRequisitions } from 'tests/mocks/requisitions';
 
 export const Loading = () => <RequisitionsList isLoading />;
 
-export const Multiple = () => <RequisitionsList requisitions={mockRequisitions} />;
+export const Multiple = () => (
+    <RequisitionsList requisitions={mockRequisitions} />
+);
 
 export default {
     title: 'RequisitionsList',

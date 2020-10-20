@@ -16,21 +16,25 @@ const commonProps = {
     phoneNumber,
 };
 
-describe ('DonorInformation', () => {
-    it ('renders without province', () => {
+describe('DonorInformation', () => {
+    it('renders without province', () => {
         const fullAddress = `${address}, ${city}`;
 
-        const { queryByText } = renderWithTheme(<DonorInformation {...commonProps} province={null} />);
+        const { queryByText } = renderWithTheme(
+            <DonorInformation {...commonProps} province={null} />
+        );
 
         expect(queryByText(fullAddress)).toBeInTheDocument();
         expect(queryByText(email)).toBeInTheDocument();
         expect(queryByText(phoneNumber)).toBeInTheDocument();
     });
 
-    it ('renders with province', () => {
+    it('renders with province', () => {
         const fullAddress = `${address}, ${city}, ${province}`;
 
-        const { queryByText } = renderWithTheme(<DonorInformation {...commonProps} province={province} />);
+        const { queryByText } = renderWithTheme(
+            <DonorInformation {...commonProps} province={province} />
+        );
 
         expect(queryByText(fullAddress)).toBeInTheDocument();
     });

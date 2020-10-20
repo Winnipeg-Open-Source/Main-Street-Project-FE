@@ -3,7 +3,7 @@ import SidebarContext from 'context/Sidebar';
 import useToggle from 'hooks/useToggle';
 
 function Sidebar ({ children }) {
-    const [ isCollapsed, onToggle, onChange ] = useToggle(true);
+    const [isCollapsed, onToggle, onChange] = useToggle(true);
 
     const props = {
         isCollapsed,

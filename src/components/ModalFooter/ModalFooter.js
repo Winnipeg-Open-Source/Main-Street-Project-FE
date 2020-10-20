@@ -6,7 +6,9 @@ import ButtonGroup from 'components/ButtonGroup';
 function ModalFooter ({ className, onClose }) {
     return (
         <ButtonGroup className={className} justifyContent='flex-end'>
-            <Button color='background.light' onClick={onClose}>Close</Button>
+            <Button color='background.light' onClick={onClose}>
+                Close
+            </Button>
             <Button>Confirm</Button>
         </ButtonGroup>
     );
