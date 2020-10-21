@@ -4,13 +4,11 @@ import styled from 'styled-components';
 import LoadingSkeleton from 'react-loading-skeleton';
 
 const StyledSkeleton = styled(LoadingSkeleton)`
-    height: ${props => props.height};
+    height: ${(props) => props.height};
 `;
 
 function Skeleton (props) {
-    return (
-        <StyledSkeleton {...props} />
-    );
+    return <StyledSkeleton {...props} />;
 }
 
 Skeleton.displayName = 'Skeleton';

@@ -9,20 +9,23 @@ const initialState = {
 };
 
 function useAxios (options = {}) {
-    const [ state, dispatch ] = useReducer(AxiosReducer, initialState);
+    const [state, dispatch] = useReducer(AxiosReducer, initialState);
 
-    const fetchData = useCallback(async (data) => {
-        const id = data && data.id ? `/${data.id}` : '';
-        const url = `${options.url}${id}`;
+    const fetchData = useCallback(
+        async (data) => {
+            const id = data && data.id ? `/${data.id}` : '';
+            const url = `${options.url}${id}`;
 
-        try {
-            dispatch(requestStart());
-            const response = await axios({ ...options, url, data });
-            dispatch(requestFinished(response));
-        } catch (err) {
-            dispatch(requestFinished(err, true));
-        }
-    }, [ options ]);
+            try {
+                dispatch(requestStart());
+                const response = await axios({ ...options, url, data });
+                dispatch(requestFinished(response));
+            } catch (err) {
+                dispatch(requestFinished(err, true));
+            }
+        },
+        [options]
+    );
 
     return { response: state, fetchData };
 }

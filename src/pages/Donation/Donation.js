@@ -20,12 +20,19 @@ const StyledFlex = styled(Flex)`
 
 function Donation () {
     const { id } = useParams();
-    const { isLoading: isLoadingDonations, donation, onLoadDonations } = useDonation(id);
+    const {
+        isLoading: isLoadingDonations,
+        donation,
+        onLoadDonations,
+    } = useDonation(id);
     const { isLoading: isLoadingDonors, donors, onLoadDonors } = useDonors();
 
     const isLoading = isLoadingDonations || isLoadingDonors;
     const title = donation ? donation.title : 'Donation not found';
-    const donor = !isLoadingDonations && !isLoadingDonors && donors.find(donor => donor.id === donation.donorId);
+    const donor =
+        !isLoadingDonations &&
+        !isLoadingDonors &&
+        donors.find((donor) => donor.id === donation.donorId);
     const items = donation && donation.items;
 
     useEffect(() => {
@@ -35,16 +42,15 @@ function Donation () {
 
     return (
         <Page isLoading={isLoading} title={title} renderAction={EditButton}>
-            {isLoading || donation
-                ? (
-                    <StyledFlex>
-                        <DonationInformation isLoading={isLoading} {...donation} />
-                        <DonorInformation isLoading={isLoading} {...donor} />
-                        <ItemList isLoading={isLoading} items={items} />
-                    </StyledFlex>
-                )
-                : 'Donation Not Found'
-            }
+            {isLoading || donation ? (
+                <StyledFlex>
+                    <DonationInformation isLoading={isLoading} {...donation} />
+                    <DonorInformation isLoading={isLoading} {...donor} />
+                    <ItemList isLoading={isLoading} items={items} />
+                </StyledFlex>
+            ) : (
+                'Donation Not Found'
+            )}
         </Page>
     );
 }

@@ -7,7 +7,9 @@ export const Loading = () => <ItemList isLoading />;
 
 export const EmptyList = () => <ItemList />;
 
-export const List = () => <ItemList items={mockItems} onDeleteClick={action('Deleted')} />;
+export const List = () => (
+    <ItemList items={mockItems} onDeleteClick={action('Deleted')} />
+);
 
 export default {
     title: 'ItemList',

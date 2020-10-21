@@ -11,7 +11,7 @@ function UserSelect ({
     onChange,
 }) {
     const loadingPlaceholder = isLoading ? 'Loading...' : placeholder;
-    
+
     return (
         <Select
             id={placeholder}
@@ -22,11 +22,12 @@ function UserSelect ({
             onChange={onChange}
             data-testid='employee-select'
         >
-            {users && users.map(user => (
-                <option key={user.id} value={user.id}>
-                    {user.name}
-                </option>
-            ))}
+            {users &&
+                users.map((user) => (
+                    <option key={user.id} value={user.id}>
+                        {user.name}
+                    </option>
+                ))}
         </Select>
     );
 }
@@ -39,9 +40,9 @@ UserSelect.propTypes = {
     placeholder: PropTypes.string,
     users: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.oneOfType([ PropTypes.string, PropTypes.number ]),
+            id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
             name: PropTypes.string,
-        }),
+        })
     ),
     value: PropTypes.string,
     onChange: PropTypes.func,

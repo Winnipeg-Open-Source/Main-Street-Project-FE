@@ -22,10 +22,27 @@ function CurrentForm ({ itemType, ...props }) {
     }
 }
 
-function ItemForm ({ className, itemType, onChange, onSaveClick, onCancelClick, ...props }) {
+function ItemForm ({
+    className,
+    itemType,
+    onChange,
+    onSaveClick,
+    onCancelClick,
+    ...props
+}) {
     return (
-        <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
-            <Select id='item-type-select' name="itemType" value={itemType} onChange={onChange} data-testid='item-type-select'>
+        <Form
+            className={className}
+            onSaveClick={onSaveClick}
+            onCancelClick={onCancelClick}
+        >
+            <Select
+                id='item-type-select'
+                name='itemType'
+                value={itemType}
+                onChange={onChange}
+                data-testid='item-type-select'
+            >
                 <option>Food</option>
                 <option>Clothing</option>
                 <option>Household Item</option>

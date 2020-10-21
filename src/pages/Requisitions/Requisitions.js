@@ -17,9 +17,22 @@ function Requisitions () {
     }, []);
 
     return (
-        <Page isLoading={isLoading} title='Requisitions' renderAction={NewButton}>
-            <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
-            <RequisitionsList isLoading={isLoading} requisitions={requisitions} onRequisitionClick={goToRequistion} />
+        <Page
+            isLoading={isLoading}
+            title='Requisitions'
+            renderAction={NewButton}
+        >
+            <Input
+                id='search'
+                disabled={disabled}
+                placeholder='Search'
+                mb={3}
+            />
+            <RequisitionsList
+                isLoading={isLoading}
+                requisitions={requisitions}
+                onRequisitionClick={goToRequistion}
+            />
         </Page>
     );
 }

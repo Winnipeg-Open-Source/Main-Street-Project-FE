@@ -6,7 +6,7 @@ exports[`App renders without crashing 1`] = `
     class="sc-qOvoE hIfWnJ sc-qWSGh dpgLb"
   >
     <div
-      class="sc-AxirZ sc-AxhCb sc-pZCbX jNjpgM"
+      class="sc-AxirZ sc-AxhCb sc-pZCbX kRKmkM"
       color="primary"
     >
       Main Street Project Inventory System
@@ -26,7 +26,7 @@ exports[`App renders without crashing 1`] = `
             class="sc-AxirZ sc-AxhCb ccVsty"
           >
             <div
-              class="sc-pAMRk cTeAEL"
+              class="sc-pAMRk LeTlr"
             />
           </div>
         </div>

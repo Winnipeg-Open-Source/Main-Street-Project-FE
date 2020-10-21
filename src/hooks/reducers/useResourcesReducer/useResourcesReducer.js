@@ -10,7 +10,7 @@ const initialState = {
 };
 
 function useResourceReducer (apiPath) {
-    const [ state, dispatch ] = useReducer(ResourcesReducer, initialState);
+    const [state, dispatch] = useReducer(ResourcesReducer, initialState);
     const { isLoading, isError, data, fetchData } = useLoadResources(apiPath);
 
     useEffect(() => {
@@ -18,7 +18,9 @@ function useResourceReducer (apiPath) {
     }, [isLoading]);
 
     const onSave = useCallback((resource) => dispatch(saveResource(resource)));
-    const onUpdate = useCallback((resource) => dispatch(updateResource(resource)));
+    const onUpdate = useCallback((resource) =>
+        dispatch(updateResource(resource))
+    );
 
     return {
         ...state,

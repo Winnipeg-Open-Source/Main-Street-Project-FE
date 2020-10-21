@@ -9,9 +9,7 @@ function EditButton () {
     const pathWithoutId = pathname.substring(0, pathname.lastIndexOf('/'));
     const editPathname = `${pathWithoutId}/edit/${id}`;
 
-    return (
-        <LinkButton title='Edit' path={editPathname} />
-    );
+    return <LinkButton title='Edit' path={editPathname} />;
 }
 
 EditButton.displayName = 'EditButton';

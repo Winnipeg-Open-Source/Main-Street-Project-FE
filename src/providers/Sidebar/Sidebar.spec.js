@@ -11,11 +11,11 @@ function Children () {
             {isCollapsed && 'isCollapsed'}
             <button onClick={onSidebarToggle}>Button</button>
         </div>
-    )
+    );
 }
 
-describe ('Sidebar Provider', () => {
-    it ('should be collapsible and expandable', () => {
+describe('Sidebar Provider', () => {
+    it('should be collapsible and expandable', () => {
         const { queryByText } = render(
             <SidebarProvider>
                 <Children />
@@ -25,9 +25,9 @@ describe ('Sidebar Provider', () => {
         const Button = queryByText(/Button/i);
 
         expect(queryByText(/isCollapsed/i)).toBeInTheDocument();
-        fireEvent.click(Button)
+        fireEvent.click(Button);
         expect(queryByText(/isCollapsed/i)).not.toBeInTheDocument();
-        fireEvent.click(Button)
+        fireEvent.click(Button);
         expect(queryByText(/isCollapsed/i)).toBeInTheDocument();
     });
 });

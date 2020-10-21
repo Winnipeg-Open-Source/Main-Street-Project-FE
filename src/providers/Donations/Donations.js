@@ -5,7 +5,9 @@ import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
 import { DONATIONS_API_PATH } from 'constants/api';
 
 function Donations ({ children }) {
-    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(DONATIONS_API_PATH);
+    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(
+        DONATIONS_API_PATH
+    );
 
     const props = {
         isLoading,

@@ -3,14 +3,14 @@ import renderWithTheme from 'tests/helpers/renderWithTheme';
 import ButtonGroup from './ButtonGroup';
 import { Button } from 'pcln-design-system';
 
-describe ('ButtonGroup', () => {
-    it ('renders without crashing', () => {
+describe('ButtonGroup', () => {
+    it('renders without crashing', () => {
         const { asFragment } = renderWithTheme(<ButtonGroup />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('has single button', () => {
+    it('has single button', () => {
         const { queryByText } = renderWithTheme(
             <ButtonGroup>
                 <Button>First</Button>
@@ -21,7 +21,7 @@ describe ('ButtonGroup', () => {
         expect(queryByText(/Second/i)).not.toBeInTheDocument();
     });
 
-    it ('has multiple buttons', () => {
+    it('has multiple buttons', () => {
         const { getByText } = renderWithTheme(
             <ButtonGroup>
                 <Button>First</Button>

@@ -5,7 +5,9 @@ import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
 import { ITEMS_API_PATH } from 'constants/api';
 
 function ItemsProvider ({ children }) {
-    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(ITEMS_API_PATH);
+    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(
+        ITEMS_API_PATH
+    );
 
     const props = {
         isLoading,
@@ -16,9 +18,7 @@ function ItemsProvider ({ children }) {
     };
 
     return (
-        <ItemsContext.Provider value={props}>
-            {children}
-        </ItemsContext.Provider>
+        <ItemsContext.Provider value={props}>{children}</ItemsContext.Provider>
     );
 }
 

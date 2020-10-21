@@ -28,20 +28,20 @@ const multipleDonorsProps = {
     ],
 };
 
-describe ('DonorsList', () => {
-    it ('renders without crashing', () => {
+describe('DonorsList', () => {
+    it('renders without crashing', () => {
         const { asFragment } = renderWithTheme(<DonorsList />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('skeleton renders without crashing', () => {
+    it('skeleton renders without crashing', () => {
         const { asFragment } = renderWithTheme(<DonorsListSkeleton />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('has no donors', () => {
+    it('has no donors', () => {
         const { queryByText } = renderWithTheme(<DonorsList />);
 
         const noDonorsText = queryByText('No donors yet...');
@@ -51,8 +51,10 @@ describe ('DonorsList', () => {
         expect(title).not.toBeInTheDocument();
     });
 
-    it ('has single donor', () => {
-        const { queryByText } = renderWithTheme(<DonorsList {...singleDonorProps} />);
+    it('has single donor', () => {
+        const { queryByText } = renderWithTheme(
+            <DonorsList {...singleDonorProps} />
+        );
 
         const noDonorsText = queryByText('No donors yet...');
         const title = queryByText(/Costco/i);
@@ -63,8 +65,10 @@ describe ('DonorsList', () => {
         expect(secondTitle).not.toBeInTheDocument();
     });
 
-    it ('has multiple donors', () => {
-        const { queryByText } = renderWithTheme(<DonorsList {...multipleDonorsProps} />);
+    it('has multiple donors', () => {
+        const { queryByText } = renderWithTheme(
+            <DonorsList {...multipleDonorsProps} />
+        );
 
         const noDonorsText = queryByText('No donors yet...');
         const title = queryByText(/Costco/i);

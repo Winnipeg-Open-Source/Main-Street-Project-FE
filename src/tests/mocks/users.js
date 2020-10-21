@@ -5,8 +5,4 @@ const getMockUser = (uid) => ({
 
 export const mockUser = getMockUser(1);
 
-export const mockUsers = [
-    getMockUser(1),
-    getMockUser(2),
-    getMockUser(3),
-];
+export const mockUsers = [getMockUser(1), getMockUser(2), getMockUser(3)];

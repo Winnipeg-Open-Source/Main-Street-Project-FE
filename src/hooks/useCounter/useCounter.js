@@ -1,19 +1,19 @@
 import { useState } from 'react';
 
 function useCounter (defaultValue = 0, minValue = null, maxValue = null) {
-    const [ count, setCount ] = useState(defaultValue);
+    const [count, setCount] = useState(defaultValue);
 
     const increment = () => {
         if (maxValue === null || count < maxValue) {
-            setCount(count+1);
+            setCount(count + 1);
         }
     };
 
     const decrement = () => {
         if (minValue === null || count > minValue) {
-            setCount(count-1);
+            setCount(count - 1);
         }
-    }
+    };
 
     const onChange = (value) => {
         let newValue;

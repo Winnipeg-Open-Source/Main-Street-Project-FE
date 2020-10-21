@@ -5,8 +5,9 @@ import { mockItems } from 'storybook/mocks/items';
 import { mockEmployees } from 'storybook/mocks/employees';
 
 export const EmptyForm = () => {
-    const [ selectedItems, setSelectedItems ] = useState([]);
-    const onSelectItemChange = (item) => setSelectedItems([ ...selectedItems, item ]);
+    const [selectedItems, setSelectedItems] = useState([]);
+    const onSelectItemChange = (item) =>
+        setSelectedItems([...selectedItems, item]);
 
     return (
         <RequisitionForm
@@ -17,7 +18,7 @@ export const EmptyForm = () => {
             onSelectItemChange={onSelectItemChange}
         />
     );
-}
+};
 
 export const FilledForm = () => (
     <RequisitionForm

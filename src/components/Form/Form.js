@@ -21,12 +21,29 @@ function Form ({ className, title, children, onSaveClick, onCancelClick }) {
     return (
         <StyledForm className={className} flexDirection='column'>
             {title && <Text bold>{title}</Text>}
-            <Content flexDirection='column' alignItems='flex-start' my={title ? 2 : 0}>
+            <Content
+                flexDirection='column'
+                alignItems='flex-start'
+                my={title ? 2 : 0}
+            >
                 {children}
             </Content>
             <ButtonGroup mt={2}>
-                {onCancelClick && <Button color='tertiary' variation='outline' width={1} onClick={onCancelClick}>Cancel</Button>}
-                {onSaveClick && <Button width={1} onClick={onSaveClick}>Save</Button>}
+                {onCancelClick && (
+                    <Button
+                        color='tertiary'
+                        variation='outline'
+                        width={1}
+                        onClick={onCancelClick}
+                    >
+                        Cancel
+                    </Button>
+                )}
+                {onSaveClick && (
+                    <Button width={1} onClick={onSaveClick}>
+                        Save
+                    </Button>
+                )}
             </ButtonGroup>
         </StyledForm>
     );

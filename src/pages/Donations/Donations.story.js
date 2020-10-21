@@ -6,7 +6,9 @@ import { mockDonations } from 'tests/mocks/donations';
 
 export const Loading = () => (
     <StorybookRouter>
-        <DonationsContext.Provider value={{ isLoading: true, onLoadDonations: () => {} }}>
+        <DonationsContext.Provider
+            value={{ isLoading: true, onLoadDonations: () => {} }}
+        >
             <DonationsPage />
         </DonationsContext.Provider>
     </StorybookRouter>
@@ -22,7 +24,9 @@ export const NoDonations = () => (
 
 export const MultipleDonations = () => (
     <StorybookRouter>
-        <DonationsContext.Provider value={{ isLoading: false, donations: mockDonations }}>
+        <DonationsContext.Provider
+            value={{ isLoading: false, donations: mockDonations }}
+        >
             <DonationsPage />
         </DonationsContext.Provider>
     </StorybookRouter>

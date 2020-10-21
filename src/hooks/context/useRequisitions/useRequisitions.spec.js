@@ -14,15 +14,17 @@ const RequisitionsContextWrapper = ({ children }) => (
     </RequisitionsContext.Provider>
 );
 
-describe ('useRequisitions', () => {
-    it ('should return default context', () => {
+describe('useRequisitions', () => {
+    it('should return default context', () => {
         const { result } = renderHook(() => useRequisitions());
         expect(result.current.isLoading).toBe(true);
         expect(result.current.requisitions).toStrictEqual([]);
     });
 
-    it ('should return set context', () => {
-        const { result } = renderHook(() => useRequisitions(), { wrapper: RequisitionsContextWrapper });
+    it('should return set context', () => {
+        const { result } = renderHook(() => useRequisitions(), {
+            wrapper: RequisitionsContextWrapper,
+        });
         expect(result.current).toBe(customContext);
     });
 });

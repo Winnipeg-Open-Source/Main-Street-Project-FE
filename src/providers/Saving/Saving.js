@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SavingContext from 'context/Saving';
 
 function SavingProvider ({ children }) {
-    const [ isSaving, setSaving ] = useState(false);
+    const [isSaving, setSaving] = useState(false);
 
     const props = {
         isSaving,

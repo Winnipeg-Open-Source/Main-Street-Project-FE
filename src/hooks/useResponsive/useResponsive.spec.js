@@ -14,15 +14,17 @@ const ResponsiveContextWrapper = ({ children }) => (
     </ResponsiveContext.Provider>
 );
 
-describe ('useResponsive', () => {
-    it ('should return default context', () => {
+describe('useResponsive', () => {
+    it('should return default context', () => {
         const { result } = renderHook(() => useResponsive());
         expect(result.current.isMobile).toBe(false);
         expect(result.current.currentBreakpoint).toBe('xs');
     });
 
-    it ('should return set context', () => {
-        const { result } = renderHook(() => useResponsive(), { wrapper: ResponsiveContextWrapper });
+    it('should return set context', () => {
+        const { result } = renderHook(() => useResponsive(), {
+            wrapper: ResponsiveContextWrapper,
+        });
         expect(result.current).toBe(customContext);
     });
 });

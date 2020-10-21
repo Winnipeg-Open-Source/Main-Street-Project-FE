@@ -17,8 +17,9 @@ export const Loading = () => (
 );
 
 export const EmptyForm = () => {
-    const [ selectedItems, setSelectedItems ] = useState([]);
-    const onSelectItemChange = (item) => setSelectedItems([ ...selectedItems, item ]);
+    const [selectedItems, setSelectedItems] = useState([]);
+    const onSelectItemChange = (item) =>
+        setSelectedItems([...selectedItems, item]);
 
     return (
         <DonationForm
@@ -33,8 +34,9 @@ export const EmptyForm = () => {
 };
 
 export const FilledForm = () => {
-    const [ selectedItems, setSelectedItems ] = useState(mockItems);
-    const onSelectItemChange = (item) => setSelectedItems([ ...selectedItems, item ]);
+    const [selectedItems, setSelectedItems] = useState(mockItems);
+    const onSelectItemChange = (item) =>
+        setSelectedItems([...selectedItems, item]);
 
     return (
         <DonationForm

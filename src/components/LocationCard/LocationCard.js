@@ -6,10 +6,18 @@ import Card from 'components/Card';
 function LocationCard ({ className, type, name, description, address }) {
     return (
         <Card className={className}>
-            <Text color='text.darkest' fontSize={1} bold>{type}</Text>
-            <Text color='text.light' fontSize={1}>{name}</Text>
-            <Text color='text.light' fontSize={1}>{description}</Text>
-            <Text color='text.light' fontSize={1}>{address}</Text>
+            <Text color='text.darkest' fontSize={1} bold>
+                {type}
+            </Text>
+            <Text color='text.light' fontSize={1}>
+                {name}
+            </Text>
+            <Text color='text.light' fontSize={1}>
+                {description}
+            </Text>
+            <Text color='text.light' fontSize={1}>
+                {address}
+            </Text>
         </Card>
     );
 }

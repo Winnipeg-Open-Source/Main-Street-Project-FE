@@ -18,8 +18,17 @@ function Donations () {
 
     return (
         <Page isLoading={isLoading} title='Donations' renderAction={NewButton}>
-            <Input id='search' disabled={disabled} placeholder='Search' mb={3} />
-            <DonationList isLoading={isLoading} donations={donations} onDonationClick={goToDonorPage} />
+            <Input
+                id='search'
+                disabled={disabled}
+                placeholder='Search'
+                mb={3}
+            />
+            <DonationList
+                isLoading={isLoading}
+                donations={donations}
+                onDonationClick={goToDonorPage}
+            />
         </Page>
     );
 }

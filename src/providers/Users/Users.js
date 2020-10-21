@@ -5,7 +5,14 @@ import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
 import { USERS_API_PATH } from 'constants/api';
 
 function UsersProvider ({ children }) {
-    const { isLoading, isError, data, onSave, onUpdate, onLoad } = useResourcesReducer(USERS_API_PATH);
+    const {
+        isLoading,
+        isError,
+        data,
+        onSave,
+        onUpdate,
+        onLoad,
+    } = useResourcesReducer(USERS_API_PATH);
 
     const props = {
         isLoading,
@@ -17,10 +24,8 @@ function UsersProvider ({ children }) {
     };
 
     return (
-        <UsersContext.Provider value={props}>
-            {children}
-        </UsersContext.Provider>
-    )
+        <UsersContext.Provider value={props}>{children}</UsersContext.Provider>
+    );
 }
 
 UsersProvider.displayName = 'UsersProvider';

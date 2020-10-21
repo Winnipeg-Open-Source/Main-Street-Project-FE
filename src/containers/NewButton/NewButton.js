@@ -6,9 +6,7 @@ function NewButton () {
     const { pathname } = useLocation();
     const newPathname = `${pathname}/new`;
 
-    return (
-        <LinkButton title='New' path={newPathname} />
-    );
+    return <LinkButton title='New' path={newPathname} />;
 }
 
 NewButton.displayName = 'NewButton';

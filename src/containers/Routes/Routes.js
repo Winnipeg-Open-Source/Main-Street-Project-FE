@@ -47,23 +47,84 @@ function Routes () {
         <Switch>
             <Route exact path={LOGIN_PATH} component={LoginPage} />
             <Route exact path={SIGN_UP_PATH} component={SignUpPage} />
-            <AuthenticatedRoute exact path={LOGOUT_PATH} component={LogoutPage} />
-            <AuthenticatedRoute exact path={LANDING_PATH} component={LandingPage} />
-            <AuthenticatedRoute exact path={DONATION_NEW_PATH} component={DonationCreatePage} />
-            <AuthenticatedRoute exact path={DONATION_PATH} component={DonationPage} />
-            <AuthenticatedRoute exact path={DONATIONS_PATH} component={DonationsPage} />
-            <AuthenticatedRoute exact path={DONOR_NEW_PATH} component={DonorCreatePage} />
-            <AuthenticatedRoute exact path={DONOR_EDIT_PATH} component={DonorEditPage} />
+            <AuthenticatedRoute
+                exact
+                path={LOGOUT_PATH}
+                component={LogoutPage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={LANDING_PATH}
+                component={LandingPage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={DONATION_NEW_PATH}
+                component={DonationCreatePage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={DONATION_PATH}
+                component={DonationPage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={DONATIONS_PATH}
+                component={DonationsPage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={DONOR_NEW_PATH}
+                component={DonorCreatePage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={DONOR_EDIT_PATH}
+                component={DonorEditPage}
+            />
             <AuthenticatedRoute exact path={DONOR_PATH} component={DonorPage} />
-            <AuthenticatedRoute exact path={DONORS_PATH} component={DonorsPage} />
-            <AuthenticatedRoute exact path={ITEM_NEW_PATH} component={ItemsCreatePage} />
+            <AuthenticatedRoute
+                exact
+                path={DONORS_PATH}
+                component={DonorsPage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={ITEM_NEW_PATH}
+                component={ItemsCreatePage}
+            />
             <AuthenticatedRoute exact path={ITEMS_PATH} component={ItemsPage} />
-            <AuthenticatedRoute exact path={LOCATION_NEW_PATH} component={LocationCreatePage} />
-            <AuthenticatedRoute exact path={LOCATIONS_PATH} component={LocationsPage} />
-            <AuthenticatedRoute exact path={REQUISITION_NEW_PATH} component={RequisitionCreatePage} />
-            <AuthenticatedRoute exact path={REQUISITIONS_PATH} component={RequisitionsPage} />
-            <AuthenticatedRoute exact path={USERS_NEW_PATH} component={UserCreatePage} />
-            <AuthenticatedRoute requiresAdmin exact path={USERS_PATH} component={UsersPage} />
+            <AuthenticatedRoute
+                exact
+                path={LOCATION_NEW_PATH}
+                component={LocationCreatePage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={LOCATIONS_PATH}
+                component={LocationsPage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={REQUISITION_NEW_PATH}
+                component={RequisitionCreatePage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={REQUISITIONS_PATH}
+                component={RequisitionsPage}
+            />
+            <AuthenticatedRoute
+                exact
+                path={USERS_NEW_PATH}
+                component={UserCreatePage}
+            />
+            <AuthenticatedRoute
+                requiresAdmin
+                exact
+                path={USERS_PATH}
+                component={UsersPage}
+            />
         </Switch>
     );
 }

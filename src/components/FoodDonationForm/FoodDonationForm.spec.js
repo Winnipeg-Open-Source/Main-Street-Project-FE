@@ -3,14 +3,16 @@ import renderWithTheme from 'tests/helpers/renderWithTheme';
 import FoodDonationForm from './FoodDonationForm';
 import { mockFoodDonationProps } from 'tests/mocks/MockDonationFormProps';
 
-describe ('FoodDonationForm', () => {
-    it ('renders without crashing', () => {
+describe('FoodDonationForm', () => {
+    it('renders without crashing', () => {
         const { asFragment } = renderWithTheme(<FoodDonationForm />);
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('has placeholders when empty', async () => {
-        const { getByLabelText, getByPlaceholderText } = renderWithTheme(<FoodDonationForm />);
+    it('has placeholders when empty', async () => {
+        const { getByLabelText, getByPlaceholderText } = renderWithTheme(
+            <FoodDonationForm />
+        );
 
         const name = await getByPlaceholderText('Name');
         const description = await getByPlaceholderText('Description');
@@ -23,8 +25,10 @@ describe ('FoodDonationForm', () => {
         expect(notes.value).toBe('');
     });
 
-    it ('has all fields used', async () => {
-        const { getByLabelText, getByPlaceholderText } = renderWithTheme(<FoodDonationForm {...mockFoodDonationProps} />);
+    it('has all fields used', async () => {
+        const { getByLabelText, getByPlaceholderText } = renderWithTheme(
+            <FoodDonationForm {...mockFoodDonationProps} />
+        );
 
         const name = await getByPlaceholderText('Name');
         const description = await getByPlaceholderText('Description');

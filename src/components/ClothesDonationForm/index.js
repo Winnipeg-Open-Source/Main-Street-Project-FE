@@ -1,2 +1,1 @@
- export { default } from './ClothesDonationForm';
- 
+export { default } from './ClothesDonationForm';

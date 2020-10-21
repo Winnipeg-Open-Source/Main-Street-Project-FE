@@ -10,8 +10,15 @@ const StyledText = styled(Text)`
 function Page ({ className, title, renderAction, children }) {
     return (
         <Flex className={className} flexDirection='column' width={1} p={3}>
-            <Flex justifyContent='space-between' width={1} alignItems='center' mb={3}>
-                <StyledText fontSize={3} bold>{title}</StyledText>
+            <Flex
+                justifyContent='space-between'
+                width={1}
+                alignItems='center'
+                mb={3}
+            >
+                <StyledText fontSize={3} bold>
+                    {title}
+                </StyledText>
                 {renderAction && renderAction()}
             </Flex>
             {children}

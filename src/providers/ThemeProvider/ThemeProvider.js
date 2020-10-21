@@ -11,11 +11,7 @@ const StyledThemeProvider = styled(PCLNThemeProvider)`
 `;
 
 function ThemeProvider ({ children }) {
-    return (
-        <StyledThemeProvider theme={theme}>
-            {children}
-        </StyledThemeProvider>
-    )
+    return <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>;
 }
 
 ThemeProvider.displayName = 'ThemeProvider';

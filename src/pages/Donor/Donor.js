@@ -20,15 +20,14 @@ function Donor () {
 
     return (
         <Page isLoading={isLoading} title={name} renderAction={EditButton}>
-            {isLoading || donor
-                ? (
-                    <>
-                        <StyledDonorInformation isLoading={isLoading} {...donor} />
-                        <DonationList isLoading={isLoading} donations={donations} />
-                    </>
-                )
-                : 'Donor Not Found'
-            }
+            {isLoading || donor ? (
+                <>
+                    <StyledDonorInformation isLoading={isLoading} {...donor} />
+                    <DonationList isLoading={isLoading} donations={donations} />
+                </>
+            ) : (
+                'Donor Not Found'
+            )}
         </Page>
     );
 }

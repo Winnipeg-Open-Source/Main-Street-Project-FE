@@ -17,12 +17,25 @@ const initialState = {
 };
 
 function ItemForm () {
-    const { state, onChange, onAddLineItemClick, onLineItemQuantityChange } = useItemForm(initialState);
+    const {
+        state,
+        onChange,
+        onAddLineItemClick,
+        onLineItemQuantityChange,
+    } = useItemForm(initialState);
     const { onSaveItem } = useItems();
-    const { isLoading: isLoadingLocations, locations, onLoadLocations } = useLocations();
+    const {
+        isLoading: isLoadingLocations,
+        locations,
+        onLoadLocations,
+    } = useLocations();
     const goToItems = useRoute(ITEMS_PATH);
 
-    const { handleSave } = useSaveResource(ITEMS_API_PATH, ITEMS_PATH, onSaveItem);
+    const { handleSave } = useSaveResource(
+        ITEMS_API_PATH,
+        ITEMS_PATH,
+        onSaveItem
+    );
     const onSaveClick = () => handleSave(state);
 
     useEffect(() => {

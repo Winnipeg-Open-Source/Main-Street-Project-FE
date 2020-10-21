@@ -7,8 +7,8 @@ import DonationCard from 'components/DonationCard';
 function DonationList ({ className, isLoading, donations, onDonationClick }) {
     return (
         <List className={className}>
-            {donations && donations.length > 0
-                ? donations.map(donation => (
+            {donations && donations.length > 0 ? (
+                donations.map((donation) => (
                     <DonationCard
                         key={donation.id}
                         isLoading={isLoading}
@@ -16,8 +16,9 @@ function DonationList ({ className, isLoading, donations, onDonationClick }) {
                         onClick={onDonationClick}
                     />
                 ))
-                : <Text textAlign='center'>No donations yet...</Text>
-            }
+            ) : (
+                <Text textAlign='center'>No donations yet...</Text>
+            )}
         </List>
     );
 }

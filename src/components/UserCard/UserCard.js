@@ -14,7 +14,9 @@ function UserCard ({ className, uid, isAdmin, email, onAdminChange }) {
 
     return (
         <StyledCard className={className} row>
-            <Text color='text.darkest' fontSize={1} bold>{email}</Text>
+            <Text color='text.darkest' fontSize={1} bold>
+                {email}
+            </Text>
             <Checkbox label='Admin' checked={isAdmin} onChange={onChange} />
         </StyledCard>
     );

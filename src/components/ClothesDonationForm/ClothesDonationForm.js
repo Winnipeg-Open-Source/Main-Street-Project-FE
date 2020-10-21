@@ -19,10 +19,35 @@ function ClothesDonationForm ({
 }) {
     return (
         <>
-            <Input id='name' name='name' placeholder='Name' value={name} onChange={onChange} />
-            <Input id='description' name='description' placeholder='Description' value={description} onChange={onChange} />
-            <Input id='quantity-name' name='quantityName' placeholder='Quantity Name' value={quantityName} onChange={onChange} />
-            <Select id='size' name='size' label='Size' value={size} onChange={onChange} data-testid='Size'>
+            <Input
+                id='name'
+                name='name'
+                placeholder='Name'
+                value={name}
+                onChange={onChange}
+            />
+            <Input
+                id='description'
+                name='description'
+                placeholder='Description'
+                value={description}
+                onChange={onChange}
+            />
+            <Input
+                id='quantity-name'
+                name='quantityName'
+                placeholder='Quantity Name'
+                value={quantityName}
+                onChange={onChange}
+            />
+            <Select
+                id='size'
+                name='size'
+                label='Size'
+                value={size}
+                onChange={onChange}
+                data-testid='Size'
+            >
                 <option>XS</option>
                 <option>S</option>
                 <option>M</option>
@@ -37,7 +62,13 @@ function ClothesDonationForm ({
                 onAddClick={onAddLineItemClick}
                 onItemQuantityChange={onItemQuantityChange}
             />
-            <TextArea id='notes' name='notes' label='Notes' value={notes} onChange={onChange} />
+            <TextArea
+                id='notes'
+                name='notes'
+                label='Notes'
+                value={notes}
+                onChange={onChange}
+            />
         </>
     );
 }
@@ -56,7 +87,7 @@ ClothesDonationForm.propTypes = {
 };
 
 ClothesDonationForm.defaultProps = {
-    size: 'M'
+    size: 'M',
 };
 
 export default memo(ClothesDonationForm);

@@ -10,25 +10,17 @@ export const Default = () => {
             email={email}
             password={password}
             onChange={onChange}
-            onLoginClick={(action('Login Clicked'))}
+            onLoginClick={action('Login Clicked')}
         />
     );
 };
 
 export const LoggingIn = () => (
-    <LoginForm
-        isLoggingIn
-        email='email@email.com'
-        password='abcdefgh'
-    />
+    <LoginForm isLoggingIn email='email@email.com' password='abcdefgh' />
 );
 
 export const LoginError = () => (
-    <LoginForm
-        isLoginFailed
-        email='email@email.com'
-        password='abcdefgh'
-    />
+    <LoginForm isLoginFailed email='email@email.com' password='abcdefgh' />
 );
 
 export default {

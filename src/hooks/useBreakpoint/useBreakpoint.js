@@ -11,7 +11,7 @@ const breakpointMap = {
 };
 
 function getCurrentBreakpoint (width) {
-    const size = breakpoints.find(breakpoint => {
+    const size = breakpoints.find((breakpoint) => {
         const em = parseInt(breakpoint.replace('em', ''));
         return width <= em * 16;
     });
@@ -20,13 +20,15 @@ function getCurrentBreakpoint (width) {
 }
 
 function isMobileDevice () {
-    return navigator.userAgent.match(/Android/i)
-        || navigator.userAgent.match(/webOS/i)
-        || navigator.userAgent.match(/iPhone/i)
-        || navigator.userAgent.match(/iPad/i)
-        || navigator.userAgent.match(/iPod/i)
-        || navigator.userAgent.match(/BlackBerry/i)
-        || navigator.userAgent.match(/Windows Phone/i);
+    return (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+    );
 }
 
 function isMobileCheck () {
@@ -36,7 +38,6 @@ function isMobileCheck () {
 function useBreakpoint () {
     const hasWindow = typeof window === 'object';
 
-
     /* istanbul ignore next */
     function getSize () {
         return {
@@ -45,7 +46,7 @@ function useBreakpoint () {
         };
     }
 
-    const [ windowSize, setWindowSize ] = useState(getSize);
+    const [windowSize, setWindowSize] = useState(getSize);
 
     useEffect(() => {
         /* istanbul ignore next */
@@ -62,13 +63,19 @@ function useBreakpoint () {
     });
 
     const currentBreakpoint = getCurrentBreakpoint(windowSize.width);
-    const isMobile = isMobileCheck() || currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
+    const isMobile =
+        isMobileCheck() ||
+        currentBreakpoint === 'xs' ||
+        currentBreakpoint === 'sm';
 
-    return useMemo(() => ({
-        ...windowSize,
-        isMobile,
-        currentBreakpoint,
-    }), [ windowSize, isMobile, currentBreakpoint ]);
+    return useMemo(
+        () => ({
+            ...windowSize,
+            isMobile,
+            currentBreakpoint,
+        }),
+        [windowSize, isMobile, currentBreakpoint]
+    );
 }
 
 export default useBreakpoint;

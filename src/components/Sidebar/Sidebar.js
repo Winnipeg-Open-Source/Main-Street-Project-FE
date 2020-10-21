@@ -14,35 +14,56 @@ const LinksWrapper = styled(Flex)`
     }
 `;
 
-function Sidebar ({ className, isAdmin, isMobileSidebar, isCollapsed, currentPathname, routes, onClose }) {
+function Sidebar ({
+    className,
+    isAdmin,
+    isMobileSidebar,
+    isCollapsed,
+    currentPathname,
+    routes,
+    onClose,
+}) {
     const Wrapper = isMobileSidebar ? Modal : React.Fragment;
 
-    const width = isCollapsed && !isMobileSidebar ? COLLAPSED_WIDTH : EXPANDED_WIDTH;
+    const width =
+        isCollapsed && !isMobileSidebar ? COLLAPSED_WIDTH : EXPANDED_WIDTH;
     const backgroundColor = isMobileSidebar ? 'inherit' : 'tertiary';
     const padding = isMobileSidebar ? 0 : 3;
 
-    const modalProps = isMobileSidebar ? {
-        className: className,
-        isMobile: isMobileSidebar,
-        isOpen: !isCollapsed,
-        title: 'Navigation',
-        onClose,
-    } : {};
+    const modalProps = isMobileSidebar
+        ? {
+              className: className,
+              isMobile: isMobileSidebar,
+              isOpen: !isCollapsed,
+              title: 'Navigation',
+              onClose,
+          }
+        : {};
 
     return (
         <Wrapper {...modalProps}>
-            <LinksWrapper className={className} flexDirection='column' width={width} color={backgroundColor} p={padding}>
-                {routes && routes.map(route => (route.isAdmin && !isAdmin) || (
-                    <Link
-                        key={route.path}
-                        isActive={currentPathname === route.path}
-                        to={route.path}
-                        icon={route.icon}
-                        onClick={isMobileSidebar ? onClose : null}
-                    >
-                        {route.label}
-                    </Link>
-                ))}
+            <LinksWrapper
+                className={className}
+                flexDirection='column'
+                width={width}
+                color={backgroundColor}
+                p={padding}
+            >
+                {routes &&
+                    routes.map(
+                        (route) =>
+                            (route.isAdmin && !isAdmin) || (
+                                <Link
+                                    key={route.path}
+                                    isActive={currentPathname === route.path}
+                                    to={route.path}
+                                    icon={route.icon}
+                                    onClick={isMobileSidebar ? onClose : null}
+                                >
+                                    {route.label}
+                                </Link>
+                            )
+                    )}
             </LinksWrapper>
         </Wrapper>
     );

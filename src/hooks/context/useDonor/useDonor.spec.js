@@ -10,7 +10,7 @@ const mockDonorState = {
 const mockNoDonorState = {
     isLoading: false,
     donors: [],
-}
+};
 
 const expectedSuccess = {
     isLoading: false,
@@ -24,19 +24,31 @@ const expectedFailure = {
     donor: undefined,
 };
 
-describe ('useDonor', () => {
-    it ('returns donor for the given id', () => {
-        const { result } = renderHookWithContext(() => useDonor(1), DonorsContext, mockDonorState);
+describe('useDonor', () => {
+    it('returns donor for the given id', () => {
+        const { result } = renderHookWithContext(
+            () => useDonor(1),
+            DonorsContext,
+            mockDonorState
+        );
         expect(result.current).toStrictEqual(expectedSuccess);
     });
 
-    it ('returns null for bad id', () => {
-        const { result } = renderHookWithContext(() => useDonor(2), DonorsContext, mockDonorState);
+    it('returns null for bad id', () => {
+        const { result } = renderHookWithContext(
+            () => useDonor(2),
+            DonorsContext,
+            mockDonorState
+        );
         expect(result.current).toStrictEqual(expectedFailure);
     });
 
-    it ('returns null for no donors', () => {
-        const { result } = renderHookWithContext(() => useDonor(1), DonorsContext, mockNoDonorState);
+    it('returns null for no donors', () => {
+        const { result } = renderHookWithContext(
+            () => useDonor(1),
+            DonorsContext,
+            mockNoDonorState
+        );
         expect(result.current).toStrictEqual(expectedFailure);
     });
 });

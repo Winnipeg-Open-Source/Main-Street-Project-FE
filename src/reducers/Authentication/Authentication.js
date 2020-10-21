@@ -1,4 +1,10 @@
-import { ATTEMPT_LOGIN, LOGIN, LOGGED_IN, LOGIN_FAILED, LOGOUT } from 'actions/Authentication';
+import {
+    ATTEMPT_LOGIN,
+    LOGIN,
+    LOGGED_IN,
+    LOGIN_FAILED,
+    LOGOUT,
+} from 'actions/Authentication';
 
 function Authentication (state = {}, action = {}) {
     switch (action.type) {

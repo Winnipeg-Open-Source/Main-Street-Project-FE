@@ -6,8 +6,8 @@ import { donor } from 'tests/mocks/donors';
 
 jest.mock('hooks/context/useDonor');
 
-describe ('DonorPage', () => {
-    it ('renders without crashing', () => {
+describe('DonorPage', () => {
+    it('renders without crashing', () => {
         useDonor.mockImplementation(() => ({
             isLoading: true,
             donor,
@@ -18,23 +18,25 @@ describe ('DonorPage', () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('renders loading state', () => {
+    it('renders loading state', () => {
         useDonor.mockImplementation(() => ({
             isLoading: true,
         }));
-        
+
         const { asFragment } = renderWithThemeAndRouter(<DonorPage />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('has a donor', async () => {
+    it('has a donor', async () => {
         useDonor.mockImplementation(() => ({
             isLoading: false,
             donor,
         }));
 
-        const { getAllByText, getByText } = renderWithThemeAndRouter(<DonorPage />);
+        const { getAllByText, getByText } = renderWithThemeAndRouter(
+            <DonorPage />
+        );
 
         expect(getAllByText('Costco').length).toBe(2);
         expect(getByText('22 Road Lane, Winnipeg, MB')).toBeInTheDocument();
@@ -45,7 +47,7 @@ describe ('DonorPage', () => {
         expect(getByText('Donated: 2019 November 20')).toBeInTheDocument();
     });
 
-    it ('does not find a donor', () => {
+    it('does not find a donor', () => {
         useDonor.mockImplementation(() => ({
             isLoading: false,
             donor: null,

@@ -20,12 +20,32 @@ function LoginForm ({
 }) {
     return (
         <>
-            <LoadingOverlay isLoading={isLoggingIn}>Logging In...</LoadingOverlay>
+            <LoadingOverlay isLoading={isLoggingIn}>
+                Logging In...
+            </LoadingOverlay>
             <StyledFlex className={className} flexDirection='column' width={1}>
-                <Label fontSize={3} bold mb={2}>Login</Label>
-                <Input placeholder='Email' name='email' value={email} onChange={onChange} />
-                <Input placeholder='Password' name='password' type='password' value={password} onChange={onChange} my={2} />
-                {isLoginFailed && <Text fontSize={0} color='error' mb={2} ml={1}>Email or password is incorrect.</Text>}
+                <Label fontSize={3} bold mb={2}>
+                    Login
+                </Label>
+                <Input
+                    placeholder='Email'
+                    name='email'
+                    value={email}
+                    onChange={onChange}
+                />
+                <Input
+                    placeholder='Password'
+                    name='password'
+                    type='password'
+                    value={password}
+                    onChange={onChange}
+                    my={2}
+                />
+                {isLoginFailed && (
+                    <Text fontSize={0} color='error' mb={2} ml={1}>
+                        Email or password is incorrect.
+                    </Text>
+                )}
                 <Button onClick={onLoginClick}>Login In</Button>
             </StyledFlex>
         </>

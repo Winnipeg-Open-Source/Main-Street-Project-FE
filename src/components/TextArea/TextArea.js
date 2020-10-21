@@ -1,7 +1,11 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Label, TextArea as PCLNTextArea, getPaletteColor } from 'pcln-design-system';
+import {
+    Label,
+    TextArea as PCLNTextArea,
+    getPaletteColor,
+} from 'pcln-design-system';
 
 const StyledTextArea = styled(PCLNTextArea)`
     background-color: ${getPaletteColor('background.lightest')};

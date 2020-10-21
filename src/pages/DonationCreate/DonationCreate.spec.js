@@ -7,13 +7,19 @@ import useItems from 'hooks/context/useItems';
 jest.mock('hooks/context/useDonors');
 jest.mock('hooks/context/useItems');
 
-describe ('DonationCreate', () => {
-    it ('renders without crashing', () => {
+describe('DonationCreate', () => {
+    it('renders without crashing', () => {
         const mockLoadDonors = jest.fn();
         const mockLoadItems = jest.fn();
 
-        useDonors.mockImplementation(() => ({ isLoading: true, onLoadDonors: mockLoadDonors }));
-        useItems.mockImplementation(() => ({ isLoading: true, onLoadItems: mockLoadItems }));
+        useDonors.mockImplementation(() => ({
+            isLoading: true,
+            onLoadDonors: mockLoadDonors,
+        }));
+        useItems.mockImplementation(() => ({
+            isLoading: true,
+            onLoadItems: mockLoadItems,
+        }));
 
         const { asFragment } = renderWithThemeAndRouter(<DonationCreate />);
 
@@ -22,12 +28,18 @@ describe ('DonationCreate', () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('does not load already loaded resources', () => {
+    it('does not load already loaded resources', () => {
         const mockLoadDonors = jest.fn();
         const mockLoadItems = jest.fn();
 
-        useDonors.mockImplementation(() => ({ isLoading: false, onLoadDonors: mockLoadDonors }));
-        useItems.mockImplementation(() => ({ isLoading: false, onLoadItems: mockLoadItems }));
+        useDonors.mockImplementation(() => ({
+            isLoading: false,
+            onLoadDonors: mockLoadDonors,
+        }));
+        useItems.mockImplementation(() => ({
+            isLoading: false,
+            onLoadItems: mockLoadItems,
+        }));
 
         renderWithThemeAndRouter(<DonationCreate />);
 

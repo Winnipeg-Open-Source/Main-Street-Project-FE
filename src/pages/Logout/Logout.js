@@ -7,11 +7,9 @@ function Logout () {
 
     useEffect(() => {
         handleLogout();
-    }, [])
+    }, []);
 
-    return (
-        <LoadingOverlay isLoading>Logging Out...</LoadingOverlay>
-    );
+    return <LoadingOverlay isLoading>Logging Out...</LoadingOverlay>;
 }
 
 Logout.displayName = 'Logout';

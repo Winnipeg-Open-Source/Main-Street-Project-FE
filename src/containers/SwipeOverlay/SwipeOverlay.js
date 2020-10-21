@@ -23,9 +23,7 @@ function SwipeOverlay () {
         preventDefaultTouchmoveEvent: true,
     });
 
-    return isMobile && isLoggedIn && (
-        <Overlay {...swipeProps} />
-    );
+    return isMobile && isLoggedIn && <Overlay {...swipeProps} />;
 }
 
 export default memo(SwipeOverlay);

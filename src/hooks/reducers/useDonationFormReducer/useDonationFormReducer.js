@@ -23,24 +23,31 @@ const initialState = {
 
 function useDonationFormReducer () {
     const { onSaveDonation } = useDonations();
-    const { handleSave } = useSaveResource(DONATIONS_API_PATH, DONATIONS_PATH, onSaveDonation);
+    const { handleSave } = useSaveResource(
+        DONATIONS_API_PATH,
+        DONATIONS_PATH,
+        onSaveDonation
+    );
 
-    const [ state, dispatch ] = useReducer(DonationForm, initialState);
+    const [state, dispatch] = useReducer(DonationForm, initialState);
     const { donorId, title, description, selectedItems, notes } = state;
 
     const onDonorChange = (evt) => dispatch(changeDonor(evt.target.value));
     const onTitleChange = (evt) => dispatch(changeTitle(evt.target.value));
-    const onDescriptionChange = (evt) => dispatch(changeDescription(evt.target.value));
+    const onDescriptionChange = (evt) =>
+        dispatch(changeDescription(evt.target.value));
     const onSelectItemChange = (item) => dispatch(addSelectedItem(item));
-    const onItemQuantityChange = (itemId, lineItemId, quantity) => dispatch(changeItemQuantity(itemId, lineItemId, quantity));
+    const onItemQuantityChange = (itemId, lineItemId, quantity) =>
+        dispatch(changeItemQuantity(itemId, lineItemId, quantity));
     const onNotesChange = (evt) => dispatch(changeNotes(evt.target.value));
 
-    const onSaveClick = () => handleSave({
-        donorId,
-        title,
-        items: selectedItems,
-        notes,
-    });
+    const onSaveClick = () =>
+        handleSave({
+            donorId,
+            title,
+            items: selectedItems,
+            notes,
+        });
 
     return {
         donorId,

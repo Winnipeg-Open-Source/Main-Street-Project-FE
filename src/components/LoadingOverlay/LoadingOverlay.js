@@ -14,20 +14,18 @@ const Overlay = styled(Flex)`
     bottom: 0;
     right: 0;
     z-index: 2;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 `;
 
 function LoadingOverlay ({ className, isLoading, children }) {
-    return isLoading
-        ? (
-            <Overlay className={className}>
-                <Text color='text.lightest' bold mb={2}>
-                    {children}
-                </Text>
-                <Spinner />
-            </Overlay>
-        )
-        : null;
+    return isLoading ? (
+        <Overlay className={className}>
+            <Text color='text.lightest' bold mb={2}>
+                {children}
+            </Text>
+            <Spinner />
+        </Overlay>
+    ) : null;
 }
 
 LoadingOverlay.displayName = 'LoadingOverlay';

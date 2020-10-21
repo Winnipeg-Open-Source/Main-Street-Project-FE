@@ -3,15 +3,17 @@ import renderWithTheme from 'tests/helpers/renderWithTheme';
 import HouseholdItemDonationForm from './HouseholdItemDonationForm';
 import { mockHouseholdItemDonationProps } from 'tests/mocks/MockDonationFormProps';
 
-describe ('HouseholdItemDonationForm', () => {
-    it ('renders without crashing', () => {
+describe('HouseholdItemDonationForm', () => {
+    it('renders without crashing', () => {
         const { asFragment } = renderWithTheme(<HouseholdItemDonationForm />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it ('has placeholders when empty', async () => {
-        const { getByLabelText, getByPlaceholderText } = renderWithTheme(<HouseholdItemDonationForm />);
+    it('has placeholders when empty', async () => {
+        const { getByLabelText, getByPlaceholderText } = renderWithTheme(
+            <HouseholdItemDonationForm />
+        );
 
         const name = await getByPlaceholderText('Name');
         const description = await getByPlaceholderText('Description');
@@ -22,8 +24,10 @@ describe ('HouseholdItemDonationForm', () => {
         expect(notes.value).toBe('');
     });
 
-    it ('has all fields used', async () => {
-        const { getByLabelText, getByPlaceholderText } = renderWithTheme(<HouseholdItemDonationForm {...mockHouseholdItemDonationProps} />);
+    it('has all fields used', async () => {
+        const { getByLabelText, getByPlaceholderText } = renderWithTheme(
+            <HouseholdItemDonationForm {...mockHouseholdItemDonationProps} />
+        );
 
         const name = await getByPlaceholderText('Name');
         const description = await getByPlaceholderText('Description');

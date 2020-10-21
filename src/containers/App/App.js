@@ -2,9 +2,7 @@ import React from 'react';
 import Router from 'containers/Router';
 
 function App () {
-    return (
-        <Router />
-    );
+    return <Router />;
 }
 
 App.displayName = 'App';

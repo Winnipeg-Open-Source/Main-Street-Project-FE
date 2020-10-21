@@ -5,7 +5,9 @@ import useResourcesReducer from 'hooks/reducers/useResourcesReducer';
 import { LOCATIONS_API_PATH } from 'constants/api';
 
 function Locations ({ children }) {
-    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(LOCATIONS_API_PATH);
+    const { isLoading, isError, data, onSave, onLoad } = useResourcesReducer(
+        LOCATIONS_API_PATH
+    );
 
     const props = {
         isLoading,

@@ -26,10 +26,14 @@ function RequisitionForm ({
     onSelectItemChange,
     onItemQuantityChange,
     onSaveClick,
-    onCancelClick
+    onCancelClick,
 }) {
     return (
-        <Form className={className} onSaveClick={onSaveClick} onCancelClick={onCancelClick}>
+        <Form
+            className={className}
+            onSaveClick={onSaveClick}
+            onCancelClick={onCancelClick}
+        >
             <UserSelect
                 isLoading={isLoadingEmployees}
                 placeholder='Employee / Volunteer'

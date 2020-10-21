@@ -8,7 +8,10 @@ function Header () {
     const { onSidebarToggle } = useSidebar();
 
     return (
-        <HeaderComponent isLoggedIn={isLoggedIn} onMenuClick={onSidebarToggle} />
+        <HeaderComponent
+            isLoggedIn={isLoggedIn}
+            onMenuClick={onSidebarToggle}
+        />
     );
 }
 

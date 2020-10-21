@@ -1,33 +1,33 @@
 {
-  "palette": {
-    "primary": {
-      "light": "#FEFBF6",
-      "base": "#E86754",
-      "dark": "#9D2715"
-    },
-    "secondary": {
-      "light": "#FAEBD7",
-      "base": "#F0C284",
-      "dark": "#9f6413"
-    },
-    "tertiary": {
-      "light": "#B6E6FC",
-      "base": "#065F86",
-      "dark": "#185273"
-    },
-    "text": {
-      "lightest": "#FFF",
-      "light": "#666",
-      "base": "#185273",
-      "dark": "#3B3F42",
-      "darkest": "#000"
-    },
-    "background": {
-      "lightest": "#FFF",
-      "light": "#EFEEEE",
-      "base": "#065F86",
-      "dark": "#185273",
-      "darkest": "#000"
+    "palette": {
+        "primary": {
+            "light": "#FEFBF6",
+            "base": "#E86754",
+            "dark": "#9D2715"
+        },
+        "secondary": {
+            "light": "#FAEBD7",
+            "base": "#F0C284",
+            "dark": "#9f6413"
+        },
+        "tertiary": {
+            "light": "#B6E6FC",
+            "base": "#065F86",
+            "dark": "#185273"
+        },
+        "text": {
+            "lightest": "#FFF",
+            "light": "#666",
+            "base": "#185273",
+            "dark": "#3B3F42",
+            "darkest": "#000"
+        },
+        "background": {
+            "lightest": "#FFF",
+            "light": "#EFEEEE",
+            "base": "#065F86",
+            "dark": "#185273",
+            "darkest": "#000"
+        }
     }
-  }
 }

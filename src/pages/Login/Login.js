@@ -8,7 +8,12 @@ import useLogin from 'hooks/useLogin';
 import usePreviousRoute from 'hooks/usePreviousRoute';
 
 function Login () {
-    const { isAttemptingLogin, isLoggingIn, isLoggedIn, isLoginFailed } = useAuthentication();
+    const {
+        isAttemptingLogin,
+        isLoggingIn,
+        isLoggedIn,
+        isLoginFailed,
+    } = useAuthentication();
     const { handleLogin, handleLoginWithToken } = useLogin();
     const goToPreviousRoute = usePreviousRoute();
 
@@ -19,17 +24,20 @@ function Login () {
 
     return (
         <Flex justifyContent='center' width={1} p={3}>
-            <LoadingOverlay isLoading={isLoggingIn}>Logging In...</LoadingOverlay>
-            {isAttemptingLogin || isLoggedIn
-                ? <Flex mt={4}><Spinner /></Flex>
-                : (
-                    <LoginForm
-                        isLoggingIn={isLoggingIn}
-                        isLoginFailed={isLoginFailed}
-                        handleLogin={handleLogin}
-                    />
-                )
-            }
+            <LoadingOverlay isLoading={isLoggingIn}>
+                Logging In...
+            </LoadingOverlay>
+            {isAttemptingLogin || isLoggedIn ? (
+                <Flex mt={4}>
+                    <Spinner />
+                </Flex>
+            ) : (
+                <LoginForm
+                    isLoggingIn={isLoggingIn}
+                    isLoginFailed={isLoginFailed}
+                    handleLogin={handleLogin}
+                />
+            )}
         </Flex>
     );
 }

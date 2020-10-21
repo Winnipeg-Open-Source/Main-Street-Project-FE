@@ -41,4 +41,3 @@ UserCardSkeleton.defaultProps = {
 };
 
 export default memo(UserCardSkeleton);
-

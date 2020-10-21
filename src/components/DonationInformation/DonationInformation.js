@@ -3,12 +3,24 @@ import PropTypes from 'prop-types';
 import { Text } from 'pcln-design-system';
 import Card from 'components/Card';
 
-function DonationInformation ({ className, title, description, donationDate, notes }) {
+function DonationInformation ({
+    className,
+    title,
+    description,
+    donationDate,
+    notes,
+}) {
     return (
         <Card className={className}>
-            <Text color='text.darkest' fontSize={1} bold>{title} - {donationDate}</Text>
-            <Text color='text.light' fontSize={1}>{description}</Text>
-            <Text color='text.light' fontSize={1}>{notes}</Text>
+            <Text color='text.darkest' fontSize={1} bold>
+                {title} - {donationDate}
+            </Text>
+            <Text color='text.light' fontSize={1}>
+                {description}
+            </Text>
+            <Text color='text.light' fontSize={1}>
+                {notes}
+            </Text>
         </Card>
     );
 }

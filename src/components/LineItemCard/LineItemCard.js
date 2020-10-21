@@ -28,13 +28,13 @@ const StyledInput = styled(Input)`
         -webkit-appearance: none;
     }
 
-    &[type=number] {
+    &[type='number'] {
         -moz-appearance: textfield;
     }
 `;
 
 function LineItem ({
-    id, 
+    id,
     itemId,
     className,
     isEditable,
@@ -44,23 +44,35 @@ function LineItem ({
 }) {
     const changeQuantity = (value) => onItemQuantityChange(itemId, id, value);
 
-    const onIncrementClick = () => changeQuantity(quantity >= 0 ? ++quantity : 1);
-    const onDecrementClick = () => changeQuantity(quantity >= 1 ? --quantity : 0);
+    const onIncrementClick = () =>
+        changeQuantity(quantity >= 0 ? ++quantity : 1);
+    const onDecrementClick = () =>
+        changeQuantity(quantity >= 1 ? --quantity : 0);
     const onQuantityChange = (evt) => changeQuantity(evt.target.value);
 
     return (
-        <StyledFlex className={className} justifyContent='space-between' alignItems='center' width={1} px={2}>
+        <StyledFlex
+            className={className}
+            justifyContent='space-between'
+            alignItems='center'
+            width={1}
+            px={2}
+        >
             <Text color='text.darkest'>{locationName}</Text>
-            {isEditable
-                ? (
-                    <Flex>
-                        <StyledButton icon={<Minus />} onClick={onDecrementClick} />
-                        <StyledInput type='number' value={quantity} onChange={onQuantityChange} mx={2} />
-                        <StyledButton icon={<Plus />} onClick={onIncrementClick} />
-                    </Flex>
-                )
-                :<Text color='text.darkest'>{quantity}</Text>
-            }
+            {isEditable ? (
+                <Flex>
+                    <StyledButton icon={<Minus />} onClick={onDecrementClick} />
+                    <StyledInput
+                        type='number'
+                        value={quantity}
+                        onChange={onQuantityChange}
+                        mx={2}
+                    />
+                    <StyledButton icon={<Plus />} onClick={onIncrementClick} />
+                </Flex>
+            ) : (
+                <Text color='text.darkest'>{quantity}</Text>
+            )}
         </StyledFlex>
     );
 }
