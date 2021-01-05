@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@babel/runtime": "7.9.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "history": "^4.10.1",
     "pcln-autocomplete": "^3.0.0",
     "pcln-design-system": "^3.5.3",
